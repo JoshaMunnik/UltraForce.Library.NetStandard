@@ -1,0 +1,702 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFModelStorageWrapper | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFModelStorageWrapper | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="can be used to create models that map their properties directly to a storage.  Use  to get a property value from the storage and use  to store a property value to the storage.   The class handles properties that implement . The class uses   and will update the object in storage whenever it changes.   If a property is a (sub)class of  the class will call  whenever a new instance is created or assigned. The class will never store the value itself in the storage. The class assumes the property value will take care of storing/retrieving itself. This allows for a  subclass to be used for multiple properties without key name conflicts.   Properties that implement  are treated slightly different. The first time a property&#39;s value is referenced and none exists, a new instance is created and its data is loaded from the wrapped  using .">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/new/master/apiSpec/new?filename=UltraForce_Library_NetStandard_Models_UFModelStorageWrapper.md&amp;value=---%0Auid%3A%20UltraForce.Library.NetStandard.Models.UFModelStorageWrapper%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper" class="text-break">
+Class UFModelStorageWrapper  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelStorageWrapper.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Models.html">Models</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html">UFModelStorageWrapper</a> can be used to create models that
+map their properties directly to a storage.</p>
+<p>
+Use <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Get__1_System_Func___0__System_String_">Get&lt;T&gt;(Func&lt;T&gt;, string)</a> to get a property value from the storage and
+use <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Set_System_Object_System_String_">Set(object?, string)</a> to store a property value to the storage.
+</p>
+<p>
+The class handles properties that implement
+<a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a>. The class uses 
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> and
+will update the object in storage whenever it changes.
+</p>
+<p>
+If a property is a (sub)class of <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html">UFModelStorageWrapper</a> the
+class will call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_SetParentKeyPrefix_System_String_">SetParentKeyPrefix(string)</a> whenever a new instance
+is created or assigned. The class will never store the value itself in
+the storage. The class assumes the property value will take care of
+storing/retrieving itself. This allows for a
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html">UFModelStorageWrapper</a> subclass to be used for multiple
+properties without key name conflicts.
+</p>
+<p>
+Properties that implement <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a> are treated
+slightly different. The first time a property's value is referenced
+and none exists, a new instance is created and its data is loaded
+from the wrapped <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a> using
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetStorableObject_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_">GetStorableObject(string, IUFStorableObject)</a>.
+</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UFModelStorageWrapper : UFModel, IUFStorableObject, IUFJsonExport, IUFLockable, INotifyPropertyChanged, IUFClearable, IUFModel, IUFAccessProperty, IUFNotifyDataChanged, IUFValidatePropertyValue</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a></div>
+      <div><span class="xref">UFModelStorageWrapper</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFJsonExport.html">IUFJsonExport</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html">IUFLockable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFClearable.html">IUFClearable</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Models.IUFModel.html">IUFModel</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty.html">IUFAccessProperty</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFValidatePropertyValue.html">IUFValidatePropertyValue</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UseLog_UltraForce_Library_NetStandard_Development_UFHtmlLog_">UFModel.UseLog(UFHtmlLog)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyType_System_String_">UFModel.GetPropertyType(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetLock">UFModel.ResetLock()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasChanged">UFModel.HasChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetChanged">UFModel.ResetChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyNames">UFModel.GetPropertyNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasProperty_System_String_">UFModel.HasProperty(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValid">UFModel.IsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_System_Boolean_">UFModel.SetPropertyValue(string, object, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyTo_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_">UFModel.CopyTo(UFModel, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyFrom_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_">UFModel.CopyFrom(UFModel, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetDataChangedToken">UFModel.GetDataChangedToken()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveToStream_System_Int32_System_IO_Stream_">UFModel.SaveToStream(int, Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LoadFromStream_System_Int32_System_IO_Stream_">UFModel.LoadFromStream(int, Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ToString">UFModel.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue__1_System_String_">UFModel.GetPropertyValue&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveJson">UFModel.SaveJson()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Clear">UFModel.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Lock">UFModel.Lock()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Unlock">UFModel.Unlock()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue_System_String_">UFModel.GetPropertyValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_">UFModel.SetPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValidPropertyValue_System_String_System_Object_">UFModel.IsValidPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">UFModel.DataChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveToStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_">UFModel.SaveToStorage(UFKeyedStorage)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LoadFromStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_">UFModel.LoadFromStorage(UFKeyedStorage)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveJson_System_Text_StringBuilder_">UFModel.SaveJson(StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_PropertyChanged">UFModel.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildChanged">UFModel.ChildChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_InitMeta">UFModel.InitMeta()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CanSave_System_String_System_Object_">UFModel.CanSave(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed">UFModel.Changed()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_">UFModel.Changed(string, object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnChildChanged_System_Object_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_">UFModel.OnChildChanged(object, UFDataChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_">UFModel.OnPropertyChanged(object, PropertyChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnDataChanged_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_">UFModel.OnDataChanged(UFDataChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties">UFModel.UpdateTrackedProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_">UFModel.AddValidator(string, IUFValidateValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateProperty_">UFModel.AddValidator(string, IUFValidateProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_">UFModel.Assign&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_">UFModel.Get&lt;T&gt;(T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasOption_UltraForce_Library_NetStandard_Models_UFModel_Option_">UFModel.HasOption(UFModel.Option)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LogNewValue_System_String_System_Object_">UFModel.LogNewValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper__ctor_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper__ctor_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.#ctor(UltraForce.Library.NetStandard.Storage.UFKeyedStorage,System.String)">
+  UFModelStorageWrapper(UFKeyedStorage, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelStorageWrapper.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html">UFModelStorageWrapper</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UFModelStorageWrapper(UFKeyedStorage aStorage, string aPrefix = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStorage</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a></dt>
+    <dd><p><a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a> instance to wrap</p>
+</dd>
+    <dt><code>aPrefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Prefix used to create storage key names from property names.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_ChildHasChanged_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.ChildHasChanged*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_ChildHasChanged_System_Object_System_String___UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.ChildHasChanged(System.Object,System.String[],UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)">
+  ChildHasChanged(object, string[], UFDataChangedEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelStorageWrapper.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is called when the <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> is used.</p>
+<p>
+The default implementation does nothing.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ChildHasChanged(object aValue, string[] aPropertyNames, UFDataChangedEventArgs anEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Property value (is the sender of the event)</p>
+</dd>
+    <dt><code>aPropertyNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>One or more property names the value is assigned to</p>
+</dd>
+    <dt><code>anEvent</code> <a class="xref" href="UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html">UFDataChangedEventArgs</a></dt>
+    <dd><p>The change event</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Clear_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Clear*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Clear_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Clear(System.Boolean)">
+  Clear(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelStorageWrapper.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes or clears the properties of the data structure to default values.</p>
+<p>
+The default implementation sets all the properties that have a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.defaultvalueattribute">DefaultValueAttribute</a> attached to
+the value specified by that attribute. 
+</p><p>
+If the property has no <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.defaultvalueattribute">DefaultValueAttribute</a> attached the method will check if the property
+value has a method named <code>Clear</code> and will call that method if it does.
+</p><p>
+As last step the method will call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties">UpdateTrackedProperties()</a></p><p>
+Subclasses can override this method to initialize or clear additional properties.
+</p><p>
+If there are properties that implement <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a> and
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> is used, the clear method should make sure the instances are existing.
+</p><param name="aCallChanged">
+When <code>true</code> call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed">Changed()</a>. 
+
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Clear(bool aCallChanged)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aCallChanged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_DeleteFromStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.DeleteFromStorage*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_DeleteFromStorage_System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.DeleteFromStorage(System.String)">
+  DeleteFromStorage(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelStorageWrapper.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a value from the settings. It assigns <code>null</code> as new
+property value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DeleteFromStorage(string aPropertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of property to remove</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_GetStorageKey_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_GetStorageKey_System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(System.String)">
+  GetStorageKey(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelStorageWrapper.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets key for storage.</p>
+<p>
+The default implementation prefixes the key with the value
+from <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_SetParentKeyPrefix_System_String_">SetParentKeyPrefix(string)</a> and the prefix passed with the
+constructor.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetStorageKey(string aName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name to convert to unique key</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Unique key</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Get_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Get__1_System_Func___0__System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get``1(System.Func{``0},System.String)">
+  Get&lt;T&gt;(Func&lt;T&gt;, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelStorageWrapper.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value from storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override T Get&lt;T&gt;(Func&lt;T&gt; aFactory, string aPropertyName = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd><p>Default value to use when the value is not available in the storage</p>
+</dd>
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of property used as storage key</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>Value from storage or aDefault</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of property</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Get__1_System_Func___0__System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The first time this method is called for a type that is implementing
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a> the method will create the object
+with <code>aFactory</code> and then will load it from the storage.</p>
+<p>
+Subsequent calls just return the stored instance.
+</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Set_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Set_System_Object_System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(System.Object,System.String)">
+  Set(object?, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelStorageWrapper.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a value in storage. Will fire a changed event if value is new.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool Set(object? aValue, string aPropertyName = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Value to store. If a value is <code>null</code>, it will get deleted from
+the storage.</p>
+</dd>
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of property used as storage key</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>True</code> if new value got stored; <code>false</code> if the value already
+stored is equal to <code>aValue</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Set_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If the value assigned is a subclass of
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html">UFModelStorageWrapper</a>, a call will be made to
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_SetParentKeyPrefix_System_String_">SetParentKeyPrefix(string)</a>.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_SetParentKeyPrefix_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_SetParentKeyPrefix_System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(System.String)">
+  SetParentKeyPrefix(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelStorageWrapper.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is called when this instance is assigned to a property
+in a parent <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html">UFModelStorageWrapper</a> instance.</p>
+<p>
+It stores a prefix that is used when getting the storage key via
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_GetStorageKey_System_String_">GetStorageKey(string)</a>.
+</p>
+<p>
+The default implementation just stores the key.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetParentKeyPrefix(string aKeyPrefix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKeyPrefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Prefix to use</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelStorageWrapper.cs/#L69" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

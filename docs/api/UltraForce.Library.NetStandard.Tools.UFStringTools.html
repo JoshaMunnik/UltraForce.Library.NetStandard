@@ -1,0 +1,926 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFStringTools | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFStringTools | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="An utility class that adds extra string related methods.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/new/master/apiSpec/new?filename=UltraForce_Library_NetStandard_Tools_UFStringTools.md&amp;value=---%0Auid%3A%20UltraForce.Library.NetStandard.Tools.UFStringTools%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Tools_UFStringTools" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools" class="text-break">
+Class UFStringTools  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Tools.html">Tools</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An utility class that adds extra string related methods.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class UFStringTools</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFStringTools</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_Add_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.Add*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_Add_System_String_System_String_System_String_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.Add(System.String,System.String,System.String)">
+  Add(string?, string?, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a string to the end of a string. Use a separator if the string being added to is not empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Add(string? aSource, string? aValue, string aSeparator = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>String to add to</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>String to add</p>
+</dd>
+    <dt><code>aSeparator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Separator to use if aSource is not empty</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>[aSource + aSeparator] + aValue</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_CodeFromGuid_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.CodeFromGuid*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_CodeFromGuid" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.CodeFromGuid">
+  CodeFromGuid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an unique code by converting a new guid to a hex string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CodeFromGuid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Unique code based on a guid</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_CodeFromGuid_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.CodeFromGuid*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_CodeFromGuid_System_Guid_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.CodeFromGuid(System.Guid)">
+  CodeFromGuid(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> to a hex string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CodeFromGuid(Guid aGuid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aGuid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>Guid to convert</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Unique code based on a guid</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_Count_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.Count*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_Count_System_Char_System_String_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.Count(System.Char,System.String,System.Boolean)">
+  Count(char, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Count the number of occurrences of a character inside another string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Count(char aValue, string aText, bool aCaseInsensitive = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>A char value to count</p>
+</dd>
+    <dt><code>aText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string to count in</p>
+</dd>
+    <dt><code>aCaseInsensitive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code>, ignore casing; <code>false</code>, differentiate between lower- and uppercase.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of occurrences</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_Count_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.Count*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_Count_System_String_System_String_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.Count(System.String,System.String,System.Boolean)">
+  Count(string, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Count the number of occurrences of a character inside another string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Count(string aValue, string aText, bool aCaseInsensitive = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A char value to count</p>
+</dd>
+    <dt><code>aText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string to count in</p>
+</dd>
+    <dt><code>aCaseInsensitive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code>, ignore casing; <code>false</code>, differentiate between lower- and uppercase.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of occurrences or -1 if aValue is empty</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_GenerateCode_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GenerateCode*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_GenerateCode_System_Int32_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GenerateCode(System.Int32)">
+  GenerateCode(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a code existing of a random sequence of upper and lowercase letters and numbers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateCode(int aLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Size of the generated code</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>a random code of aLength characters</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Tools_UFStringTools_GenerateCode_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The code makes sure every 3rd char is a numeric value (to prevent offensive words). Also the code will not
+contain any zero, uppercase o, one and lowercase l characters since these might look similar with certain fonts.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_GenerateCode_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GenerateCode*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_GenerateCode_System_Int32_System_String_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GenerateCode(System.Int32,System.String)">
+  GenerateCode(int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a code using a custom alphabet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateCode(int aLength, string anAlphabet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of digits</p>
+</dd>
+    <dt><code>anAlphabet</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Alphabet to get characters from</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A code of aLength characters existing of random characters from anAlphabet</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_GenerateNumericCode_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GenerateNumericCode*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_GenerateNumericCode_System_Int32_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GenerateNumericCode(System.Int32)">
+  GenerateNumericCode(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a numeric code. The method makes sure the first digit is not 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateNumericCode(int aLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of digits</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A code of aLength characters existing of characters '0' - '9'</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_GenerateTextCode_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GenerateTextCode*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_GenerateTextCode_System_Int32_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GenerateTextCode(System.Int32)">
+  GenerateTextCode(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a code existing of a random sequence of upper and lowercase letters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateTextCode(int aLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Size of the generated code</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>a random code of aLength characters</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Tools_UFStringTools_GenerateTextCode_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The code will not contain any uppercase o and lowercase l characters since these might look
+similar with certain fonts.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_GetHexString_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GetHexString*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_GetHexString_System_Byte___" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GetHexString(System.Byte[])">
+  GetHexString(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create an hexadecimal representation of a byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetHexString(byte[] aBytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aBytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>An array of bytes to convert to string.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The bytes as hexadecimal string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Tools_UFStringTools_GetHexString_System_Byte____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The method will return uppercase A..F characters.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_GetHexString_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GetHexString*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_GetHexString_System_Byte___System_Char___" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GetHexString(System.Byte[],System.Char[])">
+  GetHexString(byte[], char[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a byte array to a hexadecimal presentation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetHexString(byte[] aBytes, char[] aNibbleMap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aBytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Bytes to convert</p>
+</dd>
+    <dt><code>aNibbleMap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p>Maps nibbles (0..15) to character equivalent</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing a textual representation of the array</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_GetLowerCaseHexString_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GetLowerCaseHexString*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_GetLowerCaseHexString_System_Byte___" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.GetLowerCaseHexString(System.Byte[])">
+  GetLowerCaseHexString(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create an hexadecimal representation of a byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetLowerCaseHexString(byte[] aBytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aBytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>An array of bytes to convert to string.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The bytes as hexadecimal string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Tools_UFStringTools_GetLowerCaseHexString_System_Byte____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The method will return lowercase a..f characters.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_HasUniqueCharacters_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.HasUniqueCharacters*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_HasUniqueCharacters_System_String_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.HasUniqueCharacters(System.String)">
+  HasUniqueCharacters(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a string is made up of unique characters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasUniqueCharacters(string aText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text to check</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if all characters only occur once</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_Join_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.Join*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_Join__1_System_Collections_Generic_IEnumerable___0__System_String_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.Join``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+  Join&lt;T&gt;(IEnumerable&lt;T&gt;, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Joins the values of an enumerable type by using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> and joining them using
+<a class="xref" href="UltraForce.Library.NetStandard.Tools.UFStringTools.html#UltraForce_Library_NetStandard_Tools_UFStringTools_Add_System_String_System_String_System_String_">Add(string?, string?, string)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join&lt;T&gt;(IEnumerable&lt;T&gt; anEnumerable, string aSeparator = &quot;, &quot;) where T : notnull</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anEnumerable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>Enumerable to combine into one string</p>
+</dd>
+    <dt><code>aSeparator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text to use separator between each value</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string with all values joined together</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Enumerable type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_NormalizeEmail_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.NormalizeEmail*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_NormalizeEmail_System_String_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.NormalizeEmail(System.String)">
+  NormalizeEmail(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a normalized version of an email, which can be used with case insensitive
+comparisons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NormalizeEmail(string anEmail)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_NormalizeName_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.NormalizeName*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_NormalizeName_System_String_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.NormalizeName(System.String)">
+  NormalizeName(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a normalized version of a name, which can be used with case insensitive comparisons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NormalizeName(string aName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_Replace_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.Replace*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_Replace_System_String_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.Replace(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+  Replace(string?, IDictionary&lt;string, string&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Replaces all keys with their value in a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? Replace(string? anOriginal, IDictionary&lt;string, string&gt;? aMapping)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anOriginal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>string to update, when it is <code>null</code> the method just returns <code>null</code>.</p>
+</dd>
+    <dt><code>aMapping</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>keys and values, when it is <code>null</code> the method just returns the value of <code>anOriginal</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>updated string</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFStringTools_SelectString_" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.SelectString*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFStringTools_SelectString_System_String___" data-uid="UltraForce.Library.NetStandard.Tools.UFStringTools.SelectString(System.String[])">
+  SelectString(params string?[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks the string and returns the first one that is not null and not empty.
+If all texts fail, return <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string.empty">Empty</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SelectString(params string?[]? aTexts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aTexts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Texts to check to check</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>One of the values from aTexts or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string.empty">Empty</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFStringTools.cs/#L43" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

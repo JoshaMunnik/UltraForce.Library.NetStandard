@@ -1,0 +1,613 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFCachedStorage | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFCachedStorage | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="by caching values from another .">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/new/master/apiSpec/new?filename=UltraForce_Library_NetStandard_Storage_UFCachedStorage.md&amp;value=---%0Auid%3A%20UltraForce.Library.NetStandard.Storage.UFCachedStorage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Storage_UFCachedStorage" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage" class="text-break">
+Class UFCachedStorage  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFCachedStorage.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Storage.html">Storage</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.NetStandard.Storage.UFCachedStorage.html">UFCachedStorage</a> by caching values from another
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UFCachedStorage : UFKeyedStorage</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a></div>
+      <div><span class="xref">UFCachedStorage</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_">UFKeyedStorage.GetString(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetByte_System_String_System_Byte_">UFKeyedStorage.GetByte(string, byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetByte_System_String_">UFKeyedStorage.GetByte(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetByte_System_String_System_Byte_">UFKeyedStorage.SetByte(string, byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetSByte_System_String_System_SByte_">UFKeyedStorage.GetSByte(string, sbyte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetSByte_System_String_">UFKeyedStorage.GetSByte(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetSByte_System_String_System_SByte_">UFKeyedStorage.SetSByte(string, sbyte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetShort_System_String_System_Int16_">UFKeyedStorage.GetShort(string, short)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetShort_System_String_">UFKeyedStorage.GetShort(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetShort_System_String_System_Int16_">UFKeyedStorage.SetShort(string, short)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetUShort_System_String_System_UInt16_">UFKeyedStorage.GetUShort(string, ushort)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetUShort_System_String_">UFKeyedStorage.GetUShort(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetUShort_System_String_System_UInt16_">UFKeyedStorage.SetUShort(string, ushort)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetInt_System_String_System_Int32_">UFKeyedStorage.GetInt(string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetInt_System_String_">UFKeyedStorage.GetInt(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetInt_System_String_System_Int32_">UFKeyedStorage.SetInt(string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetUInt_System_String_System_UInt32_">UFKeyedStorage.GetUInt(string, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetUInt_System_String_">UFKeyedStorage.GetUInt(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetUInt_System_String_System_UInt32_">UFKeyedStorage.SetUInt(string, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetLong_System_String_System_Int64_">UFKeyedStorage.GetLong(string, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetLong_System_String_">UFKeyedStorage.GetLong(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetLong_System_String_System_Int64_">UFKeyedStorage.SetLong(string, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetULong_System_String_System_UInt64_">UFKeyedStorage.GetULong(string, ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetULong_System_String_">UFKeyedStorage.GetULong(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetULong_System_String_System_UInt64_">UFKeyedStorage.SetULong(string, ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetFloat_System_String_System_Single_">UFKeyedStorage.GetFloat(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetFloat_System_String_">UFKeyedStorage.GetFloat(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetFloat_System_String_System_Single_">UFKeyedStorage.SetFloat(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDouble_System_String_System_Double_">UFKeyedStorage.GetDouble(string, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDouble_System_String_">UFKeyedStorage.GetDouble(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetDouble_System_String_System_Double_">UFKeyedStorage.SetDouble(string, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBool_System_String_System_Boolean_">UFKeyedStorage.GetBool(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBool_System_String_">UFKeyedStorage.GetBool(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetBool_System_String_System_Boolean_">UFKeyedStorage.SetBool(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetChar_System_String_System_Char_">UFKeyedStorage.GetChar(string, char)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetChar_System_String_">UFKeyedStorage.GetChar(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetChar_System_String_System_Char_">UFKeyedStorage.SetChar(string, char)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBytes_System_String_System_Byte___">UFKeyedStorage.GetBytes(string, byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBytes_System_String_">UFKeyedStorage.GetBytes(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetBytes_System_String_System_Byte___">UFKeyedStorage.SetBytes(string, byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDateTime_System_String_System_DateTime_">UFKeyedStorage.GetDateTime(string, DateTime)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDateTime_System_String_">UFKeyedStorage.GetDateTime(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetDateTime_System_String_System_DateTime_">UFKeyedStorage.SetDateTime(string, DateTime)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetGuid_System_String_System_Guid_">UFKeyedStorage.GetGuid(string, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetGuid_System_String_">UFKeyedStorage.GetGuid(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetGuid_System_String_System_Guid_">UFKeyedStorage.SetGuid(string, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetStorableObject_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_">UFKeyedStorage.GetStorableObject(string, IUFStorableObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetStorableObject_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_">UFKeyedStorage.SetStorableObject(string, IUFStorableObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetObject_System_String_System_Type_">UFKeyedStorage.GetObject(string, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetObject__1_System_String_">UFKeyedStorage.GetObject&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetObject_System_String_System_Type_System_Func_System_Type_System_Object__">UFKeyedStorage.GetObject(string, Type, Func&lt;Type, object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject_System_String_System_Object_System_Type_">UFKeyedStorage.SetObject(string, object, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject_System_String_System_Object_">UFKeyedStorage.SetObject(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String_System_Object_">UFKeyedStorage.SetObject&lt;T&gt;(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SerializeObject_System_String_System_Object_">UFKeyedStorage.SerializeObject(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__">UFKeyedStorage.DeserializeObject(string, Type, Func&lt;Type, object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFCachedStorage__ctor_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFCachedStorage__ctor_System_TimeSpan_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.#ctor(System.TimeSpan,UltraForce.Library.NetStandard.Storage.UFKeyedStorage,System.Boolean)">
+  UFCachedStorage(TimeSpan, UFKeyedStorage, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFCachedStorage.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFCachedStorage.html">UFCachedStorage</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UFCachedStorage(TimeSpan aCacheLife, UFKeyedStorage aStorage, bool aKeepAlive = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aCacheLife</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd><p>Maximum time a value is cached</p>
+</dd>
+    <dt><code>aStorage</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a></dt>
+    <dd><p>Storage to encapsulate</p>
+</dd>
+    <dt><code>aKeepAlive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> if a cached value is accessed before it expires,
+its life time is expanded from the moment it was last accessed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFCachedStorage__ctor_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFCachedStorage__ctor_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.#ctor(UltraForce.Library.NetStandard.Storage.UFKeyedStorage,System.Boolean)">
+  UFCachedStorage(UFKeyedStorage, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFCachedStorage.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFCachedStorage.html">UFCachedStorage</a> if a maximum
+cache life time of 1 minute .</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UFCachedStorage(UFKeyedStorage aStorage, bool aKeepAlive = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStorage</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a></dt>
+    <dd><p>Storage to encapsulate</p>
+</dd>
+    <dt><code>aKeepAlive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> if a cached value is accessed before it expires,
+its life time is expanded from the moment it was last accessed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFCachedStorage_DeleteAll_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.DeleteAll*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFCachedStorage_DeleteAll" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.DeleteAll">
+  DeleteAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFCachedStorage.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeleteAll">DeleteAll()</a> of the wrapped
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a> and removes all cached values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DeleteAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFCachedStorage_DeleteKey_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.DeleteKey*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFCachedStorage_DeleteKey_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.DeleteKey(System.String)">
+  DeleteKey(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFCachedStorage.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeleteKey_System_String_">DeleteKey(string)</a> of the wrapped
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a> and removes the cached value (if any).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DeleteKey(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFCachedStorage_GetString_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.GetString*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFCachedStorage_GetString_System_String_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.GetString(System.String,System.String)">
+  GetString(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFCachedStorage.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a string from the cache if any, else get it from the
+wrapped <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a> and store it in the cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetString(string aKey, string aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get value for</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Default value to use if none exists</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Value for <code>aKey</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFCachedStorage_HasKey_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.HasKey*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFCachedStorage_HasKey_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.HasKey(System.String)">
+  HasKey(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFCachedStorage.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a valid entry exists in the cache, else calls
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_HasKey_System_String_">HasKey(string)</a> of the wrapped
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasKey(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFCachedStorage_SetString_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.SetString*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFCachedStorage_SetString_System_String_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFCachedStorage.SetString(System.String,System.String)">
+  SetString(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFCachedStorage.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a string in the wrapped <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a> and store or
+update in the cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetString(string aKey, string aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store the value for</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Value to store</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFCachedStorage.cs/#L39" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

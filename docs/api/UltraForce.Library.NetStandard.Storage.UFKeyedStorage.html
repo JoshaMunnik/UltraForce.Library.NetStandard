@@ -1,0 +1,2797 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFKeyedStorage | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFKeyedStorage | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="is a base class for storage classes that store different type of values using unique keys.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/new/master/apiSpec/new?filename=UltraForce_Library_NetStandard_Storage_UFKeyedStorage.md&amp;value=---%0Auid%3A%20UltraForce.Library.NetStandard.Storage.UFKeyedStorage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage" class="text-break">
+Class UFKeyedStorage  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Storage.html">Storage</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a> is a base class for storage classes that
+store different type of values using unique keys.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class UFKeyedStorage</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFKeyedStorage</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Storage.UFCachedStorage.html">UFCachedStorage</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Storage.UFDictionaryStorage.html">UFDictionaryStorage</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The default implementations of the storage methods for the various types
+use the <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_">GetString(string)</a> and
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_System_String_System_String_">SetString(string, string)</a> method to store textual representations of
+the data.</p>
+<p>
+The class itself is an abstract class, the following methods need to be 
+implemented in a subclass: <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_System_String_">GetString(string, string)</a>,
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_System_String_System_String_">SetString(string, string)</a>, <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_HasKey_System_String_">HasKey(string)</a> and
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeleteKey_System_String_">DeleteKey(string)</a>.
+</p>
+<p>
+If possible a subclass should also implement <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeleteAll">DeleteAll()</a>.
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage__ctor_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage__ctor" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.#ctor">
+  UFKeyedStorage()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UFKeyedStorage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeleteAll_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteAll*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeleteAll" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteAll">
+  DeleteAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L1153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes all stored data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DeleteAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeleteKey_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteKey*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeleteKey_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteKey(System.String)">
+  DeleteKey(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L1163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes the data for specific key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void DeleteKey(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to Delete the data for.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeserializeObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})">
+  DeserializeObject(string, Type?, Func&lt;Type, object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L1204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes an object that was stored previously with
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SerializeObject_System_String_System_Object_">SerializeObject(string, object)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object DeserializeObject(string aKey, Type? aType, Func&lt;Type, object&gt; aFactory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to retrieve serialized object with</p>
+</dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>Type of object to create (might be <code>null</code>)</p>
+</dd>
+    <dt><code>aFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>A factory to create a new instance of <code>aType</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Retrieved object</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBool_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBool_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(System.String)">
+  GetBool(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L648"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a bool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBool(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the bool for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The stored bool or true when missing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBool_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBool_System_String_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(System.String,System.Boolean)">
+  GetBool(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L634"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a bool.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_">GetString(string)</a> and
+converts its value back to a bool.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool GetBool(string aKey, bool aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the bool for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A default value to use when there is no bool stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The stored bool or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetByte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetByte_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(System.String)">
+  GetByte(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a byte.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte GetByte(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the byte for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>The stored byte or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetByte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetByte_System_String_System_Byte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(System.String,System.Byte)">
+  GetByte(string, byte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a byte.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetInt_System_String_">GetInt(string)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte GetByte(string aKey, byte aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the byte for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>A default value to use when there is no byte stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>The stored byte or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBytes_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBytes_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(System.String)">
+  GetBytes(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L756"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an array of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[]? GetBytes(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get array for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Array of byte or null when missing</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBytes_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBytes_System_String_System_Byte___" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(System.String,System.Byte[])">
+  GetBytes(string, byte[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L740"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an array of bytes.</p>
+<p> 
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_">GetString(string)</a> and 
+assumes the data is is a base64 encoded string.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[]? GetBytes(string aKey, byte[]? aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get array for</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Default value to use when no data exists for aKey</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Array of byte or aDefault</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetChar_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetChar_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(System.String)">
+  GetChar(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L701"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a char.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetChar(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the char for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>The stored char or '\0' when missing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetChar_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetChar_System_String_System_Char_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(System.String,System.Char)">
+  GetChar(string, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L687"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a char.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_">GetString(string)</a> to get
+the stored character.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual char GetChar(string aKey, char aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the char for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>A default value to use when there is no char stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>The stored char or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDateTime_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDateTime_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(System.String)">
+  GetDateTime(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L798"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a date and time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime GetDateTime(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get date and time for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Date and time or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime.now">Now</a> when missing</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDateTime_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDateTime_System_String_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(System.String,System.DateTime)">
+  GetDateTime(string, DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L786"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> value using <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetLong_System_String_">GetLong(string)</a>
+and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime.frombinary">FromBinary(long)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DateTime GetDateTime(string aKey, DateTime aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get date and time for</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Default value to use</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Store value or aDefault</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDouble_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDouble_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(System.String)">
+  GetDouble(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L595"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a double number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDouble(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the double number for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The stored double number or 0.0 when missing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDouble_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDouble_System_String_System_Double_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(System.String,System.Double)">
+  GetDouble(string, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L581"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a double number.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_">GetString(string)</a> and
+uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double.parse#system-double-parse(system-string)">Parse(string)</a> to convert it back to a double.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double GetDouble(string aKey, double aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the double number for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>A default value to use when there is no double number stored for
+the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The stored floating number or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetFloat_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetFloat_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(System.String)">
+  GetFloat(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a floating number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFloat(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the floating number for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The stored floating number or 0.0 when missing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetFloat_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetFloat_System_String_System_Single_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(System.String,System.Single)">
+  GetFloat(string, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a floating number.</p>
+<p>
+The default implementation just calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDouble_System_String_">GetDouble(string)</a>
+and typecast the value back to float.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float GetFloat(string aKey, float aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the floating number for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>A default value to use when there is no floating number stored for
+the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The stored floating number or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetGuid_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetGuid_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(System.String)">
+  GetGuid(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L832"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a guid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid GetGuid(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get value for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>Stored value or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid.empty">Empty</a> when missing</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetGuid_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetGuid_System_String_System_Guid_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(System.String,System.Guid)">
+  GetGuid(string, Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L820"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a guid using <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetBytes_System_String_">GetBytes(string)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Guid GetGuid(string aKey, Guid aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get value for</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>Default value to use</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>Stored value or aDefault</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetInt_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetInt_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String)">
+  GetInt(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInt(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the integer for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The stored integer or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetInt_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetInt_System_String_System_Int32_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String,System.Int32)">
+  GetInt(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an integer.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_">GetString(string)</a> and
+uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.parse#system-int32-parse(system-string)">Parse(string)</a> to convert it back to a integer.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetInt(string aKey, int aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the integer for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A default value to use when there is no integer stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The stored integer or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetLong_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetLong_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(System.String)">
+  GetLong(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L435"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a long.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetLong(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the long for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The stored long or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetLong_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetLong_System_String_System_Int64_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(System.String,System.Int64)">
+  GetLong(string, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a long.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_">GetString(string)</a> and
+uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64.parse#system-int64-parse(system-string)">Parse(string)</a> to convert it back to a long.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long GetLong(string aKey, long aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the long for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>A default value to use when there is no long stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The stored long or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetObject_System_String_System_Type_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type)">
+  GetObject(string, Type)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L890"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetObject_System_String_System_Type_System_Func_System_Type_System_Object__">GetObject(string, Type?, Func&lt;Type, object&gt;)</a>
+using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.activator">Activator</a> to create an instance of <code>aType</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? GetObject(string aKey, Type aType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get object for</p>
+</dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>type of object</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>instance or <code>null</code> if object could not be found</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetObject_System_String_System_Type_System_Func_System_Type_System_Object__" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type,System.Func{System.Type,System.Object})">
+  GetObject(string, Type?, Func&lt;Type, object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L959"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an object of a specific type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object? GetObject(string aKey, Type? aType, Func&lt;Type, object&gt; aFactory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get object for</p>
+</dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>Type of object or null if type is unknown</p>
+</dd>
+    <dt><code>aFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>A factory to create a new instance of <code>aType</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Object instance or null if none was found and no type was provided</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetObject_System_String_System_Type_System_Func_System_Type_System_Object___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default implementation checks for certain type situations.</p>
+<p>
+If the object is a primitive type, its value gets retrieved with one
+of the GetXXXX methods.
+</p>
+<p>
+If the object implements the <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a> interface
+the method uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetStorableObject_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_">GetStorableObject(string, IUFStorableObject)</a>.
+</p>
+<p>
+If the object is a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> the data is retrieved via
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetDateTime_System_String_">GetDateTime(string)</a>.
+</p>
+<p>
+If the object is a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> the data is retrieved via
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetGuid_System_String_">GetGuid(string)</a>.
+</p>
+<p>
+If the object is a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> the method uses 
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_">GetString(string)</a> to get its value.
+</p>
+<p>
+If the object is a <code>enum</code> the method assumes the value was stored
+as integer.
+</p>
+<p>
+If the object is a nullable value, the method will return null if
+no data exists (null values are not stored) or will call itself
+recursively using the underlying type.
+</p>
+<p>
+If none of the above fits, the method will call 
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__">DeserializeObject(string, Type?, Func&lt;Type, object&gt;)</a>.
+</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetObject__1_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject``1(System.String)">
+  GetObject&lt;T&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L905"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A generic version of <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetObject_System_String_System_Type_">GetObject(string, Type)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? GetObject&lt;T&gt;(string aKey) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key value was stored with</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T?</dt>
+    <dd><p>Value or null if none could be found</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of value to get</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetSByte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetSByte_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(System.String)">
+  GetSByte(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a sbyte.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sbyte GetSByte(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the sbyte for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd><p>The stored sbyte or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetSByte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetSByte_System_String_System_SByte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(System.String,System.SByte)">
+  GetSByte(string, sbyte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a sbyte.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetInt_System_String_">GetInt(string)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual sbyte GetSByte(string aKey, sbyte aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the sbyte for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd><p>A default value to use when there is no sbyte stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd><p>The stored sbyte or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetShort_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetShort_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(System.String)">
+  GetShort(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a short.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetShort(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the short for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>The stored short or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetShort_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetShort_System_String_System_Int16_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(System.String,System.Int16)">
+  GetShort(string, short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a short.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetInt_System_String_">GetInt(string)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual short GetShort(string aKey, short aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the short for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>A default value to use when there is no short stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>The stored short or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetStorableObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetStorableObject_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)">
+  GetStorableObject(string, IUFStorableObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L857"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the data by loading it into an object that implements the <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a> interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IUFStorableObject GetStorableObject(string aKey, IUFStorableObject anObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get data for</p>
+</dd>
+    <dt><code>anObject</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a></dt>
+    <dd><p>Object to load from the storage</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a></dt>
+    <dd><p>Value of <code>anObject</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String)">
+  GetString(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetString(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the string for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The stored string or &quot;&quot; if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String,System.String)">
+  GetString(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string GetString(string aKey, string aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the string for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A default value to use when there is no string stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The stored string or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetUInt_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetUInt_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(System.String)">
+  GetUInt(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an unsigned integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetUInt(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the unsigned integer for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The stored unsigned integer or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetUInt_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetUInt_System_String_System_UInt32_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(System.String,System.UInt32)">
+  GetUInt(string, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an unsigned integer.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_">GetString(string)</a> and
+uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32.parse#system-uint32-parse(system-string)">Parse(string)</a> to convert it back to an
+unsigned integer.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual uint GetUInt(string aKey, uint aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the unsigned integer for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>A default value to use when there is no unsigned integer stored for
+the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The stored unsigned integer or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetULong_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetULong_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(System.String)">
+  GetULong(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L488"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a ulong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong GetULong(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the ulong for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>The stored ulong or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetULong_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetULong_System_String_System_UInt64_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(System.String,System.UInt64)">
+  GetULong(string, ulong)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a ulong.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetString_System_String_">GetString(string)</a> and
+uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64.parse#system-uint64-parse(system-string)">Parse(string)</a> to convert it back to a ulong.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ulong GetULong(string aKey, ulong aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the ulong for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>A default value to use when there is no ulong stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>The stored ulong or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetUShort_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetUShort_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(System.String)">
+  GetUShort(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a ushort.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort GetUShort(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the ushort for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>The stored ushort or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetUShort_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetUShort_System_String_System_UInt16_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(System.String,System.UInt16)">
+  GetUShort(string, ushort)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a ushort.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetInt_System_String_">GetInt(string)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ushort GetUShort(string aKey, ushort aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the ushort for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>A default value to use when there is no ushort stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>The stored ushort or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_HasKey_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.HasKey*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_HasKey_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.HasKey(System.String)">
+  HasKey(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L1174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if there is a locally stored data for a specific key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool HasKey(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if has there is data for the key; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SerializeObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SerializeObject_System_String_System_Object_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)">
+  SerializeObject(string, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L1188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes an object. This method is called when the class can not store the object in any other way.</p>
+<p>
+The default implementation throws an exception. 
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SerializeObject(string aKey, object anObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store serializes object with</p>
+</dd>
+    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Object to store</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetBool_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBool*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetBool_System_String_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBool(System.String,System.Boolean)">
+  SetBool(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L666"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a bool in the storage.</p>
+<p>
+The default implementation convert the value to a string and uses
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_System_String_System_String_">SetString(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetBool(string aKey, bool aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetByte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetByte*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetByte_System_String_System_Byte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetByte(System.String,System.Byte)">
+  SetByte(string, byte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a byte in the storage.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetInt_System_String_System_Int32_">SetInt(string, int)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetByte(string aKey, byte aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetBytes_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBytes*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetBytes_System_String_System_Byte___" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBytes(System.String,System.Byte[])">
+  SetBytes(string, byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L774"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores an array of bytes to the storage.</p>
+<p>
+The default implementation converts the array to a base64 encoded
+string and uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_System_String_System_String_">SetString(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetBytes(string aKey, byte[] aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Array of byte to store</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetChar_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetChar*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetChar_System_String_System_Char_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetChar(System.String,System.Char)">
+  SetChar(string, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L719"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a char in the storage.</p>
+<p>
+The default implementation just uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_System_String_System_String_">SetString(string, string)</a> to store
+the value.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetChar(string aKey, char aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetDateTime_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDateTime*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetDateTime_System_String_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDateTime(System.String,System.DateTime)">
+  SetDateTime(string, DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L809"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a date and time using <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetLong_System_String_System_Int64_">SetLong(string, long)</a> and
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime.tobinary">ToBinary()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetDateTime(string aKey, DateTime aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Value to store</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetDouble_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDouble*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetDouble_System_String_System_Double_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDouble(System.String,System.Double)">
+  SetDouble(string, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L613"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a double number in the storage.</p>
+<p>
+The default implementation convert the value to a string and uses
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_System_String_System_String_">SetString(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetDouble(string aKey, double aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetFloat_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetFloat*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetFloat_System_String_System_Single_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetFloat(System.String,System.Single)">
+  SetFloat(string, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a floating number in the storage.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetDouble_System_String_System_Double_">SetDouble(string, double)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetFloat(string aKey, float aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetGuid_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetGuid*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetGuid_System_String_System_Guid_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetGuid(System.String,System.Guid)">
+  SetGuid(string, Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L843"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a guid using <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetBytes_System_String_System_Byte___">SetBytes(string, byte[])</a> and
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid.tobytearray">ToByteArray()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetGuid(string aKey, Guid aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>Value to store</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetInt_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetInt_System_String_System_Int32_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt(System.String,System.Int32)">
+  SetInt(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores an integer in the storage.</p>
+<p>
+The default implementation convert the value to a string and uses
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_System_String_System_String_">SetString(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetInt(string aKey, int aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetLong_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetLong*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetLong_System_String_System_Int64_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetLong(System.String,System.Int64)">
+  SetLong(string, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a long in the storage.</p>
+<p>
+The default implementation convert the value to a string and uses
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_System_String_System_String_">SetString(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetLong(string aKey, long aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject_System_String_System_Object_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object)">
+  SetObject(string, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L1134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores an object. It calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject_System_String_System_Object_System_Type_">SetObject(string, object?, Type?)</a>
+using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">GetType()</a> (if anObject is non null).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetObject(string aKey, object anObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store object for</p>
+</dd>
+    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Object to store</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject_System_String_System_Object_System_Type_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object,System.Type)">
+  SetObject(string, object?, Type?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L1064"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores an object to the storage using a certain type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetObject(string aKey, object? anObject, Type? aType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store object for</p>
+</dd>
+    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>object to store</p>
+</dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>type of object</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject_System_String_System_Object_System_Type__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default implementation checks for certain type situations.</p>
+<p>
+If the object is null, the method will remove the data stored with
+the key value by calling <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_DeleteKey_System_String_">DeleteKey(string)</a>
+</p>
+<p>
+If the object is a primitive type, its value gets stored with one
+of the SetXXXX methods.
+</p>
+<p>
+If the object implements the <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a> interface
+the method uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetStorableObject_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_">SetStorableObject(string, IUFStorableObject)</a>.
+</p>
+<p>
+If the object is a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> the data is stored via
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetDateTime_System_String_System_DateTime_">SetDateTime(string, DateTime)</a>.
+</p>
+<p>
+If the object is a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> the data is stored via
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetGuid_System_String_System_Guid_">SetGuid(string, Guid)</a>.
+</p>
+<p>
+If the object is a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> the method uses 
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_System_String_System_String_">SetString(string, string)</a> to store its value.
+</p>
+<p>
+If the object is a nullable value, the method will remove any value
+stored with aKey if the object is null else it will call itself
+recursively using the underlying type.
+</p>
+<p>
+If none of the above fits, the method will call 
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SerializeObject_System_String_System_Object_">SerializeObject(string, object)</a>.
+</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String_System_Object_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)">
+  SetObject&lt;T&gt;(string, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L1145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic version of <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject_System_String_System_Object_System_Type_">SetObject(string, object?, Type?)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetObject&lt;T&gt;(string aKey, object anObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store object for</p>
+</dd>
+    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Object to store</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type to store</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetSByte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetSByte*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetSByte_System_String_System_SByte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetSByte(System.String,System.SByte)">
+  SetSByte(string, sbyte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a sbyte in the storage.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetInt_System_String_System_Int32_">SetInt(string, int)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetSByte(string aKey, sbyte aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetShort_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetShort*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetShort_System_String_System_Int16_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetShort(System.String,System.Int16)">
+  SetShort(string, short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a short in the storage.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetInt_System_String_System_Int32_">SetInt(string, int)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetShort(string aKey, short aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetStorableObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetStorableObject*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetStorableObject_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)">
+  SetStorableObject(string, IUFStorableObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L876"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the data by saving it from an object that implements the <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a> interface.</p>
+<p>
+The default implementation uses a <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFDictionaryStorage.html">UFDictionaryStorage</a> to store the data as string.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetStorableObject(string aKey, IUFStorableObject anObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to set data for</p>
+</dd>
+    <dt><code>anObject</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a></dt>
+    <dd><p>Object to save to the storage</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_System_String_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)">
+  SetString(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a string in the storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SetString(string aKey, string aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetUInt_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUInt*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetUInt_System_String_System_UInt32_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUInt(System.String,System.UInt32)">
+  SetUInt(string, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores an unsigned integer in the storage.</p>
+<p>
+The default implementation convert the value to a string and uses
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_System_String_System_String_">SetString(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetUInt(string aKey, uint aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetULong_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetULong*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetULong_System_String_System_UInt64_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetULong(System.String,System.UInt64)">
+  SetULong(string, ulong)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a ulong in the storage.</p>
+<p>
+The default implementation convert the value to a string and uses
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetString_System_String_System_String_">SetString(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetULong(string aKey, ulong aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetUShort_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUShort*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetUShort_System_String_System_UInt16_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUShort(System.String,System.UInt16)">
+  SetUShort(string, ushort)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a ushort in the storage.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetInt_System_String_System_Int32_">SetInt(string, int)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetUShort(string aKey, ushort aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs/#L55" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

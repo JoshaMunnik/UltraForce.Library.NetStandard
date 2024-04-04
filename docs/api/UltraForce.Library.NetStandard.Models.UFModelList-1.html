@@ -1,0 +1,1959 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFModelList&lt;TValue&gt; | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFModelList&lt;TValue&gt; | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="Implements a generic  adding support for certain  values and implementing various  methods.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/new/master/apiSpec/new?filename=UltraForce_Library_NetStandard_Models_UFModelList_1.md&amp;value=---%0Auid%3A%20UltraForce.Library.NetStandard.Models.UFModelList%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Models_UFModelList_1" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1" class="text-break">
+Class UFModelList&lt;TValue&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Models.html">Models</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Implements a generic <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a> adding support for certain
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">UFModel.Option</a> values and implementing various
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a> methods.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UFModelList&lt;TValue&gt; : UFModel, IUFStorableObject, IUFJsonExport, IUFLockable, INotifyPropertyChanged, IUFClearable, IUFModel, IUFAccessProperty, IUFNotifyDataChanged, IUFValidatePropertyValue, IList&lt;TValue&gt;, ICollection&lt;TValue&gt;, IEnumerable&lt;TValue&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TValue</code></dt>
+    <dd>Implements a generic  adding support for certain  values and implementing various  methods.</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a></div>
+      <div><span class="xref">UFModelList&lt;TValue&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFJsonExport.html">IUFJsonExport</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html">IUFLockable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFClearable.html">IUFClearable</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Models.IUFModel.html">IUFModel</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty.html">IUFAccessProperty</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFValidatePropertyValue.html">IUFValidatePropertyValue</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;TValue&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TValue&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TValue&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelObservableList-1.html">UFModelObservableList&lt;TValue&gt;</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UseLog_UltraForce_Library_NetStandard_Development_UFHtmlLog_">UFModel.UseLog(UFHtmlLog)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyType_System_String_">UFModel.GetPropertyType(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetLock">UFModel.ResetLock()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasChanged">UFModel.HasChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetChanged">UFModel.ResetChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyNames">UFModel.GetPropertyNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasProperty_System_String_">UFModel.HasProperty(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValid">UFModel.IsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_System_Boolean_">UFModel.SetPropertyValue(string, object, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyTo_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_">UFModel.CopyTo(UFModel, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyFrom_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_">UFModel.CopyFrom(UFModel, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetDataChangedToken">UFModel.GetDataChangedToken()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveToStream_System_Int32_System_IO_Stream_">UFModel.SaveToStream(int, Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LoadFromStream_System_Int32_System_IO_Stream_">UFModel.LoadFromStream(int, Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ToString">UFModel.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue__1_System_String_">UFModel.GetPropertyValue&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveJson">UFModel.SaveJson()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Clear">UFModel.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue_System_String_">UFModel.GetPropertyValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_">UFModel.SetPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValidPropertyValue_System_String_System_Object_">UFModel.IsValidPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">UFModel.DataChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_PropertyChanged">UFModel.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildChanged">UFModel.ChildChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_InitMeta">UFModel.InitMeta()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CanSave_System_String_System_Object_">UFModel.CanSave(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed">UFModel.Changed()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_">UFModel.Changed(string, object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildHasChanged_System_Object_System_String___UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_">UFModel.ChildHasChanged(object, string[], UFDataChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnChildChanged_System_Object_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_">UFModel.OnChildChanged(object, UFDataChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_">UFModel.OnPropertyChanged(object, PropertyChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnDataChanged_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_">UFModel.OnDataChanged(UFDataChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties">UFModel.UpdateTrackedProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_">UFModel.AddValidator(string, IUFValidateValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateProperty_">UFModel.AddValidator(string, IUFValidateProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_">UFModel.Assign&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_">UFModel.Set(object, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_">UFModel.Get&lt;T&gt;(T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_">UFModel.Get&lt;T&gt;(Func&lt;T&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasOption_UltraForce_Library_NetStandard_Models_UFModel_Option_">UFModel.HasOption(UFModel.Option)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LogNewValue_System_String_System_Object_">UFModel.LogNewValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="UltraForce_Library_NetStandard_Models_UFModelList_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p><a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelList-1.html">UFModelList&lt;TValue&gt;</a> will fire a
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">DataChanged</a> event whenever the contents of the
+list changes.</p>
+<p>
+If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_LockChildren">LockChildren</a> option is set and TValue 
+implements the <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html">IUFLockable</a> interface, <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelList-1.html#UltraForce_Library_NetStandard_Models_UFModelList_1_Lock">Lock()</a>
+will also lock all items within the list.
+</p>
+<p>
+If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> option is set and 
+TValue implements <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a>,  
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelList-1.html">UFModelList&lt;TValue&gt;</a> will install change listeners with 
+every item and will fire <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">DataChanged</a>, 
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildChanged">ChildChanged</a> and 
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_PropertyChanged">PropertyChanged</a> events if an item changes. 
+</p>
+<p>
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelList-1.html">UFModelList&lt;TValue&gt;</a> will make sure to install only one 
+listener, even if the same instance is added multiple times.
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1__ctor_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1__ctor_System_Collections_Generic_IEnumerable__0__UltraForce_Library_NetStandard_Models_UFModel_Option___" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.#ctor(System.Collections.Generic.IEnumerable{`0},UltraForce.Library.NetStandard.Models.UFModel.Option[])">
+  UFModelList(IEnumerable&lt;TValue&gt;, params Option[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelList-1.html">UFModelList&lt;TValue&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFModelList(IEnumerable&lt;TValue&gt; aCollection, params UFModel.Option[] anOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aCollection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TValue&gt;</dt>
+    <dd><p>An initial collection to fill list with</p>
+</dd>
+    <dt><code>anOptions</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">Option</a>[]</dt>
+    <dd><p><a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">UFModel.Option</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1__ctor_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1__ctor_System_Int32_UltraForce_Library_NetStandard_Models_UFModel_Option___" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.#ctor(System.Int32,UltraForce.Library.NetStandard.Models.UFModel.Option[])">
+  UFModelList(int, params Option[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelList-1.html">UFModelList&lt;TValue&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFModelList(int aCapacity, params UFModel.Option[] anOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aCapacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Initial list capacity.</p>
+</dd>
+    <dt><code>anOptions</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">Option</a>[]</dt>
+    <dd><p><a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">UFModel.Option</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1__ctor_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1__ctor_UltraForce_Library_NetStandard_Models_UFModel_Option___" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.#ctor(UltraForce.Library.NetStandard.Models.UFModel.Option[])">
+  UFModelList(params Option[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelList-1.html">UFModelList&lt;TValue&gt;</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFModelList(params UFModel.Option[] anOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anOptions</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">Option</a>[]</dt>
+    <dd><p><a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">UFModel.Option</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Capacity_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Capacity*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Capacity" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Capacity">
+  Capacity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The capacity of the list (see <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.capacity">Capacity</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Capacity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Count_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Count*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Count" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L747"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the number of items</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of items</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_IsReadOnly_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.IsReadOnly*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_IsReadOnly" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.IsReadOnly">
+  IsReadOnly
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L760"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a value indicating the list is read only; this property always
+returns <code>false</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the list is read only; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Item_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Item*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Item_System_Int32_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Item(System.Int32)">
+  this[int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Access an item at an index. When assigning a new value, the instance
+will fire an DataChanged event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TValue this[int anIndex] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index in list.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TValue</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Add_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Add*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Add__0_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Add(`0)">
+  Add(TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L689"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add the item to the end of the list. Will fire an DataChanged event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(TValue anItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anItem</code> <span class="xref">TValue</span></dt>
+    <dd><p>Item to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_AddRange_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.AddRange*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_AddRange_System_Collections_Generic_IEnumerable__0__" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.AddRange(System.Collections.Generic.IEnumerable{`0})">
+  AddRange(IEnumerable&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L550"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds another collection to the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddRange(IEnumerable&lt;TValue&gt; aCollection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aCollection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TValue&gt;</dt>
+    <dd><p>Collection to add</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Clear_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Clear*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Clear_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Clear(System.Boolean)">
+  Clear(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes or clears the properties of the data structure to default values.</p>
+<p>
+The default implementation sets all the properties that have a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.defaultvalueattribute">DefaultValueAttribute</a> attached to
+the value specified by that attribute. 
+</p><p>
+If the property has no <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.defaultvalueattribute">DefaultValueAttribute</a> attached the method will check if the property
+value has a method named <code>Clear</code> and will call that method if it does.
+</p><p>
+As last step the method will call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties">UpdateTrackedProperties()</a></p><p>
+Subclasses can override this method to initialize or clear additional properties.
+</p><p>
+If there are properties that implement <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a> and
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> is used, the clear method should make sure the instances are existing.
+</p><param name="aCallChanged">
+When <code>true</code> call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed">Changed()</a>. 
+
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Clear(bool aCallChanged)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aCallChanged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Contains_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Contains*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Contains__0_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Contains(`0)">
+  Contains(TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L701"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Check if the list contains the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(TValue anItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anItem</code> <span class="xref">TValue</span></dt>
+    <dd><p><code>true</code> if the list contains the item, <code>false</code> if not.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_CopyTo_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.CopyTo*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_CopyTo_System_Int32__0___System_Int32_System_Int32_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)">
+  CopyTo(int, TValue[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies part of the list to an array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(int anIndex, TValue[] anArray, int anArrayIndex, int aCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Starting index in list</p>
+</dd>
+    <dt><code>anArray</code> TValue[]</dt>
+    <dd><p>An array to copy to.</p>
+</dd>
+    <dt><code>anArrayIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Starting index in the array.</p>
+</dd>
+    <dt><code>aCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_CopyTo_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.CopyTo*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_CopyTo__0___" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.CopyTo(`0[])">
+  CopyTo(TValue[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies list to an array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(TValue[] anArray)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anArray</code> TValue[]</dt>
+    <dd><p>An array to copy to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_CopyTo_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.CopyTo*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_CopyTo__0___System_Int32_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.CopyTo(`0[],System.Int32)">
+  CopyTo(TValue[], int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L715"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies list to an array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(TValue[] anArray, int anArrayIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anArray</code> TValue[]</dt>
+    <dd><p>Array.</p>
+</dd>
+    <dt><code>anArrayIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Start in anArray to copy to</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Find_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Find*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Find_System_Predicate__0__" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Find(System.Predicate{`0})">
+  Find(Predicate&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find first value that matches aMatch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TValue Find(Predicate&lt;TValue&gt; aMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;TValue&gt;</dt>
+    <dd><p>Match predicate</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TValue</span></dt>
+    <dd><p>An instance or null if no match was found</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindAll_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindAll*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindAll_System_Predicate__0__" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindAll(System.Predicate{`0})">
+  FindAll(Predicate&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find all values that match aMatch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TValue&gt; FindAll(Predicate&lt;TValue&gt; aMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;TValue&gt;</dt>
+    <dd><p>Match predicate</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;TValue&gt;</dt>
+    <dd><p>A list instance containing all the values.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindIndex_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindIndex*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindIndex_System_Int32_System_Int32_System_Predicate__0__" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindIndex(System.Int32,System.Int32,System.Predicate{`0})">
+  FindIndex(int, int, Predicate&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find index of first value that matches aMatch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndex(int aStart, int aCount, Predicate&lt;TValue&gt; aMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index to searching from.</p>
+</dd>
+    <dt><code>aCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Max number of values to test.</p>
+</dd>
+    <dt><code>aMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;TValue&gt;</dt>
+    <dd><p>Match predicate</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index or -1 if not found</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindIndex_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindIndex*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindIndex_System_Int32_System_Predicate__0__" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindIndex(System.Int32,System.Predicate{`0})">
+  FindIndex(int, Predicate&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find index of first value that matches aMatch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndex(int aStart, Predicate&lt;TValue&gt; aMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index to searching from.</p>
+</dd>
+    <dt><code>aMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;TValue&gt;</dt>
+    <dd><p>Match predicate</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index or -1 if not found</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindIndex_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindIndex*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindIndex_System_Predicate__0__" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindIndex(System.Predicate{`0})">
+  FindIndex(Predicate&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find index of first value that matches aMatch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndex(Predicate&lt;TValue&gt; aMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;TValue&gt;</dt>
+    <dd><p>Match predicate</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index or -1 if not found</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindLast_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindLast*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindLast_System_Predicate__0__" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindLast(System.Predicate{`0})">
+  FindLast(Predicate&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find last value that matches aMatch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TValue FindLast(Predicate&lt;TValue&gt; aMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;TValue&gt;</dt>
+    <dd><p>Match predicate</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TValue</span></dt>
+    <dd><p>An instance or null if no match was found</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindLastIndex_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindLastIndex*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindLastIndex_System_Int32_System_Int32_System_Predicate__0__" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})">
+  FindLastIndex(int, int, Predicate&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find index of last value that matches aMatch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindLastIndex(int aStart, int aCount, Predicate&lt;TValue&gt; aMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index to searching from (backwards, so Index, Index-1, Index-2, etc).</p>
+</dd>
+    <dt><code>aCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Max number of values to test.</p>
+</dd>
+    <dt><code>aMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;TValue&gt;</dt>
+    <dd><p>Match predicate</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index or -1 if not found</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindLastIndex_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindLastIndex*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindLastIndex_System_Int32_System_Predicate__0__" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindLastIndex(System.Int32,System.Predicate{`0})">
+  FindLastIndex(int, Predicate&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find index of last value that matches aMatch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindLastIndex(int aStart, Predicate&lt;TValue&gt; aMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index to searching from (backwards, so Index, Index-1, Index-2, etc).</p>
+</dd>
+    <dt><code>aMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;TValue&gt;</dt>
+    <dd><p>Match predicate</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index or -1 if not found</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindLastIndex_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindLastIndex*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_FindLastIndex_System_Predicate__0__" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.FindLastIndex(System.Predicate{`0})">
+  FindLastIndex(Predicate&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find index of last value that matches aMatch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindLastIndex(Predicate&lt;TValue&gt; aMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;TValue&gt;</dt>
+    <dd><p>Match predicate</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index or -1 if not found</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_ForEach_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.ForEach*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_ForEach_System_Action__0__" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.ForEach(System.Action{`0})">
+  ForEach(Action&lt;TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Perform action on each item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEach(Action&lt;TValue&gt; anAction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;TValue&gt;</dt>
+    <dd><p>An action for specific type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_GetEnumerator_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.GetEnumerator*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_GetEnumerator" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.GetEnumerator">
+  GetEnumerator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L659"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the enumerator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>The enumerator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_GetRange_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.GetRange*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_GetRange_System_Int32_System_Int32_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.GetRange(System.Int32,System.Int32)">
+  GetRange(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a shallow copy of part of the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;TValue&gt; GetRange(int aStart, int aCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>start of part</p>
+</dd>
+    <dt><code>aCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>number of items</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;TValue&gt;</dt>
+    <dd><p>copy</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_IndexOf_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.IndexOf*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_IndexOf__0_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.IndexOf(`0)">
+  IndexOf(TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get first index of item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(TValue anItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anItem</code> <span class="xref">TValue</span></dt>
+    <dd><p>The item to get the index for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index or -1 if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_IndexOf_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.IndexOf*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_IndexOf__0_System_Int32_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.IndexOf(`0,System.Int32)">
+  IndexOf(TValue, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the first index of a value starting from a certain position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(TValue aValue, int aStart)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <span class="xref">TValue</span></dt>
+    <dd><p>The value to get the index of</p>
+</dd>
+    <dt><code>aStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Starting position</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the item or -1 if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_IndexOf_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.IndexOf*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_IndexOf__0_System_Int32_System_Int32_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.IndexOf(`0,System.Int32,System.Int32)">
+  IndexOf(TValue, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the index of a value within a certain range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(TValue aValue, int aStart, int aCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <span class="xref">TValue</span></dt>
+    <dd><p>The value to get the index of</p>
+</dd>
+    <dt><code>aStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A starting position.</p>
+</dd>
+    <dt><code>aCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of items to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the item or -1 if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Insert_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Insert*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Insert_System_Int32__0_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Insert(System.Int32,`0)">
+  Insert(int, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Insert item at specified index. Will fire an DataChanged event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int anIndex, TValue anItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index to insert at (must be a value between 0 and Count)</p>
+</dd>
+    <dt><code>anItem</code> <span class="xref">TValue</span></dt>
+    <dd><p>Item to insert</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_LoadFromStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.LoadFromStorage*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_LoadFromStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)">
+  LoadFromStorage(UFKeyedStorage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the items from a keyed storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadFromStorage(UFKeyedStorage aStorage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStorage</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a></dt>
+    <dd><p>A storage to get data from.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Lock_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Lock*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Lock" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Lock">
+  Lock()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_LockChildren">LockChildren</a> is set, call
+<a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html#UltraForce_Library_NetStandard_Interfaces_IUFLockable_Lock">Lock()</a> on all non-null items that implement
+<a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html">IUFLockable</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Lock()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Remove_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Remove*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Remove__0_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Remove(`0)">
+  Remove(TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L730"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove the first occurrence of an item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(TValue anItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anItem</code> <span class="xref">TValue</span></dt>
+    <dd><p>Item to remove</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if item was removed, <code>false</code> if item could not
+be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_RemoveAt_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.RemoveAt*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_RemoveAt_System_Int32_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove item at index. Will fire an DataChanged event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int anIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index to remove item at.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_RemoveValues_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.RemoveValues*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_RemoveValues" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.RemoveValues">
+  RemoveValues()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L862"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove the values from internal list and call ValueRemoved in case
+of children are being tracked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RemoveValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_SaveJson_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.SaveJson*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_SaveJson_System_Text_StringBuilder_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.SaveJson(System.Text.StringBuilder)">
+  SaveJson(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Save the items as an array. This method does not save any other
+property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SaveJson(StringBuilder aBuilder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A builder to add data to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_SaveToStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.SaveToStorage*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_SaveToStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)">
+  SaveToStorage(UFKeyedStorage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores the items in a keyed storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SaveToStorage(UFKeyedStorage aStorage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStorage</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a></dt>
+    <dd><p>A storage to store data in.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Shuffle_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Shuffle*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Shuffle" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Shuffle">
+  Shuffle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shuffle the elements inside the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Shuffle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Shuffle_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Shuffle*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Shuffle_System_Int32_System_Int32_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Shuffle(System.Int32,System.Int32)">
+  Shuffle(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shuffle a part of the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Shuffle(int aStart, int aCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Start index.</p>
+</dd>
+    <dt><code>aCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_ToArray_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.ToArray*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_ToArray" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.ToArray">
+  ToArray()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convert the list to an array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TValue[] ToArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>TValue[]</dt>
+    <dd><p>Array of objects of type <code>TValue</code> containing the items</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_Unlock_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Unlock*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_Unlock" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.Unlock">
+  Unlock()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_LockChildren">LockChildren</a> is set, call
+<a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html#UltraForce_Library_NetStandard_Interfaces_IUFLockable_Unlock">Unlock()</a> on all non-null items that implement
+<a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html">IUFLockable</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Unlock()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_ValueAdded_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.ValueAdded*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_ValueAdded_System_Int32__0_System_Boolean_System_Boolean__0_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.ValueAdded(System.Int32,`0,System.Boolean,System.Boolean,`0)">
+  ValueAdded(int, TValue, bool, bool, TValue?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L788"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A value has been added for a specific key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ValueAdded(int anIndex, TValue aValue, bool aFireChanged, bool anAdded, TValue? anOldValue = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index the item has been added for.</p>
+</dd>
+    <dt><code>aValue</code> <span class="xref">TValue</span></dt>
+    <dd><p>An item.</p>
+</dd>
+    <dt><code>aFireChanged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> fire changed events, <code>false</code> not</p>
+</dd>
+    <dt><code>anAdded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if value was added, false if value was replaced</p>
+</dd>
+    <dt><code>anOldValue</code> <span class="xref">TValue</span></dt>
+    <dd><p>Value that is getting replaced (only used if anAction is Replace). Can be null else.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelList_1_ValueRemoved_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.ValueRemoved*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelList_1_ValueRemoved_System_Int32__0_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Models.UFModelList`1.ValueRemoved(System.Int32,`0,System.Boolean)">
+  ValueRemoved(int, TValue, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L829"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A value has been removed for a specific key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ValueRemoved(int anIndex, TValue aValue, bool aFireChanged)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the item has been removed for.</p>
+</dd>
+    <dt><code>aValue</code> <span class="xref">TValue</span></dt>
+    <dd><p>An item.</p>
+</dd>
+    <dt><code>aFireChanged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> fire DataChanged event, <code>false</code> not</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelList.cs/#L72" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

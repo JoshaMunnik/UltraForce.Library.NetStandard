@@ -1,0 +1,665 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFWeakReferencedEventHandlerManager | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFWeakReferencedEventHandlerManager | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="This class can be used to manage a .">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/new/master/apiSpec/new?filename=UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager.md&amp;value=---%0Auid%3A%20UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager" class="text-break">
+Class UFWeakReferencedEventHandlerManager  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Events.html">Events</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This class can be used to manage a <a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler-1.html">UFWeakReferencedEventHandler&lt;TEventArgs&gt;</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UFWeakReferencedEventHandlerManager : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFWeakReferencedEventHandlerManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager-1.html">UFWeakReferencedEventHandlerManager</a>&lt;TEventArgs&gt;</div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+When adding an event handler to an event provider, the object implementing the event handler will not get garbage
+collected until either the event handler is removed or the object implementing the event provider is also
+garbage collected.
+</p>
+<p>
+This class can be used with objects that can not remove event handlers. It will manages
+<a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler-1.html">UFWeakReferencedEventHandler&lt;TEventArgs&gt;</a> so that the target still can get garbage collected.
+</p>
+<p>
+To use this class, create an instance of <a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager-1.html">UFWeakReferencedEventHandlerManager&lt;TEventArgs&gt;</a> and assign
+it to some private property or field in the target instance.
+</p>
+<p>
+When the instance is getting garbage collected it removes also the
+<a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler-1.html">UFWeakReferencedEventHandler&lt;TEventArgs&gt;</a> instance from the event provider.
+</p>
+<p>
+Do not forget to assign the instance of  <a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager-1.html">UFWeakReferencedEventHandlerManager&lt;TEventArgs&gt;</a> to a
+private field or property so that the instance only gets garbage collected once the target also gets garbage
+collected. Else the instance might get garbage collected sooner, resulting in removal of the event handler
+while it is still needed.
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager__ctor_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager__ctor_System_Collections_Specialized_NotifyCollectionChangedEventHandler_System_Object_System_String_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.#ctor(System.Collections.Specialized.NotifyCollectionChangedEventHandler,System.Object,System.String,System.Boolean)">
+  UFWeakReferencedEventHandlerManager(NotifyCollectionChangedEventHandler, object, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance
+<a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html">UFWeakReferencedEventHandlerManager</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFWeakReferencedEventHandlerManager(NotifyCollectionChangedEventHandler anHandler, object aProvider, string anEventName, bool anAdd = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventhandler">NotifyCollectionChangedEventHandler</a></dt>
+    <dd><p>Handler method to manage.</p>
+</dd>
+    <dt><code>aProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Provider that will fire events.</p>
+</dd>
+    <dt><code>anEventName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of event to add handler to.</p>
+</dd>
+    <dt><code>anAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> add handler to provider; else call <a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Add">Add()</a>
+to add the handler.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager__ctor_System_Collections_Specialized_NotifyCollectionChangedEventHandler_System_Object_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The handler can not be static. Trying to use a static handler will
+throw an exception.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager__ctor_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager__ctor_System_ComponentModel_PropertyChangedEventHandler_System_Object_System_String_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.#ctor(System.ComponentModel.PropertyChangedEventHandler,System.Object,System.String,System.Boolean)">
+  UFWeakReferencedEventHandlerManager(PropertyChangedEventHandler, object, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance
+<a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html">UFWeakReferencedEventHandlerManager</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFWeakReferencedEventHandlerManager(PropertyChangedEventHandler anHandler, object aProvider, string anEventName, bool anAdd = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a></dt>
+    <dd><p>Handler method to manage.</p>
+</dd>
+    <dt><code>aProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Provider that will fire events.</p>
+</dd>
+    <dt><code>anEventName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of event to add handler to.</p>
+</dd>
+    <dt><code>anAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> add handler to provider; else call <a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Add">Add()</a>
+to add the handler.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager__ctor_System_ComponentModel_PropertyChangedEventHandler_System_Object_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The handler can not be static. Trying to use a static handler will
+throw an exception.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager__ctor_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager__ctor_System_EventHandler_System_Object_System_String_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.#ctor(System.EventHandler,System.Object,System.String,System.Boolean)">
+  UFWeakReferencedEventHandlerManager(EventHandler, object, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance
+<a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html">UFWeakReferencedEventHandlerManager</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFWeakReferencedEventHandlerManager(EventHandler anHandler, object aProvider, string anEventName, bool anAdd = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd><p>Handler method to manage.</p>
+</dd>
+    <dt><code>aProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Provider that will fire events.</p>
+</dd>
+    <dt><code>anEventName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of event to add handler to.</p>
+</dd>
+    <dt><code>anAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> add handler to provider; else call <a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Add">Add()</a>
+to add the handler.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager__ctor_System_EventHandler_System_Object_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The handler can not be static. Trying to use a static handler will
+throw an exception.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager__ctor_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager__ctor_UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_System_Object_System_String_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.#ctor(UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler,System.Object,System.String,System.Boolean)">
+  UFWeakReferencedEventHandlerManager(UFWeakReferencedEventHandler, object, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance
+<a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html">UFWeakReferencedEventHandlerManager</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UFWeakReferencedEventHandlerManager(UFWeakReferencedEventHandler anHandler, object aProvider, string anEventName, bool anAdd = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anHandler</code> <a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html">UFWeakReferencedEventHandler</a></dt>
+    <dd><p>Handler method to manage.</p>
+</dd>
+    <dt><code>aProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Provider that will fire events.</p>
+</dd>
+    <dt><code>anEventName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of event to add handler to.</p>
+</dd>
+    <dt><code>anAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> add handler to provider; else call <a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Add">Add()</a>
+to add the handler.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager__ctor_UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_System_Object_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The handler can not be static. Trying to use a static handler will
+throw an exception.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Add_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Add*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Add" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Add">
+  Add()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the managed handler to the event provider. If the handler is already added this method does nothing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Create_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Create*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Create_System_Collections_Specialized_NotifyCollectionChangedEventHandler_System_Collections_Specialized_INotifyCollectionChanged_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Create(System.Collections.Specialized.NotifyCollectionChangedEventHandler,System.Collections.Specialized.INotifyCollectionChanged,System.Boolean)">
+  Create(NotifyCollectionChangedEventHandler, INotifyCollectionChanged, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create instance of <a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager-1.html">UFWeakReferencedEventHandlerManager&lt;TEventArgs&gt;</a> for
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs">NotifyCollectionChangedEventArgs</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UFWeakReferencedEventHandlerManager Create(NotifyCollectionChangedEventHandler anHandler, INotifyCollectionChanged aProvider, bool anAdd = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventhandler">NotifyCollectionChangedEventHandler</a></dt>
+    <dd><p>Handler method to manage.</p>
+</dd>
+    <dt><code>aProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.inotifycollectionchanged">INotifyCollectionChanged</a></dt>
+    <dd><p>Object that implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.inotifycollectionchanged">INotifyCollectionChanged</a>.</p>
+</dd>
+    <dt><code>anAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> add handler to provider.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html">UFWeakReferencedEventHandlerManager</a></dt>
+    <dd><p>Instance of
+<a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager-1.html">UFWeakReferencedEventHandlerManager&lt;TEventArgs&gt;</a> for
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs">NotifyCollectionChangedEventArgs</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Create_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Create*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Create_System_ComponentModel_PropertyChangedEventHandler_System_ComponentModel_INotifyPropertyChanged_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Create(System.ComponentModel.PropertyChangedEventHandler,System.ComponentModel.INotifyPropertyChanged,System.Boolean)">
+  Create(PropertyChangedEventHandler, INotifyPropertyChanged, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create instance of <a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html">UFWeakReferencedEventHandlerManager</a> for
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UFWeakReferencedEventHandlerManager Create(PropertyChangedEventHandler anHandler, INotifyPropertyChanged aProvider, bool anAdd = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a></dt>
+    <dd><p>Handler method to manage.</p>
+</dd>
+    <dt><code>aProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></dt>
+    <dd><p>Object that implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a>.</p>
+</dd>
+    <dt><code>anAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> add handler to provider.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html">UFWeakReferencedEventHandlerManager</a></dt>
+    <dd><p>Instance of
+<a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html">UFWeakReferencedEventHandlerManager</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Create_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Create*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Create_System_EventHandler_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs__UltraForce_Library_NetStandard_Interfaces_IUFNotifyDataChanged_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Create(System.EventHandler{UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs},UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged,System.Boolean)">
+  Create(EventHandler&lt;UFDataChangedEventArgs&gt;, IUFNotifyDataChanged, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create instance of <a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager-1.html">UFWeakReferencedEventHandlerManager&lt;TEventArgs&gt;</a> for
+<a class="xref" href="UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html">UFDataChangedEventArgs</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UFWeakReferencedEventHandlerManager&lt;UFDataChangedEventArgs&gt; Create(EventHandler&lt;UFDataChangedEventArgs&gt; anHandler, IUFNotifyDataChanged aProvider, bool anAdd = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html">UFDataChangedEventArgs</a>&gt;</dt>
+    <dd><p>Handler method to manage.</p>
+</dd>
+    <dt><code>aProvider</code> <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a></dt>
+    <dd><p>Object that implements <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a>.</p>
+</dd>
+    <dt><code>anAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> add handler to provider.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager-1.html">UFWeakReferencedEventHandlerManager</a>&lt;<a class="xref" href="UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html">UFDataChangedEventArgs</a>&gt;</dt>
+    <dd><p>Instance of
+<a class="xref" href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager-1.html">UFWeakReferencedEventHandlerManager&lt;TEventArgs&gt;</a> for
+<a class="xref" href="UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html">UFDataChangedEventArgs</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Dispose_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Dispose*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Dispose" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Finalize_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Finalize*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Finalize" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Finalize">
+  ~UFWeakReferencedEventHandlerManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the event handler from the provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~UFWeakReferencedEventHandlerManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Remove_" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Remove*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandlerManager_Remove" data-uid="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.Remove">
+  Remove()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the managed handler from the event provider. If the handler is already removed this method does nothing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs/#L69" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

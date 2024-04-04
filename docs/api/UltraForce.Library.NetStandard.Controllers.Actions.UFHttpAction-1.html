@@ -1,0 +1,1009 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFHttpAction&lt;TResponse&gt; | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFHttpAction&lt;TResponse&gt; | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="base class for sending and receiving data from a server via HTTP.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/new/master/apiSpec/new?filename=UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1.md&amp;value=---%0Auid%3A%20UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1" class="text-break">
+Class UFHttpAction&lt;TResponse&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Controllers.html">Controllers</a>.<a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.html">Actions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html">UFHttpAction&lt;TResponse&gt;</a> base class for sending and receiving data from a server via HTTP.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class UFHttpAction&lt;TResponse&gt; : UFQueueableAction, IUFWeightedProgress, IUFProgress, IUFQueueableAction where TResponse : class</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TResponse</code></dt>
+    <dd>base class for sending and receiving data from a server via HTTP.</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html">UFQueueableAction</a></div>
+      <div><span class="xref">UFHttpAction&lt;TResponse&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress.html">IUFWeightedProgress</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFProgress.html">IUFProgress</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.html">IUFQueueableAction</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToStreamAction.html">UFDownloadToStreamAction</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFSendServerMessageAction.html">UFSendServerMessageAction</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync">UFQueueableAction.RunAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_ProgressWeight">UFQueueableAction.ProgressWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Subclasses must implement to <a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SendMessageAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_">SendMessageAsync(HttpRequestMessage, CancellationToken)</a> to send the data and process the response from
+the server.</p>
+<p>
+Subclasses can call one of the SetXXXXRequest methods either from the constructor or from the
+<a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequestAsync_System_Threading_CancellationToken_">SetRequestAsync(CancellationToken)</a> to set the request before the IO starts.
+</p>
+<p>
+There three different types of errors. Subclasses can override
+<a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Net_HttpStatusCode_System_String_">ProcessErrorAsync(HttpStatusCode, string)</a>, <a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Exception_">ProcessErrorAsync(Exception)</a> and
+<a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessTimeoutAsync">ProcessTimeoutAsync()</a>. 
+</p>
+<p>
+Subclasses can override <a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_BuildRequestAsync_System_String_System_Net_Http_HttpContent_System_Net_Http_HttpMethod_">BuildRequestAsync(string, HttpContent?, HttpMethod)</a> to do additional pre processing.
+</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ErrorResult_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ErrorResult*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ErrorResult" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ErrorResult">
+  ErrorResult
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The value to return by <a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_RunAsync_System_Threading_CancellationToken_">RunAsync(CancellationToken)</a> if the communication fails.</p>
+<p>
+The default value is <code>false</code>
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool ErrorResult { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_MaxSendTime_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.MaxSendTime*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_MaxSendTime" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.MaxSendTime">
+  MaxSendTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>MaxSendTime determines the maximum time in milliseconds an IO action make take.</p>
+<p>
+The minimum value that can be assigned is 1000. Any lower value is changed to 1000.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MaxSendTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_Progress_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Progress*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_Progress" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Progress">
+  Progress
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This property contains the progress of the action.</p>
+<p>
+The default implementation just returns 0.0
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override double Progress { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_StaticHttpClient_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.StaticHttpClient*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_StaticHttpClient" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.StaticHttpClient">
+  StaticHttpClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The HttpClient property is a static property and can be used to minimize the number of HttpClient instances.</p>
+<p>
+The instance is created the first time the property is accessed.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static HttpClient StaticHttpClient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_Uri_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Uri*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_Uri" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Uri">
+  Uri
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Uri being communicated with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Uri { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_BuildRequestAsync_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.BuildRequestAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_BuildRequestAsync_System_String_System_Net_Http_HttpContent_System_Net_Http_HttpMethod_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.BuildRequestAsync(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)">
+  BuildRequestAsync(string, HttpContent?, HttpMethod)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds a request to send to the server.</p>
+<p>
+The default implementation just creates the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a> instance. Subclasses can override
+to perform additional actions (for example setting additional header values).
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;HttpRequestMessage&gt; BuildRequestAsync(string anUri, HttpContent? aContent, HttpMethod aMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Uri to send to</p>
+</dd>
+    <dt><code>aContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a></dt>
+    <dd><p>Content to send (or null if there is none)</p>
+</dd>
+    <dt><code>aMethod</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod">HttpMethod</a></dt>
+    <dd><p>Method to use</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a> to use for the server IO.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Exception_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Exception)">
+  ProcessErrorAsync(Exception)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Processes the exception that occurred while sending the data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; ProcessErrorAsync(Exception anError)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anError</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>Error to process</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p><code>True</code> to repeat the send action, <code>false</code> to cancel the action and return <a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ErrorResult">ErrorResult</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Exception__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default implementation just returns <code>false</code>.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Net_HttpStatusCode_System_String_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Net.HttpStatusCode,System.String)">
+  ProcessErrorAsync(HttpStatusCode, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Process error statuses from the server (status code &gt;= 300)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; ProcessErrorAsync(HttpStatusCode aStatus, string anErrorResponse)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStatus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode">HttpStatusCode</a></dt>
+    <dd><p>Status returned by server</p>
+</dd>
+    <dt><code>anErrorResponse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Response if any</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p><code>True</code> to repeat the send action, <code>false</code> to cancel the action and return <a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ErrorResult">ErrorResult</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Net_HttpStatusCode_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default implementation just returns <code>false</code>.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessResponseAsync_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessResponseAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessResponseAsync__0_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessResponseAsync(`0)">
+  ProcessResponseAsync(TResponse)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Processes the data received from the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; ProcessResponseAsync(TResponse aResponse)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aResponse</code> <span class="xref">TResponse</span></dt>
+    <dd><p>Response (can be <code>null</code> if there was no data)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p><code>True</code> if data was processed successfully. This result will be returned as the result of the action.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessResponseAsync__0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default implementation returns <code>true</code>.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessTimeoutAsync_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessTimeoutAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessTimeoutAsync" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessTimeoutAsync">
+  ProcessTimeoutAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Processes timeout error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; ProcessTimeoutAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p><code>True</code> to repeat the send action, <code>false</code> to cancel the action and return <a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ErrorResult">ErrorResult</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessTimeoutAsync_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default implementation just returns <code>false</code>.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_RunAsync_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.RunAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_RunAsync_System_Threading_CancellationToken_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.RunAsync(System.Threading.CancellationToken)">
+  RunAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method runs the action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;bool&gt; RunAsync(CancellationToken aToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Cancellation token</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p><code>True</code> when successful, <code>false</code> to stop other actions in the queue.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_RunAsync_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Subclasses must implement this method.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SendMessageAsync_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SendMessageAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SendMessageAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SendMessageAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+  SendMessageAsync(HttpRequestMessage, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a message to the server and process the response.</p>
+<p>
+This is an abstract method and must be implemented by subclasses.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract Task&lt;UFHttpAction&lt;TResponse&gt;.UFServerResponse&gt; SendMessageAsync(HttpRequestMessage aRequest, CancellationToken aToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aRequest</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a></dt>
+    <dd><p>Request to send</p>
+</dd>
+    <dt><code>aToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Cancellation token</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html">UFHttpAction</a>&lt;TResponse&gt;.<a class="xref" href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.UFServerResponse.html">UFServerResponse</a>&gt;</dt>
+    <dd><p>The result of sending the message.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetJsonRequest_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetJsonRequest_System_String_UltraForce_Library_NetStandard_Interfaces_IUFJsonExport_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest(System.String,UltraForce.Library.NetStandard.Interfaces.IUFJsonExport)">
+  SetJsonRequest(string, IUFJsonExport)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialize action to send a json encoded data to the server via the
+POST method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetJsonRequest(string anUri, IUFJsonExport aSendData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>url to server</p>
+</dd>
+    <dt><code>aSendData</code> <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFJsonExport.html">IUFJsonExport</a></dt>
+    <dd><p>Data to encode as JSON</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetJsonRequest_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetJsonRequest_System_String_UltraForce_Library_NetStandard_Interfaces_IUFJsonExport_System_Net_Http_HttpMethod_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest(System.String,UltraForce.Library.NetStandard.Interfaces.IUFJsonExport,System.Net.Http.HttpMethod)">
+  SetJsonRequest(string, IUFJsonExport, HttpMethod)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialize action to send a json encoded data to the server via a certain method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetJsonRequest(string anUri, IUFJsonExport aSendData, HttpMethod aMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>url to server</p>
+</dd>
+    <dt><code>aSendData</code> <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFJsonExport.html">IUFJsonExport</a></dt>
+    <dd><p>Data to encode as JSON</p>
+</dd>
+    <dt><code>aMethod</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod">HttpMethod</a></dt>
+    <dd><p>Method to use</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetProgressAsync_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetProgressAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetProgressAsync_System_Double_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetProgressAsync(System.Double)">
+  SetProgressAsync(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the progress property.</p>
+<p>
+The default implementation updates the internal progress value. Subclasses can override to provide additional
+actions.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task SetProgressAsync(double aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>New value (might be outside valid range of 0.0 .. 1.0)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequest_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequest_System_String_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest(System.String)">
+  SetRequest(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialize action to query server via the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod.get">Get</a> method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetRequest(string anUri)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>url to server</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequest_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequest_System_String_System_Net_Http_HttpContent_System_Net_Http_HttpMethod_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)">
+  SetRequest(string, HttpContent?, HttpMethod)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialize action to send a data to the server via a certain method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetRequest(string anUri, HttpContent? aSendData, HttpMethod aMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>url to server</p>
+</dd>
+    <dt><code>aSendData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a></dt>
+    <dd><p>Data to send null to not send any data</p>
+</dd>
+    <dt><code>aMethod</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod">HttpMethod</a></dt>
+    <dd><p>Method to use</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequest_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequest_System_String_System_Net_Http_HttpMethod_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest(System.String,System.Net.Http.HttpMethod)">
+  SetRequest(string, HttpMethod)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialize action to query the server via a certain method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetRequest(string anUri, HttpMethod aMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>url to server</p>
+</dd>
+    <dt><code>aMethod</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod">HttpMethod</a></dt>
+    <dd><p>Method to use</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequestAsync_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequestAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequestAsync_System_Threading_CancellationToken_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequestAsync(System.Threading.CancellationToken)">
+  SetRequestAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method can be overridden by subclasses. It will be called at the start of the IO action.</p>
+<p>
+The default implementation does nothing and just returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task.completedtask">CompletedTask</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task SetRequestAsync(CancellationToken aToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Cancellation token</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetStringRequest_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetStringRequest*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetStringRequest_System_String_System_String_System_Text_Encoding_System_String_System_Net_Http_HttpMethod_" data-uid="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetStringRequest(System.String,System.String,System.Text.Encoding,System.String,System.Net.Http.HttpMethod)">
+  SetStringRequest(string, string, Encoding, string, HttpMethod)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialize action to send a data to the server via a certain method using a certain encoding and media type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetStringRequest(string anUri, string aSendData, Encoding anEncoding, string aMediaType, HttpMethod aMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>url to server</p>
+</dd>
+    <dt><code>aSendData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>anEncoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd></dd>
+    <dt><code>aMediaType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>aMethod</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod">HttpMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs/#L57" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

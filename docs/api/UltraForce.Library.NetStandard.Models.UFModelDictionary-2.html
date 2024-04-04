@@ -1,0 +1,1249 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFModelDictionary&lt;TKey, TValue&gt; | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFModelDictionary&lt;TKey, TValue&gt; | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="Implements a generic  adding support for certain  values and implementing various  methods.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/new/master/apiSpec/new?filename=UltraForce_Library_NetStandard_Models_UFModelDictionary_2.md&amp;value=---%0Auid%3A%20UltraForce.Library.NetStandard.Models.UFModelDictionary%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2" class="text-break">
+Class UFModelDictionary&lt;TKey, TValue&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Models.html">Models</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Implements a generic <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.idictionary">IDictionary</a> adding support for certain
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">UFModel.Option</a> values and implementing various
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a> methods.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UFModelDictionary&lt;TKey, TValue&gt; : UFModel, IUFStorableObject, IUFJsonExport, IUFLockable, INotifyPropertyChanged, IUFClearable, IUFModel, IUFAccessProperty, IUFNotifyDataChanged, IUFValidatePropertyValue, IDictionary&lt;TKey, TValue&gt;, ICollection&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable where TKey : struct where TValue : struct</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TKey</code></dt>
+    <dd>Implements a generic  adding support for certain  values and implementing various  methods.</dd>
+    <dt><code>TValue</code></dt>
+    <dd>Implements a generic  adding support for certain  values and implementing various  methods.</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a></div>
+      <div><span class="xref">UFModelDictionary&lt;TKey, TValue&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFJsonExport.html">IUFJsonExport</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html">IUFLockable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFClearable.html">IUFClearable</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Models.IUFModel.html">IUFModel</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty.html">IUFAccessProperty</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFValidatePropertyValue.html">IUFValidatePropertyValue</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;TKey, TValue&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UseLog_UltraForce_Library_NetStandard_Development_UFHtmlLog_">UFModel.UseLog(UFHtmlLog)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyType_System_String_">UFModel.GetPropertyType(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetLock">UFModel.ResetLock()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasChanged">UFModel.HasChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetChanged">UFModel.ResetChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyNames">UFModel.GetPropertyNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasProperty_System_String_">UFModel.HasProperty(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValid">UFModel.IsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_System_Boolean_">UFModel.SetPropertyValue(string, object, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyTo_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_">UFModel.CopyTo(UFModel, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyFrom_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_">UFModel.CopyFrom(UFModel, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetDataChangedToken">UFModel.GetDataChangedToken()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveToStream_System_Int32_System_IO_Stream_">UFModel.SaveToStream(int, Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LoadFromStream_System_Int32_System_IO_Stream_">UFModel.LoadFromStream(int, Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ToString">UFModel.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue__1_System_String_">UFModel.GetPropertyValue&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveJson">UFModel.SaveJson()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Clear">UFModel.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue_System_String_">UFModel.GetPropertyValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_">UFModel.SetPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValidPropertyValue_System_String_System_Object_">UFModel.IsValidPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">UFModel.DataChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_PropertyChanged">UFModel.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildChanged">UFModel.ChildChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_InitMeta">UFModel.InitMeta()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CanSave_System_String_System_Object_">UFModel.CanSave(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed">UFModel.Changed()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_">UFModel.Changed(string, object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildHasChanged_System_Object_System_String___UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_">UFModel.ChildHasChanged(object, string[], UFDataChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnChildChanged_System_Object_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_">UFModel.OnChildChanged(object, UFDataChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_">UFModel.OnPropertyChanged(object, PropertyChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnDataChanged_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_">UFModel.OnDataChanged(UFDataChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties">UFModel.UpdateTrackedProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_">UFModel.AddValidator(string, IUFValidateValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateProperty_">UFModel.AddValidator(string, IUFValidateProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_">UFModel.Assign&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_">UFModel.Set(object, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_">UFModel.Get&lt;T&gt;(T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_">UFModel.Get&lt;T&gt;(Func&lt;T&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasOption_UltraForce_Library_NetStandard_Models_UFModel_Option_">UFModel.HasOption(UFModel.Option)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LogNewValue_System_String_System_Object_">UFModel.LogNewValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelDictionary-2.html">UFModelDictionary&lt;TKey, TValue&gt;</a> will fire a 
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">DataChanged</a> event whenever the contents of 
+the dictionary changes.
+</p>
+<p>
+If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_LockChildren">LockChildren</a> option is set and TValue 
+implements the <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html">IUFLockable</a> interface, <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelDictionary-2.html#UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Lock">Lock()</a>
+will also lock all items within the list.
+</p>
+<p>
+If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> option is set and 
+TValue implements <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a>,  
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelDictionary-2.html">UFModelDictionary&lt;TKey, TValue&gt;</a> will install change 
+listeners with every stored value and will fire 
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">DataChanged</a>, 
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildChanged">ChildChanged</a> and 
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_PropertyChanged">PropertyChanged</a> events if a value changes. 
+</p>
+<p>
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelDictionary-2.html">UFModelDictionary&lt;TKey, TValue&gt;</a> will make sure to install
+only one listener, even if the same value instance is added for multiple
+keys.
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2__ctor_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2__ctor_System_Collections_Generic_IDictionary__0__1__UltraForce_Library_NetStandard_Models_UFModel_Option___" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1},UltraForce.Library.NetStandard.Models.UFModel.Option[])">
+  UFModelDictionary(IDictionary&lt;TKey, TValue&gt;, params Option[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelDictionary-2.html">UFModelDictionary&lt;TKey, TValue&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFModelDictionary(IDictionary&lt;TKey, TValue&gt; aDictionary, params UFModel.Option[] anOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aDictionary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;TKey, TValue&gt;</dt>
+    <dd><p>Initial dictionary values.</p>
+</dd>
+    <dt><code>anOptions</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">Option</a>[]</dt>
+    <dd><p>An options.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2__ctor_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2__ctor_System_Int32_UltraForce_Library_NetStandard_Models_UFModel_Option___" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.#ctor(System.Int32,UltraForce.Library.NetStandard.Models.UFModel.Option[])">
+  UFModelDictionary(int, params Option[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelDictionary-2.html">UFModelDictionary&lt;TKey, TValue&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFModelDictionary(int aCapacity, params UFModel.Option[] anOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aCapacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Initial capacity.</p>
+</dd>
+    <dt><code>anOptions</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">Option</a>[]</dt>
+    <dd><p>An options.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2__ctor_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2__ctor_UltraForce_Library_NetStandard_Models_UFModel_Option___" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.#ctor(UltraForce.Library.NetStandard.Models.UFModel.Option[])">
+  UFModelDictionary(params Option[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelDictionary-2.html">UFModelDictionary&lt;TKey, TValue&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFModelDictionary(params UFModel.Option[] anOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anOptions</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">Option</a>[]</dt>
+    <dd><p>The options <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">UFModel.Option</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Count_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Count*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Count" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of elements contained in the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of elements contained in the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_IsReadOnly_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.IsReadOnly*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_IsReadOnly" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.IsReadOnly">
+  IsReadOnly
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> is read-only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> is read-only; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Item_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Item*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Item__0_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Item(`0)">
+  this[TKey]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the element with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TValue this[TKey aKey] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <span class="xref">TKey</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TValue</span></dt>
+    <dd><p>The element with the specified key.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">key</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
+    <dd><p>The property is retrieved and <code class="paramref">key</code> is not found.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>The property is set and the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> is read-only.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Keys_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Keys*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Keys" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Keys">
+  Keys
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> containing the keys of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;TKey&gt; Keys { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TKey&gt;</dt>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> containing the keys of the object that implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Values_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Values*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Values" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Values">
+  Values
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> containing the values in the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;TValue&gt; Values { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TValue&gt;</dt>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> containing the values in the object that implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Add_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Add*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Add_System_Collections_Generic_KeyValuePair__0__1__" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Add(System.Collections.Generic.KeyValuePair{`0,`1})">
+  Add(KeyValuePair&lt;TKey, TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an item to the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(KeyValuePair&lt;TKey, TValue&gt; anItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> is read-only.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Add_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Add*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Add__0__1_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Add(`0,`1)">
+  Add(TKey, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an element with the provided key and value to the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(TKey aKey, TValue aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <span class="xref">TKey</span></dt>
+    <dd></dd>
+    <dt><code>aValue</code> <span class="xref">TValue</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">key</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>An element with the same key already exists in the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> is read-only.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Clear_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Clear*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Clear_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Clear(System.Boolean)">
+  Clear(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes or clears the properties of the data structure to default values.</p>
+<p>
+The default implementation sets all the properties that have a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.defaultvalueattribute">DefaultValueAttribute</a> attached to
+the value specified by that attribute. 
+</p><p>
+If the property has no <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.defaultvalueattribute">DefaultValueAttribute</a> attached the method will check if the property
+value has a method named <code>Clear</code> and will call that method if it does.
+</p><p>
+As last step the method will call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties">UpdateTrackedProperties()</a></p><p>
+Subclasses can override this method to initialize or clear additional properties.
+</p><p>
+If there are properties that implement <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a> and
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> is used, the clear method should make sure the instances are existing.
+</p><param name="aCallChanged">
+When <code>true</code> call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed">Changed()</a>. 
+
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Clear(bool aCallChanged)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aCallChanged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Contains_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Contains*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Contains_System_Collections_Generic_KeyValuePair__0__1__" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
+  Contains(KeyValuePair&lt;TKey, TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> contains a specific value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(KeyValuePair&lt;TKey, TValue&gt; anItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">item</code> is found in the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_ContainsKey_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.ContainsKey*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_ContainsKey__0_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.ContainsKey(`0)">
+  ContainsKey(TKey)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> contains an element with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsKey(TKey aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <span class="xref">TKey</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> contains an element with the key; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">key</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_CopyTo_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.CopyTo*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_CopyTo_System_Collections_Generic_KeyValuePair__0__1____System_Int32_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
+  CopyTo(KeyValuePair&lt;TKey, TValue&gt;[], int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies the elements of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> to an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a>, starting at a particular <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a> index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(KeyValuePair&lt;TKey, TValue&gt;[] anArray, int anArrayIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anArray</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;[]</dt>
+    <dd></dd>
+    <dt><code>anArrayIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">array</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">arrayIndex</code> is less than 0.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>The number of elements in the source <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> is greater than the available space from <code class="paramref">arrayIndex</code> to the end of the destination <code class="paramref">array</code>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_GetEnumerator_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.GetEnumerator*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_GetEnumerator" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.GetEnumerator">
+  GetEnumerator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through a collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a> object that can be used to iterate through the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_LoadFromStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.LoadFromStorage*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_LoadFromStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)">
+  LoadFromStorage(UFKeyedStorage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads the keys and values from the storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadFromStorage(UFKeyedStorage aStorage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStorage</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a></dt>
+    <dd><p>Storage to save the data to</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Lock_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Lock*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Lock" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Lock">
+  Lock()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_LockChildren">LockChildren</a> is set, call
+<a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html#UltraForce_Library_NetStandard_Interfaces_IUFLockable_Lock">Lock()</a> on all non-null items that implement
+<a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html">IUFLockable</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Lock()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Remove_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Remove*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Remove_System_Collections_Generic_KeyValuePair__0__1__" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
+  Remove(KeyValuePair&lt;TKey, TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the first occurrence of a specific object from the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(KeyValuePair&lt;TKey, TValue&gt; anItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">item</code> was successfully removed from the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. This method also returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if <code class="paramref">item</code> is not found in the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a> is read-only.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Remove_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Remove*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Remove__0_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Remove(`0)">
+  Remove(TKey)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the element with the specified key from the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(TKey aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <span class="xref">TKey</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the element is successfully removed; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.  This method also returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if <code class="paramref">key</code> was not found in the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">key</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> is read-only.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_SaveJson_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.SaveJson*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_SaveJson_System_Text_StringBuilder_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.SaveJson(System.Text.StringBuilder)">
+  SaveJson(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Save data as object definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SaveJson(StringBuilder aBuilder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A builder to add data to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_SaveToStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.SaveToStorage*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_SaveToStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)">
+  SaveToStorage(UFKeyedStorage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the keys and values in the storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SaveToStorage(UFKeyedStorage aStorage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStorage</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a></dt>
+    <dd><p>Storage to save the data to</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_TryGetValue_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.TryGetValue*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_TryGetValue__0__1__" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.TryGetValue(`0,`1@)">
+  TryGetValue(TKey, out TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the value associated with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetValue(TKey aKey, out TValue aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <span class="xref">TKey</span></dt>
+    <dd></dd>
+    <dt><code>aValue</code> <span class="xref">TValue</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object that implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a> contains an element with the specified key; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">key</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Unlock_" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Unlock*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModelDictionary_2_Unlock" data-uid="UltraForce.Library.NetStandard.Models.UFModelDictionary`2.Unlock">
+  Unlock()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_LockChildren">LockChildren</a> is set, call
+<a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html#UltraForce_Library_NetStandard_Interfaces_IUFLockable_Unlock">Unlock()</a> on all non-null items that implement
+<a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html">IUFLockable</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Unlock()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModelDictionary.cs/#L75" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

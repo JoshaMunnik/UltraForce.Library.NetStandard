@@ -1,0 +1,2203 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFModel | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFModel | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="Base class for data classes.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/new/master/apiSpec/new?filename=UltraForce_Library_NetStandard_Models_UFModel.md&amp;value=---%0Auid%3A%20UltraForce.Library.NetStandard.Models.UFModel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Models.UFModel">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Models_UFModel" data-uid="UltraForce.Library.NetStandard.Models.UFModel" class="text-break">
+Class UFModel  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Models.html">Models</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base class for data classes.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UFModel : IUFStorableObject, IUFJsonExport, IUFLockable, INotifyPropertyChanged, IUFClearable, IUFModel, IUFAccessProperty, IUFNotifyDataChanged, IUFValidatePropertyValue</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFModel</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFJsonExport.html">IUFJsonExport</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html">IUFLockable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFClearable.html">IUFClearable</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Models.IUFModel.html">IUFModel</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty.html">IUFAccessProperty</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFValidatePropertyValue.html">IUFValidatePropertyValue</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelDictionary-2.html">UFModelDictionary&lt;TKey, TValue&gt;</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelList-1.html">UFModelList&lt;TValue&gt;</a></div>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html">UFModelStorageWrapper</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="UltraForce_Library_NetStandard_Models_UFModel_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Subclasses should define properties, the set part should use the <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_">Assign&lt;T&gt;(ref T, T, string)</a> or
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_">Set(object?, string)</a> method; so <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a> can fire <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">DataChanged</a> and
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_PropertyChanged">PropertyChanged</a> events when a property changes value.
+</p>
+<p>
+A subclass can use <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_">Assign&lt;T&gt;(ref T, T, string)</a> in combination with a private variable or a subclass can use
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_">Set(object?, string)</a> and <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_">Get&lt;T&gt;(Func&lt;T&gt;, string)</a> or <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_">Get&lt;T&gt;(T, string)</a>
+which will use an internally stored value. Using <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_">Get&lt;T&gt;(Func&lt;T&gt;, string)</a> or
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_">Get&lt;T&gt;(T, string)</a> will be slightly slower then directly referencing a private variable.
+</p>
+<p>
+It is possible to <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Lock">Lock()</a> the instance; this prevent the class from firing events. While locked the
+class will keep track of any changed properties. When the class is unlocked with <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Unlock">Unlock()</a> a
+single <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">DataChanged</a> event might fire and multiple <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_PropertyChanged">PropertyChanged</a> events might fire.
+</p>
+<p>
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a> can be used to access properties and fields of another class by passing the instance to
+the constructor. Change events will only be fired when values are assigned trough
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_">SetPropertyValue(string, object?)</a>.
+</p>
+<p>
+If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> option is used <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a> installs change listeners at all
+property values that implement <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a>. If the listener detects a change,
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a> will fire also a change event for that property. 
+</p>
+<p>
+For correct working, <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_">Changed(string, object?, object?)</a> must be called when ever the property gets
+assigned a new value so that listeners can be removed from the old value and added to the new value.
+</p>
+<p>
+The methods <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_">Assign&lt;T&gt;(ref T, T, string)</a> and <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_">Set(object?, string)</a> both call the
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_">Changed(string, object?, object?)</a> whenever a new value is used.
+</p>
+<p>
+Annotate properties and fields with <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFIgnoreAttribute.html">UFIgnoreAttribute</a> to ignore them. These properties and fields
+can not be accessed trough their names and will be ignored with IO operations.
+</p>
+<p>
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a> also contains support for storing and retrieving itself from a
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a>. Annotate properties and fields with <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute.html">UFIOIgnoreAttribute</a> to prevent
+them from being saved. Annotate with <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFIONameAttribute.html">UFIONameAttribute</a> to set a different name to store data with.
+A subclass can also override <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CanSave_System_String_System_Object_">CanSave(string, object?)</a> to control which properties and fields gets saved.
+</p>
+<p>
+If <code>UFDEBUG</code> is defined a <a class="xref" href="UltraForce.Library.NetStandard.Development.UFHtmlLog.html">UFHtmlLog</a> instance can be set via the static <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UseLog_UltraForce_Library_NetStandard_Development_UFHtmlLog_">UseLog(UFHtmlLog)</a> to
+log any changes to properties and fields which are annotated with <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFLogAttribute.html">UFLogAttribute</a>.
+</p>
+<p>
+Validators added via calls to <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_">AddValidator(string, IUFValidateValue)</a> or
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateProperty_">AddValidator(string, IUFValidateProperty)</a> from within <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_InitMeta">InitMeta()</a> will be stored at
+meta level and will be shared by all instances.
+</p>
+<p>
+The <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">DataChanged</a>, <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildChanged">ChildChanged</a> and <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_PropertyChanged">PropertyChanged</a> use a weak reference
+to the object implementing the handler method.
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel__ctor_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel__ctor_System_Object_UltraForce_Library_NetStandard_Models_UFModel_Option___" data-uid="UltraForce.Library.NetStandard.Models.UFModel.#ctor(System.Object,UltraForce.Library.NetStandard.Models.UFModel.Option[])">
+  UFModel(object?, params Option[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The constructor, creates an instance and processes all properties.</p>
+<p>
+If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> is used, subclasses must call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties">UpdateTrackedProperties()</a>
+after assigning initial values to the properties.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFModel(object? aData = null, params UFModel.Option[] anOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>An instance to manage the properties and fields of, when <code>null</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a> uses itself.</p>
+</dd>
+    <dt><code>anOptions</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">Option</a>[]</dt>
+    <dd><p>Array of options to use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel__ctor_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel__ctor_UltraForce_Library_NetStandard_Models_UFModel_Option___" data-uid="UltraForce.Library.NetStandard.Models.UFModel.#ctor(UltraForce.Library.NetStandard.Models.UFModel.Option[])">
+  UFModel(params Option[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The constructor, creates an instance and processes all properties.</p>
+<p>
+If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> is used, subclasses must call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties">UpdateTrackedProperties()</a>
+after assigning initial values to the properties.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFModel(params UFModel.Option[] anOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anOptions</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">Option</a>[]</dt>
+    <dd><p>Array of options to use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_AddValidator_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.AddValidator*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateProperty_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.AddValidator(System.String,UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty)">
+  AddValidator(string, IUFValidateProperty)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a property validator for a certain property. If this method is called from within the
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_InitMeta">InitMeta()</a> method, the validator is stored at meta level and shared by all property instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddValidator(string aPropertyName, IUFValidateProperty aValidator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A property name.</p>
+</dd>
+    <dt><code>aValidator</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty.html">IUFValidateProperty</a></dt>
+    <dd><p>The validator to attach.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_AddValidator_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.AddValidator*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.AddValidator(System.String,UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue)">
+  AddValidator(string, IUFValidateValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a value validator for a certain property. If this method is called from within the
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_InitMeta">InitMeta()</a> method, the validator is stored at meta level and shared by all property instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddValidator(string aPropertyName, IUFValidateValue aValidator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A property name.</p>
+</dd>
+    <dt><code>aValidator</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html">IUFValidateValue</a></dt>
+    <dd><p>The validator to attach.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_Assign_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Assign*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)">
+  Assign&lt;T&gt;(ref T, T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a value is different; assigns a new value to a private var that represents a property and calls
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_">Changed(string, object?, object?)</a> to fire an event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool Assign&lt;T&gt;(ref T aPrivateVar, T aNewValue, string aPropertyName = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPrivateVar</code> <span class="xref">T</span></dt>
+    <dd><p>The private variable to get the current value from and assign the new value to.</p>
+</dd>
+    <dt><code>aNewValue</code> <span class="xref">T</span></dt>
+    <dd><p>A new value.</p>
+</dd>
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A property name. This parameter is optional and does not need to be set when calling this method from inside
+the property setter.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the value has changed; otherwise <code>false</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the property.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_CanSave_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.CanSave*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_CanSave_System_String_System_Object_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.CanSave(System.String,System.Object)">
+  CanSave(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L998"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Check if a certain property can be saved.</p>
+<p>
+The default implementation checks if a default value has been set via <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.defaultvalueattribute">DefaultValueAttribute</a> and
+returns <code>true</code> if <code>aValue</code> is not equal to the default value.
+</p>
+<p>
+If no default value has been specified, the method just returns true.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool CanSave(string aPropertyName, object? aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A property name.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Current property value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the property and its value should be saved; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_Changed_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Changed*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_Changed" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Changed">
+  Changed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1012"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fire a DataChanged event without specifying a property. If the instance is locked, the change gets stored and
+the event will fire when the instance gets unlocked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Changed()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_Changed_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Changed*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Changed(System.String,System.Object,System.Object)">
+  Changed(string, object?, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1040"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fire a DataChanged event for a property. If the instance is locked, the changed info gets stored and it is
+used when the instance gets unlocked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Changed(string aPropertyName, object? anOldValue = null, object? aNewValue = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The property that changed.</p>
+</dd>
+    <dt><code>anOldValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The old value.</p>
+</dd>
+    <dt><code>aNewValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The new value. If <code>null</code>, the method uses <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue_System_String_">GetPropertyValue(string)</a> to get the current value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_ChildHasChanged_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.ChildHasChanged*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_ChildHasChanged_System_Object_System_String___UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.ChildHasChanged(System.Object,System.String[],UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)">
+  ChildHasChanged(object, string[], UFDataChangedEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is called when the <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> is used.</p>
+<p>
+The default implementation does nothing.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ChildHasChanged(object aValue, string[] aPropertyNames, UFDataChangedEventArgs anEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Property value (is the sender of the event)</p>
+</dd>
+    <dt><code>aPropertyNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>One or more property names the value is assigned to</p>
+</dd>
+    <dt><code>anEvent</code> <a class="xref" href="UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html">UFDataChangedEventArgs</a></dt>
+    <dd><p>The change event</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_Clear_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Clear*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_Clear" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L626"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the instance by calling <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Clear_System_Boolean_">Clear(bool)</a> with
+<code>true</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_Clear_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Clear*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_Clear_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Clear(System.Boolean)">
+  Clear(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes or clears the properties of the data structure to default values.</p>
+<p>
+The default implementation sets all the properties that have a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.defaultvalueattribute">DefaultValueAttribute</a> attached to
+the value specified by that attribute. 
+</p>
+<p>
+If the property has no <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.defaultvalueattribute">DefaultValueAttribute</a> attached the method will check if the property
+value has a method named <code>Clear</code> and will call that method if it does.
+</p>
+<p>
+As last step the method will call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties">UpdateTrackedProperties()</a>
+</p>
+<p>
+Subclasses can override this method to initialize or clear additional properties.
+</p>
+<p>
+If there are properties that implement <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a> and
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> is used, the clear method should make sure the instances are existing.
+</p>
+<param name="aCallChanged">
+When <code>true</code> call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed">Changed()</a>. 
+
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Clear(bool aCallChanged)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aCallChanged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_CopyFrom_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.CopyFrom*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_CopyFrom_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.CopyFrom(UltraForce.Library.NetStandard.Models.UFModel,System.Boolean)">
+  CopyFrom(UFModel, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies the property values from another instance to this instance.</p>
+<p>
+This method just calls <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyTo_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_">CopyTo(UFModel, bool)</a> on <code>aSource</code> using this instance as the target.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyFrom(UFModel aSource, bool aCallChanged = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aSource</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a></dt>
+    <dd><p>Source to copy from</p>
+</dd>
+    <dt><code>aCallChanged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_">Changed(string, object?, object?)</a> for every property value that is different.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_CopyTo_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.CopyTo*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_CopyTo_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.CopyTo(UltraForce.Library.NetStandard.Models.UFModel,System.Boolean)">
+  CopyTo(UFModel, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L497"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies the property values from this instance to another instance.</p>
+<p>
+The method will use <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_System_Boolean_">SetPropertyValue(string, object?, bool)</a> and <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue_System_String_">GetPropertyValue(string)</a> to
+copy the values.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyTo(UFModel aTarget, bool aCallChanged = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aTarget</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a></dt>
+    <dd><p>Target to copy to</p>
+</dd>
+    <dt><code>aCallChanged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_">Changed(string, object?, object?)</a> for every property value that is different.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_GetDataChangedToken_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.GetDataChangedToken*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_GetDataChangedToken" data-uid="UltraForce.Library.NetStandard.Models.UFModel.GetDataChangedToken">
+  GetDataChangedToken()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The data changed token value will be used when firing a <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">DataChanged</a> event and can be used to
+match events to certain changes.</p>
+<p>
+The value is increased and copied every time when creating an <a class="xref" href="UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html">UFDataChangedEventArgs</a> instance. If
+the event handler changes the data resulting in new events the token will be increased again.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDataChangedToken()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_GetPropertyNames_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.GetPropertyNames*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_GetPropertyNames" data-uid="UltraForce.Library.NetStandard.Models.UFModel.GetPropertyNames">
+  GetPropertyNames()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the name of all the properties managed by <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetPropertyNames()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>The property names.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_GetPropertyType_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.GetPropertyType*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_GetPropertyType_System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.GetPropertyType(System.String)">
+  GetPropertyType(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the type for a property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type GetPropertyType(string aPropertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue_System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue(System.String)">
+  GetPropertyValue(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L755"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the value for a property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetPropertyValue(string aPropertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue__1_System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue``1(System.String)">
+  GetPropertyValue&lt;T&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L598"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the value for a property casting it to a certain type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetPropertyValue&lt;T&gt;(string aPropertyName) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of property</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>Value</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type to cast to</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_Get_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Get*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Get``1(System.Func{``0},System.String)">
+  Get&lt;T&gt;(Func&lt;T&gt;, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an internally stored value for a property.</p>
+<p>
+Use <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_">Set(object?, string)</a> to store a value internally.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual T Get&lt;T&gt;(Func&lt;T&gt; aFactory, string aPropertyName = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd><p>Factory function that returns a value to be used as default value.</p>
+</dd>
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A property name. This parameter is optional and does not need to be set
+when calling this method from inside the property getter.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The value of the property</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the property</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Subclasses can override this method to retrieve the value from some other location.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_Get_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Get*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Get``1(``0,System.String)">
+  Get&lt;T&gt;(T, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an internally stored value for a property.</p>
+<p>
+Use <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_">Set(object?, string)</a> to store a value internally.
+</p>
+<p>
+This method will call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_">Get&lt;T&gt;(Func&lt;T&gt;, string)</a> with a simple factory function that
+returns <code>aDefaultValue</code>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T Get&lt;T&gt;(T aDefaultValue, string aPropertyName = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aDefaultValue</code> <span class="xref">T</span></dt>
+    <dd><p>Default value to use when no value was stored.</p>
+</dd>
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A property name. This parameter is optional and does not need to be set
+when calling this method from inside the property getter.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The value of the property</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the property</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_HasChanged_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.HasChanged*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_HasChanged" data-uid="UltraForce.Library.NetStandard.Models.UFModel.HasChanged">
+  HasChanged()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if one or more properties have changed value while the <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a> instance is locked.</p>
+<p>
+If the data instance is not locked, this method will always return <code>false</code>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasChanged()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> one or more properties have changed value; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_HasOption_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.HasOption*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_HasOption_UltraForce_Library_NetStandard_Models_UFModel_Option_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.HasOption(UltraForce.Library.NetStandard.Models.UFModel.Option)">
+  HasOption(Option)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Check if a certain option is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool HasOption(UFModel.Option anOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anOption</code> <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a>.<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html">Option</a></dt>
+    <dd><p>Option to check</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if anOption is enabled; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_HasProperty_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.HasProperty*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_HasProperty_System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.HasProperty(System.String)">
+  HasProperty(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a> (sub)class contains a certain property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasProperty(string aName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A property name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the property exists; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_InitMeta_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.InitMeta*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_InitMeta" data-uid="UltraForce.Library.NetStandard.Models.UFModel.InitMeta">
+  InitMeta()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L979"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method gets called the first time an instance of certain <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a> subclass is created.</p>
+<p>
+This subclass can contain calls to  <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_">AddValidator(string, IUFValidateValue)</a> and 
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateProperty_">AddValidator(string, IUFValidateProperty)</a>. The validators are stored in the meta and will be
+shared by all instances.
+</p>
+<p>
+The default implementation does nothing.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitMeta()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_IsValid_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.IsValid*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_IsValid" data-uid="UltraForce.Library.NetStandard.Models.UFModel.IsValid">
+  IsValid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if all property have valid values. This method calls <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValidPropertyValue_System_String_System_Object_">IsValidPropertyValue(string, object?)</a> for every
+property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsValid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if all values are valid; <code>false</code> if not</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_IsValidPropertyValue_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.IsValidPropertyValue*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_IsValidPropertyValue_System_String_System_Object_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.IsValidPropertyValue(System.String,System.Object)">
+  IsValidPropertyValue(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L795"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validate a value for a certain property.</p>
+<p>
+The default implementation checks the registered validators. Subclasses can override this method to use
+alternative validation.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsValidPropertyValue(string aPropertyName, object? aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Property to validate value for</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Value to validate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the value is valid for the property; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_LoadFromStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.LoadFromStorage*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_LoadFromStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)">
+  LoadFromStorage(UFKeyedStorage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L867"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets data from a keyed storage.</p>
+<p>
+The method uses the <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute.html">UFIOIgnoreAttribute</a> to determine 
+if a property can be retrieved.
+</p>
+<p>
+The method supports the <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFIONameAttribute.html">UFIONameAttribute</a>.
+</p>
+<p>
+If a property is read only but implements the 
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a>, it will get initialized from the
+storage via <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html#UltraForce_Library_NetStandard_Storage_IUFStorableObject_LoadFromStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_">LoadFromStorage(UFKeyedStorage)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LoadFromStorage(UFKeyedStorage aStorage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStorage</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a></dt>
+    <dd><p>A storage to get data from.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_LoadFromStream_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.LoadFromStream*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_LoadFromStream_System_Int32_System_IO_Stream_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.LoadFromStream(System.Int32,System.IO.Stream)">
+  LoadFromStream(int, Stream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L563"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads the model from a stream after validating the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadFromStream(int aVersion, Stream aStream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aVersion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Version that should be matched</p>
+</dd>
+    <dt><code>aStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Stream to read from</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if loaded successfully, false if the version is incorrect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_Lock_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Lock*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_Lock" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Lock">
+  Lock()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L654"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Call lock to prevent <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">DataChanged</a> events from occurring until <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Unlock">Unlock()</a> is called.</p>
+<p>
+While the instances is locked, changes are still tracked and with the 
+last unlock an event will be fired containing all changed properties.
+</p>
+<p>
+The number of lock and unlock calls must match before events are fired 
+again.
+</p>
+<p>
+If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_LockChildren">LockChildren</a> is set, the 
+<a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html#UltraForce_Library_NetStandard_Interfaces_IUFLockable_Lock">Lock()</a> method of all properties that implement 
+<a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html">IUFLockable</a> gets called as well.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Lock()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Current lock counter</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_LogNewValue_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.LogNewValue*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_LogNewValue_System_String_System_Object_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.LogNewValue(System.String,System.Object)">
+  LogNewValue(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFLogAttribute.html">UFLogAttribute</a> has been set for the property.
+If it set, a log entry for the new value is added to the log set
+by <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UseLog_UltraForce_Library_NetStandard_Development_UFHtmlLog_">UseLog(UFHtmlLog)</a>.
+<remarks>
+This method only does something if <code>UFDEBUG</code> has been defined.
+</remarks></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;UFDEBUG&quot;)]
+protected void LogNewValue(string aPropertyName, object? aNewValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Property name to log value for</p>
+</dd>
+    <dt><code>aNewValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Value to log</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_OnChildChanged_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.OnChildChanged*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_OnChildChanged_System_Object_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.OnChildChanged(System.Object,UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)">
+  OnChildChanged(object, UFDataChangedEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggers the <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildChanged">ChildChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnChildChanged(object aSender, UFDataChangedEventArgs anEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aSender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Sender of the event</p>
+</dd>
+    <dt><code>anEvent</code> <a class="xref" href="UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html">UFDataChangedEventArgs</a></dt>
+    <dd><p>Event data</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_OnDataChanged_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.OnDataChanged*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_OnDataChanged_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.OnDataChanged(UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)">
+  OnDataChanged(UFDataChangedEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggers the <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">DataChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDataChanged(UFDataChangedEventArgs anEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anEvent</code> <a class="xref" href="UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html">UFDataChangedEventArgs</a></dt>
+    <dd><p>The event</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_OnPropertyChanged_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.OnPropertyChanged*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_OnPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+  OnPropertyChanged(object, PropertyChangedEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggers the <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_PropertyChanged">PropertyChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPropertyChanged(object aSender, PropertyChangedEventArgs anEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aSender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Sender of event</p>
+</dd>
+    <dt><code>anEvent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs">PropertyChangedEventArgs</a></dt>
+    <dd><p>Event data</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_ResetChanged_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.ResetChanged*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_ResetChanged" data-uid="UltraForce.Library.NetStandard.Models.UFModel.ResetChanged">
+  ResetChanged()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L408"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the changed state of properties. A call to unlock after a call to this method will not generate a
+DataChanged event.</p>
+<p>
+Calling this method while the data instance is not locked, has no use.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_ResetLock_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.ResetLock*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_ResetLock" data-uid="UltraForce.Library.NetStandard.Models.UFModel.ResetLock">
+  ResetLock()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the internal lock counter, bringing the data class back to the unlocked state. No events are fired.</p>
+<p>
+If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_LockChildren">LockChildren</a> is set, the <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetLock">ResetLock()</a> method of all properties that 
+implement <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html">UFModel</a> instance gets called as well.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ResetLock()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_SaveJson_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.SaveJson*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_SaveJson" data-uid="UltraForce.Library.NetStandard.Models.UFModel.SaveJson">
+  SaveJson()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L611"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create JSON formatted string from the data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SaveJson()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>JSON formatted string</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_SaveJson_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.SaveJson*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_SaveJson_System_Text_StringBuilder_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.SaveJson(System.Text.StringBuilder)">
+  SaveJson(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L911"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add data to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> using JSON formatting.</p>
+<p>
+The method uses the <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute.html">UFIOIgnoreAttribute</a> annotation and <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CanSave_System_String_System_Object_">CanSave(string, object?)</a> to determine 
+if a property can be saved.
+</p>
+<p>
+The method supports <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFIONameAttribute.html">UFIONameAttribute</a> annotation.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveJson(StringBuilder aBuilder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A builder to add data to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_SaveToStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.SaveToStorage*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_SaveToStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)">
+  SaveToStorage(UFKeyedStorage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L837"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores data in a keyed storage.</p>
+<p>
+The method uses the <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute.html">UFIOIgnoreAttribute</a> and <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CanSave_System_String_System_Object_">CanSave(string, object?)</a> to determine if a property can
+be stored.
+</p>
+<p>
+The method supports the <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFIONameAttribute.html">UFIONameAttribute</a>.
+</p>
+<p>
+If a property implements <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a>, the data is stored via
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html#UltraForce_Library_NetStandard_Storage_IUFStorableObject_SaveToStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_">SaveToStorage(UFKeyedStorage)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveToStorage(UFKeyedStorage aStorage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStorage</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a></dt>
+    <dd><p>A storage to store data in.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_SaveToStream_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.SaveToStream*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_SaveToStream_System_Int32_System_IO_Stream_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.SaveToStream(System.Int32,System.IO.Stream)">
+  SaveToStream(int, Stream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the model to a stream together with a version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveToStream(int aVersion, Stream aStream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aVersion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Version to save</p>
+</dd>
+    <dt><code>aStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Stream to write to</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Models_UFModel_SaveToStream_System_Int32_System_IO_Stream__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The method use <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFDictionaryStorage.html">UFDictionaryStorage</a> to save the data.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_Set_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Set*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Set(System.Object,System.String)">
+  Set(object?, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a value is different; if it is the method stores the value internally and
+calls <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_">Changed(string, object?, object?)</a> to fire an event.</p>
+<p>
+Use <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_">Get&lt;T&gt;(T, string)</a> or <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_">Get&lt;T&gt;(Func&lt;T&gt;, string)</a> to retrieve the internally stored
+value.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool Set(object? aNewValue, string aPropertyName = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNewValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>wA new value.</p>
+</dd>
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A property name. This parameter is optional and does not need to be set
+when calling this method from inside the property setter.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the value has changed; otherwise <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Subclasses can override this method to store the value at some other location.</p>
+<p>
+The default implementation either stores the value (the first time) or calls <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_">Assign&lt;T&gt;(ref T, T, string)</a> to assign
+the new value.
+</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(System.String,System.Object)">
+  SetPropertyValue(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L774"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of a property. If the value is different the <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_">Changed(string, object?, object?)</a> method
+is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetPropertyValue(string aPropertyName, object? aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A property name.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>A value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if <code>aValue</code> is different from the current value and
+has been assigned.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(System.String,System.Object,System.Boolean)">
+  SetPropertyValue(string, object?, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of a property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetPropertyValue(string aPropertyName, object? aValue, bool aCallChanged)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A property name.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>A value.</p>
+</dd>
+    <dt><code>aCallChanged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> call <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_">Changed(string, object?, object?)</a> if the <code>aValue</code> is not equal to the
+current value of <code>aPropertyName</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_ToString_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.ToString*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_ToString" data-uid="UltraForce.Library.NetStandard.Models.UFModel.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L581"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_Unlock_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Unlock*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_Unlock" data-uid="UltraForce.Library.NetStandard.Models.UFModel.Unlock">
+  Unlock()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L682"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unlock to allow <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">DataChanged</a> events. If any property changed while the data was locked, a
+<a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged">DataChanged</a> event is fired with all properties that changed.</p>
+<p>
+If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_LockChildren">LockChildren</a> is set, the unlock method of all properties that implement
+<a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.html">IUFLockable</a> instance gets called as well.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Unlock()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Current lock counter</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.UpdateTrackedProperties*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties" data-uid="UltraForce.Library.NetStandard.Models.UFModel.UpdateTrackedProperties">
+  UpdateTrackedProperties()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L1153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> has been set, this method will check all properties and updates
+listeners for properties that contain values that implement the <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a>.</p>
+<p>
+This method should be called from within the <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Clear">Clear()</a> method if new instances are assigned to one
+or more properties directly without any calls to <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_">Changed(string, object?, object?)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateTrackedProperties()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Models_UFModel_UseLog_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.UseLog*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_UseLog_UltraForce_Library_NetStandard_Development_UFHtmlLog_" data-uid="UltraForce.Library.NetStandard.Models.UFModel.UseLog(UltraForce.Library.NetStandard.Development.UFHtmlLog)">
+  UseLog(UFHtmlLog)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a log to use to log changes for properties that are annotated with <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFLogAttribute.html">UFLogAttribute</a>.</p>
+<p>
+This method only does something if <code>UFDEBUG</code> has been defined.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;UFDEBUG&quot;)]
+public static void UseLog(UFHtmlLog aLog)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aLog</code> <a class="xref" href="UltraForce.Library.NetStandard.Development.UFHtmlLog.html">UFHtmlLog</a></dt>
+    <dd><p>Log to use</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_ChildChanged" data-uid="UltraForce.Library.NetStandard.Models.UFModel.ChildChanged">
+  ChildChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L959"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This event is fired when <a class="xref" href="UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange">TrackChildChange</a> is used and one of the child properties that
+implements the <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html">IUFNotifyDataChanged</a> fires an <a class="xref" href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html#UltraForce_Library_NetStandard_Interfaces_IUFNotifyDataChanged_DataChanged">DataChanged</a> event.</p>
+<p>
+The sender of this event will be the original child property instance that fired the event.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;UFDataChangedEventArgs&gt; ChildChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html">UFDataChangedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_DataChanged" data-uid="UltraForce.Library.NetStandard.Models.UFModel.DataChanged">
+  DataChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L813"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This event is fired when one or more property value changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;UFDataChangedEventArgs&gt; DataChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html">UFDataChangedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="UltraForce_Library_NetStandard_Models_UFModel_PropertyChanged" data-uid="UltraForce.Library.NetStandard.Models.UFModel.PropertyChanged">
+  PropertyChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L943"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This event is fired when a property changes. If the data was locked and is unlocked, multiple events will
+fire (once for every property that is changed).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PropertyChangedEventHandler PropertyChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Models/UFModel.cs/#L112" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

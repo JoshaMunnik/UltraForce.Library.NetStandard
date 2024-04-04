@@ -1,0 +1,2807 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFKeyedStorageAsync | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFKeyedStorageAsync | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="is a base class for storage classes that store different type of values using unique keys.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/new/master/apiSpec/new?filename=UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync.md&amp;value=---%0Auid%3A%20UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync" class="text-break">
+Class UFKeyedStorageAsync  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Storage.html">Storage</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html">UFKeyedStorageAsync</a> is a base class for storage classes
+that store different type of values using unique keys.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class UFKeyedStorageAsync</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFKeyedStorageAsync</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.NetStandard.Storage.UFCachedStorageAsync.html">UFCachedStorageAsync</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>It is a async version of <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html">UFKeyedStorage</a>.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync__ctor_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync__ctor" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.#ctor">
+  UFKeyedStorageAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html">UFKeyedStorageAsync</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UFKeyedStorageAsync()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_DeleteAllAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.DeleteAllAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_DeleteAllAsync" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.DeleteAllAsync">
+  DeleteAllAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L1163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes all stored data.</p>
+<p>
+The default implemetnation does nothing.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task DeleteAllAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_DeleteKeyAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.DeleteKeyAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_DeleteKeyAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.DeleteKeyAsync(System.String)">
+  DeleteKeyAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L1174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes the data for specific key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task DeleteKeyAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to Delete the data for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_DeserializeObjectAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.DeserializeObjectAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_DeserializeObjectAsync_System_String_System_Type_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.DeserializeObjectAsync(System.String,System.Type)">
+  DeserializeObjectAsync(string, Type?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L1217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes an object that was stored previously with
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SerializeObjectAsync_System_String_System_Object_">SerializeObjectAsync(string, object)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;object&gt; DeserializeObjectAsync(string aKey, Type? aType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to retrieve serialized object with</p>
+</dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>Type of object to create (might be null)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>Retrieved object</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetBoolAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetBoolAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetBoolAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetBoolAsync(System.String)">
+  GetBoolAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L673"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a bool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; GetBoolAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the bool for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>The stored bool or true when missing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetBoolAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetBoolAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetBoolAsync_System_String_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetBoolAsync(System.String,System.Boolean)">
+  GetBoolAsync(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L659"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a bool.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_System_String_">GetStringAsync(string)</a> 
+and converts its value back to a bool.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; GetBoolAsync(string aKey, bool aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the bool for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A default value to use when there is no bool stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>The stored bool or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetByteAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetByteAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetByteAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetByteAsync(System.String)">
+  GetByteAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a byte.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;byte&gt; GetByteAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the byte for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The stored byte or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetByteAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetByteAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetByteAsync_System_String_System_Byte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetByteAsync(System.String,System.Byte)">
+  GetByteAsync(string, byte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a byte.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetIntAsync_System_String_">GetIntAsync(string)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;byte&gt; GetByteAsync(string aKey, byte aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the byte for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>A default value to use when there is no byte stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The stored byte or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetBytesAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetBytesAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetBytesAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetBytesAsync(System.String)">
+  GetBytesAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L784"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an array of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;byte[]?&gt; GetBytesAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get array for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p>Array of byte or null when missing</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetBytesAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetBytesAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetBytesAsync_System_String_System_Byte___" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetBytesAsync(System.String,System.Byte[])">
+  GetBytesAsync(string, byte[]?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L765"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an array of bytes.</p>
+<p> 
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_System_String_">GetStringAsync(string)</a> 
+and assumes the data is is a base64 encoded string.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;byte[]?&gt; GetBytesAsync(string aKey, byte[]? aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get array for</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Default value to use when no data exists for aKey</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p>Array of byte or aDefault</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetCharAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetCharAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetCharAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetCharAsync(System.String)">
+  GetCharAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L726"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a char.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;char&gt; GetCharAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the char for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd><p>The stored char or '\0' when missing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetCharAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetCharAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetCharAsync_System_String_System_Char_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetCharAsync(System.String,System.Char)">
+  GetCharAsync(string, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L712"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a char.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_System_String_">GetStringAsync(string)</a> 
+to get the stored character.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;char&gt; GetCharAsync(string aKey, char aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the char for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>A default value to use when there is no char stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd><p>The stored char or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetDateTimeAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetDateTimeAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetDateTimeAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetDateTimeAsync(System.String)">
+  GetDateTimeAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L830"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a date and time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DateTime&gt; GetDateTimeAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get date and time for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</dt>
+    <dd><p>Date and time or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime.now">Now</a> when missing</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetDateTimeAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetDateTimeAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetDateTimeAsync_System_String_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetDateTimeAsync(System.String,System.DateTime)">
+  GetDateTimeAsync(string, DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L815"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> value using
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetLongAsync_System_String_">GetLongAsync(string)</a> and
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime.frombinary">FromBinary(long)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;DateTime&gt; GetDateTimeAsync(string aKey, DateTime aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get date and time for</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Default value to use</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</dt>
+    <dd><p>Store value or aDefault</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetDoubleAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetDoubleAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetDoubleAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetDoubleAsync(System.String)">
+  GetDoubleAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L617"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a double number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;double&gt; GetDoubleAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the double number for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The stored double number or 0.0 when missing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetDoubleAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetDoubleAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetDoubleAsync_System_String_System_Double_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetDoubleAsync(System.String,System.Double)">
+  GetDoubleAsync(string, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L600"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a double number.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_System_String_">GetStringAsync(string)</a> 
+and uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double.parse#system-double-parse(system-string)">Parse(string)</a> to convert it back to 
+a double.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;double&gt; GetDoubleAsync(string aKey, double aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the double number for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>A default value to use when there is no double number stored for
+the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The stored floating number or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetFloatAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetFloatAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetFloatAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetFloatAsync(System.String)">
+  GetFloatAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a floating number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;float&gt; GetFloatAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the floating number for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd><p>The stored floating number or 0.0 when missing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetFloatAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetFloatAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetFloatAsync_System_String_System_Single_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetFloatAsync(System.String,System.Single)">
+  GetFloatAsync(string, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a floating number.</p>
+<p>
+The default implementation just calls 
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetDoubleAsync_System_String_">GetDoubleAsync(string)</a> and typecast the value back to 
+float.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;float&gt; GetFloatAsync(string aKey, float aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the floating number for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>A default value to use when there is no floating number stored for
+the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd><p>The stored floating number or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetGuidAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetGuidAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetGuidAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetGuidAsync(System.String)">
+  GetGuidAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L864"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a guid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Guid&gt; GetGuidAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get value for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</dt>
+    <dd><p>Stored value or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid.empty">Empty</a> when missing</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetGuidAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetGuidAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetGuidAsync_System_String_System_Guid_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetGuidAsync(System.String,System.Guid)">
+  GetGuidAsync(string, Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L852"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a guid using <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetBytesAsync_System_String_">GetBytesAsync(string)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Guid&gt; GetGuidAsync(string aKey, Guid aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get value for</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>Default value to use</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</dt>
+    <dd><p>Stored value or aDefault</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetIntAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetIntAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetIntAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetIntAsync(System.String)">
+  GetIntAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetIntAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the integer for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>The stored integer or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetIntAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetIntAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetIntAsync_System_String_System_Int32_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetIntAsync(System.String,System.Int32)">
+  GetIntAsync(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an integer.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_System_String_">GetStringAsync(string)</a> 
+and uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.parse#system-int32-parse(system-string)">Parse(string)</a> to convert it back to
+a integer.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;int&gt; GetIntAsync(string aKey, int aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the integer for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A default value to use when there is no integer stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>The stored integer or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetLongAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetLongAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetLongAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetLongAsync(System.String)">
+  GetLongAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a long.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;long&gt; GetLongAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the long for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd><p>The stored long or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetLongAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetLongAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetLongAsync_System_String_System_Int64_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetLongAsync(System.String,System.Int64)">
+  GetLongAsync(string, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a long.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_System_String_">GetStringAsync(string)</a> 
+and uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64.parse#system-int64-parse(system-string)">Parse(string)</a> to convert it back to a long.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;long&gt; GetLongAsync(string aKey, long aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the long for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>A default value to use when there is no long stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd><p>The stored long or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetObjectAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetObjectAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetObjectAsync_System_String_System_Type_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetObjectAsync(System.String,System.Type)">
+  GetObjectAsync(string, Type?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L963"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an object of a specific type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;object?&gt; GetObjectAsync(string aKey, Type? aType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get object for</p>
+</dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>Type of object or null if type is unknown</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>Object instance or null if none was found</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetObjectAsync_System_String_System_Type__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default implementation checks for certain type situations.</p>
+<p>
+If the object is a primitive type, its value gets retrieved with one
+of the GetXXXX methods.
+</p>
+<p>
+If the object implements the <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a> interface
+the method uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStorableObjectAsync_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_">GetStorableObjectAsync(string, IUFStorableObject)</a> using aKey.
+</p>
+<p>
+If the object is a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> the data is retrieved via
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetDateTimeAsync_System_String_">GetDateTimeAsync(string)</a>.
+</p>
+<p>
+If the object is a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> the data is retrieved via
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetGuidAsync_System_String_">GetGuidAsync(string)</a>.
+</p>
+<p>
+If the object is a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> the method uses 
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_System_String_">GetStringAsync(string)</a> to get its value.
+</p>
+<p>
+If the object is a nullable value, the method will return null if
+no data exists (null values are not stored) or will call itself
+recursively using the underlying type.
+</p>
+<p>
+If none of the above fits, the method will call 
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_DeserializeObjectAsync_System_String_System_Type_">DeserializeObjectAsync(string, Type?)</a>.
+</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetObjectAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetObjectAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetObjectAsync__1_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetObjectAsync``1(System.String)">
+  GetObjectAsync&lt;T&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L1028"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A generic version of <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetObjectAsync_System_String_System_Type_">GetObjectAsync(string, Type?)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T?&gt; GetObjectAsync&lt;T&gt;(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get object for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd><p>object</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of object to get</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetSByteAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetSByteAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetSByteAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetSByteAsync(System.String)">
+  GetSByteAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a sbyte.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;sbyte&gt; GetSByteAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the sbyte for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a>&gt;</dt>
+    <dd><p>The stored sbyte or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetSByteAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetSByteAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetSByteAsync_System_String_System_SByte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetSByteAsync(System.String,System.SByte)">
+  GetSByteAsync(string, sbyte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a sbyte.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetIntAsync_System_String_">GetIntAsync(string)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;sbyte&gt; GetSByteAsync(string aKey, sbyte aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the sbyte for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd><p>A default value to use when there is no sbyte stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a>&gt;</dt>
+    <dd><p>The stored sbyte or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetShortAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetShortAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetShortAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetShortAsync(System.String)">
+  GetShortAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a short.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;short&gt; GetShortAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the short for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>&gt;</dt>
+    <dd><p>The stored short or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetShortAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetShortAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetShortAsync_System_String_System_Int16_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetShortAsync(System.String,System.Int16)">
+  GetShortAsync(string, short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a short.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetIntAsync_System_String_">GetIntAsync(string)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;short&gt; GetShortAsync(string aKey, short aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the short for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>A default value to use when there is no short stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>&gt;</dt>
+    <dd><p>The stored short or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStorableObjectAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetStorableObjectAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStorableObjectAsync_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetStorableObjectAsync(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)">
+  GetStorableObjectAsync(string, IUFStorableObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L891"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the data by loading it into an object that implements the
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a> interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IUFStorableObject&gt; GetStorableObjectAsync(string aKey, IUFStorableObject anObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to get data for</p>
+</dd>
+    <dt><code>anObject</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a></dt>
+    <dd><p>Object to load from the storage</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a>&gt;</dt>
+    <dd><p>Value of <code>anObject</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetStringAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetStringAsync(System.String)">
+  GetStringAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetStringAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the string for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The stored string or &quot;&quot; if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetStringAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_System_String_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetStringAsync(System.String,System.String)">
+  GetStringAsync(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;string&gt; GetStringAsync(string aKey, string aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the string for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A default value to use when there is no string stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The stored string or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetUIntAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetUIntAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetUIntAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetUIntAsync(System.String)">
+  GetUIntAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an unsigned integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;uint&gt; GetUIntAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the unsigned integer for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd><p>The stored unsigned integer or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetUIntAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetUIntAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetUIntAsync_System_String_System_UInt32_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetUIntAsync(System.String,System.UInt32)">
+  GetUIntAsync(string, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an unsigned integer.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_System_String_">GetStringAsync(string)</a> 
+and uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32.parse#system-uint32-parse(system-string)">Parse(string)</a> to convert it back to an
+unsigned integer.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;uint&gt; GetUIntAsync(string aKey, uint aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the unsigned integer for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>A default value to use when there is no unsigned integer stored for
+the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd><p>The stored unsigned integer or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetULongAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetULongAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetULongAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetULongAsync(System.String)">
+  GetULongAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a ulong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ulong&gt; GetULongAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the ulong for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>&gt;</dt>
+    <dd><p>The stored ulong or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetULongAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetULongAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetULongAsync_System_String_System_UInt64_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetULongAsync(System.String,System.UInt64)">
+  GetULongAsync(string, ulong)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L491"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a ulong.</p>
+<p>
+The default implementation uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetStringAsync_System_String_">GetStringAsync(string)</a> 
+and uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64.parse#system-uint64-parse(system-string)">Parse(string)</a> to convert it back to 
+a ulong.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ulong&gt; GetULongAsync(string aKey, ulong aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the ulong for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>A default value to use when there is no ulong stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>&gt;</dt>
+    <dd><p>The stored ulong or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetUShortAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetUShortAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetUShortAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetUShortAsync(System.String)">
+  GetUShortAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a ushort.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ushort&gt; GetUShortAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the ushort for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>&gt;</dt>
+    <dd><p>The stored ushort or 0 if none could be found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetUShortAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetUShortAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetUShortAsync_System_String_System_UInt16_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetUShortAsync(System.String,System.UInt16)">
+  GetUShortAsync(string, ushort)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a ushort.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_GetIntAsync_System_String_">GetIntAsync(string)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ushort&gt; GetUShortAsync(string aKey, ushort aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to get the ushort for.</p>
+</dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>A default value to use when there is no ushort stored for the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>&gt;</dt>
+    <dd><p>The stored ushort or aDefault.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_HasKeyAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.HasKeyAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_HasKeyAsync_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.HasKeyAsync(System.String)">
+  HasKeyAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L1185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if there is a locally stored data for a specific key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;bool&gt; HasKeyAsync(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A key to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>True if has there is data for the key; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SerializeObjectAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SerializeObjectAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SerializeObjectAsync_System_String_System_Object_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SerializeObjectAsync(System.String,System.Object)">
+  SerializeObjectAsync(string, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L1200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes an object. This method is called when the class can not
+store the object in any other way.</p>
+<p>
+The default implementation throws an exception. 
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task SerializeObjectAsync(string aKey, object anObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store serializes object with</p>
+</dd>
+    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Object to store</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetBoolAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetBoolAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetBoolAsync_System_String_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetBoolAsync(System.String,System.Boolean)">
+  SetBoolAsync(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L691"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a bool in the storage.</p>
+<p>
+The default implementation convert the value to a string and uses
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStringAsync_System_String_System_String_">SetStringAsync(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetBoolAsync(string aKey, bool aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetByteAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetByteAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetByteAsync_System_String_System_Byte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetByteAsync(System.String,System.Byte)">
+  SetByteAsync(string, byte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a byte in the storage.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetIntAsync_System_String_System_Int32_">SetIntAsync(string, int)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetByteAsync(string aKey, byte aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetBytesAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetBytesAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetBytesAsync_System_String_System_Byte___" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetBytesAsync(System.String,System.Byte[])">
+  SetBytesAsync(string, byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L802"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores an array of bytes to the storage.</p>
+<p>
+The default implementation converts the array to a base64 encoded
+string and uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStringAsync_System_String_System_String_">SetStringAsync(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetBytesAsync(string aKey, byte[] aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Array of byte to store</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetCharAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetCharAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetCharAsync_System_String_System_Char_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetCharAsync(System.String,System.Char)">
+  SetCharAsync(string, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L744"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a char in the storage.</p>
+<p>
+The default implementation just uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStringAsync_System_String_System_String_">SetStringAsync(string, string)</a> to 
+store the value.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetCharAsync(string aKey, char aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetDateTimeAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetDateTimeAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetDateTimeAsync_System_String_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetDateTimeAsync(System.String,System.DateTime)">
+  SetDateTimeAsync(string, DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L841"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a date and time using <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetLongAsync_System_String_System_Int64_">SetLongAsync(string, long)</a> and
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime.tobinary">ToBinary()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetDateTimeAsync(string aKey, DateTime aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Value to store</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetDoubleAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetDoubleAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetDoubleAsync_System_String_System_Double_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetDoubleAsync(System.String,System.Double)">
+  SetDoubleAsync(string, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L635"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a double number in the storage.</p>
+<p>
+The default implementation convert the value to a string and uses
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStringAsync_System_String_System_String_">SetStringAsync(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetDoubleAsync(string aKey, double aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetFloatAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetFloatAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetFloatAsync_System_String_System_Single_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetFloatAsync(System.String,System.Single)">
+  SetFloatAsync(string, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a floating number in the storage.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetDoubleAsync_System_String_System_Double_">SetDoubleAsync(string, double)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetFloatAsync(string aKey, float aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetGuidAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetGuidAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetGuidAsync_System_String_System_Guid_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetGuidAsync(System.String,System.Guid)">
+  SetGuidAsync(string, Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L875"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a guid using <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetBytesAsync_System_String_System_Byte___">SetBytesAsync(string, byte[])</a> and
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid.tobytearray">ToByteArray()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetGuidAsync(string aKey, Guid aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>Value to store</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetIntAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetIntAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetIntAsync_System_String_System_Int32_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetIntAsync(System.String,System.Int32)">
+  SetIntAsync(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores an integer in the storage.</p>
+<p>
+The default implementation convert the value to a string and uses
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStringAsync_System_String_System_String_">SetStringAsync(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetIntAsync(string aKey, int aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetLongAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetLongAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetLongAsync_System_String_System_Int64_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetLongAsync(System.String,System.Int64)">
+  SetLongAsync(string, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a long in the storage.</p>
+<p>
+The default implementation convert the value to a string and uses
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStringAsync_System_String_System_String_">SetStringAsync(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetLongAsync(string aKey, long aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetObjectAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetObjectAsync_System_String_System_Object_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync(System.String,System.Object)">
+  SetObjectAsync(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L1152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores an object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetObjectAsync(string aKey, object? anObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store object for</p>
+</dd>
+    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Object to store</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetObjectAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetObjectAsync_System_String_System_Object_System_Type_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync(System.String,System.Object,System.Type)">
+  SetObjectAsync(string, object?, Type?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L1075"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores an object to the storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetObjectAsync(string aKey, object? anObject, Type? aType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetObjectAsync_System_String_System_Object_System_Type__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The default implementation checks for certain type situations.</p>
+<p>
+If the object is null, the method will remove the data stored with
+the key value by calling <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_DeleteKeyAsync_System_String_">DeleteKeyAsync(string)</a>
+</p>
+<p>
+If the object is a primitive type, its value gets stored with one
+of the SetXXXX methods.
+</p>
+<p>
+If the object implements the <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a> interface
+the method uses <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStorableObjectAsync_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_">SetStorableObjectAsync(string, IUFStorableObject)</a>.
+</p>
+<p>
+If the object is a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> the data is stored via
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetDateTimeAsync_System_String_System_DateTime_">SetDateTimeAsync(string, DateTime)</a>.
+</p>
+<p>
+If the object is a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> the data is stored via
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetGuidAsync_System_String_System_Guid_">SetGuidAsync(string, Guid)</a>.
+</p>
+<p>
+If the object is a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> the method uses 
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStringAsync_System_String_System_String_">SetStringAsync(string, string)</a> to store its value.
+</p>
+<p>
+If the object is a nullable value, the method will remove any value
+stored with aKey if the object is null else it will call itself
+recursively using the underlying type.
+</p>
+<p>
+If none of the above fits, the method will call 
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SerializeObjectAsync_System_String_System_Object_">SerializeObjectAsync(string, object)</a>.
+</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetSByteAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetSByteAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetSByteAsync_System_String_System_SByte_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetSByteAsync(System.String,System.SByte)">
+  SetSByteAsync(string, sbyte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a sbyte in the storage.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetIntAsync_System_String_System_Int32_">SetIntAsync(string, int)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetSByteAsync(string aKey, sbyte aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetShortAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetShortAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetShortAsync_System_String_System_Int16_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetShortAsync(System.String,System.Int16)">
+  SetShortAsync(string, short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a short in the storage.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetIntAsync_System_String_System_Int32_">SetIntAsync(string, int)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetShortAsync(string aKey, short aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStorableObjectAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetStorableObjectAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStorableObjectAsync_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetStorableObjectAsync(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)">
+  SetStorableObjectAsync(string, IUFStorableObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L915"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the data by saving it from an object that implements the
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a> interface.</p>
+<p>
+The default implementation uses a <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFDictionaryStorage.html">UFDictionaryStorage</a>
+to store the data as string.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetStorableObjectAsync(string aKey, IUFStorableObject anObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to set data for</p>
+</dd>
+    <dt><code>anObject</code> <a class="xref" href="UltraForce.Library.NetStandard.Storage.IUFStorableObject.html">IUFStorableObject</a></dt>
+    <dd><p>Object to save to the storage</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStringAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetStringAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStringAsync_System_String_System_String_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetStringAsync(System.String,System.String)">
+  SetStringAsync(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a string in the storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task SetStringAsync(string aKey, string aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetUIntAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetUIntAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetUIntAsync_System_String_System_UInt32_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetUIntAsync(System.String,System.UInt32)">
+  SetUIntAsync(string, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores an unsigned integer in the storage.</p>
+<p>
+The default implementation convert the value to a string and uses
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStringAsync_System_String_System_String_">SetStringAsync(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetUIntAsync(string aKey, uint aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetULongAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetULongAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetULongAsync_System_String_System_UInt64_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetULongAsync(System.String,System.UInt64)">
+  SetULongAsync(string, ulong)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a ulong in the storage.</p>
+<p>
+The default implementation convert the value to a string and uses
+<a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetStringAsync_System_String_System_String_">SetStringAsync(string, string)</a> to store it.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetULongAsync(string aKey, ulong aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetUShortAsync_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetUShortAsync*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetUShortAsync_System_String_System_UInt16_" data-uid="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetUShortAsync(System.String,System.UInt16)">
+  SetUShortAsync(string, ushort)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores a ushort in the storage.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetIntAsync_System_String_System_Int32_">SetIntAsync(string, int)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SetUShortAsync(string aKey, ushort aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store value for.</p>
+</dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>A value to store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Storage/UFKeyedStorageAsync.cs/#L61" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
