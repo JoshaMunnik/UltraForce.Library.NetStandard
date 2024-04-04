@@ -1,0 +1,232 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Tools
+  commentId: N:UltraForce.Library.NetStandard.Tools
+  id: UltraForce.Library.NetStandard.Tools
+  children:
+  - UltraForce.Library.NetStandard.Tools.UFArrayTools
+  - UltraForce.Library.NetStandard.Tools.UFAssemblyTools
+  - UltraForce.Library.NetStandard.Tools.UFAttributeTools
+  - UltraForce.Library.NetStandard.Tools.UFDateTimeTools
+  - UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  - UltraForce.Library.NetStandard.Tools.UFEnumTools
+  - UltraForce.Library.NetStandard.Tools.UFExceptionTools
+  - UltraForce.Library.NetStandard.Tools.UFFileTools
+  - UltraForce.Library.NetStandard.Tools.UFHtmlTools
+  - UltraForce.Library.NetStandard.Tools.UFIOTools
+  - UltraForce.Library.NetStandard.Tools.UFJavaScriptTools
+  - UltraForce.Library.NetStandard.Tools.UFJsonTools
+  - UltraForce.Library.NetStandard.Tools.UFListTools
+  - UltraForce.Library.NetStandard.Tools.UFMath
+  - UltraForce.Library.NetStandard.Tools.UFObjectTools
+  - UltraForce.Library.NetStandard.Tools.UFProgressTools
+  - UltraForce.Library.NetStandard.Tools.UFRandomTools
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  - UltraForce.Library.NetStandard.Tools.UFStringTools
+  - UltraForce.Library.NetStandard.Tools.UFSystemTools
+  - UltraForce.Library.NetStandard.Tools.UFZipTools
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.NetStandard.Tools
+  nameWithType: UltraForce.Library.NetStandard.Tools
+  fullName: UltraForce.Library.NetStandard.Tools
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.NetStandard
+references:
+- uid: UltraForce.Library.NetStandard.Tools.UFArrayTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFArrayTools
+  href: UltraForce.Library.NetStandard.Tools.UFArrayTools.html
+  name: UFArrayTools
+  nameWithType: UFArrayTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFArrayTools
+- uid: UltraForce.Library.NetStandard.Tools.UFAssemblyTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFAssemblyTools
+  href: UltraForce.Library.NetStandard.Tools.UFAssemblyTools.html
+  name: UFAssemblyTools
+  nameWithType: UFAssemblyTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFAssemblyTools
+- uid: UltraForce.Library.NetStandard.Tools.UFAttributeTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFAttributeTools
+  href: UltraForce.Library.NetStandard.Tools.UFAttributeTools.html
+  name: UFAttributeTools
+  nameWithType: UFAttributeTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFAttributeTools
+- uid: UltraForce.Library.NetStandard.Tools.UFDateTimeTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFDateTimeTools
+  href: UltraForce.Library.NetStandard.Tools.UFDateTimeTools.html
+  name: UFDateTimeTools
+  nameWithType: UFDateTimeTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFDateTimeTools
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  href: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.html
+  name: UFDictionaryTools
+  nameWithType: UFDictionaryTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+- uid: UltraForce.Library.NetStandard.Tools.UFEnumTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFEnumTools
+  href: UltraForce.Library.NetStandard.Tools.UFEnumTools.html
+  name: UFEnumTools
+  nameWithType: UFEnumTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools
+- uid: UltraForce.Library.NetStandard.Tools.UFExceptionTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFExceptionTools
+  href: UltraForce.Library.NetStandard.Tools.UFExceptionTools.html
+  name: UFExceptionTools
+  nameWithType: UFExceptionTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFExceptionTools
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFFileTools
+  href: UltraForce.Library.NetStandard.Tools.UFFileTools.html
+  name: UFFileTools
+  nameWithType: UFFileTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools
+- uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFHtmlTools
+  href: UltraForce.Library.NetStandard.Tools.UFHtmlTools.html
+  name: UFHtmlTools
+  nameWithType: UFHtmlTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools
+- uid: UltraForce.Library.NetStandard.Tools.UFIOTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFIOTools
+  href: UltraForce.Library.NetStandard.Tools.UFIOTools.html
+  name: UFIOTools
+  nameWithType: UFIOTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFIOTools
+- uid: UltraForce.Library.NetStandard.Tools.UFJavaScriptTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFJavaScriptTools
+  href: UltraForce.Library.NetStandard.Tools.UFJavaScriptTools.html
+  name: UFJavaScriptTools
+  nameWithType: UFJavaScriptTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFJavaScriptTools
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFJsonTools
+  href: UltraForce.Library.NetStandard.Tools.UFJsonTools.html
+  name: UFJsonTools
+  nameWithType: UFJsonTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools
+- uid: UltraForce.Library.NetStandard.Tools.UFListTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFListTools
+  href: UltraForce.Library.NetStandard.Tools.UFListTools.html
+  name: UFListTools
+  nameWithType: UFListTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFListTools
+- uid: UltraForce.Library.NetStandard.Tools.UFMath
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFMath
+  href: UltraForce.Library.NetStandard.Tools.UFMath.html
+  name: UFMath
+  nameWithType: UFMath
+  fullName: UltraForce.Library.NetStandard.Tools.UFMath
+- uid: UltraForce.Library.NetStandard.Tools.UFObjectTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFObjectTools
+  href: UltraForce.Library.NetStandard.Tools.UFObjectTools.html
+  name: UFObjectTools
+  nameWithType: UFObjectTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFObjectTools
+- uid: UltraForce.Library.NetStandard.Tools.UFProgressTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFProgressTools
+  href: UltraForce.Library.NetStandard.Tools.UFProgressTools.html
+  name: UFProgressTools
+  nameWithType: UFProgressTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFProgressTools
+- uid: UltraForce.Library.NetStandard.Tools.UFRandomTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFRandomTools
+  href: UltraForce.Library.NetStandard.Tools.UFRandomTools.html
+  name: UFRandomTools
+  nameWithType: UFRandomTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFRandomTools
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html
+  name: UFReflectionTools
+  nameWithType: UFReflectionTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html
+  name: UFServiceCollectionTools
+  nameWithType: UFServiceCollectionTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  parent: UltraForce.Library.NetStandard.Tools
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html
+  name: UFServiceCollectionTools.UFServiceCollectionHelper
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+    name: UFServiceCollectionTools
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    name: UFServiceCollectionHelper
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.html
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+    name: UFServiceCollectionTools
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    name: UFServiceCollectionHelper
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.html
+- uid: UltraForce.Library.NetStandard.Tools.UFStringTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFStringTools
+  href: UltraForce.Library.NetStandard.Tools.UFStringTools.html
+  name: UFStringTools
+  nameWithType: UFStringTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFStringTools
+- uid: UltraForce.Library.NetStandard.Tools.UFSystemTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFSystemTools
+  href: UltraForce.Library.NetStandard.Tools.UFSystemTools.html
+  name: UFSystemTools
+  nameWithType: UFSystemTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFSystemTools
+- uid: UltraForce.Library.NetStandard.Tools.UFZipTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFZipTools
+  href: UltraForce.Library.NetStandard.Tools.UFZipTools.html
+  name: UFZipTools
+  nameWithType: UFZipTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFZipTools
+- uid: UltraForce.Library.NetStandard.Tools
+  commentId: N:UltraForce.Library.NetStandard.Tools
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Tools
+  nameWithType: UltraForce.Library.NetStandard.Tools
+  fullName: UltraForce.Library.NetStandard.Tools
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html

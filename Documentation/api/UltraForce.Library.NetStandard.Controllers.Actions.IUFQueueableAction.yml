@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  id: IUFQueueableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  children:
+  - UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.RunAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IUFQueueableAction
+  nameWithType: IUFQueueableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  type: Interface
+  source:
+    id: IUFQueueableAction
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\IUFQueueableAction.cs
+    startLine: 37
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: The interface an action must implement so it can be placed in a queue.
+  example: []
+  syntax:
+    content: public interface IUFQueueableAction
+    content.vb: Public Interface IUFQueueableAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.RunAsync(System.Threading.CancellationToken)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.RunAsync(System.Threading.CancellationToken)
+  id: RunAsync(System.Threading.CancellationToken)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  langs:
+  - csharp
+  - vb
+  name: RunAsync(CancellationToken)
+  nameWithType: IUFQueueableAction.RunAsync(CancellationToken)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.RunAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RunAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\IUFQueueableAction.cs
+    startLine: 49
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Runs the action.
+  remarks: If action is part of a queue and the method returns <code>false</code>, the queue will stop executing.
+  example: []
+  syntax:
+    content: Task<bool> RunAsync(CancellationToken aToken)
+    parameters:
+    - id: aToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>True</code> if everything ran ok or <code>false</code> otherwise
+    content.vb: Function RunAsync(aToken As CancellationToken) As Task(Of Boolean)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.RunAsync*
+references:
+- uid: UltraForce.Library.NetStandard.Controllers.Actions
+  commentId: N:UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Controllers.Actions
+  nameWithType: UltraForce.Library.NetStandard.Controllers.Actions
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers
+    name: Controllers
+    href: UltraForce.Library.NetStandard.Controllers.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions
+    name: Actions
+    href: UltraForce.Library.NetStandard.Controllers.Actions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers
+    name: Controllers
+    href: UltraForce.Library.NetStandard.Controllers.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions
+    name: Actions
+    href: UltraForce.Library.NetStandard.Controllers.Actions.html
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.RunAsync*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.RunAsync
+  href: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_IUFQueueableAction_RunAsync_System_Threading_CancellationToken_
+  name: RunAsync
+  nameWithType: IUFQueueableAction.RunAsync
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.RunAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraForce.Library.NetStandard", "UltraForce.Library.NetStandard\UltraForce.Library.NetStandard.csproj", "{E647530A-5B17-4C65-97A7-003CDF538383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documentation", "Documentation\Documentation.csproj", "{9C317297-7553-4D66-A9B3-36BEF9E5F19D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{E7EDD4A9-9125-4BA9-808D-701CC9AFF8C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E647530A-5B17-4C65-97A7-003CDF538383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E647530A-5B17-4C65-97A7-003CDF538383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E647530A-5B17-4C65-97A7-003CDF538383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E647530A-5B17-4C65-97A7-003CDF538383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C317297-7553-4D66-A9B3-36BEF9E5F19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C317297-7553-4D66-A9B3-36BEF9E5F19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C317297-7553-4D66-A9B3-36BEF9E5F19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C317297-7553-4D66-A9B3-36BEF9E5F19D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7EDD4A9-9125-4BA9-808D-701CC9AFF8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7EDD4A9-9125-4BA9-808D-701CC9AFF8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7EDD4A9-9125-4BA9-808D-701CC9AFF8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7EDD4A9-9125-4BA9-808D-701CC9AFF8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

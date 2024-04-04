@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Annotations
+  commentId: N:UltraForce.Library.NetStandard.Annotations
+  id: UltraForce.Library.NetStandard.Annotations
+  children:
+  - UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute
+  - UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
+  - UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute
+  - UltraForce.Library.NetStandard.Annotations.UFIONameAttribute
+  - UltraForce.Library.NetStandard.Annotations.UFIgnoreAttribute
+  - UltraForce.Library.NetStandard.Annotations.UFInjectAttribute
+  - UltraForce.Library.NetStandard.Annotations.UFLogAttribute
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.NetStandard.Annotations
+  nameWithType: UltraForce.Library.NetStandard.Annotations
+  fullName: UltraForce.Library.NetStandard.Annotations
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.NetStandard
+references:
+- uid: UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute
+  commentId: T:UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute
+  href: UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute.html
+  name: UFCompareIgnoreAttribute
+  nameWithType: UFCompareIgnoreAttribute
+  fullName: UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute
+- uid: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
+  commentId: T:UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
+  href: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.html
+  name: UFDescriptionAttribute
+  nameWithType: UFDescriptionAttribute
+  fullName: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
+- uid: UltraForce.Library.NetStandard.Annotations.UFIgnoreAttribute
+  commentId: T:UltraForce.Library.NetStandard.Annotations.UFIgnoreAttribute
+  href: UltraForce.Library.NetStandard.Annotations.UFIgnoreAttribute.html
+  name: UFIgnoreAttribute
+  nameWithType: UFIgnoreAttribute
+  fullName: UltraForce.Library.NetStandard.Annotations.UFIgnoreAttribute
+- uid: UltraForce.Library.NetStandard.Annotations.UFInjectAttribute
+  commentId: T:UltraForce.Library.NetStandard.Annotations.UFInjectAttribute
+  href: UltraForce.Library.NetStandard.Annotations.UFInjectAttribute.html
+  name: UFInjectAttribute
+  nameWithType: UFInjectAttribute
+  fullName: UltraForce.Library.NetStandard.Annotations.UFInjectAttribute
+- uid: UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute
+  commentId: T:UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute
+  href: UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute.html
+  name: UFIOIgnoreAttribute
+  nameWithType: UFIOIgnoreAttribute
+  fullName: UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute
+- uid: UltraForce.Library.NetStandard.Annotations.UFIONameAttribute
+  commentId: T:UltraForce.Library.NetStandard.Annotations.UFIONameAttribute
+  href: UltraForce.Library.NetStandard.Annotations.UFIONameAttribute.html
+  name: UFIONameAttribute
+  nameWithType: UFIONameAttribute
+  fullName: UltraForce.Library.NetStandard.Annotations.UFIONameAttribute
+- uid: UltraForce.Library.NetStandard.Annotations.UFLogAttribute
+  commentId: T:UltraForce.Library.NetStandard.Annotations.UFLogAttribute
+  href: UltraForce.Library.NetStandard.Annotations.UFLogAttribute.html
+  name: UFLogAttribute
+  nameWithType: UFLogAttribute
+  fullName: UltraForce.Library.NetStandard.Annotations.UFLogAttribute

@@ -1,0 +1,532 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager
+  commentId: T:UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager
+  id: UFWeakReferencedNotifyCollectionChangedManager
+  parent: UltraForce.Library.NetStandard.Events
+  children:
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.#ctor
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Add(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Invoke(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Remove(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  langs:
+  - csharp
+  - vb
+  name: UFWeakReferencedNotifyCollectionChangedManager
+  nameWithType: UFWeakReferencedNotifyCollectionChangedManager
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager
+  type: Class
+  source:
+    id: UFWeakReferencedNotifyCollectionChangedManager
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Events\UFWeakReferencedNotifyCollectionChangedManager.cs
+    startLine: 42
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager" data-throw-if-not-resolved="false"></xref> stores event
+
+    handlers as methods and target. It uses a weak reference for
+
+    the target and only invokes the handler only if the target is still
+
+    available.
+  example: []
+  syntax:
+    content: public class UFWeakReferencedNotifyCollectionChangedManager
+    content.vb: Public Class UFWeakReferencedNotifyCollectionChangedManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.#ctor
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.#ctor
+  id: '#ctor'
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager
+  langs:
+  - csharp
+  - vb
+  name: UFWeakReferencedNotifyCollectionChangedManager()
+  nameWithType: UFWeakReferencedNotifyCollectionChangedManager.UFWeakReferencedNotifyCollectionChangedManager()
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.UFWeakReferencedNotifyCollectionChangedManager()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Events\UFWeakReferencedNotifyCollectionChangedManager.cs
+    startLine: 60
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Constructs an instance of
+
+    <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public UFWeakReferencedNotifyCollectionChangedManager()
+    content.vb: Public Sub New()
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.#ctor*
+  nameWithType.vb: UFWeakReferencedNotifyCollectionChangedManager.New()
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.New()
+  name.vb: New()
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Add(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Add(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  id: Add(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager
+  langs:
+  - csharp
+  - vb
+  name: Add(NotifyCollectionChangedEventHandler)
+  nameWithType: UFWeakReferencedNotifyCollectionChangedManager.Add(NotifyCollectionChangedEventHandler)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Add(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  type: Method
+  source:
+    id: Add
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Events\UFWeakReferencedNotifyCollectionChangedManager.cs
+    startLine: 74
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Adds a handler to the managed list. If there is already a handler
+
+    with the same method and target stored, nothing happens.
+  example: []
+  syntax:
+    content: public void Add(NotifyCollectionChangedEventHandler aHandler)
+    parameters:
+    - id: aHandler
+      type: System.Collections.Specialized.NotifyCollectionChangedEventHandler
+      description: Handler to add
+    content.vb: Public Sub Add(aHandler As NotifyCollectionChangedEventHandler)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Add*
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Remove(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Remove(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  id: Remove(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager
+  langs:
+  - csharp
+  - vb
+  name: Remove(NotifyCollectionChangedEventHandler)
+  nameWithType: UFWeakReferencedNotifyCollectionChangedManager.Remove(NotifyCollectionChangedEventHandler)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Remove(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  type: Method
+  source:
+    id: Remove
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Events\UFWeakReferencedNotifyCollectionChangedManager.cs
+    startLine: 91
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: Removes a handler from the managed list.
+  example: []
+  syntax:
+    content: public void Remove(NotifyCollectionChangedEventHandler aHandler)
+    parameters:
+    - id: aHandler
+      type: System.Collections.Specialized.NotifyCollectionChangedEventHandler
+      description: Handler to remove
+    content.vb: Public Sub Remove(aHandler As NotifyCollectionChangedEventHandler)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Remove*
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Invoke(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Invoke(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  id: Invoke(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager
+  langs:
+  - csharp
+  - vb
+  name: Invoke(object, NotifyCollectionChangedEventArgs)
+  nameWithType: UFWeakReferencedNotifyCollectionChangedManager.Invoke(object, NotifyCollectionChangedEventArgs)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Invoke(object, System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  type: Method
+  source:
+    id: Invoke
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Events\UFWeakReferencedNotifyCollectionChangedManager.cs
+    startLine: 110
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: Invokes the handlers for the targets that are still available.
+  example: []
+  syntax:
+    content: public void Invoke(object aSender, NotifyCollectionChangedEventArgs anArguments)
+    parameters:
+    - id: aSender
+      type: System.Object
+      description: Sender to use
+    - id: anArguments
+      type: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+      description: Arguments to use
+    content.vb: Public Sub Invoke(aSender As Object, anArguments As NotifyCollectionChangedEventArgs)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Invoke*
+  nameWithType.vb: UFWeakReferencedNotifyCollectionChangedManager.Invoke(Object, NotifyCollectionChangedEventArgs)
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Invoke(Object, System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  name.vb: Invoke(Object, NotifyCollectionChangedEventArgs)
+references:
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager
+  commentId: T:UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.html
+  name: UFWeakReferencedNotifyCollectionChangedManager
+  nameWithType: UFWeakReferencedNotifyCollectionChangedManager
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager
+- uid: UltraForce.Library.NetStandard.Events
+  commentId: N:UltraForce.Library.NetStandard.Events
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Events
+  nameWithType: UltraForce.Library.NetStandard.Events
+  fullName: UltraForce.Library.NetStandard.Events
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Events
+    name: Events
+    href: UltraForce.Library.NetStandard.Events.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Events
+    name: Events
+    href: UltraForce.Library.NetStandard.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.#ctor*
+  commentId: Overload:UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.#ctor
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedNotifyCollectionChangedManager__ctor
+  name: UFWeakReferencedNotifyCollectionChangedManager
+  nameWithType: UFWeakReferencedNotifyCollectionChangedManager.UFWeakReferencedNotifyCollectionChangedManager
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.UFWeakReferencedNotifyCollectionChangedManager
+  nameWithType.vb: UFWeakReferencedNotifyCollectionChangedManager.New
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.New
+  name.vb: New
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Add*
+  commentId: Overload:UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Add
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedNotifyCollectionChangedManager_Add_System_Collections_Specialized_NotifyCollectionChangedEventHandler_
+  name: Add
+  nameWithType: UFWeakReferencedNotifyCollectionChangedManager.Add
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Add
+- uid: System.Collections.Specialized.NotifyCollectionChangedEventHandler
+  commentId: T:System.Collections.Specialized.NotifyCollectionChangedEventHandler
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventhandler
+  name: NotifyCollectionChangedEventHandler
+  nameWithType: NotifyCollectionChangedEventHandler
+  fullName: System.Collections.Specialized.NotifyCollectionChangedEventHandler
+- uid: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Remove*
+  commentId: Overload:UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Remove
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedNotifyCollectionChangedManager_Remove_System_Collections_Specialized_NotifyCollectionChangedEventHandler_
+  name: Remove
+  nameWithType: UFWeakReferencedNotifyCollectionChangedManager.Remove
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Remove
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Invoke*
+  commentId: Overload:UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Invoke
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedNotifyCollectionChangedManager_Invoke_System_Object_System_Collections_Specialized_NotifyCollectionChangedEventArgs_
+  name: Invoke
+  nameWithType: UFWeakReferencedNotifyCollectionChangedManager.Invoke
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.Invoke
+- uid: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+  commentId: T:System.Collections.Specialized.NotifyCollectionChangedEventArgs
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs
+  name: NotifyCollectionChangedEventArgs
+  nameWithType: NotifyCollectionChangedEventArgs
+  fullName: System.Collections.Specialized.NotifyCollectionChangedEventArgs

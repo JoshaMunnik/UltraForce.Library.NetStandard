@@ -1,0 +1,548 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Tools.UFIOTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFIOTools
+  id: UFIOTools
+  parent: UltraForce.Library.NetStandard.Tools
+  children:
+  - UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray(System.IO.BinaryReader)
+  - UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray(System.IO.BinaryWriter,System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: UFIOTools
+  nameWithType: UFIOTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFIOTools
+  type: Class
+  source:
+    id: UFIOTools
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFIOTools.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: IO support methods.
+  example: []
+  syntax:
+    content: public static class UFIOTools
+    content.vb: Public Module UFIOTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray(System.IO.BinaryReader)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray(System.IO.BinaryReader)
+  id: ReadByteArray(System.IO.BinaryReader)
+  parent: UltraForce.Library.NetStandard.Tools.UFIOTools
+  langs:
+  - csharp
+  - vb
+  name: ReadByteArray(BinaryReader)
+  nameWithType: UFIOTools.ReadByteArray(BinaryReader)
+  fullName: UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray(System.IO.BinaryReader)
+  type: Method
+  source:
+    id: ReadByteArray
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFIOTools.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Gets a byte array from a reader, that was previously written to it
+
+    with <xref href="UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray(System.IO.BinaryWriter%2cSystem.Byte%5b%5d)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static byte[]? ReadByteArray(BinaryReader aReader)
+    parameters:
+    - id: aReader
+      type: System.IO.BinaryReader
+      description: Reader to get data from.
+    return:
+      type: System.Byte[]
+      description: Byte array or null
+    content.vb: Public Shared Function ReadByteArray(aReader As BinaryReader) As Byte()
+  overload: UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray*
+- uid: UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray(System.IO.BinaryWriter,System.Byte[])
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray(System.IO.BinaryWriter,System.Byte[])
+  id: WriteByteArray(System.IO.BinaryWriter,System.Byte[])
+  parent: UltraForce.Library.NetStandard.Tools.UFIOTools
+  langs:
+  - csharp
+  - vb
+  name: WriteByteArray(BinaryWriter, byte[]?)
+  nameWithType: UFIOTools.WriteByteArray(BinaryWriter, byte[]?)
+  fullName: UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray(System.IO.BinaryWriter, byte[]?)
+  type: Method
+  source:
+    id: WriteByteArray
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFIOTools.cs
+    startLine: 62
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Writes a byte array to a writer. Supports also null values.
+
+    <p>
+
+    The method first writes the length and then the bytes. If aValue is
+
+    <code>null</code> the method will write -1 as length.
+
+    </p>
+
+    <p>
+
+    Use <xref href="UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray(System.IO.BinaryReader)" data-throw-if-not-resolved="false"></xref> to read the byte array back
+
+    </p>
+  example: []
+  syntax:
+    content: public static void WriteByteArray(BinaryWriter aWriter, byte[]? aValue)
+    parameters:
+    - id: aWriter
+      type: System.IO.BinaryWriter
+      description: Writer to write data to
+    - id: aValue
+      type: System.Byte[]
+      description: Byte array or null
+    content.vb: Public Shared Sub WriteByteArray(aWriter As BinaryWriter, aValue As Byte())
+  overload: UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray*
+  nameWithType.vb: UFIOTools.WriteByteArray(BinaryWriter, Byte())
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray(System.IO.BinaryWriter, Byte())
+  name.vb: WriteByteArray(BinaryWriter, Byte())
+references:
+- uid: UltraForce.Library.NetStandard.Tools
+  commentId: N:UltraForce.Library.NetStandard.Tools
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Tools
+  nameWithType: UltraForce.Library.NetStandard.Tools
+  fullName: UltraForce.Library.NetStandard.Tools
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray(System.IO.BinaryWriter,System.Byte[])
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray(System.IO.BinaryWriter,System.Byte[])
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Tools.UFIOTools.html#UltraForce_Library_NetStandard_Tools_UFIOTools_WriteByteArray_System_IO_BinaryWriter_System_Byte___
+  name: WriteByteArray(BinaryWriter, byte[])
+  nameWithType: UFIOTools.WriteByteArray(BinaryWriter, byte[])
+  fullName: UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray(System.IO.BinaryWriter, byte[])
+  nameWithType.vb: UFIOTools.WriteByteArray(BinaryWriter, Byte())
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray(System.IO.BinaryWriter, Byte())
+  name.vb: WriteByteArray(BinaryWriter, Byte())
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray(System.IO.BinaryWriter,System.Byte[])
+    name: WriteByteArray
+    href: UltraForce.Library.NetStandard.Tools.UFIOTools.html#UltraForce_Library_NetStandard_Tools_UFIOTools_WriteByteArray_System_IO_BinaryWriter_System_Byte___
+  - name: (
+  - uid: System.IO.BinaryWriter
+    name: BinaryWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.binarywriter
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray(System.IO.BinaryWriter,System.Byte[])
+    name: WriteByteArray
+    href: UltraForce.Library.NetStandard.Tools.UFIOTools.html#UltraForce_Library_NetStandard_Tools_UFIOTools_WriteByteArray_System_IO_BinaryWriter_System_Byte___
+  - name: (
+  - uid: System.IO.BinaryWriter
+    name: BinaryWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.binarywriter
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray
+  href: UltraForce.Library.NetStandard.Tools.UFIOTools.html#UltraForce_Library_NetStandard_Tools_UFIOTools_ReadByteArray_System_IO_BinaryReader_
+  name: ReadByteArray
+  nameWithType: UFIOTools.ReadByteArray
+  fullName: UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray
+- uid: System.IO.BinaryReader
+  commentId: T:System.IO.BinaryReader
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.binaryreader
+  name: BinaryReader
+  nameWithType: BinaryReader
+  fullName: System.IO.BinaryReader
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray(System.IO.BinaryReader)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray(System.IO.BinaryReader)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Tools.UFIOTools.html#UltraForce_Library_NetStandard_Tools_UFIOTools_ReadByteArray_System_IO_BinaryReader_
+  name: ReadByteArray(BinaryReader)
+  nameWithType: UFIOTools.ReadByteArray(BinaryReader)
+  fullName: UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray(System.IO.BinaryReader)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray(System.IO.BinaryReader)
+    name: ReadByteArray
+    href: UltraForce.Library.NetStandard.Tools.UFIOTools.html#UltraForce_Library_NetStandard_Tools_UFIOTools_ReadByteArray_System_IO_BinaryReader_
+  - name: (
+  - uid: System.IO.BinaryReader
+    name: BinaryReader
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.binaryreader
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Tools.UFIOTools.ReadByteArray(System.IO.BinaryReader)
+    name: ReadByteArray
+    href: UltraForce.Library.NetStandard.Tools.UFIOTools.html#UltraForce_Library_NetStandard_Tools_UFIOTools_ReadByteArray_System_IO_BinaryReader_
+  - name: (
+  - uid: System.IO.BinaryReader
+    name: BinaryReader
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.binaryreader
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray
+  href: UltraForce.Library.NetStandard.Tools.UFIOTools.html#UltraForce_Library_NetStandard_Tools_UFIOTools_WriteByteArray_System_IO_BinaryWriter_System_Byte___
+  name: WriteByteArray
+  nameWithType: UFIOTools.WriteByteArray
+  fullName: UltraForce.Library.NetStandard.Tools.UFIOTools.WriteByteArray
+- uid: System.IO.BinaryWriter
+  commentId: T:System.IO.BinaryWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.binarywriter
+  name: BinaryWriter
+  nameWithType: BinaryWriter
+  fullName: System.IO.BinaryWriter

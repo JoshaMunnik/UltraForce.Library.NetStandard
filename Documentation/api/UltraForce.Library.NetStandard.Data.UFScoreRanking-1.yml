@@ -1,0 +1,697 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1
+  commentId: T:UltraForce.Library.NetStandard.Data.UFScoreRanking`1
+  id: UFScoreRanking`1
+  parent: UltraForce.Library.NetStandard.Data
+  children:
+  - UltraForce.Library.NetStandard.Data.UFScoreRanking`1.#ctor
+  - UltraForce.Library.NetStandard.Data.UFScoreRanking`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  - UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScore(`0)
+  - UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScores(System.Collections.Generic.IEnumerable{`0})
+  - UltraForce.Library.NetStandard.Data.UFScoreRanking`1.GetRanking(`0)
+  langs:
+  - csharp
+  - vb
+  name: UFScoreRanking<TScore>
+  nameWithType: UFScoreRanking<TScore>
+  fullName: UltraForce.Library.NetStandard.Data.UFScoreRanking<TScore>
+  type: Class
+  source:
+    id: UFScoreRanking
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Data\UFScoreRanking.cs
+    startLine: 55
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: >-
+    A class to help with the ranking of scores. It handles the case where there are multiple
+
+    entries with the same score.
+
+    <p>
+
+    The scores are ranked from highest to lowest. The ranking starts at 1.
+
+    </p>
+
+    <example>
+
+    <pre><code class="lang-csharp">// using c# v12 
+
+    UFScoreRanking&lt;int&gt; ranking = new([300, 200, 100, 200]);
+
+    // gives 1
+
+    int rank = ranking.GetRanking(100);
+
+    // gives 2
+
+    int rank = ranking.GetRanking(200);
+
+    // gives 4
+
+    int rank = ranking.GetRanking(300);</code></pre>
+
+    </example>
+  example: []
+  syntax:
+    content: 'public class UFScoreRanking<TScore> where TScore : IComparable<TScore>'
+    typeParameters:
+    - id: TScore
+      description: A type that supports <xref href="System.IComparable" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Class UFScoreRanking(Of TScore As IComparable(Of TScore))
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: UFScoreRanking(Of TScore)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFScoreRanking(Of TScore)
+  name.vb: UFScoreRanking(Of TScore)
+- uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.#ctor
+  commentId: M:UltraForce.Library.NetStandard.Data.UFScoreRanking`1.#ctor
+  id: '#ctor'
+  parent: UltraForce.Library.NetStandard.Data.UFScoreRanking`1
+  langs:
+  - csharp
+  - vb
+  name: UFScoreRanking()
+  nameWithType: UFScoreRanking<TScore>.UFScoreRanking()
+  fullName: UltraForce.Library.NetStandard.Data.UFScoreRanking<TScore>.UFScoreRanking()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Data\UFScoreRanking.cs
+    startLine: 101
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Constructs an empty instance.
+  example: []
+  syntax:
+    content: public UFScoreRanking()
+    content.vb: Public Sub New()
+  overload: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.#ctor*
+  nameWithType.vb: UFScoreRanking(Of TScore).New()
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFScoreRanking(Of TScore).New()
+  name.vb: New()
+- uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:UltraForce.Library.NetStandard.Data.UFScoreRanking`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerable{`0})'
+  parent: UltraForce.Library.NetStandard.Data.UFScoreRanking`1
+  langs:
+  - csharp
+  - vb
+  name: UFScoreRanking(IEnumerable<TScore>)
+  nameWithType: UFScoreRanking<TScore>.UFScoreRanking(IEnumerable<TScore>)
+  fullName: UltraForce.Library.NetStandard.Data.UFScoreRanking<TScore>.UFScoreRanking(System.Collections.Generic.IEnumerable<TScore>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Data\UFScoreRanking.cs
+    startLine: 109
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Creates an empty instance and then calls <xref href="UltraForce.Library.NetStandard.Data.UFScoreRanking%601.AddScores(System.Collections.Generic.IEnumerable%7b%600%7d)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public UFScoreRanking(IEnumerable<TScore> aScores)
+    parameters:
+    - id: aScores
+      type: System.Collections.Generic.IEnumerable{{TScore}}
+      description: Scores to add
+    content.vb: Public Sub New(aScores As IEnumerable(Of TScore))
+  overload: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.#ctor*
+  nameWithType.vb: UFScoreRanking(Of TScore).New(IEnumerable(Of TScore))
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFScoreRanking(Of TScore).New(System.Collections.Generic.IEnumerable(Of TScore))
+  name.vb: New(IEnumerable(Of TScore))
+- uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScore(`0)
+  commentId: M:UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScore(`0)
+  id: AddScore(`0)
+  parent: UltraForce.Library.NetStandard.Data.UFScoreRanking`1
+  langs:
+  - csharp
+  - vb
+  name: AddScore(TScore)
+  nameWithType: UFScoreRanking<TScore>.AddScore(TScore)
+  fullName: UltraForce.Library.NetStandard.Data.UFScoreRanking<TScore>.AddScore(TScore)
+  type: Method
+  source:
+    id: AddScore
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Data\UFScoreRanking.cs
+    startLine: 122
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Adds a new score, this will invalidate the ranking cache.
+  example: []
+  syntax:
+    content: public void AddScore(TScore aScore)
+    parameters:
+    - id: aScore
+      type: '{TScore}'
+      description: ''
+    content.vb: Public Sub AddScore(aScore As TScore)
+  overload: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScore*
+  nameWithType.vb: UFScoreRanking(Of TScore).AddScore(TScore)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFScoreRanking(Of TScore).AddScore(TScore)
+- uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScores(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScores(System.Collections.Generic.IEnumerable{`0})
+  id: AddScores(System.Collections.Generic.IEnumerable{`0})
+  parent: UltraForce.Library.NetStandard.Data.UFScoreRanking`1
+  langs:
+  - csharp
+  - vb
+  name: AddScores(IEnumerable<TScore>)
+  nameWithType: UFScoreRanking<TScore>.AddScores(IEnumerable<TScore>)
+  fullName: UltraForce.Library.NetStandard.Data.UFScoreRanking<TScore>.AddScores(System.Collections.Generic.IEnumerable<TScore>)
+  type: Method
+  source:
+    id: AddScores
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Data\UFScoreRanking.cs
+    startLine: 145
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Adds multiple score entries.
+  example: []
+  syntax:
+    content: public void AddScores(IEnumerable<TScore> aScores)
+    parameters:
+    - id: aScores
+      type: System.Collections.Generic.IEnumerable{{TScore}}
+      description: Scores to add
+    content.vb: Public Sub AddScores(aScores As IEnumerable(Of TScore))
+  overload: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScores*
+  nameWithType.vb: UFScoreRanking(Of TScore).AddScores(IEnumerable(Of TScore))
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFScoreRanking(Of TScore).AddScores(System.Collections.Generic.IEnumerable(Of TScore))
+  name.vb: AddScores(IEnumerable(Of TScore))
+- uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.GetRanking(`0)
+  commentId: M:UltraForce.Library.NetStandard.Data.UFScoreRanking`1.GetRanking(`0)
+  id: GetRanking(`0)
+  parent: UltraForce.Library.NetStandard.Data.UFScoreRanking`1
+  langs:
+  - csharp
+  - vb
+  name: GetRanking(TScore)
+  nameWithType: UFScoreRanking<TScore>.GetRanking(TScore)
+  fullName: UltraForce.Library.NetStandard.Data.UFScoreRanking<TScore>.GetRanking(TScore)
+  type: Method
+  source:
+    id: GetRanking
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Data\UFScoreRanking.cs
+    startLine: 158
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Gets a ranking for a certain score.
+  example: []
+  syntax:
+    content: public int GetRanking(TScore aScore)
+    parameters:
+    - id: aScore
+      type: '{TScore}'
+      description: Score to get the ranking for
+    return:
+      type: System.Int32
+      description: Ranking or -1 if the score was never added
+    content.vb: Public Function GetRanking(aScore As TScore) As Integer
+  overload: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.GetRanking*
+  nameWithType.vb: UFScoreRanking(Of TScore).GetRanking(TScore)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFScoreRanking(Of TScore).GetRanking(TScore)
+references:
+- uid: System.IComparable
+  commentId: T:System.IComparable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable
+  name: IComparable
+  nameWithType: IComparable
+  fullName: System.IComparable
+- uid: UltraForce.Library.NetStandard.Data
+  commentId: N:UltraForce.Library.NetStandard.Data
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Data
+  nameWithType: UltraForce.Library.NetStandard.Data
+  fullName: UltraForce.Library.NetStandard.Data
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Data
+    name: Data
+    href: UltraForce.Library.NetStandard.Data.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Data
+    name: Data
+    href: UltraForce.Library.NetStandard.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.#ctor*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFScoreRanking`1.#ctor
+  href: UltraForce.Library.NetStandard.Data.UFScoreRanking-1.html#UltraForce_Library_NetStandard_Data_UFScoreRanking_1__ctor
+  name: UFScoreRanking
+  nameWithType: UFScoreRanking<TScore>.UFScoreRanking
+  fullName: UltraForce.Library.NetStandard.Data.UFScoreRanking<TScore>.UFScoreRanking
+  nameWithType.vb: UFScoreRanking(Of TScore).New
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFScoreRanking(Of TScore).New
+  name.vb: New
+- uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScores(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScores(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Data.UFScoreRanking-1.html#UltraForce_Library_NetStandard_Data_UFScoreRanking_1_AddScores_System_Collections_Generic_IEnumerable__0__
+  name: AddScores(IEnumerable<TScore>)
+  nameWithType: UFScoreRanking<TScore>.AddScores(IEnumerable<TScore>)
+  fullName: UltraForce.Library.NetStandard.Data.UFScoreRanking<TScore>.AddScores(System.Collections.Generic.IEnumerable<TScore>)
+  nameWithType.vb: UFScoreRanking(Of TScore).AddScores(IEnumerable(Of TScore))
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFScoreRanking(Of TScore).AddScores(System.Collections.Generic.IEnumerable(Of TScore))
+  name.vb: AddScores(IEnumerable(Of TScore))
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScores(System.Collections.Generic.IEnumerable{`0})
+    name: AddScores
+    href: UltraForce.Library.NetStandard.Data.UFScoreRanking-1.html#UltraForce_Library_NetStandard_Data_UFScoreRanking_1_AddScores_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TScore
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScores(System.Collections.Generic.IEnumerable{`0})
+    name: AddScores
+    href: UltraForce.Library.NetStandard.Data.UFScoreRanking-1.html#UltraForce_Library_NetStandard_Data_UFScoreRanking_1_AddScores_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TScore
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{{TScore}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TScore>
+  nameWithType: IEnumerable<TScore>
+  fullName: System.Collections.Generic.IEnumerable<TScore>
+  nameWithType.vb: IEnumerable(Of TScore)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TScore)
+  name.vb: IEnumerable(Of TScore)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TScore
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TScore
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScore*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScore
+  href: UltraForce.Library.NetStandard.Data.UFScoreRanking-1.html#UltraForce_Library_NetStandard_Data_UFScoreRanking_1_AddScore__0_
+  name: AddScore
+  nameWithType: UFScoreRanking<TScore>.AddScore
+  fullName: UltraForce.Library.NetStandard.Data.UFScoreRanking<TScore>.AddScore
+  nameWithType.vb: UFScoreRanking(Of TScore).AddScore
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFScoreRanking(Of TScore).AddScore
+- uid: '{TScore}'
+  commentId: '!:TScore'
+  definition: TScore
+  name: TScore
+  nameWithType: TScore
+  fullName: TScore
+- uid: TScore
+  name: TScore
+  nameWithType: TScore
+  fullName: TScore
+- uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScores*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFScoreRanking`1.AddScores
+  href: UltraForce.Library.NetStandard.Data.UFScoreRanking-1.html#UltraForce_Library_NetStandard_Data_UFScoreRanking_1_AddScores_System_Collections_Generic_IEnumerable__0__
+  name: AddScores
+  nameWithType: UFScoreRanking<TScore>.AddScores
+  fullName: UltraForce.Library.NetStandard.Data.UFScoreRanking<TScore>.AddScores
+  nameWithType.vb: UFScoreRanking(Of TScore).AddScores
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFScoreRanking(Of TScore).AddScores
+- uid: UltraForce.Library.NetStandard.Data.UFScoreRanking`1.GetRanking*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFScoreRanking`1.GetRanking
+  href: UltraForce.Library.NetStandard.Data.UFScoreRanking-1.html#UltraForce_Library_NetStandard_Data_UFScoreRanking_1_GetRanking__0_
+  name: GetRanking
+  nameWithType: UFScoreRanking<TScore>.GetRanking
+  fullName: UltraForce.Library.NetStandard.Data.UFScoreRanking<TScore>.GetRanking
+  nameWithType.vb: UFScoreRanking(Of TScore).GetRanking
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFScoreRanking(Of TScore).GetRanking
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

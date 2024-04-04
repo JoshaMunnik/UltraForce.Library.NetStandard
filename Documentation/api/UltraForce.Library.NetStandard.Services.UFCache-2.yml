@@ -1,0 +1,811 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2
+  commentId: T:UltraForce.Library.NetStandard.Services.UFCache`2
+  id: UFCache`2
+  parent: UltraForce.Library.NetStandard.Services
+  children:
+  - UltraForce.Library.NetStandard.Services.UFCache`2.#ctor(System.Int64,`1)
+  - UltraForce.Library.NetStandard.Services.UFCache`2.Add(`0,`1)
+  - UltraForce.Library.NetStandard.Services.UFCache`2.Clear
+  - UltraForce.Library.NetStandard.Services.UFCache`2.Get(`0)
+  - UltraForce.Library.NetStandard.Services.UFCache`2.GetSize(`1)
+  - UltraForce.Library.NetStandard.Services.UFCache`2.Has(`0)
+  - UltraForce.Library.NetStandard.Services.UFCache`2.Remove(`0)
+  - UltraForce.Library.NetStandard.Services.UFCache`2.Unknown
+  langs:
+  - csharp
+  - vb
+  name: UFCache<TKey, TValue>
+  nameWithType: UFCache<TKey, TValue>
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>
+  type: Class
+  source:
+    id: UFCache
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Services\UFCache.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Services
+  summary: >-
+    <xref href="UltraForce.Library.NetStandard.Services.UFCache%602" data-throw-if-not-resolved="false"></xref> is a base class to create a simple memory cache for a certain type and
+
+    storing it for a certain key type.
+
+    <p>
+
+    The methods are thread safe (using the `lock` construct).
+
+    </p>
+  remarks: Subclasses must override the <xref href="UltraForce.Library.NetStandard.Services.UFCache%602.GetSize(%601)" data-throw-if-not-resolved="false"></xref> method.
+  example: []
+  syntax:
+    content: public abstract class UFCache<TKey, TValue>
+    typeParameters:
+    - id: TKey
+      description: Type of the key
+    - id: TValue
+      description: Type of the value
+    content.vb: Public MustInherit Class UFCache(Of TKey, TValue)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - UltraForce.Library.NetStandard.Services.UFStringCache`1
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: UFCache(Of TKey, TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue)
+  name.vb: UFCache(Of TKey, TValue)
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.#ctor(System.Int64,`1)
+  commentId: M:UltraForce.Library.NetStandard.Services.UFCache`2.#ctor(System.Int64,`1)
+  id: '#ctor(System.Int64,`1)'
+  parent: UltraForce.Library.NetStandard.Services.UFCache`2
+  langs:
+  - csharp
+  - vb
+  name: UFCache(long, TValue)
+  nameWithType: UFCache<TKey, TValue>.UFCache(long, TValue)
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.UFCache(long, TValue)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Services\UFCache.cs
+    startLine: 80
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Services
+  summary: Constructs an instance of <xref href="UltraForce.Library.NetStandard.Services.UFCache%602" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected UFCache(long aCapacity, TValue anUnknown)
+    parameters:
+    - id: aCapacity
+      type: System.Int64
+      description: Maximums size of cache
+    - id: anUnknown
+      type: '{TValue}'
+      description: Value to return when trying to get a value that is not in the cache.
+    content.vb: Protected Sub New(aCapacity As Long, anUnknown As TValue)
+  overload: UltraForce.Library.NetStandard.Services.UFCache`2.#ctor*
+  nameWithType.vb: UFCache(Of TKey, TValue).New(Long, TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).New(Long, TValue)
+  name.vb: New(Long, TValue)
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Add(`0,`1)
+  commentId: M:UltraForce.Library.NetStandard.Services.UFCache`2.Add(`0,`1)
+  id: Add(`0,`1)
+  parent: UltraForce.Library.NetStandard.Services.UFCache`2
+  langs:
+  - csharp
+  - vb
+  name: Add(TKey, TValue)
+  nameWithType: UFCache<TKey, TValue>.Add(TKey, TValue)
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Add(TKey, TValue)
+  type: Method
+  source:
+    id: Add
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Services\UFCache.cs
+    startLine: 103
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Services
+  summary: >-
+    Adds a value to the cache.
+
+    <p>
+
+    If the size of the value is bigger then the cache capacity, nothing happens and the value is not cached.
+
+    </p>
+
+    <p>
+
+    The method will remove the oldest cached items (access times most in the past) if the cache would exceed
+
+    its capacity.
+
+    </p>
+  example: []
+  syntax:
+    content: public void Add(TKey aKey, TValue aValue)
+    parameters:
+    - id: aKey
+      type: '{TKey}'
+      description: Key of value to add
+    - id: aValue
+      type: '{TValue}'
+      description: Value to add
+    content.vb: Public Sub Add(aKey As TKey, aValue As TValue)
+  overload: UltraForce.Library.NetStandard.Services.UFCache`2.Add*
+  nameWithType.vb: UFCache(Of TKey, TValue).Add(TKey, TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Add(TKey, TValue)
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Get(`0)
+  commentId: M:UltraForce.Library.NetStandard.Services.UFCache`2.Get(`0)
+  id: Get(`0)
+  parent: UltraForce.Library.NetStandard.Services.UFCache`2
+  langs:
+  - csharp
+  - vb
+  name: Get(TKey)
+  nameWithType: UFCache<TKey, TValue>.Get(TKey)
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Get(TKey)
+  type: Method
+  source:
+    id: Get
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Services\UFCache.cs
+    startLine: 143
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Services
+  summary: >-
+    Gets a value for a key from the cache. If the value can not be found, the method will return the value
+
+    of <xref href="UltraForce.Library.NetStandard.Services.UFCache%602.Unknown" data-throw-if-not-resolved="false"></xref>.
+
+    <p>
+
+    Accessing a value will also update its access time.
+
+    </p>
+  example: []
+  syntax:
+    content: public TValue Get(TKey aKey)
+    parameters:
+    - id: aKey
+      type: '{TKey}'
+      description: Key to get value for
+    return:
+      type: '{TValue}'
+      description: Value or <xref href="UltraForce.Library.NetStandard.Services.UFCache%602.Unknown" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function [Get](aKey As TKey) As TValue
+  overload: UltraForce.Library.NetStandard.Services.UFCache`2.Get*
+  nameWithType.vb: UFCache(Of TKey, TValue).Get(TKey)
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Get(TKey)
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Remove(`0)
+  commentId: M:UltraForce.Library.NetStandard.Services.UFCache`2.Remove(`0)
+  id: Remove(`0)
+  parent: UltraForce.Library.NetStandard.Services.UFCache`2
+  langs:
+  - csharp
+  - vb
+  name: Remove(TKey)
+  nameWithType: UFCache<TKey, TValue>.Remove(TKey)
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Remove(TKey)
+  type: Method
+  source:
+    id: Remove
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Services\UFCache.cs
+    startLine: 163
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Services
+  summary: >-
+    Removes a value for a key from the cache. If the value can not be found, the method will return the value
+
+    of <xref href="UltraForce.Library.NetStandard.Services.UFCache%602.Unknown" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public TValue Remove(TKey aKey)
+    parameters:
+    - id: aKey
+      type: '{TKey}'
+      description: Key to get value for
+    return:
+      type: '{TValue}'
+      description: Removed value or <xref href="UltraForce.Library.NetStandard.Services.UFCache%602.Unknown" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function Remove(aKey As TKey) As TValue
+  overload: UltraForce.Library.NetStandard.Services.UFCache`2.Remove*
+  nameWithType.vb: UFCache(Of TKey, TValue).Remove(TKey)
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Remove(TKey)
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Has(`0)
+  commentId: M:UltraForce.Library.NetStandard.Services.UFCache`2.Has(`0)
+  id: Has(`0)
+  parent: UltraForce.Library.NetStandard.Services.UFCache`2
+  langs:
+  - csharp
+  - vb
+  name: Has(TKey)
+  nameWithType: UFCache<TKey, TValue>.Has(TKey)
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Has(TKey)
+  type: Method
+  source:
+    id: Has
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Services\UFCache.cs
+    startLine: 183
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Services
+  summary: Checks if there is a value for a key.
+  example: []
+  syntax:
+    content: public bool Has(TKey aKey)
+    parameters:
+    - id: aKey
+      type: '{TKey}'
+      description: Key to check
+    return:
+      type: System.Boolean
+      description: True if there is a value
+    content.vb: Public Function Has(aKey As TKey) As Boolean
+  overload: UltraForce.Library.NetStandard.Services.UFCache`2.Has*
+  nameWithType.vb: UFCache(Of TKey, TValue).Has(TKey)
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Has(TKey)
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Clear
+  commentId: M:UltraForce.Library.NetStandard.Services.UFCache`2.Clear
+  id: Clear
+  parent: UltraForce.Library.NetStandard.Services.UFCache`2
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: UFCache<TKey, TValue>.Clear()
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Services\UFCache.cs
+    startLine: 191
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Services
+  summary: Clears the whole cache.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: UltraForce.Library.NetStandard.Services.UFCache`2.Clear*
+  nameWithType.vb: UFCache(Of TKey, TValue).Clear()
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Clear()
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Unknown
+  commentId: P:UltraForce.Library.NetStandard.Services.UFCache`2.Unknown
+  id: Unknown
+  parent: UltraForce.Library.NetStandard.Services.UFCache`2
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: UFCache<TKey, TValue>.Unknown
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Unknown
+  type: Property
+  source:
+    id: Unknown
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Services\UFCache.cs
+    startLine: 207
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Services
+  summary: This value is returned by <xref href="UltraForce.Library.NetStandard.Services.UFCache%602.Get(%600)" data-throw-if-not-resolved="false"></xref> when there is no value stored for a certain key.
+  example: []
+  syntax:
+    content: public TValue Unknown { get; }
+    parameters: []
+    return:
+      type: '{TValue}'
+    content.vb: Public ReadOnly Property Unknown As TValue
+  overload: UltraForce.Library.NetStandard.Services.UFCache`2.Unknown*
+  nameWithType.vb: UFCache(Of TKey, TValue).Unknown
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Unknown
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.GetSize(`1)
+  commentId: M:UltraForce.Library.NetStandard.Services.UFCache`2.GetSize(`1)
+  id: GetSize(`1)
+  parent: UltraForce.Library.NetStandard.Services.UFCache`2
+  langs:
+  - csharp
+  - vb
+  name: GetSize(TValue)
+  nameWithType: UFCache<TKey, TValue>.GetSize(TValue)
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.GetSize(TValue)
+  type: Method
+  source:
+    id: GetSize
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Services\UFCache.cs
+    startLine: 218
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Services
+  summary: Gets the size of a value.
+  example: []
+  syntax:
+    content: protected abstract long GetSize(TValue aValue)
+    parameters:
+    - id: aValue
+      type: '{TValue}'
+      description: Value to get a size for
+    return:
+      type: System.Int64
+      description: Size of value
+    content.vb: Protected MustOverride Function GetSize(aValue As TValue) As Long
+  overload: UltraForce.Library.NetStandard.Services.UFCache`2.GetSize*
+  nameWithType.vb: UFCache(Of TKey, TValue).GetSize(TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).GetSize(TValue)
+references:
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2
+  commentId: T:UltraForce.Library.NetStandard.Services.UFCache`2
+  href: UltraForce.Library.NetStandard.Services.UFCache-2.html
+  name: UFCache<TKey, TValue>
+  nameWithType: UFCache<TKey, TValue>
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>
+  nameWithType.vb: UFCache(Of TKey, TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue)
+  name.vb: UFCache(Of TKey, TValue)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Services.UFCache`2
+    name: UFCache
+    href: UltraForce.Library.NetStandard.Services.UFCache-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Services.UFCache`2
+    name: UFCache
+    href: UltraForce.Library.NetStandard.Services.UFCache-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.GetSize(`1)
+  commentId: M:UltraForce.Library.NetStandard.Services.UFCache`2.GetSize(`1)
+  href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_GetSize__1_
+  name: GetSize(TValue)
+  nameWithType: UFCache<TKey, TValue>.GetSize(TValue)
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.GetSize(TValue)
+  nameWithType.vb: UFCache(Of TKey, TValue).GetSize(TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).GetSize(TValue)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Services.UFCache`2.GetSize(`1)
+    name: GetSize
+    href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_GetSize__1_
+  - name: (
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Services.UFCache`2.GetSize(`1)
+    name: GetSize
+    href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_GetSize__1_
+  - name: (
+  - name: TValue
+  - name: )
+- uid: UltraForce.Library.NetStandard.Services
+  commentId: N:UltraForce.Library.NetStandard.Services
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Services
+  nameWithType: UltraForce.Library.NetStandard.Services
+  fullName: UltraForce.Library.NetStandard.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Services
+    name: Services
+    href: UltraForce.Library.NetStandard.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Services
+    name: Services
+    href: UltraForce.Library.NetStandard.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.#ctor*
+  commentId: Overload:UltraForce.Library.NetStandard.Services.UFCache`2.#ctor
+  href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2__ctor_System_Int64__1_
+  name: UFCache
+  nameWithType: UFCache<TKey, TValue>.UFCache
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.UFCache
+  nameWithType.vb: UFCache(Of TKey, TValue).New
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Add*
+  commentId: Overload:UltraForce.Library.NetStandard.Services.UFCache`2.Add
+  href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_Add__0__1_
+  name: Add
+  nameWithType: UFCache<TKey, TValue>.Add
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Add
+  nameWithType.vb: UFCache(Of TKey, TValue).Add
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Add
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Unknown
+  commentId: P:UltraForce.Library.NetStandard.Services.UFCache`2.Unknown
+  href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_Unknown
+  name: Unknown
+  nameWithType: UFCache<TKey, TValue>.Unknown
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Unknown
+  nameWithType.vb: UFCache(Of TKey, TValue).Unknown
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Unknown
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Get*
+  commentId: Overload:UltraForce.Library.NetStandard.Services.UFCache`2.Get
+  href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_Get__0_
+  name: Get
+  nameWithType: UFCache<TKey, TValue>.Get
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Get
+  nameWithType.vb: UFCache(Of TKey, TValue).Get
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Get
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Remove*
+  commentId: Overload:UltraForce.Library.NetStandard.Services.UFCache`2.Remove
+  href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_Remove__0_
+  name: Remove
+  nameWithType: UFCache<TKey, TValue>.Remove
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Remove
+  nameWithType.vb: UFCache(Of TKey, TValue).Remove
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Remove
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Has*
+  commentId: Overload:UltraForce.Library.NetStandard.Services.UFCache`2.Has
+  href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_Has__0_
+  name: Has
+  nameWithType: UFCache<TKey, TValue>.Has
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Has
+  nameWithType.vb: UFCache(Of TKey, TValue).Has
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Has
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Clear*
+  commentId: Overload:UltraForce.Library.NetStandard.Services.UFCache`2.Clear
+  href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_Clear
+  name: Clear
+  nameWithType: UFCache<TKey, TValue>.Clear
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Clear
+  nameWithType.vb: UFCache(Of TKey, TValue).Clear
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Clear
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Get(`0)
+  commentId: M:UltraForce.Library.NetStandard.Services.UFCache`2.Get(`0)
+  href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_Get__0_
+  name: Get(TKey)
+  nameWithType: UFCache<TKey, TValue>.Get(TKey)
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Get(TKey)
+  nameWithType.vb: UFCache(Of TKey, TValue).Get(TKey)
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Get(TKey)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Services.UFCache`2.Get(`0)
+    name: Get
+    href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_Get__0_
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Services.UFCache`2.Get(`0)
+    name: Get
+    href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_Get__0_
+  - name: (
+  - name: TKey
+  - name: )
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.Unknown*
+  commentId: Overload:UltraForce.Library.NetStandard.Services.UFCache`2.Unknown
+  href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_Unknown
+  name: Unknown
+  nameWithType: UFCache<TKey, TValue>.Unknown
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.Unknown
+  nameWithType.vb: UFCache(Of TKey, TValue).Unknown
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).Unknown
+- uid: UltraForce.Library.NetStandard.Services.UFCache`2.GetSize*
+  commentId: Overload:UltraForce.Library.NetStandard.Services.UFCache`2.GetSize
+  href: UltraForce.Library.NetStandard.Services.UFCache-2.html#UltraForce_Library_NetStandard_Services_UFCache_2_GetSize__1_
+  name: GetSize
+  nameWithType: UFCache<TKey, TValue>.GetSize
+  fullName: UltraForce.Library.NetStandard.Services.UFCache<TKey, TValue>.GetSize
+  nameWithType.vb: UFCache(Of TKey, TValue).GetSize
+  fullName.vb: UltraForce.Library.NetStandard.Services.UFCache(Of TKey, TValue).GetSize

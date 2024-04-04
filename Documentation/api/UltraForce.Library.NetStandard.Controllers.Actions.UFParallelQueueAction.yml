@@ -1,0 +1,1171 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  id: UFParallelQueueAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  children:
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.#ctor(System.Int32,UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[])
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.#ctor(UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[])
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.GetRunningActions
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Pause
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Paused
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Progress
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Resume
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunAsync(System.Threading.CancellationToken)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Running
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunningCount
+  langs:
+  - csharp
+  - vb
+  name: UFParallelQueueAction
+  nameWithType: UFParallelQueueAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  type: Class
+  source:
+    id: UFParallelQueueAction
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\UFParallelQueueAction.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction" data-throw-if-not-resolved="false"></xref> implements an action queue that can run a number of actions at the same time.
+
+    <p>
+
+    It extends <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction" data-throw-if-not-resolved="false"></xref> so the queue can be placed into other queues if needed.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public abstract class UFParallelQueueAction : UFQueueableAction, IUFWeightedProgress, IUFProgress, IUFQueueableAction, IUFPausableAction'
+    content.vb: Public MustInherit Class UFParallelQueueAction Inherits UFQueueableAction Implements IUFWeightedProgress, IUFProgress, IUFQueueableAction, IUFPausableAction
+  inheritance:
+  - System.Object
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  derivedClasses:
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFSerialQueueAction
+  implements:
+  - UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress
+  - UltraForce.Library.NetStandard.Interfaces.IUFProgress
+  - UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  inheritedMembers:
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.ProgressWeight
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.#ctor(System.Int32,UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[])
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.#ctor(System.Int32,UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[])
+  id: '#ctor(System.Int32,UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[])'
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  langs:
+  - csharp
+  - vb
+  name: UFParallelQueueAction(int, params IUFQueueableAction[])
+  nameWithType: UFParallelQueueAction.UFParallelQueueAction(int, params IUFQueueableAction[])
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.UFParallelQueueAction(int, params UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\UFParallelQueueAction.cs
+    startLine: 109
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    Constructs an instance of <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction" data-throw-if-not-resolved="false"></xref> that will run a certain number of actions at
+
+    the same time.
+  example: []
+  syntax:
+    content: protected UFParallelQueueAction(int aConcurrentCount, params IUFQueueableAction[] anActions)
+    parameters:
+    - id: aConcurrentCount
+      type: System.Int32
+      description: Maximum number of actions that should run at the same time.
+    - id: anActions
+      type: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[]
+      description: One or more actions to run
+    content.vb: Protected Sub New(aConcurrentCount As Integer, ParamArray anActions As IUFQueueableAction())
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.#ctor*
+  nameWithType.vb: UFParallelQueueAction.New(Integer, ParamArray IUFQueueableAction())
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.New(Integer, ParamArray UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction())
+  name.vb: New(Integer, ParamArray IUFQueueableAction())
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.#ctor(UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[])
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.#ctor(UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[])
+  id: '#ctor(UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[])'
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  langs:
+  - csharp
+  - vb
+  name: UFParallelQueueAction(params IUFQueueableAction[])
+  nameWithType: UFParallelQueueAction.UFParallelQueueAction(params IUFQueueableAction[])
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.UFParallelQueueAction(params UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\UFParallelQueueAction.cs
+    startLine: 127
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Constructs an instance of <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction" data-throw-if-not-resolved="false"></xref> that will run all the actions at the same time.
+  example: []
+  syntax:
+    content: protected UFParallelQueueAction(params IUFQueueableAction[] anActions)
+    parameters:
+    - id: anActions
+      type: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[]
+      description: One or more actions to run
+    content.vb: Protected Sub New(ParamArray anActions As IUFQueueableAction())
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.#ctor*
+  nameWithType.vb: UFParallelQueueAction.New(ParamArray IUFQueueableAction())
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.New(ParamArray UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction())
+  name.vb: New(ParamArray IUFQueueableAction())
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunAsync(System.Threading.CancellationToken)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunAsync(System.Threading.CancellationToken)
+  id: RunAsync(System.Threading.CancellationToken)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  langs:
+  - csharp
+  - vb
+  name: RunAsync(CancellationToken)
+  nameWithType: UFParallelQueueAction.RunAsync(CancellationToken)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: RunAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\UFParallelQueueAction.cs
+    startLine: 150
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Runs all stored actions at the same time.
+  remarks: >-
+    If the queue is already running, the method just returns true.
+
+    <p>
+
+    Actions are processed from first to last. Actions should never assume a previous action has finished before
+
+    they are started (unless only one action is allowed to run).
+
+    </p>
+  example: []
+  syntax:
+    content: public override Task<bool> RunAsync(CancellationToken aToken)
+    parameters:
+    - id: aToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>True</code> if all actions returned true and there was no cancellation by aToken
+    content.vb: Public Overrides Function RunAsync(aToken As CancellationToken) As Task(Of Boolean)
+  overridden: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync(System.Threading.CancellationToken)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunAsync*
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Pause
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Pause
+  id: Pause
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: UFParallelQueueAction.Pause()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Pause()
+  type: Method
+  source:
+    id: Pause
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\UFParallelQueueAction.cs
+    startLine: 185
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Pauses all actions that are still running.
+  example: []
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause()
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Pause*
+  implements:
+  - UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Resume
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Resume
+  id: Resume
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: UFParallelQueueAction.Resume()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Resume()
+  type: Method
+  source:
+    id: Resume
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\UFParallelQueueAction.cs
+    startLine: 207
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Resume all actions that are still running.
+  example: []
+  syntax:
+    content: public void Resume()
+    content.vb: Public Sub [Resume]()
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Resume*
+  implements:
+  - UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Running
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Running
+  id: Running
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  langs:
+  - csharp
+  - vb
+  name: Running
+  nameWithType: UFParallelQueueAction.Running
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Running
+  type: Property
+  source:
+    id: Running
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\UFParallelQueueAction.cs
+    startLine: 237
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    This property is <code>true</code> so long actions are being start from 
+
+    the queue.
+  example: []
+  syntax:
+    content: public bool Running { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Running As Boolean
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Running*
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunningCount
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunningCount
+  id: RunningCount
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  langs:
+  - csharp
+  - vb
+  name: RunningCount
+  nameWithType: UFParallelQueueAction.RunningCount
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunningCount
+  type: Property
+  source:
+    id: RunningCount
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\UFParallelQueueAction.cs
+    startLine: 242
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Gets the number of action still running.
+  example: []
+  syntax:
+    content: public int RunningCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property RunningCount As Integer
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunningCount*
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Paused
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Paused
+  id: Paused
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  langs:
+  - csharp
+  - vb
+  name: Paused
+  nameWithType: UFParallelQueueAction.Paused
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Paused
+  type: Property
+  source:
+    id: Paused
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\UFParallelQueueAction.cs
+    startLine: 249
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Is true while queue is paused.
+  example: []
+  syntax:
+    content: public bool Paused { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Paused As Boolean
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Paused*
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Progress
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Progress
+  id: Progress
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: UFParallelQueueAction.Progress
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Progress
+  type: Property
+  source:
+    id: Progress
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\UFParallelQueueAction.cs
+    startLine: 258
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Gets the progress, include the progress of any running action.
+  example: []
+  syntax:
+    content: public override double Progress { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Overrides ReadOnly Property Progress As Double
+  overridden: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.Progress
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Progress*
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.GetRunningActions
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.GetRunningActions
+  id: GetRunningActions
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  langs:
+  - csharp
+  - vb
+  name: GetRunningActions()
+  nameWithType: UFParallelQueueAction.GetRunningActions()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.GetRunningActions()
+  type: Method
+  source:
+    id: GetRunningActions
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\UFParallelQueueAction.cs
+    startLine: 280
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Gets all current running actions
+  example: []
+  syntax:
+    content: protected IEnumerable<IUFQueueableAction> GetRunningActions()
+    return:
+      type: System.Collections.Generic.IEnumerable{UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction}
+      description: Running actions
+    content.vb: Protected Function GetRunningActions() As IEnumerable(Of IUFQueueableAction)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.GetRunningActions*
+references:
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.html
+  name: UFParallelQueueAction
+  nameWithType: UFParallelQueueAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html
+  name: UFQueueableAction
+  nameWithType: UFQueueableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions
+  commentId: N:UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Controllers.Actions
+  nameWithType: UltraForce.Library.NetStandard.Controllers.Actions
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers
+    name: Controllers
+    href: UltraForce.Library.NetStandard.Controllers.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions
+    name: Actions
+    href: UltraForce.Library.NetStandard.Controllers.Actions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers
+    name: Controllers
+    href: UltraForce.Library.NetStandard.Controllers.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions
+    name: Actions
+    href: UltraForce.Library.NetStandard.Controllers.Actions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress.html
+  name: IUFWeightedProgress
+  nameWithType: IUFWeightedProgress
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFProgress
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFProgress
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFProgress.html
+  name: IUFProgress
+  nameWithType: IUFProgress
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFProgress
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.html
+  name: IUFQueueableAction
+  nameWithType: IUFQueueableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.html
+  name: IUFPausableAction
+  nameWithType: IUFPausableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync
+  name: RunAsync()
+  nameWithType: UFQueueableAction.RunAsync()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.ProgressWeight
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.ProgressWeight
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_ProgressWeight
+  name: ProgressWeight
+  nameWithType: UFQueueableAction.ProgressWeight
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.ProgressWeight
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Interfaces
+  commentId: N:UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Interfaces
+  nameWithType: UltraForce.Library.NetStandard.Interfaces
+  fullName: UltraForce.Library.NetStandard.Interfaces
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.#ctor*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.#ctor
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFParallelQueueAction__ctor_System_Int32_UltraForce_Library_NetStandard_Controllers_Actions_IUFQueueableAction___
+  name: UFParallelQueueAction
+  nameWithType: UFParallelQueueAction.UFParallelQueueAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.UFParallelQueueAction
+  nameWithType.vb: UFParallelQueueAction.New
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[]
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.html
+  name: IUFQueueableAction[]
+  nameWithType: IUFQueueableAction[]
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction[]
+  nameWithType.vb: IUFQueueableAction()
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction()
+  name.vb: IUFQueueableAction()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+    name: IUFQueueableAction
+    href: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+    name: IUFQueueableAction
+    href: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.html
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync(System.Threading.CancellationToken)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync(System.Threading.CancellationToken)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync_System_Threading_CancellationToken_
+  name: RunAsync(CancellationToken)
+  nameWithType: UFQueueableAction.RunAsync(CancellationToken)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync(System.Threading.CancellationToken)
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync(System.Threading.CancellationToken)
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunAsync*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunAsync
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFParallelQueueAction_RunAsync_System_Threading_CancellationToken_
+  name: RunAsync
+  nameWithType: UFParallelQueueAction.RunAsync
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Pause*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Pause
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFParallelQueueAction_Pause
+  name: Pause
+  nameWithType: UFParallelQueueAction.Pause
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Pause
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_IUFPausableAction_Pause
+  name: Pause()
+  nameWithType: IUFPausableAction.Pause()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause
+    name: Pause
+    href: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_IUFPausableAction_Pause
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause
+    name: Pause
+    href: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_IUFPausableAction_Pause
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Resume*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Resume
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFParallelQueueAction_Resume
+  name: Resume
+  nameWithType: UFParallelQueueAction.Resume
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Resume
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_IUFPausableAction_Resume
+  name: Resume()
+  nameWithType: IUFPausableAction.Resume()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume
+    name: Resume
+    href: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_IUFPausableAction_Resume
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume
+    name: Resume
+    href: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_IUFPausableAction_Resume
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Running*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Running
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFParallelQueueAction_Running
+  name: Running
+  nameWithType: UFParallelQueueAction.Running
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Running
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunningCount*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunningCount
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFParallelQueueAction_RunningCount
+  name: RunningCount
+  nameWithType: UFParallelQueueAction.RunningCount
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.RunningCount
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Paused*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Paused
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFParallelQueueAction_Paused
+  name: Paused
+  nameWithType: UFParallelQueueAction.Paused
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Paused
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.Progress
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.Progress
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_Progress
+  name: Progress
+  nameWithType: UFQueueableAction.Progress
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.Progress
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Progress*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Progress
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFParallelQueueAction_Progress
+  name: Progress
+  nameWithType: UFParallelQueueAction.Progress
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.Progress
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.GetRunningActions*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.GetRunningActions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFParallelQueueAction_GetRunningActions
+  name: GetRunningActions
+  nameWithType: UFParallelQueueAction.GetRunningActions
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.GetRunningActions
+- uid: System.Collections.Generic.IEnumerable{UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction}
+  commentId: T:System.Collections.Generic.IEnumerable{UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IUFQueueableAction>
+  nameWithType: IEnumerable<IUFQueueableAction>
+  fullName: System.Collections.Generic.IEnumerable<UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction>
+  nameWithType.vb: IEnumerable(Of IUFQueueableAction)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction)
+  name.vb: IEnumerable(Of IUFQueueableAction)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+    name: IUFQueueableAction
+    href: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+    name: IUFQueueableAction
+    href: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

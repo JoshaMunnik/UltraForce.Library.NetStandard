@@ -1,0 +1,728 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  id: UFServiceCollectionTools.UFServiceCollectionHelper
+  parent: UltraForce.Library.NetStandard.Tools
+  children:
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register(System.Reflection.Assembly,System.String)
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register(System.Type[])
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(System.Type[])
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton``1
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton``1(``0)
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton``2
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register``1
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register``2
+  langs:
+  - csharp
+  - vb
+  name: UFServiceCollectionTools.UFServiceCollectionHelper
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  type: Class
+  source:
+    id: UFServiceCollectionHelper
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 204
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    A helper class with various registration methods. Each registration method returns the instance, allowing
+
+    for chaining of registration calls.
+  example: []
+  syntax:
+    content: public class UFServiceCollectionTools.UFServiceCollectionHelper
+    content.vb: Public Class UFServiceCollectionTools.UFServiceCollectionHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register``1
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register``1
+  id: Register``1
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  langs:
+  - csharp
+  - vb
+  name: Register<TService>()
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper.Register<TService>()
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register<TService>()
+  type: Method
+  source:
+    id: Register
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 237
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Registers a service that also implements itself. A new instance will be created every time a parameter uses
+
+    that type.
+  example: []
+  syntax:
+    content: 'public UFServiceCollectionTools.UFServiceCollectionHelper Register<TService>() where TService : class'
+    typeParameters:
+    - id: TService
+      description: Service type register
+    return:
+      type: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    content.vb: Public Function Register(Of TService As Class)() As UFServiceCollectionTools.UFServiceCollectionHelper
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register*
+  nameWithType.vb: UFServiceCollectionTools.UFServiceCollectionHelper.Register(Of TService)()
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register(Of TService)()
+  name.vb: Register(Of TService)()
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register``2
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register``2
+  id: Register``2
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  langs:
+  - csharp
+  - vb
+  name: Register<TService, TProvider>()
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper.Register<TService, TProvider>()
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register<TService, TProvider>()
+  type: Method
+  source:
+    id: Register
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 256
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Registers a class provider type for a certain service type. A new instance will be created every time a
+
+    parameter uses the service type.
+  remarks: <code>TService</code> may also refer to a subclass of <code>TProvider</code>.
+  example: []
+  syntax:
+    content: 'public UFServiceCollectionTools.UFServiceCollectionHelper Register<TService, TProvider>() where TProvider : class, TService'
+    typeParameters:
+    - id: TService
+      description: Service type to register class type for
+    - id: TProvider
+      description: Provider type to register
+    return:
+      type: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    content.vb: Public Function Register(Of TService, TProvider As {Class, TService})() As UFServiceCollectionTools.UFServiceCollectionHelper
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register*
+  nameWithType.vb: UFServiceCollectionTools.UFServiceCollectionHelper.Register(Of TService, TProvider)()
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register(Of TService, TProvider)()
+  name.vb: Register(Of TService, TProvider)()
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton``1
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton``1
+  id: RegisterSingleton``1
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  langs:
+  - csharp
+  - vb
+  name: RegisterSingleton<TService>()
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton<TService>()
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton<TService>()
+  type: Method
+  source:
+    id: RegisterSingleton
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 269
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Registers a singleton service type. The first time the service is requested by a parameter an instance is
+
+    created. This instance is reused whenever a parameter requests the same service.
+  example: []
+  syntax:
+    content: 'public UFServiceCollectionTools.UFServiceCollectionHelper RegisterSingleton<TService>() where TService : class'
+    typeParameters:
+    - id: TService
+      description: Service type to register both as service and provider.
+    return:
+      type: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    content.vb: Public Function RegisterSingleton(Of TService As Class)() As UFServiceCollectionTools.UFServiceCollectionHelper
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton*
+  nameWithType.vb: UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(Of TService)()
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(Of TService)()
+  name.vb: RegisterSingleton(Of TService)()
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton``2
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton``2
+  id: RegisterSingleton``2
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  langs:
+  - csharp
+  - vb
+  name: RegisterSingleton<TService, TProvider>()
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton<TService, TProvider>()
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton<TService, TProvider>()
+  type: Method
+  source:
+    id: RegisterSingleton
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 286
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Registers a singleton provider type for a certain service type. The first time the service is requested by a
+
+    parameter an instance is created. This is instance is reused whenever a parameter requests
+
+    the same service.
+  example: []
+  syntax:
+    content: 'public UFServiceCollectionTools.UFServiceCollectionHelper RegisterSingleton<TService, TProvider>() where TProvider : class, TService'
+    typeParameters:
+    - id: TService
+      description: service type to register provider type for
+    - id: TProvider
+      description: provider type to register
+    return:
+      type: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    content.vb: Public Function RegisterSingleton(Of TService, TProvider As {Class, TService})() As UFServiceCollectionTools.UFServiceCollectionHelper
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton*
+  nameWithType.vb: UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(Of TService, TProvider)()
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(Of TService, TProvider)()
+  name.vb: RegisterSingleton(Of TService, TProvider)()
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton``1(``0)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton``1(``0)
+  id: RegisterSingleton``1(``0)
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  langs:
+  - csharp
+  - vb
+  name: RegisterSingleton<TService>(TService)
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton<TService>(TService)
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton<TService>(TService)
+  type: Method
+  source:
+    id: RegisterSingleton
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 302
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Registers a singleton instance for a service type. Whenever a parameter request the service, the instance will
+
+    be used.
+  example: []
+  syntax:
+    content: public UFServiceCollectionTools.UFServiceCollectionHelper RegisterSingleton<TService>(TService anInstance)
+    parameters:
+    - id: anInstance
+      type: '{TService}'
+      description: Provider instance implementing the service
+    typeParameters:
+    - id: TService
+      description: Service type to register
+    return:
+      type: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    content.vb: Public Function RegisterSingleton(Of TService)(anInstance As TService) As UFServiceCollectionTools.UFServiceCollectionHelper
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton*
+  nameWithType.vb: UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(Of TService)(TService)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(Of TService)(TService)
+  name.vb: RegisterSingleton(Of TService)(TService)
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register(System.Type[])
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register(System.Type[])
+  id: Register(System.Type[])
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  langs:
+  - csharp
+  - vb
+  name: Register(params Type[])
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper.Register(params Type[])
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register(params System.Type[])
+  type: Method
+  source:
+    id: Register
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 313
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Registers multiple types (both as service and provider implementing the service). The method checks if type is
+
+    not registered before registering it.
+  example: []
+  syntax:
+    content: public UFServiceCollectionTools.UFServiceCollectionHelper Register(params Type[] aTypes)
+    parameters:
+    - id: aTypes
+      type: System.Type[]
+      description: One or more types to register
+    return:
+      type: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    content.vb: Public Function Register(ParamArray aTypes As Type()) As UFServiceCollectionTools.UFServiceCollectionHelper
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register*
+  nameWithType.vb: UFServiceCollectionTools.UFServiceCollectionHelper.Register(ParamArray Type())
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register(ParamArray System.Type())
+  name.vb: Register(ParamArray Type())
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(System.Type[])
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(System.Type[])
+  id: RegisterSingleton(System.Type[])
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  langs:
+  - csharp
+  - vb
+  name: RegisterSingleton(params Type[])
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(params Type[])
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(params System.Type[])
+  type: Method
+  source:
+    id: RegisterSingleton
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 329
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Registers multiple types (both as service and singleton provider implementing the service).
+  example: []
+  syntax:
+    content: public UFServiceCollectionTools.UFServiceCollectionHelper RegisterSingleton(params Type[] aTypes)
+    parameters:
+    - id: aTypes
+      type: System.Type[]
+      description: One or more types to register
+    return:
+      type: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    content.vb: Public Function RegisterSingleton(ParamArray aTypes As Type()) As UFServiceCollectionTools.UFServiceCollectionHelper
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton*
+  nameWithType.vb: UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(ParamArray Type())
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton(ParamArray System.Type())
+  name.vb: RegisterSingleton(ParamArray Type())
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register(System.Reflection.Assembly,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register(System.Reflection.Assembly,System.String)
+  id: Register(System.Reflection.Assembly,System.String)
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  langs:
+  - csharp
+  - vb
+  name: Register(Assembly, string)
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper.Register(Assembly, string)
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register(System.Reflection.Assembly, string)
+  type: Method
+  source:
+    id: Register
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 343
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Registers all types in a namespace in an assembly.
+  example: []
+  syntax:
+    content: public UFServiceCollectionTools.UFServiceCollectionHelper Register(Assembly anAssembly, string aNameSpace)
+    parameters:
+    - id: anAssembly
+      type: System.Reflection.Assembly
+      description: Assembly to get types from
+    - id: aNameSpace
+      type: System.String
+      description: Name space to get types from
+    return:
+      type: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    content.vb: Public Function Register(anAssembly As Assembly, aNameSpace As String) As UFServiceCollectionTools.UFServiceCollectionHelper
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register*
+  nameWithType.vb: UFServiceCollectionTools.UFServiceCollectionHelper.Register(Assembly, String)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register(System.Reflection.Assembly, String)
+  name.vb: Register(Assembly, String)
+references:
+- uid: UltraForce.Library.NetStandard.Tools
+  commentId: N:UltraForce.Library.NetStandard.Tools
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Tools
+  nameWithType: UltraForce.Library.NetStandard.Tools
+  fullName: UltraForce.Library.NetStandard.Tools
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.html#UltraForce_Library_NetStandard_Tools_UFServiceCollectionTools_UFServiceCollectionHelper_Register__1
+  name: Register
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper.Register
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.Register
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  parent: UltraForce.Library.NetStandard.Tools
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html
+  name: UFServiceCollectionTools.UFServiceCollectionHelper
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+    name: UFServiceCollectionTools
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    name: UFServiceCollectionHelper
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.html
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+    name: UFServiceCollectionTools
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    name: UFServiceCollectionHelper
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.html
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.html#UltraForce_Library_NetStandard_Tools_UFServiceCollectionTools_UFServiceCollectionHelper_RegisterSingleton__1
+  name: RegisterSingleton
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.RegisterSingleton
+- uid: '{TService}'
+  commentId: '!:TService'
+  definition: TService
+  name: TService
+  nameWithType: TService
+  fullName: TService
+- uid: TService
+  name: TService
+  nameWithType: TService
+  fullName: TService
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection

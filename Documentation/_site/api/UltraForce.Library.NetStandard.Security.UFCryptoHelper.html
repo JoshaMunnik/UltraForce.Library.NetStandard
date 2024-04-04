@@ -1,0 +1,598 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFCryptoHelper | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFCryptoHelper | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="library is a library that implements various encryption and decryption methods.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Security_UFCryptoHelper" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper" class="text-break">
+Class UFCryptoHelper  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Security.html">Security</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.NetStandard.Security.UFCryptoHelper.html">UFCryptoHelper</a> library is a library that implements
+various encryption and decryption methods.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UFCryptoHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFCryptoHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Security_UFCryptoHelper__ctor_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Security_UFCryptoHelper__ctor_System_Byte___System_Int32_System_String_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.#ctor(System.Byte[],System.Int32,System.String)">
+  UFCryptoHelper(byte[], int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="UltraForce.Library.NetStandard.Security.UFCryptoHelper.html">UFCryptoHelper</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFCryptoHelper(byte[] aSalt, int aDerivationIterations = 1000, string aHashNibbles = &quot;0123456789ABCDEF&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aSalt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Salt to use (must at least be 8 bytes in length)</p>
+</dd>
+    <dt><code>aDerivationIterations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of derivations to use</p>
+</dd>
+    <dt><code>aHashNibbles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string of 16 unique characters to use as nibble values when
+processing 'hex' strings.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_AsymmetricDecrypt_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.AsymmetricDecrypt*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_AsymmetricDecrypt_System_String_System_Object_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.AsymmetricDecrypt(System.String,System.Object)">
+  AsymmetricDecrypt(string, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Decrypts text using asymmetric encryption with RSA.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AsymmetricDecrypt(string aData, object aPrivateKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Data to decrypt</p>
+</dd>
+    <dt><code>aPrivateKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Private key to decrypt with</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Decrypted data</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_AsymmetricEncrypt_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.AsymmetricEncrypt*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_AsymmetricEncrypt_System_String_System_String_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.AsymmetricEncrypt(System.String,System.String)">
+  AsymmetricEncrypt(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Encrypts text using asymmetric encryption with RSA.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AsymmetricEncrypt(string aData, string aPublicKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Data to encrypt</p>
+</dd>
+    <dt><code>aPublicKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to encrypt with (Pkcs1key format)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>base64 encoded data</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_AsymmetricEncrypt_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Assumes public key is a base64 encoded key using Pkcs1key format</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_AsymmetricSign_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.AsymmetricSign*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_AsymmetricSign_System_String_System_Object_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.AsymmetricSign(System.String,System.Object)">
+  AsymmetricSign(string, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a signature using an asymmetric key using SHA256.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AsymmetricSign(string aData, object aPrivateKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Data to create signature for</p>
+</dd>
+    <dt><code>aPrivateKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Private key to sign with</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Signature base64 encoded</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_CalcHash_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.CalcHash*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_CalcHash_System_String_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.CalcHash(System.String)">
+  CalcHash(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates an hash value using SHA512.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CalcHash(string aData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Data to get hash from</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>hashed data</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_Encrypt_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.Encrypt*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_Encrypt_System_String_System_String_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.Encrypt(System.String,System.String)">
+  Encrypt(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Encrypts a value using AES encryption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Encrypt(string aValue, string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Value to encrypt</p>
+</dd>
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to encrypt with</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_GetAsymmetricKeys_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.GetAsymmetricKeys*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_GetAsymmetricKeys_System_String__System_Object__" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.GetAsymmetricKeys(System.String@,System.Object@)">
+  GetAsymmetricKeys(out string, out object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a public and private key pair for RSA encryption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetAsymmetricKeys(out string aPublicKey, out object aPrivateKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPublicKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Public key in private format</p>
+</dd>
+    <dt><code>aPrivateKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Private key</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_GetAsymmetricKeysPEM_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.GetAsymmetricKeysPEM*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_GetAsymmetricKeysPEM_System_String__System_Object__" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.GetAsymmetricKeysPEM(System.String@,System.Object@)">
+  GetAsymmetricKeysPEM(out string, out object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a public and private key pair for RSA encryption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetAsymmetricKeysPEM(out string aPublicKey, out object aPrivateKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPublicKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Public key in PEM format</p>
+</dd>
+    <dt><code>aPrivateKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Private key</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_SymmetricDecrypt_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.SymmetricDecrypt*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_SymmetricDecrypt_System_String_System_String_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.SymmetricDecrypt(System.String,System.String)">
+  SymmetricDecrypt(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Decrypt a text previously encrypted with <a class="xref" href="UltraForce.Library.NetStandard.Security.UFCryptoHelper.html#UltraForce_Library_NetStandard_Security_UFCryptoHelper_SymmetricEncrypt_System_String_System_String_">SymmetricEncrypt(string, string)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SymmetricDecrypt(string aEncryptedValue, string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aEncryptedValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Encrypted text</p>
+</dd>
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key used to encrypt</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Decrypted text</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_SymmetricDecrypt_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Based on:
+<a href="https://xamarinhelp.com/cryptography-in-xamarin-forms/">https://xamarinhelp.com/cryptography-in-xamarin-forms/</a></p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_SymmetricEncrypt_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.SymmetricEncrypt*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_SymmetricEncrypt_System_String_System_String_" data-uid="UltraForce.Library.NetStandard.Security.UFCryptoHelper.SymmetricEncrypt(System.String,System.String)">
+  SymmetricEncrypt(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Encrypt a text with a key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SymmetricEncrypt(string aText, string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text to encrypt</p>
+</dd>
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to use</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Encrypted text (base64 encoded with one ';' character)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Security_UFCryptoHelper_SymmetricEncrypt_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Based on:
+<a href="https://xamarinhelp.com/cryptography-in-xamarin-forms/">https://xamarinhelp.com/cryptography-in-xamarin-forms/</a></p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

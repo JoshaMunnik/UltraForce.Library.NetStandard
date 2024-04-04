@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Net
+  commentId: N:UltraForce.Library.NetStandard.Net
+  id: UltraForce.Library.NetStandard.Net
+  children:
+  - UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel`1
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.NetStandard.Net
+  nameWithType: UltraForce.Library.NetStandard.Net
+  fullName: UltraForce.Library.NetStandard.Net
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.NetStandard
+references:
+- uid: UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel`1
+  commentId: T:UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel`1
+  href: UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel-1.html
+  name: UFExtendedErrorResponseModel<TEnum>
+  nameWithType: UFExtendedErrorResponseModel<TEnum>
+  fullName: UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel<TEnum>
+  nameWithType.vb: UFExtendedErrorResponseModel(Of TEnum)
+  fullName.vb: UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel(Of TEnum)
+  name.vb: UFExtendedErrorResponseModel(Of TEnum)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel`1
+    name: UFExtendedErrorResponseModel
+    href: UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel-1.html
+  - name: <
+  - name: TEnum
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel`1
+    name: UFExtendedErrorResponseModel
+    href: UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEnum
+  - name: )

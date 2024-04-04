@@ -1,0 +1,843 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFDateTimeTools | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFDateTimeTools | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="related utility methods.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools" class="text-break">
+Class UFDateTimeTools  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Tools.html">Tools</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> related utility methods.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class UFDateTimeTools</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFDateTimeTools</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcAge_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcAge*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcAge_System_DateTime_System_Nullable_System_DateTime__" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcAge(System.DateTime,System.Nullable{System.DateTime})">
+  CalcAge(DateTime, DateTime?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the age of a person based on the birth date and a reference date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalcAge(DateTime aBirthDate, DateTime? aNow = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aBirthDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Date of birth</p>
+</dd>
+    <dt><code>aNow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd><p>When null, use the current UTC date and time.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Age in years</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcDifferenceMonths_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcDifferenceMonths*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcDifferenceMonths_System_DateTime_System_DateTime_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcDifferenceMonths(System.DateTime,System.DateTime,System.Boolean)">
+  CalcDifferenceMonths(DateTime, DateTime, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the difference in months.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalcDifferenceMonths(DateTime aStart, DateTime anEnd, bool anIgnoreDay = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Starting month</p>
+</dd>
+    <dt><code>anEnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Ending month (inclusive)</p>
+</dd>
+    <dt><code>anIgnoreDay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> ignore day, else adjust the result if the difference
+between days is less then a month.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of months difference</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcNearestPeriodDateWithDays_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcNearestPeriodDateWithDays*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcNearestPeriodDateWithDays_System_Int32_System_DateTime_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcNearestPeriodDateWithDays(System.Int32,System.DateTime,System.DateTime)">
+  CalcNearestPeriodDateWithDays(int, DateTime, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the nearest date of a period of a certain days before
+a certain date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime CalcNearestPeriodDateWithDays(int aDays, DateTime aPeriodStartDate, DateTime aDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aDays</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of days in period</p>
+</dd>
+    <dt><code>aPeriodStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Start date of first period</p>
+</dd>
+    <dt><code>aDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Date to get nearest date before</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>next date</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcNearestPeriodDateWithMonths_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcNearestPeriodDateWithMonths*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcNearestPeriodDateWithMonths_System_Int32_System_DateTime_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcNearestPeriodDateWithMonths(System.Int32,System.DateTime,System.DateTime)">
+  CalcNearestPeriodDateWithMonths(int, DateTime, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the nearest date of a period of a certain months before
+a certain date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime CalcNearestPeriodDateWithMonths(int aMonths, DateTime aPeriodStartDate, DateTime aDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aMonths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of months in period</p>
+</dd>
+    <dt><code>aPeriodStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Start date of first period</p>
+</dd>
+    <dt><code>aDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Date to get nearest date before</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>next date</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcNearestPeriodDateWithYears_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcNearestPeriodDateWithYears*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcNearestPeriodDateWithYears_System_Int32_System_DateTime_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcNearestPeriodDateWithYears(System.Int32,System.DateTime,System.DateTime)">
+  CalcNearestPeriodDateWithYears(int, DateTime, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the nearest date of a period of a certain years before
+a certain date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime CalcNearestPeriodDateWithYears(int aYears, DateTime aPeriodStartDate, DateTime aDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aYears</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of years in period</p>
+</dd>
+    <dt><code>aPeriodStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Start date of first period</p>
+</dd>
+    <dt><code>aDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Date to get nearest date before</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>next date</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcNextPeriodDateWithDays_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcNextPeriodDateWithDays*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcNextPeriodDateWithDays_System_Int32_System_DateTime_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcNextPeriodDateWithDays(System.Int32,System.DateTime,System.DateTime)">
+  CalcNextPeriodDateWithDays(int, DateTime, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the next date of a period of a certain days.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime CalcNextPeriodDateWithDays(int aDays, DateTime aPeriodStartDate, DateTime aDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aDays</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of days in period</p>
+</dd>
+    <dt><code>aPeriodStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Start date of first period</p>
+</dd>
+    <dt><code>aDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Date to get next date on or after</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>next date</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcNextPeriodDateWithMonths_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcNextPeriodDateWithMonths*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcNextPeriodDateWithMonths_System_Int32_System_DateTime_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcNextPeriodDateWithMonths(System.Int32,System.DateTime,System.DateTime)">
+  CalcNextPeriodDateWithMonths(int, DateTime, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the next date of a period of a certain months.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime CalcNextPeriodDateWithMonths(int aMonths, DateTime aPeriodStartDate, DateTime aDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aMonths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of months in period</p>
+</dd>
+    <dt><code>aPeriodStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Start date of first period</p>
+</dd>
+    <dt><code>aDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Date to get next date on or after</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>next date</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcNextPeriodDateWithYears_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcNextPeriodDateWithYears*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcNextPeriodDateWithYears_System_Int32_System_DateTime_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcNextPeriodDateWithYears(System.Int32,System.DateTime,System.DateTime)">
+  CalcNextPeriodDateWithYears(int, DateTime, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the next date of a period of a certain years.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime CalcNextPeriodDateWithYears(int aYears, DateTime aPeriodStartDate, DateTime aDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aYears</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of years in period</p>
+</dd>
+    <dt><code>aPeriodStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Start date of first period</p>
+</dd>
+    <dt><code>aDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Date to get next date on or after</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>next date</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcPeriodCountWithDays_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcPeriodCountWithDays*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcPeriodCountWithDays_System_Int32_System_DateTime_System_DateTime_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcPeriodCountWithDays(System.Int32,System.DateTime,System.DateTime,System.DateTime)">
+  CalcPeriodCountWithDays(int, DateTime, DateTime, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the number of periods within a date range with a certain
+period length in days.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalcPeriodCountWithDays(int aDays, DateTime aPeriodStartDate, DateTime aStartDate, DateTime anEndDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aDays</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of days in period</p>
+</dd>
+    <dt><code>aPeriodStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Start date of first period</p>
+</dd>
+    <dt><code>aStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Start date of range</p>
+</dd>
+    <dt><code>anEndDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>End date of range</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of periods</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcPeriodCountWithMonths_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcPeriodCountWithMonths*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcPeriodCountWithMonths_System_Int32_System_DateTime_System_DateTime_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcPeriodCountWithMonths(System.Int32,System.DateTime,System.DateTime,System.DateTime)">
+  CalcPeriodCountWithMonths(int, DateTime, DateTime, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the number of periods within a date range with a certain
+period length in months.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalcPeriodCountWithMonths(int aMonths, DateTime aPeriodStartDate, DateTime aStartDate, DateTime anEndDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aMonths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of months in period</p>
+</dd>
+    <dt><code>aPeriodStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Start date of first period</p>
+</dd>
+    <dt><code>aStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Start date of range</p>
+</dd>
+    <dt><code>anEndDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>End date of range</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of periods</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcPeriodCountWithYears_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcPeriodCountWithYears*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_CalcPeriodCountWithYears_System_Int32_System_DateTime_System_DateTime_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.CalcPeriodCountWithYears(System.Int32,System.DateTime,System.DateTime,System.DateTime)">
+  CalcPeriodCountWithYears(int, DateTime, DateTime, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the number of periods within a date range with a certain
+period length in years.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalcPeriodCountWithYears(int aYears, DateTime aPeriodStartDate, DateTime aStartDate, DateTime anEndDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aYears</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of years in period</p>
+</dd>
+    <dt><code>aPeriodStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Start date of first period</p>
+</dd>
+    <dt><code>aStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Start date of range</p>
+</dd>
+    <dt><code>anEndDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>End date of range</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of periods</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_EqualDate_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.EqualDate*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_EqualDate_System_DateTime_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.EqualDate(System.DateTime,System.DateTime)">
+  EqualDate(DateTime, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares the date part of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> type. The method
+checks if the year, month and day are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EqualDate(DateTime aDate1, DateTime aDate2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aDate1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>First date to compare</p>
+</dd>
+    <dt><code>aDate2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Second date to compare</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>True</code> if dates are equal.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_GetLastDayOfMonth_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.GetLastDayOfMonth*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_GetLastDayOfMonth_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.GetLastDayOfMonth(System.DateTime)">
+  GetLastDayOfMonth(DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the last day of the month.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetLastDayOfMonth(DateTime aDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Date to get last day of month for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>last day of the month</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_GetMilliseconds_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.GetMilliseconds*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_GetMilliseconds" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.GetMilliseconds">
+  GetMilliseconds()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets current time/date in milliseconds, just returns
+GetMilliseconds(DateTime.Now)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetMilliseconds()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime.now">Now</a> in milliseconds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_GetMilliseconds_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.GetMilliseconds*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFDateTimeTools_GetMilliseconds_System_DateTime_" data-uid="UltraForce.Library.NetStandard.Tools.UFDateTimeTools.GetMilliseconds(System.DateTime)">
+  GetMilliseconds(DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get time/date in milliseconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetMilliseconds(DateTime aTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>A time/date.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>aTime.Ticks in milliseconds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

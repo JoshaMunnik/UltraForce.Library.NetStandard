@@ -1,0 +1,942 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+  commentId: T:UltraForce.Library.NetStandard.Models.UFModel.Option
+  id: UFModel.Option
+  parent: UltraForce.Library.NetStandard.Models
+  children:
+  - UltraForce.Library.NetStandard.Models.UFModel.Option.IgnoreProperties
+  - UltraForce.Library.NetStandard.Models.UFModel.Option.IncludeFields
+  - UltraForce.Library.NetStandard.Models.UFModel.Option.LockChildren
+  - UltraForce.Library.NetStandard.Models.UFModel.Option.TrackChildChange
+  langs:
+  - csharp
+  - vb
+  name: UFModel.Option
+  nameWithType: UFModel.Option
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Option
+  type: Enum
+  source:
+    id: Option
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModel.cs
+    startLine: 119
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: Options for the <xref href="UltraForce.Library.NetStandard.Models.UFModel" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public enum UFModel.Option
+    content.vb: Public Enum UFModel.Option
+  extensionMethods:
+  - System.Enum.UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute``1
+  - System.Enum.UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription
+  - System.Enum.UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName
+  - System.Enum.UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription
+  - UltraForce.Library.NetStandard.Models.UFModel.Option.UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next``1
+  - UltraForce.Library.NetStandard.Models.UFModel.Option.UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous``1
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Option.LockChildren
+  commentId: F:UltraForce.Library.NetStandard.Models.UFModel.Option.LockChildren
+  id: LockChildren
+  parent: UltraForce.Library.NetStandard.Models.UFModel.Option
+  langs:
+  - csharp
+  - vb
+  name: LockChildren
+  nameWithType: UFModel.Option.LockChildren
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Option.LockChildren
+  type: Field
+  source:
+    id: LockChildren
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModel.cs
+    startLine: 126
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: >-
+    Calls to <xref href="UltraForce.Library.NetStandard.Models.UFModel.Lock" data-throw-if-not-resolved="false"></xref> and <xref href="UltraForce.Library.NetStandard.Models.UFModel.Unlock" data-throw-if-not-resolved="false"></xref> also processes all properties and will call 
+
+    <xref href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.Lock" data-throw-if-not-resolved="false"></xref> and <xref href="UltraForce.Library.NetStandard.Interfaces.IUFLockable.Unlock" data-throw-if-not-resolved="false"></xref>  if a property is an object that
+
+    implements <xref href="UltraForce.Library.NetStandard.Interfaces.IUFLockable" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: LockChildren = 0
+    return:
+      type: UltraForce.Library.NetStandard.Models.UFModel.Option
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Option.IgnoreProperties
+  commentId: F:UltraForce.Library.NetStandard.Models.UFModel.Option.IgnoreProperties
+  id: IgnoreProperties
+  parent: UltraForce.Library.NetStandard.Models.UFModel.Option
+  langs:
+  - csharp
+  - vb
+  name: IgnoreProperties
+  nameWithType: UFModel.Option.IgnoreProperties
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Option.IgnoreProperties
+  type: Field
+  source:
+    id: IgnoreProperties
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModel.cs
+    startLine: 132
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: >-
+    Do not process any properties. This option is only checked when the first instance is created (since property
+
+    meta data is shared between all instances of a certain subclass)
+  example: []
+  syntax:
+    content: IgnoreProperties = 1
+    return:
+      type: UltraForce.Library.NetStandard.Models.UFModel.Option
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Option.IncludeFields
+  commentId: F:UltraForce.Library.NetStandard.Models.UFModel.Option.IncludeFields
+  id: IncludeFields
+  parent: UltraForce.Library.NetStandard.Models.UFModel.Option
+  langs:
+  - csharp
+  - vb
+  name: IncludeFields
+  nameWithType: UFModel.Option.IncludeFields
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Option.IncludeFields
+  type: Field
+  source:
+    id: IncludeFields
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModel.cs
+    startLine: 138
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: >-
+    Also process the fields. This option is only checked when the first instance is created (since property meta
+
+    data is shared between all instances of a certain subclass)
+  example: []
+  syntax:
+    content: IncludeFields = 2
+    return:
+      type: UltraForce.Library.NetStandard.Models.UFModel.Option
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Option.TrackChildChange
+  commentId: F:UltraForce.Library.NetStandard.Models.UFModel.Option.TrackChildChange
+  id: TrackChildChange
+  parent: UltraForce.Library.NetStandard.Models.UFModel.Option
+  langs:
+  - csharp
+  - vb
+  name: TrackChildChange
+  nameWithType: UFModel.Option.TrackChildChange
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Option.TrackChildChange
+  type: Field
+  source:
+    id: TrackChildChange
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModel.cs
+    startLine: 149
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: >-
+    Checks if a property implements <xref href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged" data-throw-if-not-resolved="false"></xref>. If it does, listen for changes and fire
+
+    <xref href="UltraForce.Library.NetStandard.Models.UFModel.ChildChanged" data-throw-if-not-resolved="false"></xref>
+
+    <p>
+
+    When this option is used, changes to property values should result in calls to
+
+    <xref href="UltraForce.Library.NetStandard.Models.UFModel.Changed(System.String%2cSystem.Object%2cSystem.Object)" data-throw-if-not-resolved="false"></xref>. This will happen automatically when using 
+
+    <xref href="UltraForce.Library.NetStandard.Models.UFModel.Assign%60%601(%60%600%40%2c%60%600%2cSystem.String)" data-throw-if-not-resolved="false"></xref> or <xref href="UltraForce.Library.NetStandard.Models.UFModel.Set(System.Object%2cSystem.String)" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
+  example: []
+  syntax:
+    content: TrackChildChange = 3
+    return:
+      type: UltraForce.Library.NetStandard.Models.UFModel.Option
+references:
+- uid: UltraForce.Library.NetStandard.Models.UFModel
+  commentId: T:UltraForce.Library.NetStandard.Models.UFModel
+  parent: UltraForce.Library.NetStandard.Models
+  href: UltraForce.Library.NetStandard.Models.UFModel.html
+  name: UFModel
+  nameWithType: UFModel
+  fullName: UltraForce.Library.NetStandard.Models.UFModel
+- uid: UltraForce.Library.NetStandard.Models
+  commentId: N:UltraForce.Library.NetStandard.Models
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Models
+  nameWithType: UltraForce.Library.NetStandard.Models
+  fullName: UltraForce.Library.NetStandard.Models
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models
+    name: Models
+    href: UltraForce.Library.NetStandard.Models.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models
+    name: Models
+    href: UltraForce.Library.NetStandard.Models.html
+- uid: System.Enum.UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute``1
+  commentId: M:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute``1(System.Enum)
+  parent: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions
+  definition: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute``1(System.Enum)
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetAttribute__1_System_Enum_
+  name: GetAttribute<T>(Enum)
+  nameWithType: UFEnumExtensions.GetAttribute<T>(Enum)
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute<T>(System.Enum)
+  nameWithType.vb: UFEnumExtensions.GetAttribute(Of T)(Enum)
+  fullName.vb: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute(Of T)(System.Enum)
+  name.vb: GetAttribute(Of T)(Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute``1(System.Enum)
+    name: GetAttribute
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetAttribute__1_System_Enum_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute``1(System.Enum)
+    name: GetAttribute
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetAttribute__1_System_Enum_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: System.Enum.UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription
+  commentId: M:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription(System.Enum)
+  parent: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions
+  definition: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription(System.Enum)
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetDescription_System_Enum_
+  name: GetDescription(Enum)
+  nameWithType: UFEnumExtensions.GetDescription(Enum)
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription(System.Enum)
+    name: GetDescription
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription(System.Enum)
+    name: GetDescription
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: System.Enum.UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName
+  commentId: M:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName(System.Enum)
+  parent: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions
+  definition: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName(System.Enum)
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetName_System_Enum_
+  name: GetName(Enum)
+  nameWithType: UFEnumExtensions.GetName(Enum)
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName(System.Enum)
+    name: GetName
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName(System.Enum)
+    name: GetName
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: System.Enum.UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription
+  commentId: M:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription(System.Enum)
+  parent: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions
+  definition: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription(System.Enum)
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetShortDescription_System_Enum_
+  name: GetShortDescription(Enum)
+  nameWithType: UFEnumExtensions.GetShortDescription(Enum)
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription(System.Enum)
+    name: GetShortDescription
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetShortDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription(System.Enum)
+    name: GetShortDescription
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetShortDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Option.UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next``1
+  commentId: M:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next``1(``0)
+  parent: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions
+  definition: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next``1(``0)
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Next__1___0_
+  name: Next<Option>(Option)
+  nameWithType: UFEnumExtensions.Next<UFModel.Option>(UFModel.Option)
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next<UltraForce.Library.NetStandard.Models.UFModel.Option>(UltraForce.Library.NetStandard.Models.UFModel.Option)
+  nameWithType.vb: UFEnumExtensions.Next(Of UFModel.Option)(UFModel.Option)
+  fullName.vb: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next(Of UltraForce.Library.NetStandard.Models.UFModel.Option)(UltraForce.Library.NetStandard.Models.UFModel.Option)
+  name.vb: Next(Of Option)(Option)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next``1(UltraForce.Library.NetStandard.Models.UFModel.Option)
+    name: Next
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Next__1___0_
+  - name: <
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+    name: Option
+    href: UltraForce.Library.NetStandard.Models.UFModel.Option.html
+  - name: '>'
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+    name: Option
+    href: UltraForce.Library.NetStandard.Models.UFModel.Option.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next``1(UltraForce.Library.NetStandard.Models.UFModel.Option)
+    name: Next
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Next__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+    name: Option
+    href: UltraForce.Library.NetStandard.Models.UFModel.Option.html
+  - name: )
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+    name: Option
+    href: UltraForce.Library.NetStandard.Models.UFModel.Option.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Option.UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous``1
+  commentId: M:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous``1(``0)
+  parent: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions
+  definition: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous``1(``0)
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Previous__1___0_
+  name: Previous<Option>(Option)
+  nameWithType: UFEnumExtensions.Previous<UFModel.Option>(UFModel.Option)
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous<UltraForce.Library.NetStandard.Models.UFModel.Option>(UltraForce.Library.NetStandard.Models.UFModel.Option)
+  nameWithType.vb: UFEnumExtensions.Previous(Of UFModel.Option)(UFModel.Option)
+  fullName.vb: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous(Of UltraForce.Library.NetStandard.Models.UFModel.Option)(UltraForce.Library.NetStandard.Models.UFModel.Option)
+  name.vb: Previous(Of Option)(Option)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous``1(UltraForce.Library.NetStandard.Models.UFModel.Option)
+    name: Previous
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Previous__1___0_
+  - name: <
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+    name: Option
+    href: UltraForce.Library.NetStandard.Models.UFModel.Option.html
+  - name: '>'
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+    name: Option
+    href: UltraForce.Library.NetStandard.Models.UFModel.Option.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous``1(UltraForce.Library.NetStandard.Models.UFModel.Option)
+    name: Previous
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Previous__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+    name: Option
+    href: UltraForce.Library.NetStandard.Models.UFModel.Option.html
+  - name: )
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+    name: Option
+    href: UltraForce.Library.NetStandard.Models.UFModel.Option.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute``1(System.Enum)
+  commentId: M:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute``1(System.Enum)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetAttribute__1_System_Enum_
+  name: GetAttribute<T>(Enum)
+  nameWithType: UFEnumExtensions.GetAttribute<T>(Enum)
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute<T>(System.Enum)
+  nameWithType.vb: UFEnumExtensions.GetAttribute(Of T)(Enum)
+  fullName.vb: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute(Of T)(System.Enum)
+  name.vb: GetAttribute(Of T)(Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute``1(System.Enum)
+    name: GetAttribute
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetAttribute__1_System_Enum_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute``1(System.Enum)
+    name: GetAttribute
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetAttribute__1_System_Enum_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions
+  commentId: T:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions
+  parent: UltraForce.Library.NetStandard.Extensions
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html
+  name: UFEnumExtensions
+  nameWithType: UFEnumExtensions
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions
+- uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription(System.Enum)
+  commentId: M:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription(System.Enum)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetDescription_System_Enum_
+  name: GetDescription(Enum)
+  nameWithType: UFEnumExtensions.GetDescription(Enum)
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription(System.Enum)
+    name: GetDescription
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription(System.Enum)
+    name: GetDescription
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName(System.Enum)
+  commentId: M:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName(System.Enum)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetName_System_Enum_
+  name: GetName(Enum)
+  nameWithType: UFEnumExtensions.GetName(Enum)
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName(System.Enum)
+    name: GetName
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName(System.Enum)
+    name: GetName
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription(System.Enum)
+  commentId: M:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription(System.Enum)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetShortDescription_System_Enum_
+  name: GetShortDescription(Enum)
+  nameWithType: UFEnumExtensions.GetShortDescription(Enum)
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription(System.Enum)
+    name: GetShortDescription
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetShortDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription(System.Enum)
+    name: GetShortDescription
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetShortDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next``1(``0)
+  commentId: M:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next``1(``0)
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Next__1___0_
+  name: Next<T>(T)
+  nameWithType: UFEnumExtensions.Next<T>(T)
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next<T>(T)
+  nameWithType.vb: UFEnumExtensions.Next(Of T)(T)
+  fullName.vb: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next(Of T)(T)
+  name.vb: Next(Of T)(T)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next``1(``0)
+    name: Next
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Next__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next``1(``0)
+    name: Next
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Next__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous``1(``0)
+  commentId: M:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous``1(``0)
+  href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Previous__1___0_
+  name: Previous<T>(T)
+  nameWithType: UFEnumExtensions.Previous<T>(T)
+  fullName: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous<T>(T)
+  nameWithType.vb: UFEnumExtensions.Previous(Of T)(T)
+  fullName.vb: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous(Of T)(T)
+  name.vb: Previous(Of T)(T)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous``1(``0)
+    name: Previous
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Previous__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous``1(``0)
+    name: Previous
+    href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Previous__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: UltraForce.Library.NetStandard.Extensions
+  commentId: N:UltraForce.Library.NetStandard.Extensions
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Extensions
+  nameWithType: UltraForce.Library.NetStandard.Extensions
+  fullName: UltraForce.Library.NetStandard.Extensions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Extensions
+    name: Extensions
+    href: UltraForce.Library.NetStandard.Extensions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Extensions
+    name: Extensions
+    href: UltraForce.Library.NetStandard.Extensions.html
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Lock
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Lock
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Lock
+  name: Lock()
+  nameWithType: UFModel.Lock()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Lock()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Lock
+    name: Lock
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Lock
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Lock
+    name: Lock
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Lock
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Unlock
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Unlock
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Unlock
+  name: Unlock()
+  nameWithType: UFModel.Unlock()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Unlock()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Unlock
+    name: Unlock
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Unlock
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Unlock
+    name: Unlock
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Unlock
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFLockable.Lock
+  commentId: M:UltraForce.Library.NetStandard.Interfaces.IUFLockable.Lock
+  parent: UltraForce.Library.NetStandard.Interfaces.IUFLockable
+  href: UltraForce.Library.NetStandard.Interfaces.IUFLockable.html#UltraForce_Library_NetStandard_Interfaces_IUFLockable_Lock
+  name: Lock()
+  nameWithType: IUFLockable.Lock()
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFLockable.Lock()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Interfaces.IUFLockable.Lock
+    name: Lock
+    href: UltraForce.Library.NetStandard.Interfaces.IUFLockable.html#UltraForce_Library_NetStandard_Interfaces_IUFLockable_Lock
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Interfaces.IUFLockable.Lock
+    name: Lock
+    href: UltraForce.Library.NetStandard.Interfaces.IUFLockable.html#UltraForce_Library_NetStandard_Interfaces_IUFLockable_Lock
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFLockable.Unlock
+  commentId: M:UltraForce.Library.NetStandard.Interfaces.IUFLockable.Unlock
+  parent: UltraForce.Library.NetStandard.Interfaces.IUFLockable
+  href: UltraForce.Library.NetStandard.Interfaces.IUFLockable.html#UltraForce_Library_NetStandard_Interfaces_IUFLockable_Unlock
+  name: Unlock()
+  nameWithType: IUFLockable.Unlock()
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFLockable.Unlock()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Interfaces.IUFLockable.Unlock
+    name: Unlock
+    href: UltraForce.Library.NetStandard.Interfaces.IUFLockable.html#UltraForce_Library_NetStandard_Interfaces_IUFLockable_Unlock
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Interfaces.IUFLockable.Unlock
+    name: Unlock
+    href: UltraForce.Library.NetStandard.Interfaces.IUFLockable.html#UltraForce_Library_NetStandard_Interfaces_IUFLockable_Unlock
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFLockable
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFLockable
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFLockable.html
+  name: IUFLockable
+  nameWithType: IUFLockable
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFLockable
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+  commentId: T:UltraForce.Library.NetStandard.Models.UFModel.Option
+  parent: UltraForce.Library.NetStandard.Models
+  href: UltraForce.Library.NetStandard.Models.UFModel.html
+  name: UFModel.Option
+  nameWithType: UFModel.Option
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Option
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel
+    name: UFModel
+    href: UltraForce.Library.NetStandard.Models.UFModel.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+    name: Option
+    href: UltraForce.Library.NetStandard.Models.UFModel.Option.html
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel
+    name: UFModel
+    href: UltraForce.Library.NetStandard.Models.UFModel.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+    name: Option
+    href: UltraForce.Library.NetStandard.Models.UFModel.Option.html
+- uid: UltraForce.Library.NetStandard.Interfaces
+  commentId: N:UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Interfaces
+  nameWithType: UltraForce.Library.NetStandard.Interfaces
+  fullName: UltraForce.Library.NetStandard.Interfaces
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html
+  name: IUFNotifyDataChanged
+  nameWithType: IUFNotifyDataChanged
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+- uid: UltraForce.Library.NetStandard.Models.UFModel.ChildChanged
+  commentId: E:UltraForce.Library.NetStandard.Models.UFModel.ChildChanged
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildChanged
+  name: ChildChanged
+  nameWithType: UFModel.ChildChanged
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.ChildChanged
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Changed(System.String,System.Object,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Changed(System.String,System.Object,System.Object)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_
+  name: Changed(string, object, object)
+  nameWithType: UFModel.Changed(string, object, object)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Changed(string, object, object)
+  nameWithType.vb: UFModel.Changed(String, Object, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.Changed(String, Object, Object)
+  name.vb: Changed(String, Object, Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Changed(System.String,System.Object,System.Object)
+    name: Changed
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Changed(System.String,System.Object,System.Object)
+    name: Changed
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_
+  name: Assign<T>(ref T, T, string)
+  nameWithType: UFModel.Assign<T>(ref T, T, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Assign<T>(ref T, T, string)
+  nameWithType.vb: UFModel.Assign(Of T)(T, T, String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.Assign(Of T)(T, T, String)
+  name.vb: Assign(Of T)(T, T, String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)
+    name: Assign
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)
+    name: Assign
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Set(System.Object,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Set(System.Object,System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_
+  name: Set(object, string)
+  nameWithType: UFModel.Set(object, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Set(object, string)
+  nameWithType.vb: UFModel.Set(Object, String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.Set(Object, String)
+  name.vb: Set(Object, String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Set(System.Object,System.String)
+    name: Set
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Set(System.Object,System.String)
+    name: Set
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

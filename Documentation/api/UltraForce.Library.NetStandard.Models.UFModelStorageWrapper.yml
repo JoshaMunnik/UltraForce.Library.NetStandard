@@ -1,0 +1,3014 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  commentId: T:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  id: UFModelStorageWrapper
+  parent: UltraForce.Library.NetStandard.Models
+  children:
+  - UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.#ctor(UltraForce.Library.NetStandard.Storage.UFKeyedStorage,System.String)
+  - UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.ChildHasChanged(System.Object,System.String[],UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  - UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Clear(System.Boolean)
+  - UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.DeleteFromStorage(System.String)
+  - UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(System.String)
+  - UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get``1(System.Func{``0},System.String)
+  - UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(System.Object,System.String)
+  - UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(System.String)
+  langs:
+  - csharp
+  - vb
+  name: UFModelStorageWrapper
+  nameWithType: UFModelStorageWrapper
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  type: Class
+  source:
+    id: UFModelStorageWrapper
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModelStorageWrapper.cs
+    startLine: 68
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: >-
+    <xref href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper" data-throw-if-not-resolved="false"></xref> can be used to create models that
+
+    map their properties directly to a storage.
+
+    <p>
+
+    Use <xref href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get%60%601(System.Func%7b%60%600%7d%2cSystem.String)" data-throw-if-not-resolved="false"></xref> to get a property value from the storage and
+
+    use <xref href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(System.Object%2cSystem.String)" data-throw-if-not-resolved="false"></xref> to store a property value to the storage.
+
+    </p>
+
+    <p>
+
+    The class handles properties that implement
+
+    <xref href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged" data-throw-if-not-resolved="false"></xref>. The class uses 
+
+    <xref href="UltraForce.Library.NetStandard.Models.UFModel.Option.TrackChildChange" data-throw-if-not-resolved="false"></xref> and
+
+    will update the object in storage whenever it changes.
+
+    </p>
+
+    <p>
+
+    If a property is a (sub)class of <xref href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper" data-throw-if-not-resolved="false"></xref> the
+
+    class will call <xref href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(System.String)" data-throw-if-not-resolved="false"></xref> whenever a new instance
+
+    is created or assigned. The class will never store the value itself in
+
+    the storage. The class assumes the property value will take care of
+
+    storing/retrieving itself. This allows for a
+
+    <xref href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper" data-throw-if-not-resolved="false"></xref> subclass to be used for multiple
+
+    properties without key name conflicts.
+
+    </p>
+
+    <p>
+
+    Properties that implement <xref href="UltraForce.Library.NetStandard.Storage.IUFStorableObject" data-throw-if-not-resolved="false"></xref> are treated
+
+    slightly different. The first time a property's value is referenced
+
+    and none exists, a new instance is created and its data is loaded
+
+    from the wrapped <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage" data-throw-if-not-resolved="false"></xref> using
+
+    <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String%2cUltraForce.Library.NetStandard.Storage.IUFStorableObject)" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public class UFModelStorageWrapper : UFModel, IUFStorableObject, IUFJsonExport, IUFLockable, INotifyPropertyChanged, IUFClearable, IUFModel, IUFAccessProperty, IUFNotifyDataChanged, IUFValidatePropertyValue'
+    content.vb: Public Class UFModelStorageWrapper Inherits UFModel Implements IUFStorableObject, IUFJsonExport, IUFLockable, INotifyPropertyChanged, IUFClearable, IUFModel, IUFAccessProperty, IUFNotifyDataChanged, IUFValidatePropertyValue
+  inheritance:
+  - System.Object
+  - UltraForce.Library.NetStandard.Models.UFModel
+  implements:
+  - UltraForce.Library.NetStandard.Storage.IUFStorableObject
+  - UltraForce.Library.NetStandard.Interfaces.IUFJsonExport
+  - UltraForce.Library.NetStandard.Interfaces.IUFLockable
+  - System.ComponentModel.INotifyPropertyChanged
+  - UltraForce.Library.NetStandard.Interfaces.IUFClearable
+  - UltraForce.Library.NetStandard.Models.IUFModel
+  - UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty
+  - UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+  - UltraForce.Library.NetStandard.Interfaces.IUFValidatePropertyValue
+  inheritedMembers:
+  - UltraForce.Library.NetStandard.Models.UFModel.UseLog(UltraForce.Library.NetStandard.Development.UFHtmlLog)
+  - UltraForce.Library.NetStandard.Models.UFModel.GetPropertyType(System.String)
+  - UltraForce.Library.NetStandard.Models.UFModel.ResetLock
+  - UltraForce.Library.NetStandard.Models.UFModel.HasChanged
+  - UltraForce.Library.NetStandard.Models.UFModel.ResetChanged
+  - UltraForce.Library.NetStandard.Models.UFModel.GetPropertyNames
+  - UltraForce.Library.NetStandard.Models.UFModel.HasProperty(System.String)
+  - UltraForce.Library.NetStandard.Models.UFModel.IsValid
+  - UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(System.String,System.Object,System.Boolean)
+  - UltraForce.Library.NetStandard.Models.UFModel.CopyTo(UltraForce.Library.NetStandard.Models.UFModel,System.Boolean)
+  - UltraForce.Library.NetStandard.Models.UFModel.CopyFrom(UltraForce.Library.NetStandard.Models.UFModel,System.Boolean)
+  - UltraForce.Library.NetStandard.Models.UFModel.GetDataChangedToken
+  - UltraForce.Library.NetStandard.Models.UFModel.SaveToStream(System.Int32,System.IO.Stream)
+  - UltraForce.Library.NetStandard.Models.UFModel.LoadFromStream(System.Int32,System.IO.Stream)
+  - UltraForce.Library.NetStandard.Models.UFModel.ToString
+  - UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue``1(System.String)
+  - UltraForce.Library.NetStandard.Models.UFModel.SaveJson
+  - UltraForce.Library.NetStandard.Models.UFModel.Clear
+  - UltraForce.Library.NetStandard.Models.UFModel.Lock
+  - UltraForce.Library.NetStandard.Models.UFModel.Unlock
+  - UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue(System.String)
+  - UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(System.String,System.Object)
+  - UltraForce.Library.NetStandard.Models.UFModel.IsValidPropertyValue(System.String,System.Object)
+  - UltraForce.Library.NetStandard.Models.UFModel.DataChanged
+  - UltraForce.Library.NetStandard.Models.UFModel.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  - UltraForce.Library.NetStandard.Models.UFModel.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  - UltraForce.Library.NetStandard.Models.UFModel.SaveJson(System.Text.StringBuilder)
+  - UltraForce.Library.NetStandard.Models.UFModel.PropertyChanged
+  - UltraForce.Library.NetStandard.Models.UFModel.ChildChanged
+  - UltraForce.Library.NetStandard.Models.UFModel.InitMeta
+  - UltraForce.Library.NetStandard.Models.UFModel.CanSave(System.String,System.Object)
+  - UltraForce.Library.NetStandard.Models.UFModel.Changed
+  - UltraForce.Library.NetStandard.Models.UFModel.Changed(System.String,System.Object,System.Object)
+  - UltraForce.Library.NetStandard.Models.UFModel.OnChildChanged(System.Object,UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  - UltraForce.Library.NetStandard.Models.UFModel.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  - UltraForce.Library.NetStandard.Models.UFModel.OnDataChanged(UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  - UltraForce.Library.NetStandard.Models.UFModel.UpdateTrackedProperties
+  - UltraForce.Library.NetStandard.Models.UFModel.AddValidator(System.String,UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue)
+  - UltraForce.Library.NetStandard.Models.UFModel.AddValidator(System.String,UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty)
+  - UltraForce.Library.NetStandard.Models.UFModel.Assign``1({T}@,{T},System.String)
+  - UltraForce.Library.NetStandard.Models.UFModel.Get``1({T},System.String)
+  - UltraForce.Library.NetStandard.Models.UFModel.HasOption(UltraForce.Library.NetStandard.Models.UFModel.Option)
+  - UltraForce.Library.NetStandard.Models.UFModel.LogNewValue(System.String,System.Object)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.#ctor(UltraForce.Library.NetStandard.Storage.UFKeyedStorage,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.#ctor(UltraForce.Library.NetStandard.Storage.UFKeyedStorage,System.String)
+  id: '#ctor(UltraForce.Library.NetStandard.Storage.UFKeyedStorage,System.String)'
+  parent: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  langs:
+  - csharp
+  - vb
+  name: UFModelStorageWrapper(UFKeyedStorage, string)
+  nameWithType: UFModelStorageWrapper.UFModelStorageWrapper(UFKeyedStorage, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.UFModelStorageWrapper(UltraForce.Library.NetStandard.Storage.UFKeyedStorage, string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModelStorageWrapper.cs
+    startLine: 100
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: Constructs an instance <xref href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected UFModelStorageWrapper(UFKeyedStorage aStorage, string aPrefix = "")
+    parameters:
+    - id: aStorage
+      type: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+      description: <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage" data-throw-if-not-resolved="false"></xref> instance to wrap
+    - id: aPrefix
+      type: System.String
+      description: Prefix used to create storage key names from property names.
+    content.vb: Protected Sub New(aStorage As UFKeyedStorage, aPrefix As String = "")
+  overload: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.#ctor*
+  nameWithType.vb: UFModelStorageWrapper.New(UFKeyedStorage, String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.New(UltraForce.Library.NetStandard.Storage.UFKeyedStorage, String)
+  name.vb: New(UFKeyedStorage, String)
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Clear(System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Clear(System.Boolean)
+  id: Clear(System.Boolean)
+  parent: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  langs:
+  - csharp
+  - vb
+  name: Clear(bool)
+  nameWithType: UFModelStorageWrapper.Clear(bool)
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Clear(bool)
+  type: Method
+  source:
+    id: Clear
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModelStorageWrapper.cs
+    startLine: 115
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: >-
+    Initializes or clears the properties of the data structure to default values. 
+
+    <p>
+
+    The default implementation sets all the properties that have a <xref href="System.ComponentModel.DefaultValueAttribute" data-throw-if-not-resolved="false"></xref> attached to
+
+    the value specified by that attribute. 
+
+    </p><p>
+
+    If the property has no <xref href="System.ComponentModel.DefaultValueAttribute" data-throw-if-not-resolved="false"></xref> attached the method will check if the property
+
+    value has a method named <code>Clear</code> and will call that method if it does.
+
+    </p><p>
+
+    As last step the method will call <xref href="UltraForce.Library.NetStandard.Models.UFModel.UpdateTrackedProperties" data-throw-if-not-resolved="false"></xref></p><p>
+
+    Subclasses can override this method to initialize or clear additional properties.
+
+    </p><p>
+
+    If there are properties that implement <xref href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="UltraForce.Library.NetStandard.Models.UFModel.Option.TrackChildChange" data-throw-if-not-resolved="false"></xref> is used, the clear method should make sure the instances are existing.
+
+    </p><param name="aCallChanged">
+
+    When <code>true</code> call <xref href="UltraForce.Library.NetStandard.Models.UFModel.Changed" data-throw-if-not-resolved="false"></xref>. 
+
+    </param>
+  example: []
+  syntax:
+    content: public override void Clear(bool aCallChanged)
+    parameters:
+    - id: aCallChanged
+      type: System.Boolean
+    content.vb: Public Overrides Sub Clear(aCallChanged As Boolean)
+  overridden: UltraForce.Library.NetStandard.Models.UFModel.Clear(System.Boolean)
+  overload: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Clear*
+  nameWithType.vb: UFModelStorageWrapper.Clear(Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Clear(Boolean)
+  name.vb: Clear(Boolean)
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get``1(System.Func{``0},System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get``1(System.Func{``0},System.String)
+  id: Get``1(System.Func{``0},System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  langs:
+  - csharp
+  - vb
+  name: Get<T>(Func<T>, string)
+  nameWithType: UFModelStorageWrapper.Get<T>(Func<T>, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get<T>(System.Func<T>, string)
+  type: Method
+  source:
+    id: Get
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModelStorageWrapper.cs
+    startLine: 149
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: Gets a value from storage.
+  remarks: >-
+    The first time this method is called for a type that is implementing
+
+    <xref href="UltraForce.Library.NetStandard.Storage.IUFStorableObject" data-throw-if-not-resolved="false"></xref> the method will create the object
+
+    with <code>aFactory</code> and then will load it from the storage.
+
+    <p>
+
+    Subsequent calls just return the stored instance.
+
+    </p>
+  example: []
+  syntax:
+    content: protected override T Get<T>(Func<T> aFactory, string aPropertyName = "")
+    parameters:
+    - id: aFactory
+      type: System.Func{{T}}
+      description: Default value to use when the value is not available in the storage
+    - id: aPropertyName
+      type: System.String
+      description: Name of property used as storage key
+    typeParameters:
+    - id: T
+      description: Type of property
+    return:
+      type: '{T}'
+      description: Value from storage or aDefault
+    content.vb: Protected Overrides Function [Get](Of T)(aFactory As Func(Of T), aPropertyName As String = "") As T
+  overridden: UltraForce.Library.NetStandard.Models.UFModel.Get``1(System.Func{{T}},System.String)
+  overload: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get*
+  nameWithType.vb: UFModelStorageWrapper.Get(Of T)(Func(Of T), String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get(Of T)(System.Func(Of T), String)
+  name.vb: Get(Of T)(Func(Of T), String)
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(System.Object,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(System.Object,System.String)
+  id: Set(System.Object,System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  langs:
+  - csharp
+  - vb
+  name: Set(object?, string)
+  nameWithType: UFModelStorageWrapper.Set(object?, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(object?, string)
+  type: Method
+  source:
+    id: Set
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModelStorageWrapper.cs
+    startLine: 213
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: Sets a value in storage. Will fire a changed event if value is new.
+  remarks: >-
+    If the value assigned is a subclass of
+
+    <xref href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper" data-throw-if-not-resolved="false"></xref>, a call will be made to
+
+    <xref href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(System.String)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected override bool Set(object? aValue, string aPropertyName = "")
+    parameters:
+    - id: aValue
+      type: System.Object
+      description: >-
+        Value to store. If a value is <code>null</code>, it will get deleted from
+
+        the storage.
+    - id: aPropertyName
+      type: System.String
+      description: Name of property used as storage key
+    return:
+      type: System.Boolean
+      description: >-
+        <code>True</code> if new value got stored; <code>false</code> if the value already
+
+        stored is equal to <code>aValue</code>.
+    content.vb: Protected Overrides Function [Set](aValue As Object, aPropertyName As String = "") As Boolean
+  overridden: UltraForce.Library.NetStandard.Models.UFModel.Set(System.Object,System.String)
+  overload: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set*
+  nameWithType.vb: UFModelStorageWrapper.Set(Object, String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(Object, String)
+  name.vb: Set(Object, String)
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.DeleteFromStorage(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.DeleteFromStorage(System.String)
+  id: DeleteFromStorage(System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  langs:
+  - csharp
+  - vb
+  name: DeleteFromStorage(string)
+  nameWithType: UFModelStorageWrapper.DeleteFromStorage(string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.DeleteFromStorage(string)
+  type: Method
+  source:
+    id: DeleteFromStorage
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModelStorageWrapper.cs
+    startLine: 252
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: >-
+    Removes a value from the settings. It assigns <code>null</code> as new
+
+    property value.
+  example: []
+  syntax:
+    content: protected void DeleteFromStorage(string aPropertyName)
+    parameters:
+    - id: aPropertyName
+      type: System.String
+      description: Name of property to remove
+    content.vb: Protected Sub DeleteFromStorage(aPropertyName As String)
+  overload: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.DeleteFromStorage*
+  nameWithType.vb: UFModelStorageWrapper.DeleteFromStorage(String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.DeleteFromStorage(String)
+  name.vb: DeleteFromStorage(String)
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.ChildHasChanged(System.Object,System.String[],UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.ChildHasChanged(System.Object,System.String[],UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  id: ChildHasChanged(System.Object,System.String[],UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  parent: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  langs:
+  - csharp
+  - vb
+  name: ChildHasChanged(object, string[], UFDataChangedEventArgs)
+  nameWithType: UFModelStorageWrapper.ChildHasChanged(object, string[], UFDataChangedEventArgs)
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.ChildHasChanged(object, string[], UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  type: Method
+  source:
+    id: ChildHasChanged
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModelStorageWrapper.cs
+    startLine: 258
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: >-
+    This method is called when the <xref href="UltraForce.Library.NetStandard.Models.UFModel.Option.TrackChildChange" data-throw-if-not-resolved="false"></xref> is used.
+
+    <p>
+
+    The default implementation does nothing.
+
+    </p>
+  example: []
+  syntax:
+    content: protected override void ChildHasChanged(object aValue, string[] aPropertyNames, UFDataChangedEventArgs anEvent)
+    parameters:
+    - id: aValue
+      type: System.Object
+      description: Property value (is the sender of the event)
+    - id: aPropertyNames
+      type: System.String[]
+      description: One or more property names the value is assigned to
+    - id: anEvent
+      type: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+      description: The change event
+    content.vb: Protected Overrides Sub ChildHasChanged(aValue As Object, aPropertyNames As String(), anEvent As UFDataChangedEventArgs)
+  overridden: UltraForce.Library.NetStandard.Models.UFModel.ChildHasChanged(System.Object,System.String[],UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  overload: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.ChildHasChanged*
+  nameWithType.vb: UFModelStorageWrapper.ChildHasChanged(Object, String(), UFDataChangedEventArgs)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.ChildHasChanged(Object, String(), UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  name.vb: ChildHasChanged(Object, String(), UFDataChangedEventArgs)
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(System.String)
+  id: SetParentKeyPrefix(System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  langs:
+  - csharp
+  - vb
+  name: SetParentKeyPrefix(string)
+  nameWithType: UFModelStorageWrapper.SetParentKeyPrefix(string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(string)
+  type: Method
+  source:
+    id: SetParentKeyPrefix
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModelStorageWrapper.cs
+    startLine: 291
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: >-
+    This method is called when this instance is assigned to a property
+
+    in a parent <xref href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper" data-throw-if-not-resolved="false"></xref> instance.
+
+    <p>
+
+    It stores a prefix that is used when getting the storage key via
+
+    <xref href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(System.String)" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
+
+    <p>
+
+    The default implementation just stores the key.
+
+    </p>
+  example: []
+  syntax:
+    content: protected virtual void SetParentKeyPrefix(string aKeyPrefix)
+    parameters:
+    - id: aKeyPrefix
+      type: System.String
+      description: Prefix to use
+    content.vb: Protected Overridable Sub SetParentKeyPrefix(aKeyPrefix As String)
+  overload: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix*
+  nameWithType.vb: UFModelStorageWrapper.SetParentKeyPrefix(String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(String)
+  name.vb: SetParentKeyPrefix(String)
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(System.String)
+  id: GetStorageKey(System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  langs:
+  - csharp
+  - vb
+  name: GetStorageKey(string)
+  nameWithType: UFModelStorageWrapper.GetStorageKey(string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(string)
+  type: Method
+  source:
+    id: GetStorageKey
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\UFModelStorageWrapper.cs
+    startLine: 306
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models
+  summary: >-
+    Gets key for storage.
+
+    <p>
+
+    The default implementation prefixes the key with the value
+
+    from <xref href="UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(System.String)" data-throw-if-not-resolved="false"></xref> and the prefix passed with the
+
+    constructor.
+
+    </p>
+  example: []
+  syntax:
+    content: protected virtual string GetStorageKey(string aName)
+    parameters:
+    - id: aName
+      type: System.String
+      description: Name to convert to unique key
+    return:
+      type: System.String
+      description: Unique key
+    content.vb: Protected Overridable Function GetStorageKey(aName As String) As String
+  overload: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey*
+  nameWithType.vb: UFModelStorageWrapper.GetStorageKey(String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(String)
+  name.vb: GetStorageKey(String)
+references:
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  commentId: T:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html
+  name: UFModelStorageWrapper
+  nameWithType: UFModelStorageWrapper
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get``1(System.Func{``0},System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get``1(System.Func{``0},System.String)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Get__1_System_Func___0__System_String_
+  name: Get<T>(Func<T>, string)
+  nameWithType: UFModelStorageWrapper.Get<T>(Func<T>, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get<T>(System.Func<T>, string)
+  nameWithType.vb: UFModelStorageWrapper.Get(Of T)(Func(Of T), String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get(Of T)(System.Func(Of T), String)
+  name.vb: Get(Of T)(Func(Of T), String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get``1(System.Func{``0},System.String)
+    name: Get
+    href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Get__1_System_Func___0__System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get``1(System.Func{``0},System.String)
+    name: Get
+    href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Get__1_System_Func___0__System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(System.Object,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(System.Object,System.String)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Set_System_Object_System_String_
+  name: Set(object, string)
+  nameWithType: UFModelStorageWrapper.Set(object, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(object, string)
+  nameWithType.vb: UFModelStorageWrapper.Set(Object, String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(Object, String)
+  name.vb: Set(Object, String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(System.Object,System.String)
+    name: Set
+    href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Set_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set(System.Object,System.String)
+    name: Set
+    href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Set_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html
+  name: IUFNotifyDataChanged
+  nameWithType: IUFNotifyDataChanged
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Option.TrackChildChange
+  commentId: F:UltraForce.Library.NetStandard.Models.UFModel.Option.TrackChildChange
+  href: UltraForce.Library.NetStandard.Models.UFModel.Option.html#UltraForce_Library_NetStandard_Models_UFModel_Option_TrackChildChange
+  name: TrackChildChange
+  nameWithType: UFModel.Option.TrackChildChange
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Option.TrackChildChange
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(System.String)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_SetParentKeyPrefix_System_String_
+  name: SetParentKeyPrefix(string)
+  nameWithType: UFModelStorageWrapper.SetParentKeyPrefix(string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(string)
+  nameWithType.vb: UFModelStorageWrapper.SetParentKeyPrefix(String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(String)
+  name.vb: SetParentKeyPrefix(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(System.String)
+    name: SetParentKeyPrefix
+    href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_SetParentKeyPrefix_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix(System.String)
+    name: SetParentKeyPrefix
+    href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_SetParentKeyPrefix_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+  commentId: T:UltraForce.Library.NetStandard.Storage.IUFStorableObject
+  parent: UltraForce.Library.NetStandard.Storage
+  href: UltraForce.Library.NetStandard.Storage.IUFStorableObject.html
+  name: IUFStorableObject
+  nameWithType: IUFStorableObject
+  fullName: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  commentId: T:UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  parent: UltraForce.Library.NetStandard.Storage
+  href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html
+  name: UFKeyedStorage
+  nameWithType: UFKeyedStorage
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetStorableObject_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_
+  name: GetStorableObject(string, IUFStorableObject)
+  nameWithType: UFKeyedStorage.GetStorableObject(string, IUFStorableObject)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(string, UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  nameWithType.vb: UFKeyedStorage.GetStorableObject(String, IUFStorableObject)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(String, UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  name.vb: GetStorableObject(String, IUFStorableObject)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+    name: GetStorableObject
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetStorableObject_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+    name: IUFStorableObject
+    href: UltraForce.Library.NetStandard.Storage.IUFStorableObject.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+    name: GetStorableObject
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_GetStorableObject_System_String_UltraForce_Library_NetStandard_Storage_IUFStorableObject_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+    name: IUFStorableObject
+    href: UltraForce.Library.NetStandard.Storage.IUFStorableObject.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models
+  commentId: N:UltraForce.Library.NetStandard.Models
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Models
+  nameWithType: UltraForce.Library.NetStandard.Models
+  fullName: UltraForce.Library.NetStandard.Models
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models
+    name: Models
+    href: UltraForce.Library.NetStandard.Models.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models
+    name: Models
+    href: UltraForce.Library.NetStandard.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UltraForce.Library.NetStandard.Models.UFModel
+  commentId: T:UltraForce.Library.NetStandard.Models.UFModel
+  parent: UltraForce.Library.NetStandard.Models
+  href: UltraForce.Library.NetStandard.Models.UFModel.html
+  name: UFModel
+  nameWithType: UFModel
+  fullName: UltraForce.Library.NetStandard.Models.UFModel
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFJsonExport
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFJsonExport
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFJsonExport.html
+  name: IUFJsonExport
+  nameWithType: IUFJsonExport
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFJsonExport
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFLockable
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFLockable
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFLockable.html
+  name: IUFLockable
+  nameWithType: IUFLockable
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFLockable
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFClearable
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFClearable
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFClearable.html
+  name: IUFClearable
+  nameWithType: IUFClearable
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFClearable
+- uid: UltraForce.Library.NetStandard.Models.IUFModel
+  commentId: T:UltraForce.Library.NetStandard.Models.IUFModel
+  parent: UltraForce.Library.NetStandard.Models
+  href: UltraForce.Library.NetStandard.Models.IUFModel.html
+  name: IUFModel
+  nameWithType: IUFModel
+  fullName: UltraForce.Library.NetStandard.Models.IUFModel
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty.html
+  name: IUFAccessProperty
+  nameWithType: IUFAccessProperty
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFValidatePropertyValue
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFValidatePropertyValue
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFValidatePropertyValue.html
+  name: IUFValidatePropertyValue
+  nameWithType: IUFValidatePropertyValue
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFValidatePropertyValue
+- uid: UltraForce.Library.NetStandard.Models.UFModel.UseLog(UltraForce.Library.NetStandard.Development.UFHtmlLog)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.UseLog(UltraForce.Library.NetStandard.Development.UFHtmlLog)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UseLog_UltraForce_Library_NetStandard_Development_UFHtmlLog_
+  name: UseLog(UFHtmlLog)
+  nameWithType: UFModel.UseLog(UFHtmlLog)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.UseLog(UltraForce.Library.NetStandard.Development.UFHtmlLog)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.UseLog(UltraForce.Library.NetStandard.Development.UFHtmlLog)
+    name: UseLog
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UseLog_UltraForce_Library_NetStandard_Development_UFHtmlLog_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Development.UFHtmlLog
+    name: UFHtmlLog
+    href: UltraForce.Library.NetStandard.Development.UFHtmlLog.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.UseLog(UltraForce.Library.NetStandard.Development.UFHtmlLog)
+    name: UseLog
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UseLog_UltraForce_Library_NetStandard_Development_UFHtmlLog_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Development.UFHtmlLog
+    name: UFHtmlLog
+    href: UltraForce.Library.NetStandard.Development.UFHtmlLog.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyType(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.GetPropertyType(System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyType_System_String_
+  name: GetPropertyType(string)
+  nameWithType: UFModel.GetPropertyType(string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyType(string)
+  nameWithType.vb: UFModel.GetPropertyType(String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyType(String)
+  name.vb: GetPropertyType(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyType(System.String)
+    name: GetPropertyType
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyType_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyType(System.String)
+    name: GetPropertyType
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyType_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.ResetLock
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.ResetLock
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetLock
+  name: ResetLock()
+  nameWithType: UFModel.ResetLock()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.ResetLock()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.ResetLock
+    name: ResetLock
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetLock
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.ResetLock
+    name: ResetLock
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetLock
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.HasChanged
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.HasChanged
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasChanged
+  name: HasChanged()
+  nameWithType: UFModel.HasChanged()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.HasChanged()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.HasChanged
+    name: HasChanged
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.HasChanged
+    name: HasChanged
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasChanged
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.ResetChanged
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.ResetChanged
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetChanged
+  name: ResetChanged()
+  nameWithType: UFModel.ResetChanged()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.ResetChanged()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.ResetChanged
+    name: ResetChanged
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.ResetChanged
+    name: ResetChanged
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ResetChanged
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyNames
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.GetPropertyNames
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyNames
+  name: GetPropertyNames()
+  nameWithType: UFModel.GetPropertyNames()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyNames()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyNames
+    name: GetPropertyNames
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyNames
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyNames
+    name: GetPropertyNames
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyNames
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.HasProperty(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.HasProperty(System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasProperty_System_String_
+  name: HasProperty(string)
+  nameWithType: UFModel.HasProperty(string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.HasProperty(string)
+  nameWithType.vb: UFModel.HasProperty(String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.HasProperty(String)
+  name.vb: HasProperty(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.HasProperty(System.String)
+    name: HasProperty
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasProperty_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.HasProperty(System.String)
+    name: HasProperty
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasProperty_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.IsValid
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.IsValid
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValid
+  name: IsValid()
+  nameWithType: UFModel.IsValid()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.IsValid()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.IsValid
+    name: IsValid
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValid
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.IsValid
+    name: IsValid
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValid
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(System.String,System.Object,System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(System.String,System.Object,System.Boolean)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_System_Boolean_
+  name: SetPropertyValue(string, object, bool)
+  nameWithType: UFModel.SetPropertyValue(string, object, bool)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(string, object, bool)
+  nameWithType.vb: UFModel.SetPropertyValue(String, Object, Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(String, Object, Boolean)
+  name.vb: SetPropertyValue(String, Object, Boolean)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(System.String,System.Object,System.Boolean)
+    name: SetPropertyValue
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(System.String,System.Object,System.Boolean)
+    name: SetPropertyValue
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.CopyTo(UltraForce.Library.NetStandard.Models.UFModel,System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.CopyTo(UltraForce.Library.NetStandard.Models.UFModel,System.Boolean)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyTo_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_
+  name: CopyTo(UFModel, bool)
+  nameWithType: UFModel.CopyTo(UFModel, bool)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.CopyTo(UltraForce.Library.NetStandard.Models.UFModel, bool)
+  nameWithType.vb: UFModel.CopyTo(UFModel, Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.CopyTo(UltraForce.Library.NetStandard.Models.UFModel, Boolean)
+  name.vb: CopyTo(UFModel, Boolean)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.CopyTo(UltraForce.Library.NetStandard.Models.UFModel,System.Boolean)
+    name: CopyTo
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyTo_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Models.UFModel
+    name: UFModel
+    href: UltraForce.Library.NetStandard.Models.UFModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.CopyTo(UltraForce.Library.NetStandard.Models.UFModel,System.Boolean)
+    name: CopyTo
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyTo_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Models.UFModel
+    name: UFModel
+    href: UltraForce.Library.NetStandard.Models.UFModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.CopyFrom(UltraForce.Library.NetStandard.Models.UFModel,System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.CopyFrom(UltraForce.Library.NetStandard.Models.UFModel,System.Boolean)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyFrom_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_
+  name: CopyFrom(UFModel, bool)
+  nameWithType: UFModel.CopyFrom(UFModel, bool)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.CopyFrom(UltraForce.Library.NetStandard.Models.UFModel, bool)
+  nameWithType.vb: UFModel.CopyFrom(UFModel, Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.CopyFrom(UltraForce.Library.NetStandard.Models.UFModel, Boolean)
+  name.vb: CopyFrom(UFModel, Boolean)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.CopyFrom(UltraForce.Library.NetStandard.Models.UFModel,System.Boolean)
+    name: CopyFrom
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyFrom_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Models.UFModel
+    name: UFModel
+    href: UltraForce.Library.NetStandard.Models.UFModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.CopyFrom(UltraForce.Library.NetStandard.Models.UFModel,System.Boolean)
+    name: CopyFrom
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CopyFrom_UltraForce_Library_NetStandard_Models_UFModel_System_Boolean_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Models.UFModel
+    name: UFModel
+    href: UltraForce.Library.NetStandard.Models.UFModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.GetDataChangedToken
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.GetDataChangedToken
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetDataChangedToken
+  name: GetDataChangedToken()
+  nameWithType: UFModel.GetDataChangedToken()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.GetDataChangedToken()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.GetDataChangedToken
+    name: GetDataChangedToken
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetDataChangedToken
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.GetDataChangedToken
+    name: GetDataChangedToken
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetDataChangedToken
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.SaveToStream(System.Int32,System.IO.Stream)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.SaveToStream(System.Int32,System.IO.Stream)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveToStream_System_Int32_System_IO_Stream_
+  name: SaveToStream(int, Stream)
+  nameWithType: UFModel.SaveToStream(int, Stream)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.SaveToStream(int, System.IO.Stream)
+  nameWithType.vb: UFModel.SaveToStream(Integer, Stream)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.SaveToStream(Integer, System.IO.Stream)
+  name.vb: SaveToStream(Integer, Stream)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.SaveToStream(System.Int32,System.IO.Stream)
+    name: SaveToStream
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveToStream_System_Int32_System_IO_Stream_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.SaveToStream(System.Int32,System.IO.Stream)
+    name: SaveToStream
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveToStream_System_Int32_System_IO_Stream_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.LoadFromStream(System.Int32,System.IO.Stream)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.LoadFromStream(System.Int32,System.IO.Stream)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LoadFromStream_System_Int32_System_IO_Stream_
+  name: LoadFromStream(int, Stream)
+  nameWithType: UFModel.LoadFromStream(int, Stream)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.LoadFromStream(int, System.IO.Stream)
+  nameWithType.vb: UFModel.LoadFromStream(Integer, Stream)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.LoadFromStream(Integer, System.IO.Stream)
+  name.vb: LoadFromStream(Integer, Stream)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.LoadFromStream(System.Int32,System.IO.Stream)
+    name: LoadFromStream
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LoadFromStream_System_Int32_System_IO_Stream_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.LoadFromStream(System.Int32,System.IO.Stream)
+    name: LoadFromStream
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LoadFromStream_System_Int32_System_IO_Stream_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.ToString
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.ToString
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ToString
+  name: ToString()
+  nameWithType: UFModel.ToString()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.ToString()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.ToString
+    name: ToString
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.ToString
+    name: ToString
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ToString
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue``1(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue``1(System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue__1_System_String_
+  name: GetPropertyValue<T>(string)
+  nameWithType: UFModel.GetPropertyValue<T>(string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue<T>(string)
+  nameWithType.vb: UFModel.GetPropertyValue(Of T)(String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue(Of T)(String)
+  name.vb: GetPropertyValue(Of T)(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue``1(System.String)
+    name: GetPropertyValue
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue__1_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue``1(System.String)
+    name: GetPropertyValue
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue__1_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.SaveJson
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.SaveJson
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveJson
+  name: SaveJson()
+  nameWithType: UFModel.SaveJson()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.SaveJson()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.SaveJson
+    name: SaveJson
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveJson
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.SaveJson
+    name: SaveJson
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveJson
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Clear
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Clear
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Clear
+  name: Clear()
+  nameWithType: UFModel.Clear()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Clear()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Clear
+    name: Clear
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Clear
+    name: Clear
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Clear
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Lock
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Lock
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Lock
+  name: Lock()
+  nameWithType: UFModel.Lock()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Lock()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Lock
+    name: Lock
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Lock
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Lock
+    name: Lock
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Lock
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Unlock
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Unlock
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Unlock
+  name: Unlock()
+  nameWithType: UFModel.Unlock()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Unlock()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Unlock
+    name: Unlock
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Unlock
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Unlock
+    name: Unlock
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Unlock
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue(System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue_System_String_
+  name: GetPropertyValue(string)
+  nameWithType: UFModel.GetPropertyValue(string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue(string)
+  nameWithType.vb: UFModel.GetPropertyValue(String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue(String)
+  name.vb: GetPropertyValue(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue(System.String)
+    name: GetPropertyValue
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.GetPropertyValue(System.String)
+    name: GetPropertyValue
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_GetPropertyValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(System.String,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(System.String,System.Object)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_
+  name: SetPropertyValue(string, object)
+  nameWithType: UFModel.SetPropertyValue(string, object)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(string, object)
+  nameWithType.vb: UFModel.SetPropertyValue(String, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(String, Object)
+  name.vb: SetPropertyValue(String, Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(System.String,System.Object)
+    name: SetPropertyValue
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.SetPropertyValue(System.String,System.Object)
+    name: SetPropertyValue
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SetPropertyValue_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.IsValidPropertyValue(System.String,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.IsValidPropertyValue(System.String,System.Object)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValidPropertyValue_System_String_System_Object_
+  name: IsValidPropertyValue(string, object)
+  nameWithType: UFModel.IsValidPropertyValue(string, object)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.IsValidPropertyValue(string, object)
+  nameWithType.vb: UFModel.IsValidPropertyValue(String, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.IsValidPropertyValue(String, Object)
+  name.vb: IsValidPropertyValue(String, Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.IsValidPropertyValue(System.String,System.Object)
+    name: IsValidPropertyValue
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValidPropertyValue_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.IsValidPropertyValue(System.String,System.Object)
+    name: IsValidPropertyValue
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_IsValidPropertyValue_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.DataChanged
+  commentId: E:UltraForce.Library.NetStandard.Models.UFModel.DataChanged
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_DataChanged
+  name: DataChanged
+  nameWithType: UFModel.DataChanged
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.DataChanged
+- uid: UltraForce.Library.NetStandard.Models.UFModel.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveToStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_
+  name: SaveToStorage(UFKeyedStorage)
+  nameWithType: UFModel.SaveToStorage(UFKeyedStorage)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+    name: SaveToStorage
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveToStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+    name: UFKeyedStorage
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+    name: SaveToStorage
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveToStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+    name: UFKeyedStorage
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LoadFromStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_
+  name: LoadFromStorage(UFKeyedStorage)
+  nameWithType: UFModel.LoadFromStorage(UFKeyedStorage)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+    name: LoadFromStorage
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LoadFromStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+    name: UFKeyedStorage
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+    name: LoadFromStorage
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LoadFromStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+    name: UFKeyedStorage
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.SaveJson(System.Text.StringBuilder)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.SaveJson(System.Text.StringBuilder)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveJson_System_Text_StringBuilder_
+  name: SaveJson(StringBuilder)
+  nameWithType: UFModel.SaveJson(StringBuilder)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.SaveJson(System.Text.StringBuilder)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.SaveJson(System.Text.StringBuilder)
+    name: SaveJson
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveJson_System_Text_StringBuilder_
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.SaveJson(System.Text.StringBuilder)
+    name: SaveJson
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_SaveJson_System_Text_StringBuilder_
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.PropertyChanged
+  commentId: E:UltraForce.Library.NetStandard.Models.UFModel.PropertyChanged
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_PropertyChanged
+  name: PropertyChanged
+  nameWithType: UFModel.PropertyChanged
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.PropertyChanged
+- uid: UltraForce.Library.NetStandard.Models.UFModel.ChildChanged
+  commentId: E:UltraForce.Library.NetStandard.Models.UFModel.ChildChanged
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildChanged
+  name: ChildChanged
+  nameWithType: UFModel.ChildChanged
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.ChildChanged
+- uid: UltraForce.Library.NetStandard.Models.UFModel.InitMeta
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.InitMeta
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_InitMeta
+  name: InitMeta()
+  nameWithType: UFModel.InitMeta()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.InitMeta()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.InitMeta
+    name: InitMeta
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_InitMeta
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.InitMeta
+    name: InitMeta
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_InitMeta
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.CanSave(System.String,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.CanSave(System.String,System.Object)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CanSave_System_String_System_Object_
+  name: CanSave(string, object)
+  nameWithType: UFModel.CanSave(string, object)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.CanSave(string, object)
+  nameWithType.vb: UFModel.CanSave(String, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.CanSave(String, Object)
+  name.vb: CanSave(String, Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.CanSave(System.String,System.Object)
+    name: CanSave
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CanSave_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.CanSave(System.String,System.Object)
+    name: CanSave
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_CanSave_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Changed
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Changed
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed
+  name: Changed()
+  nameWithType: UFModel.Changed()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Changed()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Changed
+    name: Changed
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Changed
+    name: Changed
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Changed(System.String,System.Object,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Changed(System.String,System.Object,System.Object)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_
+  name: Changed(string, object, object)
+  nameWithType: UFModel.Changed(string, object, object)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Changed(string, object, object)
+  nameWithType.vb: UFModel.Changed(String, Object, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.Changed(String, Object, Object)
+  name.vb: Changed(String, Object, Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Changed(System.String,System.Object,System.Object)
+    name: Changed
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Changed(System.String,System.Object,System.Object)
+    name: Changed
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Changed_System_String_System_Object_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.OnChildChanged(System.Object,UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.OnChildChanged(System.Object,UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnChildChanged_System_Object_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_
+  name: OnChildChanged(object, UFDataChangedEventArgs)
+  nameWithType: UFModel.OnChildChanged(object, UFDataChangedEventArgs)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.OnChildChanged(object, UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  nameWithType.vb: UFModel.OnChildChanged(Object, UFDataChangedEventArgs)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.OnChildChanged(Object, UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  name.vb: OnChildChanged(Object, UFDataChangedEventArgs)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.OnChildChanged(System.Object,UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+    name: OnChildChanged
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnChildChanged_System_Object_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+    name: UFDataChangedEventArgs
+    href: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.OnChildChanged(System.Object,UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+    name: OnChildChanged
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnChildChanged_System_Object_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+    name: UFDataChangedEventArgs
+    href: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  name: OnPropertyChanged(object, PropertyChangedEventArgs)
+  nameWithType: UFModel.OnPropertyChanged(object, PropertyChangedEventArgs)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.OnPropertyChanged(object, System.ComponentModel.PropertyChangedEventArgs)
+  nameWithType.vb: UFModel.OnPropertyChanged(Object, PropertyChangedEventArgs)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.OnPropertyChanged(Object, System.ComponentModel.PropertyChangedEventArgs)
+  name.vb: OnPropertyChanged(Object, PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.OnDataChanged(UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.OnDataChanged(UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnDataChanged_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_
+  name: OnDataChanged(UFDataChangedEventArgs)
+  nameWithType: UFModel.OnDataChanged(UFDataChangedEventArgs)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.OnDataChanged(UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.OnDataChanged(UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+    name: OnDataChanged
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnDataChanged_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+    name: UFDataChangedEventArgs
+    href: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.OnDataChanged(UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+    name: OnDataChanged
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_OnDataChanged_UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+    name: UFDataChangedEventArgs
+    href: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.UpdateTrackedProperties
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.UpdateTrackedProperties
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties
+  name: UpdateTrackedProperties()
+  nameWithType: UFModel.UpdateTrackedProperties()
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.UpdateTrackedProperties()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.UpdateTrackedProperties
+    name: UpdateTrackedProperties
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.UpdateTrackedProperties
+    name: UpdateTrackedProperties
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_UpdateTrackedProperties
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.AddValidator(System.String,UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.AddValidator(System.String,UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_
+  name: AddValidator(string, IUFValidateValue)
+  nameWithType: UFModel.AddValidator(string, IUFValidateValue)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.AddValidator(string, UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue)
+  nameWithType.vb: UFModel.AddValidator(String, IUFValidateValue)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.AddValidator(String, UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue)
+  name.vb: AddValidator(String, IUFValidateValue)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.AddValidator(System.String,UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue)
+    name: AddValidator
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+    name: IUFValidateValue
+    href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.AddValidator(System.String,UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue)
+    name: AddValidator
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+    name: IUFValidateValue
+    href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.AddValidator(System.String,UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.AddValidator(System.String,UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateProperty_
+  name: AddValidator(string, IUFValidateProperty)
+  nameWithType: UFModel.AddValidator(string, IUFValidateProperty)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.AddValidator(string, UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty)
+  nameWithType.vb: UFModel.AddValidator(String, IUFValidateProperty)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.AddValidator(String, UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty)
+  name.vb: AddValidator(String, IUFValidateProperty)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.AddValidator(System.String,UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty)
+    name: AddValidator
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateProperty_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty
+    name: IUFValidateProperty
+    href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.AddValidator(System.String,UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty)
+    name: AddValidator
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_AddValidator_System_String_UltraForce_Library_NetStandard_Models_Validators_IUFValidateProperty_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty
+    name: IUFValidateProperty
+    href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Assign``1({T}@,{T},System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  definition: UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_
+  name: Assign<T>(ref T, T, string)
+  nameWithType: UFModel.Assign<T>(ref T, T, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Assign<T>(ref T, T, string)
+  nameWithType.vb: UFModel.Assign(Of T)(T, T, String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.Assign(Of T)(T, T, String)
+  name.vb: Assign(Of T)(T, T, String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)
+    name: Assign
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)
+    name: Assign
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Get``1({T},System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Get``1(``0,System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  definition: UltraForce.Library.NetStandard.Models.UFModel.Get``1(``0,System.String)
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_
+  name: Get<T>(T, string)
+  nameWithType: UFModel.Get<T>(T, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Get<T>(T, string)
+  nameWithType.vb: UFModel.Get(Of T)(T, String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.Get(Of T)(T, String)
+  name.vb: Get(Of T)(T, String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Get``1(``0,System.String)
+    name: Get
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Get``1(``0,System.String)
+    name: Get
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.HasOption(UltraForce.Library.NetStandard.Models.UFModel.Option)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.HasOption(UltraForce.Library.NetStandard.Models.UFModel.Option)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasOption_UltraForce_Library_NetStandard_Models_UFModel_Option_
+  name: HasOption(Option)
+  nameWithType: UFModel.HasOption(UFModel.Option)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.HasOption(UltraForce.Library.NetStandard.Models.UFModel.Option)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.HasOption(UltraForce.Library.NetStandard.Models.UFModel.Option)
+    name: HasOption
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasOption_UltraForce_Library_NetStandard_Models_UFModel_Option_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+    name: Option
+    href: UltraForce.Library.NetStandard.Models.UFModel.Option.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.HasOption(UltraForce.Library.NetStandard.Models.UFModel.Option)
+    name: HasOption
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_HasOption_UltraForce_Library_NetStandard_Models_UFModel_Option_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Option
+    name: Option
+    href: UltraForce.Library.NetStandard.Models.UFModel.Option.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.LogNewValue(System.String,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.LogNewValue(System.String,System.Object)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LogNewValue_System_String_System_Object_
+  name: LogNewValue(string, object)
+  nameWithType: UFModel.LogNewValue(string, object)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.LogNewValue(string, object)
+  nameWithType.vb: UFModel.LogNewValue(String, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.LogNewValue(String, Object)
+  name.vb: LogNewValue(String, Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.LogNewValue(System.String,System.Object)
+    name: LogNewValue
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LogNewValue_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.LogNewValue(System.String,System.Object)
+    name: LogNewValue
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_LogNewValue_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.NetStandard.Interfaces
+  commentId: N:UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Interfaces
+  nameWithType: UltraForce.Library.NetStandard.Interfaces
+  fullName: UltraForce.Library.NetStandard.Interfaces
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+- uid: UltraForce.Library.NetStandard.Storage
+  commentId: N:UltraForce.Library.NetStandard.Storage
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Storage
+  nameWithType: UltraForce.Library.NetStandard.Storage
+  fullName: UltraForce.Library.NetStandard.Storage
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Storage
+    name: Storage
+    href: UltraForce.Library.NetStandard.Storage.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Storage
+    name: Storage
+    href: UltraForce.Library.NetStandard.Storage.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_
+  name: Assign<T>(ref T, T, string)
+  nameWithType: UFModel.Assign<T>(ref T, T, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Assign<T>(ref T, T, string)
+  nameWithType.vb: UFModel.Assign(Of T)(T, T, String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.Assign(Of T)(T, T, String)
+  name.vb: Assign(Of T)(T, T, String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)
+    name: Assign
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Assign``1(``0@,``0,System.String)
+    name: Assign
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Assign__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Get``1(``0,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Get``1(``0,System.String)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_
+  name: Get<T>(T, string)
+  nameWithType: UFModel.Get<T>(T, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Get<T>(T, string)
+  nameWithType.vb: UFModel.Get(Of T)(T, String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.Get(Of T)(T, String)
+  name.vb: Get(Of T)(T, String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Get``1(``0,System.String)
+    name: Get
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Get``1(``0,System.String)
+    name: Get
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1___0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.#ctor*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.#ctor
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper__ctor_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_System_String_
+  name: UFModelStorageWrapper
+  nameWithType: UFModelStorageWrapper.UFModelStorageWrapper
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.UFModelStorageWrapper
+  nameWithType.vb: UFModelStorageWrapper.New
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ComponentModel.DefaultValueAttribute
+  commentId: T:System.ComponentModel.DefaultValueAttribute
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.defaultvalueattribute
+  name: DefaultValueAttribute
+  nameWithType: DefaultValueAttribute
+  fullName: System.ComponentModel.DefaultValueAttribute
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Clear(System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Clear(System.Boolean)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Clear_System_Boolean_
+  name: Clear(bool)
+  nameWithType: UFModel.Clear(bool)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Clear(bool)
+  nameWithType.vb: UFModel.Clear(Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.Clear(Boolean)
+  name.vb: Clear(Boolean)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Clear(System.Boolean)
+    name: Clear
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Clear_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Clear(System.Boolean)
+    name: Clear
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Clear_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Clear*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Clear
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Clear_System_Boolean_
+  name: Clear
+  nameWithType: UFModelStorageWrapper.Clear
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Clear
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Get``1(System.Func{{T}},System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Get``1(System.Func{``0},System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  definition: UltraForce.Library.NetStandard.Models.UFModel.Get``1(System.Func{``0},System.String)
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_
+  name: Get<T>(Func<T>, string)
+  nameWithType: UFModel.Get<T>(Func<T>, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Get<T>(System.Func<T>, string)
+  nameWithType.vb: UFModel.Get(Of T)(Func(Of T), String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.Get(Of T)(System.Func(Of T), String)
+  name.vb: Get(Of T)(Func(Of T), String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Get``1(System.Func{``0},System.String)
+    name: Get
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Get``1(System.Func{``0},System.String)
+    name: Get
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Get__1_System_Func___0__System_String_
+  name: Get
+  nameWithType: UFModelStorageWrapper.Get
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Get
+- uid: System.Func{{T}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<T>
+  nameWithType: Func<T>
+  fullName: System.Func<T>
+  nameWithType.vb: Func(Of T)
+  fullName.vb: System.Func(Of T)
+  name.vb: Func(Of T)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Get``1(System.Func{``0},System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Get``1(System.Func{``0},System.String)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_
+  name: Get<T>(Func<T>, string)
+  nameWithType: UFModel.Get<T>(Func<T>, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Get<T>(System.Func<T>, string)
+  nameWithType.vb: UFModel.Get(Of T)(Func(Of T), String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.Get(Of T)(System.Func(Of T), String)
+  name.vb: Get(Of T)(Func(Of T), String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Get``1(System.Func{``0},System.String)
+    name: Get
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Get``1(System.Func{``0},System.String)
+    name: Get
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Get__1_System_Func___0__System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UltraForce.Library.NetStandard.Models.UFModel.Set(System.Object,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.Set(System.Object,System.String)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_
+  name: Set(object, string)
+  nameWithType: UFModel.Set(object, string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.Set(object, string)
+  nameWithType.vb: UFModel.Set(Object, String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.Set(Object, String)
+  name.vb: Set(Object, String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Set(System.Object,System.String)
+    name: Set
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.Set(System.Object,System.String)
+    name: Set
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_Set_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_Set_System_Object_System_String_
+  name: Set
+  nameWithType: UFModelStorageWrapper.Set
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.Set
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.DeleteFromStorage*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.DeleteFromStorage
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_DeleteFromStorage_System_String_
+  name: DeleteFromStorage
+  nameWithType: UFModelStorageWrapper.DeleteFromStorage
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.DeleteFromStorage
+- uid: UltraForce.Library.NetStandard.Models.UFModel.ChildHasChanged(System.Object,System.String[],UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModel.ChildHasChanged(System.Object,System.String[],UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  parent: UltraForce.Library.NetStandard.Models.UFModel
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildHasChanged_System_Object_System_String___UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_
+  name: ChildHasChanged(object, string[], UFDataChangedEventArgs)
+  nameWithType: UFModel.ChildHasChanged(object, string[], UFDataChangedEventArgs)
+  fullName: UltraForce.Library.NetStandard.Models.UFModel.ChildHasChanged(object, string[], UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  nameWithType.vb: UFModel.ChildHasChanged(Object, String(), UFDataChangedEventArgs)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModel.ChildHasChanged(Object, String(), UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  name.vb: ChildHasChanged(Object, String(), UFDataChangedEventArgs)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.ChildHasChanged(System.Object,System.String[],UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+    name: ChildHasChanged
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildHasChanged_System_Object_System_String___UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+    name: UFDataChangedEventArgs
+    href: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModel.ChildHasChanged(System.Object,System.String[],UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+    name: ChildHasChanged
+    href: UltraForce.Library.NetStandard.Models.UFModel.html#UltraForce_Library_NetStandard_Models_UFModel_ChildHasChanged_System_Object_System_String___UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+    name: UFDataChangedEventArgs
+    href: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.ChildHasChanged*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.ChildHasChanged
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_ChildHasChanged_System_Object_System_String___UltraForce_Library_NetStandard_Events_UFDataChangedEventArgs_
+  name: ChildHasChanged
+  nameWithType: UFModelStorageWrapper.ChildHasChanged
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.ChildHasChanged
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+  commentId: T:UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+  parent: UltraForce.Library.NetStandard.Events
+  href: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html
+  name: UFDataChangedEventArgs
+  nameWithType: UFDataChangedEventArgs
+  fullName: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+- uid: UltraForce.Library.NetStandard.Events
+  commentId: N:UltraForce.Library.NetStandard.Events
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Events
+  nameWithType: UltraForce.Library.NetStandard.Events
+  fullName: UltraForce.Library.NetStandard.Events
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Events
+    name: Events
+    href: UltraForce.Library.NetStandard.Events.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Events
+    name: Events
+    href: UltraForce.Library.NetStandard.Events.html
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(System.String)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_GetStorageKey_System_String_
+  name: GetStorageKey(string)
+  nameWithType: UFModelStorageWrapper.GetStorageKey(string)
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(string)
+  nameWithType.vb: UFModelStorageWrapper.GetStorageKey(String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(String)
+  name.vb: GetStorageKey(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(System.String)
+    name: GetStorageKey
+    href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_GetStorageKey_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey(System.String)
+    name: GetStorageKey
+    href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_GetStorageKey_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_SetParentKeyPrefix_System_String_
+  name: SetParentKeyPrefix
+  nameWithType: UFModelStorageWrapper.SetParentKeyPrefix
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.SetParentKeyPrefix
+- uid: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey
+  href: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html#UltraForce_Library_NetStandard_Models_UFModelStorageWrapper_GetStorageKey_System_String_
+  name: GetStorageKey
+  nameWithType: UFModelStorageWrapper.GetStorageKey
+  fullName: UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.GetStorageKey

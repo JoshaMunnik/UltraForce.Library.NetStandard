@@ -1,0 +1,1485 @@
+{
+  "source_base_path": "D:/projects/ultraforce.com/csharp/NuGetPackages/UltraForce.Library.NetStandard/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFIONameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFIONameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFIgnoreAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFIgnoreAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFInjectAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFInjectAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFLogAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Annotations.UFLogAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Annotations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Annotations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFActionCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFActionCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFClearClearableAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFClearClearableAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFConditionalAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFConditionalAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFDelayAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFDelayAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToFileAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToFileAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToStreamAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToStreamAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFExternalAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFExternalAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.UFServerResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.UFServerResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFSendServerMessageAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFSendServerMessageAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFSerialQueueAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFSerialQueueAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFWaitForResumeAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.UFWaitForResumeAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.Actions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.UFActionController-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.UFActionController-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.UFBindingController-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.UFBindingController-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Controllers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Data.UFCsvBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Data.UFCsvBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Data.UFCsvHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Data.UFCsvHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Data.UFPropertiesTracker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Data.UFPropertiesTracker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Data.UFScoreRanking-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Data.UFScoreRanking-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Data.UFWeakReferenceCollection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Data.UFWeakReferenceCollection-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Delegates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Delegates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Development.UFHtmlLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Development.UFHtmlLog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Development.UFTextFileLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Development.UFTextFileLog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Development.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Development.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Errors.UFQueueException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Errors.UFQueueException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Errors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Errors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedNotifyCollectionChangedManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedPropertyChangedManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Events.UFWeakReferencedPropertyChangedManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Events.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.IO.UFLazyStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.IO.UFLazyStream.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.IO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFClearable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFClearable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFJsonExport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFJsonExport.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFLockable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFLockable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFProgress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFProgress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFValidatePropertyValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFValidatePropertyValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.IUFModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.IUFModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.UFModel.Option.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.UFModel.Option.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.UFModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.UFModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.UFModelDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.UFModelDictionary-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.UFModelList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.UFModelList-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.UFModelObservableList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.UFModelObservableList-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.UFModelStorageWrapper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.UFPropertyBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.UFPropertyBinding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.IUFValidateProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateAnotherField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateAnotherField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateBoolean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateBoolean.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateCityName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateCityName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateConditional.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateConditional.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateDouble.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateDoubleRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateDoubleRange.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateEmail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateEmail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateEqualToProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateEqualToProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateEqualsValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateEqualsValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateInteger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateInteger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateIntegerRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateIntegerRange.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateNonEmptyText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateNonEmptyText.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateOptional.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateOptional.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateZipCodeDutch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.UFValidateZipCodeDutch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.Validators.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Net.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Net.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Security.UFCryptoHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Security.UFCryptoHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Security.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Security.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Services.IUFServiceCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Services.IUFServiceCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Services.IUFServiceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Services.IUFServiceProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Services.UFCache-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Services.UFCache-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Services.UFSimpleServiceCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Services.UFSimpleServiceCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Services.UFStringCache-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Services.UFStringCache-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Storage.IUFStorableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Storage.IUFStorableObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Storage.IUFStorableObjectAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Storage.IUFStorableObjectAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Storage.UFCachedStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Storage.UFCachedStorage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Storage.UFCachedStorageAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Storage.UFCachedStorageAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Storage.UFDictionaryStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Storage.UFDictionaryStorage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Storage.UFKeyedStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Storage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Storage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Testing.UFPropertiesComparer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Testing.UFPropertiesComparer-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Testing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Testing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFArrayTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFArrayTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFAssemblyTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFAssemblyTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFAttributeTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFAttributeTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFDateTimeTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFDateTimeTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFDictionaryTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFDictionaryTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFEnumTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFEnumTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFExceptionTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFExceptionTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFFileTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFFileTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFHtmlTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFHtmlTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFIOTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFIOTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFJavaScriptTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFJavaScriptTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFJsonTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFJsonTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFListTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFListTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFMath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFMath.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFObjectTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFObjectTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFProgressTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFProgressTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFRandomTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFRandomTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFReflectionTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFReflectionTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFStringTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFStringTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFSystemTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFSystemTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.UFZipTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.UFZipTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.NetStandard.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.NetStandard.Tools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

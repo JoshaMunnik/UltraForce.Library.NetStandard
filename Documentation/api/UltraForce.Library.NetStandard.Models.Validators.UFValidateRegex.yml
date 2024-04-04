@@ -1,0 +1,553 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex
+  commentId: T:UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex
+  id: UFValidateRegex
+  parent: UltraForce.Library.NetStandard.Models.Validators
+  children:
+  - UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.#ctor(System.String)
+  - UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.#ctor(System.Text.RegularExpressions.Regex)
+  - UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.IsValid(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: UFValidateRegex
+  nameWithType: UFValidateRegex
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex
+  type: Class
+  source:
+    id: UFValidateRegex
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\Validators\UFValidateRegex.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models.Validators
+  summary: Validator using regular expression to validate.
+  example: []
+  syntax:
+    content: 'public class UFValidateRegex : IUFValidateValue'
+    content.vb: Public Class UFValidateRegex Implements IUFValidateValue
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - UltraForce.Library.NetStandard.Models.Validators.UFValidateCityName
+  - UltraForce.Library.NetStandard.Models.Validators.UFValidateEmail
+  - UltraForce.Library.NetStandard.Models.Validators.UFValidateZipCodeDutch
+  implements:
+  - UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.#ctor(System.Text.RegularExpressions.Regex)
+  commentId: M:UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.#ctor(System.Text.RegularExpressions.Regex)
+  id: '#ctor(System.Text.RegularExpressions.Regex)'
+  parent: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex
+  langs:
+  - csharp
+  - vb
+  name: UFValidateRegex(Regex)
+  nameWithType: UFValidateRegex.UFValidateRegex(Regex)
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.UFValidateRegex(System.Text.RegularExpressions.Regex)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\Validators\UFValidateRegex.cs
+    startLine: 55
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models.Validators
+  summary: Initializes a new instance of the <xref href="UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public UFValidateRegex(Regex aRegExp)
+    parameters:
+    - id: aRegExp
+      type: System.Text.RegularExpressions.Regex
+      description: Regular expression to match.
+    content.vb: Public Sub New(aRegExp As Regex)
+  overload: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.#ctor*
+  nameWithType.vb: UFValidateRegex.New(Regex)
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.New(System.Text.RegularExpressions.Regex)
+  name.vb: New(Regex)
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.#ctor(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex
+  langs:
+  - csharp
+  - vb
+  name: UFValidateRegex(string)
+  nameWithType: UFValidateRegex.UFValidateRegex(string)
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.UFValidateRegex(string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\Validators\UFValidateRegex.cs
+    startLine: 66
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models.Validators
+  summary: Initializes a new instance of the <xref href="UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public UFValidateRegex(string aPattern)
+    parameters:
+    - id: aPattern
+      type: System.String
+      description: Pattern to build reg expression from.
+    content.vb: Public Sub New(aPattern As String)
+  overload: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.#ctor*
+  nameWithType.vb: UFValidateRegex.New(String)
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.New(String)
+  name.vb: New(String)
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.IsValid(System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.IsValid(System.Object)
+  id: IsValid(System.Object)
+  parent: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex
+  langs:
+  - csharp
+  - vb
+  name: IsValid(object?)
+  nameWithType: UFValidateRegex.IsValid(object?)
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.IsValid(object?)
+  type: Method
+  source:
+    id: IsValid
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\Validators\UFValidateRegex.cs
+    startLine: 79
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models.Validators
+  example: []
+  syntax:
+    content: public virtual bool IsValid(object? aValue)
+    parameters:
+    - id: aValue
+      type: System.Object
+      description: value to check
+    return:
+      type: System.Boolean
+      description: <code>True</code> if aValue matches the expression
+    content.vb: Public Overridable Function IsValid(aValue As Object) As Boolean
+  overload: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.IsValid*
+  implements:
+  - UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+  nameWithType.vb: UFValidateRegex.IsValid(Object)
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.IsValid(Object)
+  name.vb: IsValid(Object)
+references:
+- uid: UltraForce.Library.NetStandard.Models.Validators
+  commentId: N:UltraForce.Library.NetStandard.Models.Validators
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Models.Validators
+  nameWithType: UltraForce.Library.NetStandard.Models.Validators
+  fullName: UltraForce.Library.NetStandard.Models.Validators
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models
+    name: Models
+    href: UltraForce.Library.NetStandard.Models.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models.Validators
+    name: Validators
+    href: UltraForce.Library.NetStandard.Models.Validators.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models
+    name: Models
+    href: UltraForce.Library.NetStandard.Models.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models.Validators
+    name: Validators
+    href: UltraForce.Library.NetStandard.Models.Validators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+  commentId: T:UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+  parent: UltraForce.Library.NetStandard.Models.Validators
+  href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html
+  name: IUFValidateValue
+  nameWithType: IUFValidateValue
+  fullName: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex
+  commentId: T:UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex
+  parent: UltraForce.Library.NetStandard.Models.Validators
+  href: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.html
+  name: UFValidateRegex
+  nameWithType: UFValidateRegex
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.#ctor*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.#ctor
+  href: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.html#UltraForce_Library_NetStandard_Models_Validators_UFValidateRegex__ctor_System_Text_RegularExpressions_Regex_
+  name: UFValidateRegex
+  nameWithType: UFValidateRegex.UFValidateRegex
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.UFValidateRegex
+  nameWithType.vb: UFValidateRegex.New
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.New
+  name.vb: New
+- uid: System.Text.RegularExpressions.Regex
+  commentId: T:System.Text.RegularExpressions.Regex
+  parent: System.Text.RegularExpressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.regularexpressions.regex
+  name: Regex
+  nameWithType: Regex
+  fullName: System.Text.RegularExpressions.Regex
+- uid: System.Text.RegularExpressions
+  commentId: N:System.Text.RegularExpressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text.RegularExpressions
+  nameWithType: System.Text.RegularExpressions
+  fullName: System.Text.RegularExpressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.RegularExpressions
+    name: RegularExpressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.regularexpressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.RegularExpressions
+    name: RegularExpressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.regularexpressions
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.IsValid*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.IsValid
+  href: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.html#UltraForce_Library_NetStandard_Models_Validators_UFValidateRegex_IsValid_System_Object_
+  name: IsValid
+  nameWithType: UFValidateRegex.IsValid
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateRegex.IsValid
+- uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+  parent: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html#UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_IsValid_System_Object_
+  name: IsValid(object)
+  nameWithType: IUFValidateValue.IsValid(object)
+  fullName: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(object)
+  nameWithType.vb: IUFValidateValue.IsValid(Object)
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(Object)
+  name.vb: IsValid(Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+    name: IsValid
+    href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html#UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_IsValid_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+    name: IsValid
+    href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html#UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_IsValid_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

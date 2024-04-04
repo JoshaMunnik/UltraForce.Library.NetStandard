@@ -1,0 +1,759 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFJsonTools
+  id: UFJsonTools
+  parent: UltraForce.Library.NetStandard.Tools
+  children:
+  - UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary(System.Collections.IDictionary)
+  - UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary(System.Text.StringBuilder,System.Collections.IDictionary)
+  - UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList(System.Collections.IList)
+  - UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList(System.Text.StringBuilder,System.Collections.IList)
+  - UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveString(System.Text.StringBuilder,System.String)
+  - UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue(System.Object)
+  - UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue(System.Text.StringBuilder,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: UFJsonTools
+  nameWithType: UFJsonTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools
+  type: Class
+  source:
+    id: UFJsonTools
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFJsonTools.cs
+    startLine: 56
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    UFJsonTools can be used to create JSON formatted data. It supports 
+
+    <xref href="UltraForce.Library.NetStandard.Interfaces.IUFJsonExport" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    The code is based upon MiniJSONs code (added support for IUFJsonExport):
+
+    <p>
+
+    MiniJSON Copyright (c) 2013 Calvin Rien
+
+    </p>
+
+    <p>
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+
+    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+    </p>
+  example: []
+  syntax:
+    content: public static class UFJsonTools
+    content.vb: Public Module UFJsonTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveString(System.Text.StringBuilder,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveString(System.Text.StringBuilder,System.String)
+  id: SaveString(System.Text.StringBuilder,System.String)
+  parent: UltraForce.Library.NetStandard.Tools.UFJsonTools
+  langs:
+  - csharp
+  - vb
+  name: SaveString(StringBuilder, string)
+  nameWithType: UFJsonTools.SaveString(StringBuilder, string)
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveString(System.Text.StringBuilder, string)
+  type: Method
+  source:
+    id: SaveString
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFJsonTools.cs
+    startLine: 64
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Adds a string to <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> using JON formatting.
+  example: []
+  syntax:
+    content: public static void SaveString(StringBuilder aBuilder, string aValue)
+    parameters:
+    - id: aBuilder
+      type: System.Text.StringBuilder
+      description: A builder to add string to.
+    - id: aValue
+      type: System.String
+      description: A value to add.
+    content.vb: Public Shared Sub SaveString(aBuilder As StringBuilder, aValue As String)
+  overload: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveString*
+  nameWithType.vb: UFJsonTools.SaveString(StringBuilder, String)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveString(System.Text.StringBuilder, String)
+  name.vb: SaveString(StringBuilder, String)
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue(System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue(System.Object)
+  id: SaveValue(System.Object)
+  parent: UltraForce.Library.NetStandard.Tools.UFJsonTools
+  langs:
+  - csharp
+  - vb
+  name: SaveValue(object)
+  nameWithType: UFJsonTools.SaveValue(object)
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue(object)
+  type: Method
+  source:
+    id: SaveValue
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFJsonTools.cs
+    startLine: 115
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Saves a value as JSON structure.
+  example: []
+  syntax:
+    content: public static string SaveValue(object aValue)
+    parameters:
+    - id: aValue
+      type: System.Object
+      description: A value to save.
+    return:
+      type: System.String
+      description: JSON formatted string
+    content.vb: Public Shared Function SaveValue(aValue As Object) As String
+  overload: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue*
+  nameWithType.vb: UFJsonTools.SaveValue(Object)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue(Object)
+  name.vb: SaveValue(Object)
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue(System.Text.StringBuilder,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue(System.Text.StringBuilder,System.Object)
+  id: SaveValue(System.Text.StringBuilder,System.Object)
+  parent: UltraForce.Library.NetStandard.Tools.UFJsonTools
+  langs:
+  - csharp
+  - vb
+  name: SaveValue(StringBuilder, object?)
+  nameWithType: UFJsonTools.SaveValue(StringBuilder, object?)
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue(System.Text.StringBuilder, object?)
+  type: Method
+  source:
+    id: SaveValue
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFJsonTools.cs
+    startLine: 134
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Adds a value to <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref> using JSON formatting.
+
+    <p>
+
+    This method tries to create the correct formatted JSON based on the 
+
+    type of <code>aValue</code>. 
+
+    </p>
+
+    <p>
+
+    The method supports objects implementing <xref href="UltraForce.Library.NetStandard.Interfaces.IUFJsonExport" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
+  example: []
+  syntax:
+    content: public static void SaveValue(StringBuilder aBuilder, object? aValue)
+    parameters:
+    - id: aBuilder
+      type: System.Text.StringBuilder
+      description: A builder to add value to.
+    - id: aValue
+      type: System.Object
+      description: A value to add.
+    content.vb: Public Shared Sub SaveValue(aBuilder As StringBuilder, aValue As Object)
+  overload: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue*
+  nameWithType.vb: UFJsonTools.SaveValue(StringBuilder, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue(System.Text.StringBuilder, Object)
+  name.vb: SaveValue(StringBuilder, Object)
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList(System.Collections.IList)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList(System.Collections.IList)
+  id: SaveList(System.Collections.IList)
+  parent: UltraForce.Library.NetStandard.Tools.UFJsonTools
+  langs:
+  - csharp
+  - vb
+  name: SaveList(IList)
+  nameWithType: UFJsonTools.SaveList(IList)
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList(System.Collections.IList)
+  type: Method
+  source:
+    id: SaveList
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFJsonTools.cs
+    startLine: 180
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Saves an <xref href="System.Collections.IList" data-throw-if-not-resolved="false"></xref> as JSON structure.
+  example: []
+  syntax:
+    content: public static string SaveList(IList aList)
+    parameters:
+    - id: aList
+      type: System.Collections.IList
+      description: A list to add.
+    return:
+      type: System.String
+      description: JSON formatted string
+    content.vb: Public Shared Function SaveList(aList As IList) As String
+  overload: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList*
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList(System.Text.StringBuilder,System.Collections.IList)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList(System.Text.StringBuilder,System.Collections.IList)
+  id: SaveList(System.Text.StringBuilder,System.Collections.IList)
+  parent: UltraForce.Library.NetStandard.Tools.UFJsonTools
+  langs:
+  - csharp
+  - vb
+  name: SaveList(StringBuilder, IList)
+  nameWithType: UFJsonTools.SaveList(StringBuilder, IList)
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList(System.Text.StringBuilder, System.Collections.IList)
+  type: Method
+  source:
+    id: SaveList
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFJsonTools.cs
+    startLine: 193
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Adds an <xref href="System.Collections.IList" data-throw-if-not-resolved="false"></xref> as JSON array to 
+
+    <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static void SaveList(StringBuilder aBuilder, IList aList)
+    parameters:
+    - id: aBuilder
+      type: System.Text.StringBuilder
+      description: A builder to add data to.
+    - id: aList
+      type: System.Collections.IList
+      description: A list to add.
+    content.vb: Public Shared Sub SaveList(aBuilder As StringBuilder, aList As IList)
+  overload: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList*
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary(System.Collections.IDictionary)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary(System.Collections.IDictionary)
+  id: SaveDictionary(System.Collections.IDictionary)
+  parent: UltraForce.Library.NetStandard.Tools.UFJsonTools
+  langs:
+  - csharp
+  - vb
+  name: SaveDictionary(IDictionary)
+  nameWithType: UFJsonTools.SaveDictionary(IDictionary)
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary(System.Collections.IDictionary)
+  type: Method
+  source:
+    id: SaveDictionary
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFJsonTools.cs
+    startLine: 212
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Saves an <xref href="System.Collections.IDictionary" data-throw-if-not-resolved="false"></xref> as JSON structure.
+  example: []
+  syntax:
+    content: public static string SaveDictionary(IDictionary aDictionary)
+    parameters:
+    - id: aDictionary
+      type: System.Collections.IDictionary
+      description: A dictionary.
+    return:
+      type: System.String
+      description: JSON formatted string
+    content.vb: Public Shared Function SaveDictionary(aDictionary As IDictionary) As String
+  overload: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary*
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary(System.Text.StringBuilder,System.Collections.IDictionary)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary(System.Text.StringBuilder,System.Collections.IDictionary)
+  id: SaveDictionary(System.Text.StringBuilder,System.Collections.IDictionary)
+  parent: UltraForce.Library.NetStandard.Tools.UFJsonTools
+  langs:
+  - csharp
+  - vb
+  name: SaveDictionary(StringBuilder, IDictionary)
+  nameWithType: UFJsonTools.SaveDictionary(StringBuilder, IDictionary)
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary(System.Text.StringBuilder, System.Collections.IDictionary)
+  type: Method
+  source:
+    id: SaveDictionary
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFJsonTools.cs
+    startLine: 228
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Adds an <xref href="System.Collections.IDictionary" data-throw-if-not-resolved="false"></xref> as JSON object to 
+
+    <xref href="System.Text.StringBuilder" data-throw-if-not-resolved="false"></xref>.
+
+    <p>
+
+    The keys are used for property names, the values as property values.
+
+    </p>
+  example: []
+  syntax:
+    content: public static void SaveDictionary(StringBuilder aBuilder, IDictionary aDictionary)
+    parameters:
+    - id: aBuilder
+      type: System.Text.StringBuilder
+      description: A builder to add data to.
+    - id: aDictionary
+      type: System.Collections.IDictionary
+      description: A dictionary to add.
+    content.vb: Public Shared Sub SaveDictionary(aBuilder As StringBuilder, aDictionary As IDictionary)
+  overload: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary*
+references:
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFJsonExport
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFJsonExport
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFJsonExport.html
+  name: IUFJsonExport
+  nameWithType: IUFJsonExport
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFJsonExport
+- uid: UltraForce.Library.NetStandard.Tools
+  commentId: N:UltraForce.Library.NetStandard.Tools
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Tools
+  nameWithType: UltraForce.Library.NetStandard.Tools
+  fullName: UltraForce.Library.NetStandard.Tools
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Interfaces
+  commentId: N:UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Interfaces
+  nameWithType: UltraForce.Library.NetStandard.Interfaces
+  fullName: UltraForce.Library.NetStandard.Interfaces
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveString*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveString
+  href: UltraForce.Library.NetStandard.Tools.UFJsonTools.html#UltraForce_Library_NetStandard_Tools_UFJsonTools_SaveString_System_Text_StringBuilder_System_String_
+  name: SaveString
+  nameWithType: UFJsonTools.SaveString
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue
+  href: UltraForce.Library.NetStandard.Tools.UFJsonTools.html#UltraForce_Library_NetStandard_Tools_UFJsonTools_SaveValue_System_Object_
+  name: SaveValue
+  nameWithType: UFJsonTools.SaveValue
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveValue
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList
+  href: UltraForce.Library.NetStandard.Tools.UFJsonTools.html#UltraForce_Library_NetStandard_Tools_UFJsonTools_SaveList_System_Collections_IList_
+  name: SaveList
+  nameWithType: UFJsonTools.SaveList
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveList
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Collections.IDictionary
+  commentId: T:System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary
+  href: UltraForce.Library.NetStandard.Tools.UFJsonTools.html#UltraForce_Library_NetStandard_Tools_UFJsonTools_SaveDictionary_System_Collections_IDictionary_
+  name: SaveDictionary
+  nameWithType: UFJsonTools.SaveDictionary
+  fullName: UltraForce.Library.NetStandard.Tools.UFJsonTools.SaveDictionary

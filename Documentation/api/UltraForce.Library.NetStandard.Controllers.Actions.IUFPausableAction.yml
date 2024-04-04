@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  id: IUFPausableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  children:
+  - UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause
+  - UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume
+  langs:
+  - csharp
+  - vb
+  name: IUFPausableAction
+  nameWithType: IUFPausableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  type: Interface
+  source:
+    id: IUFPausableAction
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\IUFPausableAction.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: An interface that can be implemented by actions that can be paused and resumed.
+  example: []
+  syntax:
+    content: public interface IUFPausableAction
+    content.vb: Public Interface IUFPausableAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause
+  id: Pause
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: IUFPausableAction.Pause()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause()
+  type: Method
+  source:
+    id: Pause
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\IUFPausableAction.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Pauses the action.
+  example: []
+  syntax:
+    content: void Pause()
+    content.vb: Sub Pause()
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause*
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume
+  id: Resume
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: IUFPausableAction.Resume()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume()
+  type: Method
+  source:
+    id: Resume
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Controllers\Actions\IUFPausableAction.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Resumes a previously paused action.
+  example: []
+  syntax:
+    content: void Resume()
+    content.vb: Sub [Resume]()
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume*
+references:
+- uid: UltraForce.Library.NetStandard.Controllers.Actions
+  commentId: N:UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Controllers.Actions
+  nameWithType: UltraForce.Library.NetStandard.Controllers.Actions
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers
+    name: Controllers
+    href: UltraForce.Library.NetStandard.Controllers.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions
+    name: Actions
+    href: UltraForce.Library.NetStandard.Controllers.Actions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers
+    name: Controllers
+    href: UltraForce.Library.NetStandard.Controllers.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions
+    name: Actions
+    href: UltraForce.Library.NetStandard.Controllers.Actions.html
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause
+  href: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_IUFPausableAction_Pause
+  name: Pause
+  nameWithType: IUFPausableAction.Pause
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Pause
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume
+  href: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_IUFPausableAction_Resume
+  name: Resume
+  nameWithType: IUFPausableAction.Resume
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.Resume

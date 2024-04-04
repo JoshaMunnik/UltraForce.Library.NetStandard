@@ -1,0 +1,598 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager
+  commentId: T:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager
+  id: UFWeakReferencedEventManager
+  parent: UltraForce.Library.NetStandard.Events
+  children:
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Add(System.EventHandler)
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Invoke(System.Object)
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Remove(System.EventHandler)
+  langs:
+  - csharp
+  - vb
+  name: UFWeakReferencedEventManager
+  nameWithType: UFWeakReferencedEventManager
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager
+  type: Class
+  source:
+    id: UFWeakReferencedEventManager
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Events\UFWeakReferencedEventManager.cs
+    startLine: 103
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager" data-throw-if-not-resolved="false"></xref> stores event handlers as methods and target. It uses a weak reference
+
+    for the target and only invokes the handler only if the target is still available.
+  example: []
+  syntax:
+    content: 'public class UFWeakReferencedEventManager : UFWeakReferencedDelegateManagerBase'
+    content.vb: Public Class UFWeakReferencedEventManager Inherits UFWeakReferencedDelegateManagerBase
+  inheritance:
+  - System.Object
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase
+  inheritedMembers:
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Add(UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase)
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Remove(UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase)
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.CleanUp
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Invoke(System.Object[])
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Add(System.EventHandler)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Add(System.EventHandler)
+  id: Add(System.EventHandler)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager
+  langs:
+  - csharp
+  - vb
+  name: Add(EventHandler)
+  nameWithType: UFWeakReferencedEventManager.Add(EventHandler)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Add(System.EventHandler)
+  type: Method
+  source:
+    id: Add
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Events\UFWeakReferencedEventManager.cs
+    startLine: 112
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Adds a handler to the managed list. If there is already a handler with the same method and target stored,
+
+    nothing happens.
+  example: []
+  syntax:
+    content: public void Add(EventHandler aHandler)
+    parameters:
+    - id: aHandler
+      type: System.EventHandler
+      description: Handler to add
+    content.vb: Public Sub Add(aHandler As EventHandler)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Add*
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Remove(System.EventHandler)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Remove(System.EventHandler)
+  id: Remove(System.EventHandler)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager
+  langs:
+  - csharp
+  - vb
+  name: Remove(EventHandler)
+  nameWithType: UFWeakReferencedEventManager.Remove(EventHandler)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Remove(System.EventHandler)
+  type: Method
+  source:
+    id: Remove
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Events\UFWeakReferencedEventManager.cs
+    startLine: 121
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: Removes a handler from the managed list.
+  example: []
+  syntax:
+    content: public void Remove(EventHandler aHandler)
+    parameters:
+    - id: aHandler
+      type: System.EventHandler
+      description: Handler to remove
+    content.vb: Public Sub Remove(aHandler As EventHandler)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Remove*
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Invoke(System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Invoke(System.Object)
+  id: Invoke(System.Object)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager
+  langs:
+  - csharp
+  - vb
+  name: Invoke(object)
+  nameWithType: UFWeakReferencedEventManager.Invoke(object)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Invoke(object)
+  type: Method
+  source:
+    id: Invoke
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Events\UFWeakReferencedEventManager.cs
+    startLine: 130
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: Invokes the handlers for the targets that are still available.
+  example: []
+  syntax:
+    content: public void Invoke(object aSender)
+    parameters:
+    - id: aSender
+      type: System.Object
+      description: Sender to use
+    content.vb: Public Sub Invoke(aSender As Object)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Invoke*
+  nameWithType.vb: UFWeakReferencedEventManager.Invoke(Object)
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Invoke(Object)
+  name.vb: Invoke(Object)
+references:
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager
+  commentId: T:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.html
+  name: UFWeakReferencedEventManager
+  nameWithType: UFWeakReferencedEventManager
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager
+- uid: UltraForce.Library.NetStandard.Events
+  commentId: N:UltraForce.Library.NetStandard.Events
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Events
+  nameWithType: UltraForce.Library.NetStandard.Events
+  fullName: UltraForce.Library.NetStandard.Events
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Events
+    name: Events
+    href: UltraForce.Library.NetStandard.Events.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Events
+    name: Events
+    href: UltraForce.Library.NetStandard.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase
+  commentId: T:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase
+  parent: UltraForce.Library.NetStandard.Delegates
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html
+  name: UFWeakReferencedDelegateManagerBase
+  nameWithType: UFWeakReferencedDelegateManagerBase
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Add(UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase)
+  commentId: M:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Add(UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase)
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateManagerBase_Add_UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_
+  name: Add(UFWeakReferencedDelegateBase)
+  nameWithType: UFWeakReferencedDelegateManagerBase.Add(UFWeakReferencedDelegateBase)
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Add(UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Add(UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase)
+    name: Add
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateManagerBase_Add_UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+    name: UFWeakReferencedDelegateBase
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Add(UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase)
+    name: Add
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateManagerBase_Add_UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+    name: UFWeakReferencedDelegateBase
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Remove(UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase)
+  commentId: M:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Remove(UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase)
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateManagerBase_Remove_UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_
+  name: Remove(UFWeakReferencedDelegateBase)
+  nameWithType: UFWeakReferencedDelegateManagerBase.Remove(UFWeakReferencedDelegateBase)
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Remove(UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Remove(UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase)
+    name: Remove
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateManagerBase_Remove_UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+    name: UFWeakReferencedDelegateBase
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Remove(UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase)
+    name: Remove
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateManagerBase_Remove_UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_
+  - name: (
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+    name: UFWeakReferencedDelegateBase
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html
+  - name: )
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.CleanUp
+  commentId: M:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.CleanUp
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateManagerBase_CleanUp
+  name: CleanUp()
+  nameWithType: UFWeakReferencedDelegateManagerBase.CleanUp()
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.CleanUp()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.CleanUp
+    name: CleanUp
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateManagerBase_CleanUp
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.CleanUp
+    name: CleanUp
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateManagerBase_CleanUp
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Invoke(System.Object[])
+  commentId: M:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Invoke(System.Object[])
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateManagerBase_Invoke_System_Object___
+  name: Invoke(params object[])
+  nameWithType: UFWeakReferencedDelegateManagerBase.Invoke(params object[])
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Invoke(params object[])
+  nameWithType.vb: UFWeakReferencedDelegateManagerBase.Invoke(ParamArray Object())
+  fullName.vb: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Invoke(ParamArray Object())
+  name.vb: Invoke(ParamArray Object())
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Invoke(System.Object[])
+    name: Invoke
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateManagerBase_Invoke_System_Object___
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.Invoke(System.Object[])
+    name: Invoke
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateManagerBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateManagerBase_Invoke_System_Object___
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Delegates
+  commentId: N:UltraForce.Library.NetStandard.Delegates
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Delegates
+  nameWithType: UltraForce.Library.NetStandard.Delegates
+  fullName: UltraForce.Library.NetStandard.Delegates
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Delegates
+    name: Delegates
+    href: UltraForce.Library.NetStandard.Delegates.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Delegates
+    name: Delegates
+    href: UltraForce.Library.NetStandard.Delegates.html
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Add*
+  commentId: Overload:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Add
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventManager_Add_System_EventHandler_
+  name: Add
+  nameWithType: UFWeakReferencedEventManager.Add
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Add
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Remove*
+  commentId: Overload:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Remove
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventManager_Remove_System_EventHandler_
+  name: Remove
+  nameWithType: UFWeakReferencedEventManager.Remove
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Remove
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Invoke*
+  commentId: Overload:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Invoke
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventManager_Invoke_System_Object_
+  name: Invoke
+  nameWithType: UFWeakReferencedEventManager.Invoke
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventManager.Invoke

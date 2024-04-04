@@ -1,0 +1,481 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength
+  commentId: T:UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength
+  id: UFValidateTextLength
+  parent: UltraForce.Library.NetStandard.Models.Validators
+  children:
+  - UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.#ctor(System.Int32,System.Int32)
+  - UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.IsValid(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: UFValidateTextLength
+  nameWithType: UFValidateTextLength
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength
+  type: Class
+  source:
+    id: UFValidateTextLength
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\Validators\UFValidateTextLength.cs
+    startLine: 35
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models.Validators
+  summary: >-
+    Check if a text has certain number of characters. For example to 
+
+    validate a minimum length on passwords.
+  example: []
+  syntax:
+    content: 'public class UFValidateTextLength : IUFValidateValue'
+    content.vb: Public Class UFValidateTextLength Implements IUFValidateValue
+  inheritance:
+  - System.Object
+  implements:
+  - UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.#ctor(System.Int32,System.Int32)
+  commentId: M:UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength
+  langs:
+  - csharp
+  - vb
+  name: UFValidateTextLength(int, int)
+  nameWithType: UFValidateTextLength.UFValidateTextLength(int, int)
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.UFValidateTextLength(int, int)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\Validators\UFValidateTextLength.cs
+    startLine: 63
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models.Validators
+  summary: >-
+    Initializes a new instance of the 
+
+    <xref href="UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public UFValidateTextLength(int aMin, int aMax = 2147483647)
+    parameters:
+    - id: aMin
+      type: System.Int32
+      description: Minimal number of characters allowed.
+    - id: aMax
+      type: System.Int32
+      description: Maximum number of characters allowed.
+    content.vb: Public Sub New(aMin As Integer, aMax As Integer = 2147483647)
+  overload: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.#ctor*
+  nameWithType.vb: UFValidateTextLength.New(Integer, Integer)
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.IsValid(System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.IsValid(System.Object)
+  id: IsValid(System.Object)
+  parent: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength
+  langs:
+  - csharp
+  - vb
+  name: IsValid(object?)
+  nameWithType: UFValidateTextLength.IsValid(object?)
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.IsValid(object?)
+  type: Method
+  source:
+    id: IsValid
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Models\Validators\UFValidateTextLength.cs
+    startLine: 78
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models.Validators
+  summary: Verify if a text value length falls inside the set range.
+  example: []
+  syntax:
+    content: public bool IsValid(object? aValue)
+    parameters:
+    - id: aValue
+      type: System.Object
+      description: Value to check
+    return:
+      type: System.Boolean
+      description: True if aValue is valid
+    content.vb: Public Function IsValid(aValue As Object) As Boolean
+  overload: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.IsValid*
+  implements:
+  - UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+  nameWithType.vb: UFValidateTextLength.IsValid(Object)
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.IsValid(Object)
+  name.vb: IsValid(Object)
+references:
+- uid: UltraForce.Library.NetStandard.Models.Validators
+  commentId: N:UltraForce.Library.NetStandard.Models.Validators
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Models.Validators
+  nameWithType: UltraForce.Library.NetStandard.Models.Validators
+  fullName: UltraForce.Library.NetStandard.Models.Validators
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models
+    name: Models
+    href: UltraForce.Library.NetStandard.Models.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models.Validators
+    name: Validators
+    href: UltraForce.Library.NetStandard.Models.Validators.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models
+    name: Models
+    href: UltraForce.Library.NetStandard.Models.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models.Validators
+    name: Validators
+    href: UltraForce.Library.NetStandard.Models.Validators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+  commentId: T:UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+  parent: UltraForce.Library.NetStandard.Models.Validators
+  href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html
+  name: IUFValidateValue
+  nameWithType: IUFValidateValue
+  fullName: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength
+  commentId: T:UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength
+  href: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.html
+  name: UFValidateTextLength
+  nameWithType: UFValidateTextLength
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.#ctor*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.#ctor
+  href: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.html#UltraForce_Library_NetStandard_Models_Validators_UFValidateTextLength__ctor_System_Int32_System_Int32_
+  name: UFValidateTextLength
+  nameWithType: UFValidateTextLength.UFValidateTextLength
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.UFValidateTextLength
+  nameWithType.vb: UFValidateTextLength.New
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.IsValid*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.IsValid
+  href: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.html#UltraForce_Library_NetStandard_Models_Validators_UFValidateTextLength_IsValid_System_Object_
+  name: IsValid
+  nameWithType: UFValidateTextLength.IsValid
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateTextLength.IsValid
+- uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+  parent: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html#UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_IsValid_System_Object_
+  name: IsValid(object)
+  nameWithType: IUFValidateValue.IsValid(object)
+  fullName: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(object)
+  nameWithType.vb: IUFValidateValue.IsValid(Object)
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(Object)
+  name.vb: IsValid(Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+    name: IsValid
+    href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html#UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_IsValid_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+    name: IsValid
+    href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html#UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_IsValid_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

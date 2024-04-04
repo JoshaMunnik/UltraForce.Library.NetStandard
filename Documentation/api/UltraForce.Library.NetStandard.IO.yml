@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.IO
+  commentId: N:UltraForce.Library.NetStandard.IO
+  id: UltraForce.Library.NetStandard.IO
+  children:
+  - UltraForce.Library.NetStandard.IO.UFLazyStream
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.NetStandard.IO
+  nameWithType: UltraForce.Library.NetStandard.IO
+  fullName: UltraForce.Library.NetStandard.IO
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.NetStandard
+references:
+- uid: UltraForce.Library.NetStandard.IO.UFLazyStream
+  commentId: T:UltraForce.Library.NetStandard.IO.UFLazyStream
+  href: UltraForce.Library.NetStandard.IO.UFLazyStream.html
+  name: UFLazyStream
+  nameWithType: UFLazyStream
+  fullName: UltraForce.Library.NetStandard.IO.UFLazyStream

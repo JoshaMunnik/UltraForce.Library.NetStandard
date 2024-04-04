@@ -1,0 +1,894 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  id: UFServiceCollectionTools
+  parent: UltraForce.Library.NetStandard.Tools
+  children:
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(System.Object,System.Reflection.MethodInfo,System.IServiceProvider)
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(System.Object,System.String,System.IServiceProvider)
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethods(System.Object,System.String,System.IServiceProvider)
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetArguments(System.IServiceProvider,System.Reflection.ParameterInfo[])
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetService``1(System.IServiceProvider)
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.ProcessInjects(System.Object,System.IServiceProvider)
+  - UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.With(UltraForce.Library.NetStandard.Services.IUFServiceCollection)
+  langs:
+  - csharp
+  - vb
+  name: UFServiceCollectionTools
+  nameWithType: UFServiceCollectionTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  type: Class
+  source:
+    id: UFServiceCollectionTools
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 42
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Support methods for <xref href="UltraForce.Library.NetStandard.Services.IUFServiceCollection" data-throw-if-not-resolved="false"></xref> and <xref href="System.IServiceProvider" data-throw-if-not-resolved="false"></xref> providing generic
+
+    versions of various methods.
+  example: []
+  syntax:
+    content: public static class UFServiceCollectionTools
+    content.vb: Public Module UFServiceCollectionTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.With(UltraForce.Library.NetStandard.Services.IUFServiceCollection)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.With(UltraForce.Library.NetStandard.Services.IUFServiceCollection)
+  id: With(UltraForce.Library.NetStandard.Services.IUFServiceCollection)
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  langs:
+  - csharp
+  - vb
+  name: With(IUFServiceCollection)
+  nameWithType: UFServiceCollectionTools.With(IUFServiceCollection)
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.With(UltraForce.Library.NetStandard.Services.IUFServiceCollection)
+  type: Method
+  source:
+    id: With
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 51
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Returns a helper to register various bindings using generics.
+  example: []
+  syntax:
+    content: public static UFServiceCollectionTools.UFServiceCollectionHelper With(IUFServiceCollection aCollection)
+    parameters:
+    - id: aCollection
+      type: UltraForce.Library.NetStandard.Services.IUFServiceCollection
+      description: Collection to register at
+    return:
+      type: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+      description: A helper to register various binding
+    content.vb: Public Shared Function [With](aCollection As IUFServiceCollection) As UFServiceCollectionTools.UFServiceCollectionHelper
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.With*
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetService``1(System.IServiceProvider)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetService``1(System.IServiceProvider)
+  id: GetService``1(System.IServiceProvider)
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  langs:
+  - csharp
+  - vb
+  name: GetService<TService>(IServiceProvider)
+  nameWithType: UFServiceCollectionTools.GetService<TService>(IServiceProvider)
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetService<TService>(System.IServiceProvider)
+  type: Method
+  source:
+    id: GetService
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 62
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Gets a service instance for a specific type.
+  example: []
+  syntax:
+    content: public static TService GetService<TService>(IServiceProvider aProvider)
+    parameters:
+    - id: aProvider
+      type: System.IServiceProvider
+      description: Provider of services
+    typeParameters:
+    - id: TService
+      description: Type to get service for
+    return:
+      type: '{TService}'
+      description: instance of <code>T</code>
+    content.vb: Public Shared Function GetService(Of TService)(aProvider As IServiceProvider) As TService
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetService*
+  nameWithType.vb: UFServiceCollectionTools.GetService(Of TService)(IServiceProvider)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetService(Of TService)(System.IServiceProvider)
+  name.vb: GetService(Of TService)(IServiceProvider)
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetArguments(System.IServiceProvider,System.Reflection.ParameterInfo[])
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetArguments(System.IServiceProvider,System.Reflection.ParameterInfo[])
+  id: GetArguments(System.IServiceProvider,System.Reflection.ParameterInfo[])
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  langs:
+  - csharp
+  - vb
+  name: GetArguments(IServiceProvider, ParameterInfo[])
+  nameWithType: UFServiceCollectionTools.GetArguments(IServiceProvider, ParameterInfo[])
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetArguments(System.IServiceProvider, System.Reflection.ParameterInfo[])
+  type: Method
+  source:
+    id: GetArguments
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 77
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Processes a list of parameters and tries to create argument values for them by resolving them as a service or
+
+    else using their default value.
+  example: []
+  syntax:
+    content: public static object[] GetArguments(IServiceProvider aProvider, ParameterInfo[] aParameters)
+    parameters:
+    - id: aProvider
+      type: System.IServiceProvider
+      description: Service provider to use
+    - id: aParameters
+      type: System.Reflection.ParameterInfo[]
+      description: Parameters to resolve
+    return:
+      type: System.Object[]
+      description: argument values
+    content.vb: Public Shared Function GetArguments(aProvider As IServiceProvider, aParameters As ParameterInfo()) As Object()
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetArguments*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Thrown if a parameter type is not a known service and the parameter has no default value.
+  nameWithType.vb: UFServiceCollectionTools.GetArguments(IServiceProvider, ParameterInfo())
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetArguments(System.IServiceProvider, System.Reflection.ParameterInfo())
+  name.vb: GetArguments(IServiceProvider, ParameterInfo())
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(System.Object,System.Reflection.MethodInfo,System.IServiceProvider)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(System.Object,System.Reflection.MethodInfo,System.IServiceProvider)
+  id: CallMethod(System.Object,System.Reflection.MethodInfo,System.IServiceProvider)
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  langs:
+  - csharp
+  - vb
+  name: CallMethod(object, MethodInfo, IServiceProvider)
+  nameWithType: UFServiceCollectionTools.CallMethod(object, MethodInfo, IServiceProvider)
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(object, System.Reflection.MethodInfo, System.IServiceProvider)
+  type: Method
+  source:
+    id: CallMethod
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 110
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Calls a method, assuming its parameters are either service types or have a default value.
+  example: []
+  syntax:
+    content: public static object CallMethod(object anInstance, MethodInfo aMethod, IServiceProvider aProvider)
+    parameters:
+    - id: anInstance
+      type: System.Object
+      description: Instance to call method with
+    - id: aMethod
+      type: System.Reflection.MethodInfo
+      description: Method to call
+    - id: aProvider
+      type: System.IServiceProvider
+      description: Service provider
+    return:
+      type: System.Object
+      description: result from call
+    content.vb: Public Shared Function CallMethod(anInstance As Object, aMethod As MethodInfo, aProvider As IServiceProvider) As Object
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod*
+  nameWithType.vb: UFServiceCollectionTools.CallMethod(Object, MethodInfo, IServiceProvider)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(Object, System.Reflection.MethodInfo, System.IServiceProvider)
+  name.vb: CallMethod(Object, MethodInfo, IServiceProvider)
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(System.Object,System.String,System.IServiceProvider)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(System.Object,System.String,System.IServiceProvider)
+  id: CallMethod(System.Object,System.String,System.IServiceProvider)
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  langs:
+  - csharp
+  - vb
+  name: CallMethod(object, string, IServiceProvider)
+  nameWithType: UFServiceCollectionTools.CallMethod(object, string, IServiceProvider)
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(object, string, System.IServiceProvider)
+  type: Method
+  source:
+    id: CallMethod
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 124
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Calls a method of a certain name, assuming its parameters are either
+
+    service types or have a default value.
+  example: []
+  syntax:
+    content: public static object CallMethod(object anInstance, string aMethodName, IServiceProvider aProvider)
+    parameters:
+    - id: anInstance
+      type: System.Object
+      description: Instance to call method with
+    - id: aMethodName
+      type: System.String
+      description: Name of method to call
+    - id: aProvider
+      type: System.IServiceProvider
+      description: Service provider
+    return:
+      type: System.Object
+      description: result from call
+    content.vb: Public Shared Function CallMethod(anInstance As Object, aMethodName As String, aProvider As IServiceProvider) As Object
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod*
+  nameWithType.vb: UFServiceCollectionTools.CallMethod(Object, String, IServiceProvider)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(Object, String, System.IServiceProvider)
+  name.vb: CallMethod(Object, String, IServiceProvider)
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethods(System.Object,System.String,System.IServiceProvider)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethods(System.Object,System.String,System.IServiceProvider)
+  id: CallMethods(System.Object,System.String,System.IServiceProvider)
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  langs:
+  - csharp
+  - vb
+  name: CallMethods(object, string, IServiceProvider)
+  nameWithType: UFServiceCollectionTools.CallMethods(object, string, IServiceProvider)
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethods(object, string, System.IServiceProvider)
+  type: Method
+  source:
+    id: CallMethods
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 141
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Calls all methods of a certain name, assuming their parameters are
+
+    either service types or have a default value.
+
+    <p>
+
+    This method will call all methods from the instance and its parent
+
+    classes starting at the base class and ending with <code>anInstance</code>.
+
+    </p>
+  example: []
+  syntax:
+    content: public static void CallMethods(object anInstance, string aMethodName, IServiceProvider aProvider)
+    parameters:
+    - id: anInstance
+      type: System.Object
+      description: Instance to call method with
+    - id: aMethodName
+      type: System.String
+      description: Name of method to call
+    - id: aProvider
+      type: System.IServiceProvider
+      description: Service provider
+    content.vb: Public Shared Sub CallMethods(anInstance As Object, aMethodName As String, aProvider As IServiceProvider)
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethods*
+  nameWithType.vb: UFServiceCollectionTools.CallMethods(Object, String, IServiceProvider)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethods(Object, String, System.IServiceProvider)
+  name.vb: CallMethods(Object, String, IServiceProvider)
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.ProcessInjects(System.Object,System.IServiceProvider)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.ProcessInjects(System.Object,System.IServiceProvider)
+  id: ProcessInjects(System.Object,System.IServiceProvider)
+  parent: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+  langs:
+  - csharp
+  - vb
+  name: ProcessInjects(object, IServiceProvider)
+  nameWithType: UFServiceCollectionTools.ProcessInjects(object, IServiceProvider)
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.ProcessInjects(object, System.IServiceProvider)
+  type: Method
+  source:
+    id: ProcessInjects
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.NetStandard\UltraForce.Library.NetStandard\Tools\UFServiceCollectionTools.cs
+    startLine: 163
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Processes all methods, properties and fields in an instance. Methods annotated with the
+
+    <xref href="UltraForce.Library.NetStandard.Annotations.UFInjectAttribute" data-throw-if-not-resolved="false"></xref> will be invoked via
+
+    <xref href="UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(System.Object%2cSystem.Reflection.MethodInfo%2cSystem.IServiceProvider)" data-throw-if-not-resolved="false"></xref>.
+
+    Properties and fields annotated with <xref href="UltraForce.Library.NetStandard.Annotations.UFInjectAttribute" data-throw-if-not-resolved="false"></xref> will be assigned a value from
+
+    <code>aProvider</code> using their type to get a service instance.
+  example: []
+  syntax:
+    content: public static void ProcessInjects(object anInstance, IServiceProvider aProvider)
+    parameters:
+    - id: anInstance
+      type: System.Object
+      description: Instance to process
+    - id: aProvider
+      type: System.IServiceProvider
+      description: Provider to get service instances from
+    content.vb: Public Shared Sub ProcessInjects(anInstance As Object, aProvider As IServiceProvider)
+  overload: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.ProcessInjects*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Thrown if a readonly property has been annotated with <xref href="UltraForce.Library.NetStandard.Annotations.UFInjectAttribute" data-throw-if-not-resolved="false"></xref>
+  nameWithType.vb: UFServiceCollectionTools.ProcessInjects(Object, IServiceProvider)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.ProcessInjects(Object, System.IServiceProvider)
+  name.vb: ProcessInjects(Object, IServiceProvider)
+references:
+- uid: UltraForce.Library.NetStandard.Services.IUFServiceCollection
+  commentId: T:UltraForce.Library.NetStandard.Services.IUFServiceCollection
+  parent: UltraForce.Library.NetStandard.Services
+  href: UltraForce.Library.NetStandard.Services.IUFServiceCollection.html
+  name: IUFServiceCollection
+  nameWithType: IUFServiceCollection
+  fullName: UltraForce.Library.NetStandard.Services.IUFServiceCollection
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: UltraForce.Library.NetStandard.Tools
+  commentId: N:UltraForce.Library.NetStandard.Tools
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Tools
+  nameWithType: UltraForce.Library.NetStandard.Tools
+  fullName: UltraForce.Library.NetStandard.Tools
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Services
+  commentId: N:UltraForce.Library.NetStandard.Services
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Services
+  nameWithType: UltraForce.Library.NetStandard.Services
+  fullName: UltraForce.Library.NetStandard.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Services
+    name: Services
+    href: UltraForce.Library.NetStandard.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Services
+    name: Services
+    href: UltraForce.Library.NetStandard.Services.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.With*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.With
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html#UltraForce_Library_NetStandard_Tools_UFServiceCollectionTools_With_UltraForce_Library_NetStandard_Services_IUFServiceCollection_
+  name: With
+  nameWithType: UFServiceCollectionTools.With
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.With
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  parent: UltraForce.Library.NetStandard.Tools
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html
+  name: UFServiceCollectionTools.UFServiceCollectionHelper
+  nameWithType: UFServiceCollectionTools.UFServiceCollectionHelper
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+    name: UFServiceCollectionTools
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    name: UFServiceCollectionHelper
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.html
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools
+    name: UFServiceCollectionTools
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper
+    name: UFServiceCollectionHelper
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.UFServiceCollectionHelper.html
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetService*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetService
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html#UltraForce_Library_NetStandard_Tools_UFServiceCollectionTools_GetService__1_System_IServiceProvider_
+  name: GetService
+  nameWithType: UFServiceCollectionTools.GetService
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetService
+- uid: '{TService}'
+  commentId: '!:TService'
+  definition: TService
+  name: TService
+  nameWithType: TService
+  fullName: TService
+- uid: TService
+  name: TService
+  nameWithType: TService
+  fullName: TService
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetArguments*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetArguments
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html#UltraForce_Library_NetStandard_Tools_UFServiceCollectionTools_GetArguments_System_IServiceProvider_System_Reflection_ParameterInfo___
+  name: GetArguments
+  nameWithType: UFServiceCollectionTools.GetArguments
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.GetArguments
+- uid: System.Reflection.ParameterInfo[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  name: ParameterInfo[]
+  nameWithType: ParameterInfo[]
+  fullName: System.Reflection.ParameterInfo[]
+  nameWithType.vb: ParameterInfo()
+  fullName.vb: System.Reflection.ParameterInfo()
+  name.vb: ParameterInfo()
+  spec.csharp:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: (
+  - name: )
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html#UltraForce_Library_NetStandard_Tools_UFServiceCollectionTools_CallMethod_System_Object_System_Reflection_MethodInfo_System_IServiceProvider_
+  name: CallMethod
+  nameWithType: UFServiceCollectionTools.CallMethod
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethods*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethods
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html#UltraForce_Library_NetStandard_Tools_UFServiceCollectionTools_CallMethods_System_Object_System_String_System_IServiceProvider_
+  name: CallMethods
+  nameWithType: UFServiceCollectionTools.CallMethods
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethods
+- uid: UltraForce.Library.NetStandard.Annotations.UFInjectAttribute
+  commentId: T:UltraForce.Library.NetStandard.Annotations.UFInjectAttribute
+  href: UltraForce.Library.NetStandard.Annotations.UFInjectAttribute.html
+  name: UFInjectAttribute
+  nameWithType: UFInjectAttribute
+  fullName: UltraForce.Library.NetStandard.Annotations.UFInjectAttribute
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(System.Object,System.Reflection.MethodInfo,System.IServiceProvider)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(System.Object,System.Reflection.MethodInfo,System.IServiceProvider)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html#UltraForce_Library_NetStandard_Tools_UFServiceCollectionTools_CallMethod_System_Object_System_Reflection_MethodInfo_System_IServiceProvider_
+  name: CallMethod(object, MethodInfo, IServiceProvider)
+  nameWithType: UFServiceCollectionTools.CallMethod(object, MethodInfo, IServiceProvider)
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(object, System.Reflection.MethodInfo, System.IServiceProvider)
+  nameWithType.vb: UFServiceCollectionTools.CallMethod(Object, MethodInfo, IServiceProvider)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(Object, System.Reflection.MethodInfo, System.IServiceProvider)
+  name.vb: CallMethod(Object, MethodInfo, IServiceProvider)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(System.Object,System.Reflection.MethodInfo,System.IServiceProvider)
+    name: CallMethod
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html#UltraForce_Library_NetStandard_Tools_UFServiceCollectionTools_CallMethod_System_Object_System_Reflection_MethodInfo_System_IServiceProvider_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: ','
+  - name: " "
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.CallMethod(System.Object,System.Reflection.MethodInfo,System.IServiceProvider)
+    name: CallMethod
+    href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html#UltraForce_Library_NetStandard_Tools_UFServiceCollectionTools_CallMethod_System_Object_System_Reflection_MethodInfo_System_IServiceProvider_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: ','
+  - name: " "
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.ProcessInjects*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.ProcessInjects
+  href: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.html#UltraForce_Library_NetStandard_Tools_UFServiceCollectionTools_ProcessInjects_System_Object_System_IServiceProvider_
+  name: ProcessInjects
+  nameWithType: UFServiceCollectionTools.ProcessInjects
+  fullName: UltraForce.Library.NetStandard.Tools.UFServiceCollectionTools.ProcessInjects

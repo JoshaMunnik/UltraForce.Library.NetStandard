@@ -1,0 +1,557 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFCsvHelper | UltraForce.Library.NetStandard </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFCsvHelper | UltraForce.Library.NetStandard ">
+      
+      <meta name="description" content="Parse a CSV formatted text. The code does not trim any text.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.NetStandard">
+            UltraForce.Library.NetStandard
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper">
+
+
+
+  <h1 id="UltraForce_Library_NetStandard_Data_UFCsvHelper" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper" class="text-break">
+Class UFCsvHelper  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.NetStandard.html">NetStandard</a>.<a class="xref" href="UltraForce.Library.NetStandard.Data.html">Data</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Parse a CSV formatted text. The code does not trim any text.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UFCsvHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFCsvHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Data_UFCsvHelper__ctor_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Data_UFCsvHelper__ctor" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.#ctor">
+  UFCsvHelper()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="UltraForce.Library.NetStandard.Data.UFCsvHelper.html">UFCsvHelper</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFCsvHelper()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Data_UFCsvHelper_Count_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.Count*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Data_UFCsvHelper_Count" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of records.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Data_UFCsvHelper_FieldEnclose_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.FieldEnclose*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Data_UFCsvHelper_FieldEnclose" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.FieldEnclose">
+  FieldEnclose
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Field enclose text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char FieldEnclose { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>The field enclose value, default &quot; (double quote)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Data_UFCsvHelper_FieldSeparator_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.FieldSeparator*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Data_UFCsvHelper_FieldSeparator" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.FieldSeparator">
+  FieldSeparator
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Field separator text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char FieldSeparator { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>The field separator, default &quot;,&quot;</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Data_UFCsvHelper_HasHeader_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.HasHeader*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Data_UFCsvHelper_HasHeader" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.HasHeader">
+  HasHeader
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the first row of the CSV data
+is a header.</p>
+<p>
+This property is only used within the <a class="xref" href="UltraForce.Library.NetStandard.Data.UFCsvHelper.html#UltraForce_Library_NetStandard_Data_UFCsvHelper_Parse_System_String_">Parse(string)</a>; assigning
+a value after will not change the other properties.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasHeader { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> (default) if the first row is a header;
+otherwise, <code>false</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Data_UFCsvHelper_Header_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.Header*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Data_UFCsvHelper_Header" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.Header">
+  Header
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the headers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt;? Header { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Data_UFCsvHelper_Item_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.Item*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Data_UFCsvHelper_Item_System_Int32_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a record for a certain index using array index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; this[int anIndex] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An index.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Data_UFCsvHelper_RecordSeparator_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.RecordSeparator*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Data_UFCsvHelper_RecordSeparator" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.RecordSeparator">
+  RecordSeparator
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Record separator text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char RecordSeparator { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>The record separator, default is &quot;\n&quot;</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_NetStandard_Data_UFCsvHelper_Clear_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.Clear*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Data_UFCsvHelper_Clear" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes existing data. After this call, use <a class="xref" href="UltraForce.Library.NetStandard.Data.UFCsvHelper.html#UltraForce_Library_NetStandard_Data_UFCsvHelper_Parse_System_String_">Parse(string)</a> to
+fill the instance with new data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Data_UFCsvHelper_GetRecord_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.GetRecord*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Data_UFCsvHelper_GetRecord_System_Int32_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.GetRecord(System.Int32)">
+  GetRecord(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a record (row).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetRecord(int anIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>record index (first record has index of 0)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The record (a list of strings)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Data_UFCsvHelper_Parse_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.Parse*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Data_UFCsvHelper_Parse_System_String_" data-uid="UltraForce.Library.NetStandard.Data.UFCsvHelper.Parse(System.String)">
+  Parse(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parses a CSV text. After parsing <a class="xref" href="UltraForce.Library.NetStandard.Data.UFCsvHelper.html#UltraForce_Library_NetStandard_Data_UFCsvHelper_GetRecord_System_Int32_">GetRecord(int)</a> can be called
+and <a class="xref" href="UltraForce.Library.NetStandard.Data.UFCsvHelper.html#UltraForce_Library_NetStandard_Data_UFCsvHelper_Header">Header</a> contains the header if
+<a class="xref" href="UltraForce.Library.NetStandard.Data.UFCsvHelper.html#UltraForce_Library_NetStandard_Data_UFCsvHelper_HasHeader">HasHeader</a> is <code>true</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Parse(string aText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A text.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
