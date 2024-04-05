@@ -20,7 +20,7 @@
         ],
         "exclude": [
           "_site/**",
-          "readme.md"
+          "README.md"
         ]
       }
     ],

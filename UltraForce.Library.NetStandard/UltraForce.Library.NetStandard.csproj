@@ -11,6 +11,8 @@
     <Description>A set of general usable classes requiring only netstandard 2.1</Description>
     <PackageIcon>ufd.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.NetStandard</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -20,6 +22,7 @@
   <ItemGroup>
     <None Remove="**/*.meta"/>
     <None Include="ufd.png" Pack="True" PackagePath="" />
+    <None Include="README.md" Pack="True" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
