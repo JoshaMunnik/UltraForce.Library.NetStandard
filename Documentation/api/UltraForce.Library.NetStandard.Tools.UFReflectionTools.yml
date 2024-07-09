@@ -1,0 +1,1303 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  id: UFReflectionTools
+  parent: UltraForce.Library.NetStandard.Tools
+  children:
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools.CopyProperty(System.Reflection.PropertyInfo,System.Reflection.PropertyInfo,System.Object,System.Object)
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllConstructors(System.Type)
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllEvents(System.Type)
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllFields(System.Type)
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMembers(System.Type)
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods(System.Type)
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods(System.Type,System.String)
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllNestedTypes(System.Type)
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllProperties(System.Type)
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetEnumType(System.Reflection.PropertyInfo)
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric(System.Type,System.Boolean)
+  - UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumericType``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: UFReflectionTools
+  nameWithType: UFReflectionTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: UFReflectionTools
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 46
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Support methods for <xref href="System.Type" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    Based on code from:
+
+    https://stackoverflow.com/a/35370385/968451
+
+    <p>
+
+    When using this class with Unity 3D, it is faster just to query the
+
+    Type with the correct GetXXXX method.
+
+    </p>
+  example: []
+  syntax:
+    content: public static class UFReflectionTools
+    content.vb: Public Module UFReflectionTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllConstructors(System.Type)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllConstructors(System.Type)
+  id: GetAllConstructors(System.Type)
+  parent: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  langs:
+  - csharp
+  - vb
+  name: GetAllConstructors(Type)
+  nameWithType: UFReflectionTools.GetAllConstructors(Type)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllConstructors(System.Type)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetAllConstructors
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 64
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Gets all constructors for the current type and parent types.
+  example: []
+  syntax:
+    content: public static IEnumerable<ConstructorInfo> GetAllConstructors(Type aType)
+    parameters:
+    - id: aType
+      type: System.Type
+      description: Type to get constructors for
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo}
+      description: All constructors
+    content.vb: Public Shared Function GetAllConstructors(aType As Type) As IEnumerable(Of ConstructorInfo)
+  overload: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllConstructors*
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllEvents(System.Type)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllEvents(System.Type)
+  id: GetAllEvents(System.Type)
+  parent: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  langs:
+  - csharp
+  - vb
+  name: GetAllEvents(Type)
+  nameWithType: UFReflectionTools.GetAllEvents(Type)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllEvents(System.Type)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetAllEvents
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 74
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Gets all events for the current type and parent types.
+  example: []
+  syntax:
+    content: public static IEnumerable<EventInfo> GetAllEvents(Type aType)
+    parameters:
+    - id: aType
+      type: System.Type
+      description: Type to get events for
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.EventInfo}
+      description: All events
+    content.vb: Public Shared Function GetAllEvents(aType As Type) As IEnumerable(Of EventInfo)
+  overload: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllEvents*
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllFields(System.Type)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllFields(System.Type)
+  id: GetAllFields(System.Type)
+  parent: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  langs:
+  - csharp
+  - vb
+  name: GetAllFields(Type)
+  nameWithType: UFReflectionTools.GetAllFields(Type)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllFields(System.Type)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetAllFields
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 84
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Gets all fields for the current type and parent types.
+  example: []
+  syntax:
+    content: public static IEnumerable<FieldInfo> GetAllFields(Type aType)
+    parameters:
+    - id: aType
+      type: System.Type
+      description: Type to get fields for
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+      description: All fields
+    content.vb: Public Shared Function GetAllFields(aType As Type) As IEnumerable(Of FieldInfo)
+  overload: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllFields*
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMembers(System.Type)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMembers(System.Type)
+  id: GetAllMembers(System.Type)
+  parent: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  langs:
+  - csharp
+  - vb
+  name: GetAllMembers(Type)
+  nameWithType: UFReflectionTools.GetAllMembers(Type)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMembers(System.Type)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetAllMembers
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 94
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Gets all members for the current type and parent types.
+  example: []
+  syntax:
+    content: public static IEnumerable<MemberInfo> GetAllMembers(Type aType)
+    parameters:
+    - id: aType
+      type: System.Type
+      description: Type to get members for
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+      description: All members
+    content.vb: Public Shared Function GetAllMembers(aType As Type) As IEnumerable(Of MemberInfo)
+  overload: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMembers*
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods(System.Type)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods(System.Type)
+  id: GetAllMethods(System.Type)
+  parent: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  langs:
+  - csharp
+  - vb
+  name: GetAllMethods(Type)
+  nameWithType: UFReflectionTools.GetAllMethods(Type)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods(System.Type)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetAllMethods
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 104
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Gets all methods for the current type and parent types.
+  example: []
+  syntax:
+    content: public static IEnumerable<MethodInfo> GetAllMethods(Type aType)
+    parameters:
+    - id: aType
+      type: System.Type
+      description: Type to get methods for
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+      description: All methods
+    content.vb: Public Shared Function GetAllMethods(aType As Type) As IEnumerable(Of MethodInfo)
+  overload: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods*
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods(System.Type,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods(System.Type,System.String)
+  id: GetAllMethods(System.Type,System.String)
+  parent: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  langs:
+  - csharp
+  - vb
+  name: GetAllMethods(Type, string)
+  nameWithType: UFReflectionTools.GetAllMethods(Type, string)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods(System.Type, string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetAllMethods
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 117
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Gets all methods of a certain name for the current type and parent
+
+    types. The first method will be from the type, the last method from
+
+    the last base class implementing the method itself.
+  example: []
+  syntax:
+    content: public static IEnumerable<MethodInfo> GetAllMethods(Type aType, string aMethodName)
+    parameters:
+    - id: aType
+      type: System.Type
+      description: Type to get methods for
+    - id: aMethodName
+      type: System.String
+      description: Name of method
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+      description: All methods of the specified name
+    content.vb: Public Shared Function GetAllMethods(aType As Type, aMethodName As String) As IEnumerable(Of MethodInfo)
+  overload: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods*
+  nameWithType.vb: UFReflectionTools.GetAllMethods(Type, String)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods(System.Type, String)
+  name.vb: GetAllMethods(Type, String)
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllNestedTypes(System.Type)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllNestedTypes(System.Type)
+  id: GetAllNestedTypes(System.Type)
+  parent: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  langs:
+  - csharp
+  - vb
+  name: GetAllNestedTypes(Type)
+  nameWithType: UFReflectionTools.GetAllNestedTypes(Type)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllNestedTypes(System.Type)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetAllNestedTypes
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 133
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Gets all nested types for the current type and parent types.
+  example: []
+  syntax:
+    content: public static IEnumerable<TypeInfo> GetAllNestedTypes(Type aType)
+    parameters:
+    - id: aType
+      type: System.Type
+      description: Type to get nested types for
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.TypeInfo}
+      description: All nested types
+    content.vb: Public Shared Function GetAllNestedTypes(aType As Type) As IEnumerable(Of TypeInfo)
+  overload: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllNestedTypes*
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllProperties(System.Type)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllProperties(System.Type)
+  id: GetAllProperties(System.Type)
+  parent: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  langs:
+  - csharp
+  - vb
+  name: GetAllProperties(Type)
+  nameWithType: UFReflectionTools.GetAllProperties(Type)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllProperties(System.Type)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetAllProperties
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 143
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Gets all properties for the current type and parent types.
+  example: []
+  syntax:
+    content: public static IEnumerable<PropertyInfo> GetAllProperties(Type aType)
+    parameters:
+    - id: aType
+      type: System.Type
+      description: Type to get properties for
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+      description: All properties
+    content.vb: Public Shared Function GetAllProperties(aType As Type) As IEnumerable(Of PropertyInfo)
+  overload: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllProperties*
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric(System.Type,System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric(System.Type,System.Boolean)
+  id: IsNumeric(System.Type,System.Boolean)
+  parent: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  langs:
+  - csharp
+  - vb
+  name: IsNumeric(Type, bool)
+  nameWithType: UFReflectionTools.IsNumeric(Type, bool)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric(System.Type, bool)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: IsNumeric
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 157
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Checks if a type is numeric.
+
+    <p>
+
+    Code based on: https://stackoverflow.com/a/33776103/968451
+
+    </p>
+  example: []
+  syntax:
+    content: public static bool IsNumeric(Type aType, bool anIncludeNullable = true)
+    parameters:
+    - id: aType
+      type: System.Type
+      description: Type to check
+    - id: anIncludeNullable
+      type: System.Boolean
+      description: When true also check for nullable versions of the type
+    return:
+      type: System.Boolean
+      description: true if type is numeric
+    content.vb: Public Shared Function IsNumeric(aType As Type, anIncludeNullable As Boolean = True) As Boolean
+  overload: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric*
+  nameWithType.vb: UFReflectionTools.IsNumeric(Type, Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric(System.Type, Boolean)
+  name.vb: IsNumeric(Type, Boolean)
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumericType``1(``0)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumericType``1(``0)
+  id: IsNumericType``1(``0)
+  parent: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  langs:
+  - csharp
+  - vb
+  name: IsNumericType<T>(T)
+  nameWithType: UFReflectionTools.IsNumericType<T>(T)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumericType<T>(T)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: IsNumericType
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 178
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Checks if the type of a value is numeric. This method just calls <xref href="UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric(System.Type%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> with the type of the
+
+    parameter.
+  example: []
+  syntax:
+    content: public static bool IsNumericType<T>(T aValue)
+    parameters:
+    - id: aValue
+      type: '{T}'
+      description: Value to check its type of
+    typeParameters:
+    - id: T
+      description: Type of the value
+    return:
+      type: System.Boolean
+      description: true if aValue is numeric
+    content.vb: Public Shared Function IsNumericType(Of T)(aValue As T) As Boolean
+  overload: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumericType*
+  nameWithType.vb: UFReflectionTools.IsNumericType(Of T)(T)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumericType(Of T)(T)
+  name.vb: IsNumericType(Of T)(T)
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.CopyProperty(System.Reflection.PropertyInfo,System.Reflection.PropertyInfo,System.Object,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.CopyProperty(System.Reflection.PropertyInfo,System.Reflection.PropertyInfo,System.Object,System.Object)
+  id: CopyProperty(System.Reflection.PropertyInfo,System.Reflection.PropertyInfo,System.Object,System.Object)
+  parent: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  langs:
+  - csharp
+  - vb
+  name: CopyProperty(PropertyInfo, PropertyInfo, object, object)
+  nameWithType: UFReflectionTools.CopyProperty(PropertyInfo, PropertyInfo, object, object)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.CopyProperty(System.Reflection.PropertyInfo, System.Reflection.PropertyInfo, object, object)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: CopyProperty
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 192
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Copies a property value. The method handles the following:<br />
+
+    - null values with nullable strings copied to a non-nullable string are replaced by ""<br />
+
+    - enum values are copied to integers and vice versa (including support for nullable fields)
+  example: []
+  syntax:
+    content: public static void CopyProperty(PropertyInfo aSourceProperty, PropertyInfo aTargetProperty, object aSource, object aTarget)
+    parameters:
+    - id: aSourceProperty
+      type: System.Reflection.PropertyInfo
+      description: ''
+    - id: aTargetProperty
+      type: System.Reflection.PropertyInfo
+      description: ''
+    - id: aSource
+      type: System.Object
+      description: ''
+    - id: aTarget
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Sub CopyProperty(aSourceProperty As PropertyInfo, aTargetProperty As PropertyInfo, aSource As Object, aTarget As Object)
+  overload: UltraForce.Library.NetStandard.Tools.UFReflectionTools.CopyProperty*
+  nameWithType.vb: UFReflectionTools.CopyProperty(PropertyInfo, PropertyInfo, Object, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFReflectionTools.CopyProperty(System.Reflection.PropertyInfo, System.Reflection.PropertyInfo, Object, Object)
+  name.vb: CopyProperty(PropertyInfo, PropertyInfo, Object, Object)
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetEnumType(System.Reflection.PropertyInfo)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetEnumType(System.Reflection.PropertyInfo)
+  id: GetEnumType(System.Reflection.PropertyInfo)
+  parent: UltraForce.Library.NetStandard.Tools.UFReflectionTools
+  langs:
+  - csharp
+  - vb
+  name: GetEnumType(PropertyInfo)
+  nameWithType: UFReflectionTools.GetEnumType(PropertyInfo)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetEnumType(System.Reflection.PropertyInfo)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetEnumType
+    path: ../UltraForce.Library.NetStandard/Tools/UFReflectionTools.cs
+    startLine: 224
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Gets the enum type of a property. When the property is nullable, it returns
+
+    the underlying type.
+  example: []
+  syntax:
+    content: public static Type? GetEnumType(PropertyInfo aProperty)
+    parameters:
+    - id: aProperty
+      type: System.Reflection.PropertyInfo
+      description: ''
+    return:
+      type: System.Type
+      description: Enum type or null if property is not a (nullable) enum.
+    content.vb: Public Shared Function GetEnumType(aProperty As PropertyInfo) As Type
+  overload: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetEnumType*
+references:
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: UltraForce.Library.NetStandard.Tools
+  commentId: N:UltraForce.Library.NetStandard.Tools
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Tools
+  nameWithType: UltraForce.Library.NetStandard.Tools
+  fullName: UltraForce.Library.NetStandard.Tools
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllConstructors*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllConstructors
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_GetAllConstructors_System_Type_
+  name: GetAllConstructors
+  nameWithType: UFReflectionTools.GetAllConstructors
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllConstructors
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.ConstructorInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ConstructorInfo>
+  nameWithType: IEnumerable<ConstructorInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.ConstructorInfo>
+  nameWithType.vb: IEnumerable(Of ConstructorInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.ConstructorInfo)
+  name.vb: IEnumerable(Of ConstructorInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllEvents*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllEvents
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_GetAllEvents_System_Type_
+  name: GetAllEvents
+  nameWithType: UFReflectionTools.GetAllEvents
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllEvents
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.EventInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.EventInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EventInfo>
+  nameWithType: IEnumerable<EventInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.EventInfo>
+  nameWithType.vb: IEnumerable(Of EventInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.EventInfo)
+  name.vb: IEnumerable(Of EventInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.EventInfo
+    name: EventInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.eventinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.EventInfo
+    name: EventInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.eventinfo
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllFields*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllFields
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_GetAllFields_System_Type_
+  name: GetAllFields
+  nameWithType: UFReflectionTools.GetAllFields
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllFields
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<FieldInfo>
+  nameWithType: IEnumerable<FieldInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.FieldInfo>
+  nameWithType.vb: IEnumerable(Of FieldInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.FieldInfo)
+  name.vb: IEnumerable(Of FieldInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMembers*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMembers
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_GetAllMembers_System_Type_
+  name: GetAllMembers
+  nameWithType: UFReflectionTools.GetAllMembers
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMembers
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<MemberInfo>
+  nameWithType: IEnumerable<MemberInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MemberInfo>
+  nameWithType.vb: IEnumerable(Of MemberInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.MemberInfo)
+  name.vb: IEnumerable(Of MemberInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_GetAllMethods_System_Type_
+  name: GetAllMethods
+  nameWithType: UFReflectionTools.GetAllMethods
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllMethods
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<MethodInfo>
+  nameWithType: IEnumerable<MethodInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo>
+  nameWithType.vb: IEnumerable(Of MethodInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.MethodInfo)
+  name.vb: IEnumerable(Of MethodInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllNestedTypes*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllNestedTypes
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_GetAllNestedTypes_System_Type_
+  name: GetAllNestedTypes
+  nameWithType: UFReflectionTools.GetAllNestedTypes
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllNestedTypes
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.TypeInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.TypeInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TypeInfo>
+  nameWithType: IEnumerable<TypeInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.TypeInfo>
+  nameWithType.vb: IEnumerable(Of TypeInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.TypeInfo)
+  name.vb: IEnumerable(Of TypeInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.TypeInfo
+    name: TypeInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.typeinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.TypeInfo
+    name: TypeInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.typeinfo
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllProperties*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllProperties
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_GetAllProperties_System_Type_
+  name: GetAllProperties
+  nameWithType: UFReflectionTools.GetAllProperties
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetAllProperties
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PropertyInfo>
+  nameWithType: IEnumerable<PropertyInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.PropertyInfo>
+  nameWithType.vb: IEnumerable(Of PropertyInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.PropertyInfo)
+  name.vb: IEnumerable(Of PropertyInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_IsNumeric_System_Type_System_Boolean_
+  name: IsNumeric
+  nameWithType: UFReflectionTools.IsNumeric
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric(System.Type,System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric(System.Type,System.Boolean)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_IsNumeric_System_Type_System_Boolean_
+  name: IsNumeric(Type, bool)
+  nameWithType: UFReflectionTools.IsNumeric(Type, bool)
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric(System.Type, bool)
+  nameWithType.vb: UFReflectionTools.IsNumeric(Type, Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric(System.Type, Boolean)
+  name.vb: IsNumeric(Type, Boolean)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric(System.Type,System.Boolean)
+    name: IsNumeric
+    href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_IsNumeric_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumeric(System.Type,System.Boolean)
+    name: IsNumeric
+    href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_IsNumeric_System_Type_System_Boolean_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumericType*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumericType
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_IsNumericType__1___0_
+  name: IsNumericType
+  nameWithType: UFReflectionTools.IsNumericType
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.IsNumericType
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.CopyProperty*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFReflectionTools.CopyProperty
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_CopyProperty_System_Reflection_PropertyInfo_System_Reflection_PropertyInfo_System_Object_System_Object_
+  name: CopyProperty
+  nameWithType: UFReflectionTools.CopyProperty
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.CopyProperty
+- uid: System.Reflection.PropertyInfo
+  commentId: T:System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetEnumType*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetEnumType
+  href: UltraForce.Library.NetStandard.Tools.UFReflectionTools.html#UltraForce_Library_NetStandard_Tools_UFReflectionTools_GetEnumType_System_Reflection_PropertyInfo_
+  name: GetEnumType
+  nameWithType: UFReflectionTools.GetEnumType
+  fullName: UltraForce.Library.NetStandard.Tools.UFReflectionTools.GetEnumType

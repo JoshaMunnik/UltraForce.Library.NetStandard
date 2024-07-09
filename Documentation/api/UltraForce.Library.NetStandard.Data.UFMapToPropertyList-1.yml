@@ -1,0 +1,2186 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  commentId: T:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  id: UFMapToPropertyList`1
+  parent: UltraForce.Library.NetStandard.Data
+  children:
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.#ctor(System.Collections.Generic.IEnumerable{System.Object},System.String,System.Boolean)
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.#ctor(System.Collections.Generic.IList{System.Object},System.String,System.Boolean)
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Add(`0)
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Clear
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Contains(`0)
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.CopyTo(`0[],System.Int32)
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Count
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.GetEnumerator
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.IndexOf(`0)
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Insert(System.Int32,`0)
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.IsReadOnly
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Item(System.Int32)
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Remove(`0)
+  - UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.RemoveAt(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: UFMapToPropertyList<TValue>
+  nameWithType: UFMapToPropertyList<TValue>
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: UFMapToPropertyList
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 52
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: >-
+    This class can be used to create a list that maps to a certain property in a list of objects.
+
+    <p>
+
+    If the object implements <xref href="UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty" data-throw-if-not-resolved="false"></xref>, the class will use its methods to
+
+    get and optionally set the property value. Else the class will use reflection to get and set
+
+    the property value.
+
+    </p>
+
+    <p>
+
+    It is not possible to delete, clear, add or insert items to the list. Trying to do so will
+
+    throw an exception.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public class UFMapToPropertyList<TValue> : IList<TValue>, ICollection<TValue>, IEnumerable<TValue>, IEnumerable where TValue : notnull'
+    typeParameters:
+    - id: TValue
+      description: The type of the property value
+    content.vb: Public Class UFMapToPropertyList(Of TValue) Implements IList(Of TValue), ICollection(Of TValue), IEnumerable(Of TValue), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IList{{TValue}}
+  - System.Collections.Generic.ICollection{{TValue}}
+  - System.Collections.Generic.IEnumerable{{TValue}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: UFMapToPropertyList(Of TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue)
+  name.vb: UFMapToPropertyList(Of TValue)
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.#ctor(System.Collections.Generic.IEnumerable{System.Object},System.String,System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.#ctor(System.Collections.Generic.IEnumerable{System.Object},System.String,System.Boolean)
+  id: '#ctor(System.Collections.Generic.IEnumerable{System.Object},System.String,System.Boolean)'
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: UFMapToPropertyList(IEnumerable<object>, string, bool)
+  nameWithType: UFMapToPropertyList<TValue>.UFMapToPropertyList(IEnumerable<object>, string, bool)
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.UFMapToPropertyList(System.Collections.Generic.IEnumerable<object>, string, bool)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: .ctor
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 82
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Constructs an instance of <xref href="UltraForce.Library.NetStandard.Data.UFMapToPropertyList%601" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public UFMapToPropertyList(IEnumerable<object> anItems, string aPropertyName, bool aReadOnly = true)
+    parameters:
+    - id: anItems
+      type: System.Collections.Generic.IEnumerable{System.Object}
+      description: Array of objects, each containing the property with specified name.
+    - id: aPropertyName
+      type: System.String
+      description: Name of property
+    - id: aReadOnly
+      type: System.Boolean
+      description: When <code>true</code> trying to set a value in the list will throw an exception.
+    content.vb: Public Sub New(anItems As IEnumerable(Of Object), aPropertyName As String, aReadOnly As Boolean = True)
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.#ctor*
+  nameWithType.vb: UFMapToPropertyList(Of TValue).New(IEnumerable(Of Object), String, Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).New(System.Collections.Generic.IEnumerable(Of Object), String, Boolean)
+  name.vb: New(IEnumerable(Of Object), String, Boolean)
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.#ctor(System.Collections.Generic.IList{System.Object},System.String,System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.#ctor(System.Collections.Generic.IList{System.Object},System.String,System.Boolean)
+  id: '#ctor(System.Collections.Generic.IList{System.Object},System.String,System.Boolean)'
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: UFMapToPropertyList(IList<object>, string, bool)
+  nameWithType: UFMapToPropertyList<TValue>.UFMapToPropertyList(IList<object>, string, bool)
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.UFMapToPropertyList(System.Collections.Generic.IList<object>, string, bool)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: .ctor
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 99
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Constructs an instance of <xref href="UltraForce.Library.NetStandard.Data.UFMapToPropertyList%601" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public UFMapToPropertyList(IList<object> anItems, string aPropertyName, bool aReadOnly = true)
+    parameters:
+    - id: anItems
+      type: System.Collections.Generic.IList{System.Object}
+      description: List of objects that contain the property with specified name.
+    - id: aPropertyName
+      type: System.String
+      description: Name of property
+    - id: aReadOnly
+      type: System.Boolean
+      description: When <code>true</code> trying to set a value in the list will throw an exception.
+    content.vb: Public Sub New(anItems As IList(Of Object), aPropertyName As String, aReadOnly As Boolean = True)
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.#ctor*
+  nameWithType.vb: UFMapToPropertyList(Of TValue).New(IList(Of Object), String, Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).New(System.Collections.Generic.IList(Of Object), String, Boolean)
+  name.vb: New(IList(Of Object), String, Boolean)
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.GetEnumerator
+  commentId: M:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.GetEnumerator
+  id: GetEnumerator
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: UFMapToPropertyList<TValue>.GetEnumerator()
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetEnumerator
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 111
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Returns an enumerator that iterates through the collection.
+  example: []
+  syntax:
+    content: public IEnumerator<TValue> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{{TValue}}
+      description: An enumerator that can be used to iterate through the collection.
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of TValue)
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{{TValue}}.GetEnumerator
+  nameWithType.vb: UFMapToPropertyList(Of TValue).GetEnumerator()
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).GetEnumerator()
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Add(`0)
+  commentId: M:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Add(`0)
+  id: Add(`0)
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: Add(TValue)
+  nameWithType: UFMapToPropertyList<TValue>.Add(TValue)
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.Add(TValue)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Add
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 127
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Calling this method will throw an exception, since the list is readonly.
+  example: []
+  syntax:
+    content: public void Add(TValue item)
+    parameters:
+    - id: item
+      type: '{TValue}'
+      description: Item to add
+    content.vb: Public Sub Add(item As TValue)
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Add*
+  implements:
+  - System.Collections.Generic.ICollection{{TValue}}.Add({TValue})
+  nameWithType.vb: UFMapToPropertyList(Of TValue).Add(TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).Add(TValue)
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Clear
+  commentId: M:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Clear
+  id: Clear
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: UFMapToPropertyList<TValue>.Clear()
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.Clear()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Clear
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 135
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Calling this method will throw an exception, since the list is readonly.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Clear*
+  implements:
+  - System.Collections.Generic.ICollection{{TValue}}.Clear
+  nameWithType.vb: UFMapToPropertyList(Of TValue).Clear()
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).Clear()
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Contains(`0)
+  commentId: M:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Contains(`0)
+  id: Contains(`0)
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(TValue)
+  nameWithType: UFMapToPropertyList<TValue>.Contains(TValue)
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.Contains(TValue)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Contains
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 141
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Determines whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> contains a specific value.
+  example: []
+  syntax:
+    content: public bool Contains(TValue item)
+    parameters:
+    - id: item
+      type: '{TValue}'
+      description: The object to locate in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">item</code> is found in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Contains(item As TValue) As Boolean
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{{TValue}}.Contains({TValue})
+  nameWithType.vb: UFMapToPropertyList(Of TValue).Contains(TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).Contains(TValue)
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.CopyTo(`0[],System.Int32)
+  commentId: M:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(TValue[], int)
+  nameWithType: UFMapToPropertyList<TValue>.CopyTo(TValue[], int)
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.CopyTo(TValue[], int)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: CopyTo
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 147
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Copies the elements of the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> to an <xref href="System.Array" data-throw-if-not-resolved="false"></xref>, starting at a particular <xref href="System.Array" data-throw-if-not-resolved="false"></xref> index.
+  example: []
+  syntax:
+    content: public void CopyTo(TValue[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: '{TValue}[]'
+      description: The one-dimensional <xref href="System.Array" data-throw-if-not-resolved="false"></xref> that is the destination of the elements copied from <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>. The <xref href="System.Array" data-throw-if-not-resolved="false"></xref> must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in <code class="paramref">array</code> at which copying begins.
+    content.vb: Public Sub CopyTo(array As TValue(), arrayIndex As Integer)
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">array</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">arrayIndex</code> is less than 0.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The number of elements in the source <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is greater than the available space from <code class="paramref">arrayIndex</code> to the end of the destination <code class="paramref">array</code>.
+  implements:
+  - System.Collections.Generic.ICollection{{TValue}}.CopyTo({TValue}[],System.Int32)
+  nameWithType.vb: UFMapToPropertyList(Of TValue).CopyTo(TValue(), Integer)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).CopyTo(TValue(), Integer)
+  name.vb: CopyTo(TValue(), Integer)
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Remove(`0)
+  commentId: M:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Remove(`0)
+  id: Remove(`0)
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: Remove(TValue)
+  nameWithType: UFMapToPropertyList<TValue>.Remove(TValue)
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.Remove(TValue)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Remove
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 174
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: >-
+    Calling this method will throw an exception, since the list is
+
+    readonly.
+  example: []
+  syntax:
+    content: public bool Remove(TValue item)
+    parameters:
+    - id: item
+      type: '{TValue}'
+      description: Item to remove
+    return:
+      type: System.Boolean
+    content.vb: Public Function Remove(item As TValue) As Boolean
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Remove*
+  implements:
+  - System.Collections.Generic.ICollection{{TValue}}.Remove({TValue})
+  nameWithType.vb: UFMapToPropertyList(Of TValue).Remove(TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).Remove(TValue)
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Count
+  commentId: P:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Count
+  id: Count
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: UFMapToPropertyList<TValue>.Count
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.Count
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Count
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 180
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Gets the number of elements contained in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements contained in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Count*
+  implements:
+  - System.Collections.Generic.ICollection{{TValue}}.Count
+  nameWithType.vb: UFMapToPropertyList(Of TValue).Count
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).Count
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.IsReadOnly
+  commentId: P:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.IsReadOnly
+  id: IsReadOnly
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: UFMapToPropertyList<TValue>.IsReadOnly
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: IsReadOnly
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 183
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Gets a value indicating whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{{TValue}}.IsReadOnly
+  nameWithType.vb: UFMapToPropertyList(Of TValue).IsReadOnly
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).IsReadOnly
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.IndexOf(`0)
+  commentId: M:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.IndexOf(`0)
+  id: IndexOf(`0)
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(TValue)
+  nameWithType: UFMapToPropertyList<TValue>.IndexOf(TValue)
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.IndexOf(TValue)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: IndexOf
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 186
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Determines the index of a specific item in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int IndexOf(TValue item)
+    parameters:
+    - id: item
+      type: '{TValue}'
+      description: The object to locate in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Int32
+      description: The index of <code class="paramref">item</code> if found in the list; otherwise, -1.
+    content.vb: Public Function IndexOf(item As TValue) As Integer
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.IndexOf*
+  implements:
+  - System.Collections.Generic.IList{{TValue}}.IndexOf({TValue})
+  nameWithType.vb: UFMapToPropertyList(Of TValue).IndexOf(TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).IndexOf(TValue)
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Insert(System.Int32,`0)
+  commentId: M:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Insert(System.Int32,`0)
+  id: Insert(System.Int32,`0)
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: Insert(int, TValue)
+  nameWithType: UFMapToPropertyList<TValue>.Insert(int, TValue)
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.Insert(int, TValue)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Insert
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 200
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Inserts an item to the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> at the specified index.
+  example: []
+  syntax:
+    content: public void Insert(int index, TValue item)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which <code class="paramref">item</code> should be inserted.
+    - id: item
+      type: '{TValue}'
+      description: The object to insert into the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Insert(index As Integer, item As TValue)
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Insert*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is not a valid index in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IList{{TValue}}.Insert(System.Int32,{TValue})
+  nameWithType.vb: UFMapToPropertyList(Of TValue).Insert(Integer, TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).Insert(Integer, TValue)
+  name.vb: Insert(Integer, TValue)
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.RemoveAt(System.Int32)
+  commentId: M:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(int)
+  nameWithType: UFMapToPropertyList<TValue>.RemoveAt(int)
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.RemoveAt(int)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: RemoveAt
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 206
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Removes the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> item at the specified index.
+  example: []
+  syntax:
+    content: public void RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the item to remove.
+    content.vb: Public Sub RemoveAt(index As Integer)
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.RemoveAt*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is not a valid index in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IList{{TValue}}.RemoveAt(System.Int32)
+  nameWithType.vb: UFMapToPropertyList(Of TValue).RemoveAt(Integer)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Item(System.Int32)
+  commentId: P:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: UFMapToPropertyList<TValue>.this[int]
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.this[int]
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: this[]
+    path: ../UltraForce.Library.NetStandard/Data/UFMapToPropertyList.cs
+    startLine: 212
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Data
+  summary: Gets or sets the element at the specified index.
+  example: []
+  syntax:
+    content: public TValue this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get or set.
+    return:
+      type: '{TValue}'
+      description: The element at the specified index.
+    content.vb: Public Default Property this[](index As Integer) As TValue
+  overload: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Item*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is not a valid index in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The property is set and the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IList{{TValue}}.Item(System.Int32)
+  nameWithType.vb: UFMapToPropertyList(Of TValue).this[](Integer)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).this[](Integer)
+  name.vb: this[](Integer)
+references:
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty.html
+  name: IUFAccessProperty
+  nameWithType: IUFAccessProperty
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty
+- uid: UltraForce.Library.NetStandard.Data
+  commentId: N:UltraForce.Library.NetStandard.Data
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Data
+  nameWithType: UltraForce.Library.NetStandard.Data
+  fullName: UltraForce.Library.NetStandard.Data
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Data
+    name: Data
+    href: UltraForce.Library.NetStandard.Data.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Data
+    name: Data
+    href: UltraForce.Library.NetStandard.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.IList{{TValue}}
+  commentId: T:System.Collections.Generic.IList{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<TValue>
+  nameWithType: IList<TValue>
+  fullName: System.Collections.Generic.IList<TValue>
+  nameWithType.vb: IList(Of TValue)
+  fullName.vb: System.Collections.Generic.IList(Of TValue)
+  name.vb: IList(Of TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.ICollection{{TValue}}
+  commentId: T:System.Collections.Generic.ICollection{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<TValue>
+  nameWithType: ICollection<TValue>
+  fullName: System.Collections.Generic.ICollection<TValue>
+  nameWithType.vb: ICollection(Of TValue)
+  fullName.vb: System.Collections.Generic.ICollection(Of TValue)
+  name.vb: ICollection(Of TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{{TValue}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TValue>
+  nameWithType: IEnumerable<TValue>
+  fullName: System.Collections.Generic.IEnumerable<TValue>
+  nameWithType.vb: IEnumerable(Of TValue)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TValue)
+  name.vb: IEnumerable(Of TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Interfaces
+  commentId: N:UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Interfaces
+  nameWithType: UltraForce.Library.NetStandard.Interfaces
+  fullName: UltraForce.Library.NetStandard.Interfaces
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  commentId: T:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html
+  name: UFMapToPropertyList<TValue>
+  nameWithType: UFMapToPropertyList<TValue>
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>
+  nameWithType.vb: UFMapToPropertyList(Of TValue)
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue)
+  name.vb: UFMapToPropertyList(Of TValue)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+    name: UFMapToPropertyList
+    href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1
+    name: UFMapToPropertyList
+    href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.#ctor*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.#ctor
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1__ctor_System_Collections_Generic_IEnumerable_System_Object__System_String_System_Boolean_
+  name: UFMapToPropertyList
+  nameWithType: UFMapToPropertyList<TValue>.UFMapToPropertyList
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.UFMapToPropertyList
+  nameWithType.vb: UFMapToPropertyList(Of TValue).New
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<object>
+  nameWithType: IEnumerable<object>
+  fullName: System.Collections.Generic.IEnumerable<object>
+  nameWithType.vb: IEnumerable(Of Object)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Object)
+  name.vb: IEnumerable(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.IList{System.Object}
+  commentId: T:System.Collections.Generic.IList{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<object>
+  nameWithType: IList<object>
+  fullName: System.Collections.Generic.IList<object>
+  nameWithType.vb: IList(Of Object)
+  fullName.vb: System.Collections.Generic.IList(Of Object)
+  name.vb: IList(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.GetEnumerator*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.GetEnumerator
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1_GetEnumerator
+  name: GetEnumerator
+  nameWithType: UFMapToPropertyList<TValue>.GetEnumerator
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.GetEnumerator
+  nameWithType.vb: UFMapToPropertyList(Of TValue).GetEnumerator
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{{TValue}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{TValue}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<TValue>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<TValue>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of TValue).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TValue).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{{TValue}}
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<TValue>
+  nameWithType: IEnumerator<TValue>
+  fullName: System.Collections.Generic.IEnumerator<TValue>
+  nameWithType.vb: IEnumerator(Of TValue)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of TValue)
+  name.vb: IEnumerator(Of TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Add*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Add
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1_Add__0_
+  name: Add
+  nameWithType: UFMapToPropertyList<TValue>.Add
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.Add
+  nameWithType.vb: UFMapToPropertyList(Of TValue).Add
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).Add
+- uid: System.Collections.Generic.ICollection{{TValue}}.Add({TValue})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Add(`0)
+  parent: System.Collections.Generic.ICollection{{TValue}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  name: Add(TValue)
+  nameWithType: ICollection<TValue>.Add(TValue)
+  fullName: System.Collections.Generic.ICollection<TValue>.Add(TValue)
+  nameWithType.vb: ICollection(Of TValue).Add(TValue)
+  fullName.vb: System.Collections.Generic.ICollection(Of TValue).Add(TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{`0}.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{`0}.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: TValue
+  - name: )
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: T
+  - name: )
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Clear*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Clear
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1_Clear
+  name: Clear
+  nameWithType: UFMapToPropertyList<TValue>.Clear
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.Clear
+  nameWithType.vb: UFMapToPropertyList(Of TValue).Clear
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).Clear
+- uid: System.Collections.Generic.ICollection{{TValue}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{`0}.Clear
+  parent: System.Collections.Generic.ICollection{{TValue}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<TValue>.Clear()
+  fullName: System.Collections.Generic.ICollection<TValue>.Clear()
+  nameWithType.vb: ICollection(Of TValue).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of TValue).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{`0}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{`0}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Contains*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Contains
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1_Contains__0_
+  name: Contains
+  nameWithType: UFMapToPropertyList<TValue>.Contains
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.Contains
+  nameWithType.vb: UFMapToPropertyList(Of TValue).Contains
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).Contains
+- uid: System.Collections.Generic.ICollection{{TValue}}.Contains({TValue})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Contains(`0)
+  parent: System.Collections.Generic.ICollection{{TValue}}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  name: Contains(TValue)
+  nameWithType: ICollection<TValue>.Contains(TValue)
+  fullName: System.Collections.Generic.ICollection<TValue>.Contains(TValue)
+  nameWithType.vb: ICollection(Of TValue).Contains(TValue)
+  fullName.vb: System.Collections.Generic.ICollection(Of TValue).Contains(TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{`0}.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{`0}.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Array
+  commentId: T:System.Array
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.array
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.CopyTo*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.CopyTo
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1_CopyTo__0___System_Int32_
+  name: CopyTo
+  nameWithType: UFMapToPropertyList<TValue>.CopyTo
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.CopyTo
+  nameWithType.vb: UFMapToPropertyList(Of TValue).CopyTo
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).CopyTo
+- uid: System.Collections.Generic.ICollection{{TValue}}.CopyTo({TValue}[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{`0}.CopyTo(`0[],System.Int32)
+  parent: System.Collections.Generic.ICollection{{TValue}}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  name: CopyTo(TValue[], int)
+  nameWithType: ICollection<TValue>.CopyTo(TValue[], int)
+  fullName: System.Collections.Generic.ICollection<TValue>.CopyTo(TValue[], int)
+  nameWithType.vb: ICollection(Of TValue).CopyTo(TValue(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of TValue).CopyTo(TValue(), Integer)
+  name.vb: CopyTo(TValue(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{`0}.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: TValue
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{`0}.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: TValue
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: '{TValue}[]'
+  isExternal: true
+  name: TValue[]
+  nameWithType: TValue[]
+  fullName: TValue[]
+  nameWithType.vb: TValue()
+  fullName.vb: TValue()
+  name.vb: TValue()
+  spec.csharp:
+  - name: TValue
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: TValue
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  name: CopyTo(T[], int)
+  nameWithType: ICollection<T>.CopyTo(T[], int)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], int)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), Integer)
+  name.vb: CopyTo(T(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Remove*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Remove
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1_Remove__0_
+  name: Remove
+  nameWithType: UFMapToPropertyList<TValue>.Remove
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.Remove
+  nameWithType.vb: UFMapToPropertyList(Of TValue).Remove
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).Remove
+- uid: System.Collections.Generic.ICollection{{TValue}}.Remove({TValue})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Remove(`0)
+  parent: System.Collections.Generic.ICollection{{TValue}}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  name: Remove(TValue)
+  nameWithType: ICollection<TValue>.Remove(TValue)
+  fullName: System.Collections.Generic.ICollection<TValue>.Remove(TValue)
+  nameWithType.vb: ICollection(Of TValue).Remove(TValue)
+  fullName.vb: System.Collections.Generic.ICollection(Of TValue).Remove(TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{`0}.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{`0}.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - name: T
+  - name: )
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Count*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Count
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1_Count
+  name: Count
+  nameWithType: UFMapToPropertyList<TValue>.Count
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.Count
+  nameWithType.vb: UFMapToPropertyList(Of TValue).Count
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).Count
+- uid: System.Collections.Generic.ICollection{{TValue}}.Count
+  commentId: P:System.Collections.Generic.ICollection{`0}.Count
+  parent: System.Collections.Generic.ICollection{{TValue}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<TValue>.Count
+  fullName: System.Collections.Generic.ICollection<TValue>.Count
+  nameWithType.vb: ICollection(Of TValue).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of TValue).Count
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.IsReadOnly*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.IsReadOnly
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1_IsReadOnly
+  name: IsReadOnly
+  nameWithType: UFMapToPropertyList<TValue>.IsReadOnly
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.IsReadOnly
+  nameWithType.vb: UFMapToPropertyList(Of TValue).IsReadOnly
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).IsReadOnly
+- uid: System.Collections.Generic.ICollection{{TValue}}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{`0}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{{TValue}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<TValue>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<TValue>.IsReadOnly
+  nameWithType.vb: ICollection(Of TValue).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of TValue).IsReadOnly
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.IndexOf*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.IndexOf
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1_IndexOf__0_
+  name: IndexOf
+  nameWithType: UFMapToPropertyList<TValue>.IndexOf
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.IndexOf
+  nameWithType.vb: UFMapToPropertyList(Of TValue).IndexOf
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).IndexOf
+- uid: System.Collections.Generic.IList{{TValue}}.IndexOf({TValue})
+  commentId: M:System.Collections.Generic.IList{`0}.IndexOf(`0)
+  parent: System.Collections.Generic.IList{{TValue}}
+  definition: System.Collections.Generic.IList`1.IndexOf(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  name: IndexOf(TValue)
+  nameWithType: IList<TValue>.IndexOf(TValue)
+  fullName: System.Collections.Generic.IList<TValue>.IndexOf(TValue)
+  nameWithType.vb: IList(Of TValue).IndexOf(TValue)
+  fullName.vb: System.Collections.Generic.IList(Of TValue).IndexOf(TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList{`0}.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList{`0}.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IList`1.IndexOf(`0)
+  commentId: M:System.Collections.Generic.IList`1.IndexOf(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  name: IndexOf(T)
+  nameWithType: IList<T>.IndexOf(T)
+  fullName: System.Collections.Generic.IList<T>.IndexOf(T)
+  nameWithType.vb: IList(Of T).IndexOf(T)
+  fullName.vb: System.Collections.Generic.IList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - name: T
+  - name: )
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Insert*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Insert
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1_Insert_System_Int32__0_
+  name: Insert
+  nameWithType: UFMapToPropertyList<TValue>.Insert
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.Insert
+  nameWithType.vb: UFMapToPropertyList(Of TValue).Insert
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).Insert
+- uid: System.Collections.Generic.IList{{TValue}}.Insert(System.Int32,{TValue})
+  commentId: M:System.Collections.Generic.IList{`0}.Insert(System.Int32,`0)
+  parent: System.Collections.Generic.IList{{TValue}}
+  definition: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  name: Insert(int, TValue)
+  nameWithType: IList<TValue>.Insert(int, TValue)
+  fullName: System.Collections.Generic.IList<TValue>.Insert(int, TValue)
+  nameWithType.vb: IList(Of TValue).Insert(Integer, TValue)
+  fullName.vb: System.Collections.Generic.IList(Of TValue).Insert(Integer, TValue)
+  name.vb: Insert(Integer, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList{`0}.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList{`0}.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  commentId: M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  name: Insert(int, T)
+  nameWithType: IList<T>.Insert(int, T)
+  fullName: System.Collections.Generic.IList<T>.Insert(int, T)
+  nameWithType.vb: IList(Of T).Insert(Integer, T)
+  fullName.vb: System.Collections.Generic.IList(Of T).Insert(Integer, T)
+  name.vb: Insert(Integer, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.RemoveAt*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.RemoveAt
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1_RemoveAt_System_Int32_
+  name: RemoveAt
+  nameWithType: UFMapToPropertyList<TValue>.RemoveAt
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.RemoveAt
+  nameWithType.vb: UFMapToPropertyList(Of TValue).RemoveAt
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).RemoveAt
+- uid: System.Collections.Generic.IList{{TValue}}.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Generic.IList{`0}.RemoveAt(System.Int32)
+  parent: System.Collections.Generic.IList{{TValue}}
+  definition: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  name: RemoveAt(int)
+  nameWithType: IList<TValue>.RemoveAt(int)
+  fullName: System.Collections.Generic.IList<TValue>.RemoveAt(int)
+  nameWithType.vb: IList(Of TValue).RemoveAt(Integer)
+  fullName.vb: System.Collections.Generic.IList(Of TValue).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList{`0}.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList{`0}.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  name: RemoveAt(int)
+  nameWithType: IList<T>.RemoveAt(int)
+  fullName: System.Collections.Generic.IList<T>.RemoveAt(int)
+  nameWithType.vb: IList(Of T).RemoveAt(Integer)
+  fullName.vb: System.Collections.Generic.IList(Of T).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Item*
+  commentId: Overload:UltraForce.Library.NetStandard.Data.UFMapToPropertyList`1.Item
+  href: UltraForce.Library.NetStandard.Data.UFMapToPropertyList-1.html#UltraForce_Library_NetStandard_Data_UFMapToPropertyList_1_Item_System_Int32_
+  name: this
+  nameWithType: UFMapToPropertyList<TValue>.this
+  fullName: UltraForce.Library.NetStandard.Data.UFMapToPropertyList<TValue>.this
+  nameWithType.vb: UFMapToPropertyList(Of TValue).this[]
+  fullName.vb: UltraForce.Library.NetStandard.Data.UFMapToPropertyList(Of TValue).this[]
+  name.vb: this[]
+- uid: System.Collections.Generic.IList{{TValue}}.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IList{`0}.Item(System.Int32)
+  parent: System.Collections.Generic.IList{{TValue}}
+  definition: System.Collections.Generic.IList`1.Item(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IList<TValue>.this[int]
+  fullName: System.Collections.Generic.IList<TValue>.this[int]
+  nameWithType.vb: IList(Of TValue).this[](Integer)
+  fullName.vb: System.Collections.Generic.IList(Of TValue).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList{`0}.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IList`1.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IList`1.Item(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IList<T>.this[int]
+  fullName: System.Collections.Generic.IList<T>.this[int]
+  nameWithType.vb: IList(Of T).this[](Integer)
+  fullName.vb: System.Collections.Generic.IList(Of T).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )

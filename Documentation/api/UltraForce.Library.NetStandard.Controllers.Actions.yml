@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Controllers.Actions
+  commentId: N:UltraForce.Library.NetStandard.Controllers.Actions
+  id: UltraForce.Library.NetStandard.Controllers.Actions
+  children:
+  - UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFActionCollection
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFClearClearableAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFConditionalAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFDelayAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToFileAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToStreamAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFExternalAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.UFServerResponse
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFSendServerMessageAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFSerialQueueAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFWaitForResumeAction
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.NetStandard.Controllers.Actions
+  nameWithType: UltraForce.Library.NetStandard.Controllers.Actions
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.NetStandard
+references:
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction.html
+  name: IUFPausableAction
+  nameWithType: IUFPausableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFPausableAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.html
+  name: IUFQueueableAction
+  nameWithType: IUFQueueableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFActionCollection
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFActionCollection
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFActionCollection.html
+  name: UFActionCollection
+  nameWithType: UFActionCollection
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFActionCollection
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.html
+  name: UFCallbackAction
+  nameWithType: UFCallbackAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFClearClearableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFClearClearableAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFClearClearableAction.html
+  name: UFClearClearableAction
+  nameWithType: UFClearClearableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFClearClearableAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFConditionalAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFConditionalAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFConditionalAction.html
+  name: UFConditionalAction
+  nameWithType: UFConditionalAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFConditionalAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFDelayAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFDelayAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFDelayAction.html
+  name: UFDelayAction
+  nameWithType: UFDelayAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFDelayAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToFileAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToFileAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToFileAction.html
+  name: UFDownloadToFileAction
+  nameWithType: UFDownloadToFileAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToFileAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToStreamAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToStreamAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToStreamAction.html
+  name: UFDownloadToStreamAction
+  nameWithType: UFDownloadToStreamAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToStreamAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFExternalAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFExternalAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFExternalAction.html
+  name: UFExternalAction
+  nameWithType: UFExternalAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFExternalAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html
+  name: UFHttpAction<TResponse>
+  nameWithType: UFHttpAction<TResponse>
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>
+  nameWithType.vb: UFHttpAction(Of TResponse)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse)
+  name.vb: UFHttpAction(Of TResponse)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+    name: UFHttpAction
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+    name: UFHttpAction
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.UFServerResponse
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.UFServerResponse
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html
+  name: UFHttpAction<TResponse>.UFServerResponse
+  nameWithType: UFHttpAction<TResponse>.UFServerResponse
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.UFServerResponse
+  nameWithType.vb: UFHttpAction(Of TResponse).UFServerResponse
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).UFServerResponse
+  name.vb: UFHttpAction(Of TResponse).UFServerResponse
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+    name: UFHttpAction
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html
+  - name: <
+  - name: TResponse
+  - name: '>'
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.UFServerResponse
+    name: UFServerResponse
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.UFServerResponse.html
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+    name: UFHttpAction
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.UFServerResponse
+    name: UFServerResponse
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.UFServerResponse.html
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction.html
+  name: UFParallelQueueAction
+  nameWithType: UFParallelQueueAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFParallelQueueAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html
+  name: UFQueueableAction
+  nameWithType: UFQueueableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.html
+  name: UFRunnableAction
+  nameWithType: UFRunnableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFSendServerMessageAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFSendServerMessageAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFSendServerMessageAction.html
+  name: UFSendServerMessageAction
+  nameWithType: UFSendServerMessageAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFSendServerMessageAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFSerialQueueAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFSerialQueueAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFSerialQueueAction.html
+  name: UFSerialQueueAction
+  nameWithType: UFSerialQueueAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFSerialQueueAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFWaitForResumeAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFWaitForResumeAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFWaitForResumeAction.html
+  name: UFWaitForResumeAction
+  nameWithType: UFWaitForResumeAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFWaitForResumeAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions
+  commentId: N:UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Controllers.Actions
+  nameWithType: UltraForce.Library.NetStandard.Controllers.Actions
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers
+    name: Controllers
+    href: UltraForce.Library.NetStandard.Controllers.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions
+    name: Actions
+    href: UltraForce.Library.NetStandard.Controllers.Actions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers
+    name: Controllers
+    href: UltraForce.Library.NetStandard.Controllers.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions
+    name: Actions
+    href: UltraForce.Library.NetStandard.Controllers.Actions.html

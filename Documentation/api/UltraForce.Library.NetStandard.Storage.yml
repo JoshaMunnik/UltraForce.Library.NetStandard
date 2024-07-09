@@ -1,0 +1,106 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Storage
+  commentId: N:UltraForce.Library.NetStandard.Storage
+  id: UltraForce.Library.NetStandard.Storage
+  children:
+  - UltraForce.Library.NetStandard.Storage.IUFStorableObject
+  - UltraForce.Library.NetStandard.Storage.IUFStorableObjectAsync
+  - UltraForce.Library.NetStandard.Storage.UFCachedStorage
+  - UltraForce.Library.NetStandard.Storage.UFCachedStorageAsync
+  - UltraForce.Library.NetStandard.Storage.UFDictionaryStorage
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.NetStandard.Storage
+  nameWithType: UltraForce.Library.NetStandard.Storage
+  fullName: UltraForce.Library.NetStandard.Storage
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.NetStandard
+references:
+- uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+  commentId: T:UltraForce.Library.NetStandard.Storage.IUFStorableObject
+  parent: UltraForce.Library.NetStandard.Storage
+  href: UltraForce.Library.NetStandard.Storage.IUFStorableObject.html
+  name: IUFStorableObject
+  nameWithType: IUFStorableObject
+  fullName: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+- uid: UltraForce.Library.NetStandard.Storage.IUFStorableObjectAsync
+  commentId: T:UltraForce.Library.NetStandard.Storage.IUFStorableObjectAsync
+  href: UltraForce.Library.NetStandard.Storage.IUFStorableObjectAsync.html
+  name: IUFStorableObjectAsync
+  nameWithType: IUFStorableObjectAsync
+  fullName: UltraForce.Library.NetStandard.Storage.IUFStorableObjectAsync
+- uid: UltraForce.Library.NetStandard.Storage.UFCachedStorage
+  commentId: T:UltraForce.Library.NetStandard.Storage.UFCachedStorage
+  href: UltraForce.Library.NetStandard.Storage.UFCachedStorage.html
+  name: UFCachedStorage
+  nameWithType: UFCachedStorage
+  fullName: UltraForce.Library.NetStandard.Storage.UFCachedStorage
+- uid: UltraForce.Library.NetStandard.Storage.UFCachedStorageAsync
+  commentId: T:UltraForce.Library.NetStandard.Storage.UFCachedStorageAsync
+  href: UltraForce.Library.NetStandard.Storage.UFCachedStorageAsync.html
+  name: UFCachedStorageAsync
+  nameWithType: UFCachedStorageAsync
+  fullName: UltraForce.Library.NetStandard.Storage.UFCachedStorageAsync
+- uid: UltraForce.Library.NetStandard.Storage.UFDictionaryStorage
+  commentId: T:UltraForce.Library.NetStandard.Storage.UFDictionaryStorage
+  href: UltraForce.Library.NetStandard.Storage.UFDictionaryStorage.html
+  name: UFDictionaryStorage
+  nameWithType: UFDictionaryStorage
+  fullName: UltraForce.Library.NetStandard.Storage.UFDictionaryStorage
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  commentId: T:UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  parent: UltraForce.Library.NetStandard.Storage
+  href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html
+  name: UFKeyedStorage
+  nameWithType: UFKeyedStorage
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync
+  commentId: T:UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync
+  parent: UltraForce.Library.NetStandard.Storage
+  href: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html
+  name: UFKeyedStorageAsync
+  nameWithType: UFKeyedStorageAsync
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync
+- uid: UltraForce.Library.NetStandard.Storage
+  commentId: N:UltraForce.Library.NetStandard.Storage
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Storage
+  nameWithType: UltraForce.Library.NetStandard.Storage
+  fullName: UltraForce.Library.NetStandard.Storage
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Storage
+    name: Storage
+    href: UltraForce.Library.NetStandard.Storage.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Storage
+    name: Storage
+    href: UltraForce.Library.NetStandard.Storage.html

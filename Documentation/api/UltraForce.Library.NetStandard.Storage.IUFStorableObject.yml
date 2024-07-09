@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+  commentId: T:UltraForce.Library.NetStandard.Storage.IUFStorableObject
+  id: IUFStorableObject
+  parent: UltraForce.Library.NetStandard.Storage
+  children:
+  - UltraForce.Library.NetStandard.Storage.IUFStorableObject.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  - UltraForce.Library.NetStandard.Storage.IUFStorableObject.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  langs:
+  - csharp
+  - vb
+  name: IUFStorableObject
+  nameWithType: IUFStorableObject
+  fullName: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+  type: Interface
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Storage/IUFStorableObject.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: IUFStorableObject
+    path: ../UltraForce.Library.NetStandard/Storage/IUFStorableObject.cs
+    startLine: 35
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Storage
+  summary: >-
+    This interface defines methods an object can implement if it can store
+
+    itself to a and retrieve itself from a <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public interface IUFStorableObject
+    content.vb: Public Interface IUFStorableObject
+- uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  commentId: M:UltraForce.Library.NetStandard.Storage.IUFStorableObject.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  id: SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  parent: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+  langs:
+  - csharp
+  - vb
+  name: SaveToStorage(UFKeyedStorage)
+  nameWithType: IUFStorableObject.SaveToStorage(UFKeyedStorage)
+  fullName: UltraForce.Library.NetStandard.Storage.IUFStorableObject.SaveToStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Storage/IUFStorableObject.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: SaveToStorage
+    path: ../UltraForce.Library.NetStandard/Storage/IUFStorableObject.cs
+    startLine: 43
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Storage
+  summary: Saves this instance to a <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: void SaveToStorage(UFKeyedStorage aStorage)
+    parameters:
+    - id: aStorage
+      type: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+      description: Storage where property is saved to
+    content.vb: Sub SaveToStorage(aStorage As UFKeyedStorage)
+  overload: UltraForce.Library.NetStandard.Storage.IUFStorableObject.SaveToStorage*
+- uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  commentId: M:UltraForce.Library.NetStandard.Storage.IUFStorableObject.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  id: LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  parent: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+  langs:
+  - csharp
+  - vb
+  name: LoadFromStorage(UFKeyedStorage)
+  nameWithType: IUFStorableObject.LoadFromStorage(UFKeyedStorage)
+  fullName: UltraForce.Library.NetStandard.Storage.IUFStorableObject.LoadFromStorage(UltraForce.Library.NetStandard.Storage.UFKeyedStorage)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Storage/IUFStorableObject.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: LoadFromStorage
+    path: ../UltraForce.Library.NetStandard/Storage/IUFStorableObject.cs
+    startLine: 51
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Storage
+  summary: Loads this instance from a <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: void LoadFromStorage(UFKeyedStorage aStorage)
+    parameters:
+    - id: aStorage
+      type: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+      description: Storage where property was saved to
+    content.vb: Sub LoadFromStorage(aStorage As UFKeyedStorage)
+  overload: UltraForce.Library.NetStandard.Storage.IUFStorableObject.LoadFromStorage*
+references:
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  commentId: T:UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  parent: UltraForce.Library.NetStandard.Storage
+  href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html
+  name: UFKeyedStorage
+  nameWithType: UFKeyedStorage
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+- uid: UltraForce.Library.NetStandard.Storage
+  commentId: N:UltraForce.Library.NetStandard.Storage
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Storage
+  nameWithType: UltraForce.Library.NetStandard.Storage
+  fullName: UltraForce.Library.NetStandard.Storage
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Storage
+    name: Storage
+    href: UltraForce.Library.NetStandard.Storage.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Storage
+    name: Storage
+    href: UltraForce.Library.NetStandard.Storage.html
+- uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject.SaveToStorage*
+  commentId: Overload:UltraForce.Library.NetStandard.Storage.IUFStorableObject.SaveToStorage
+  href: UltraForce.Library.NetStandard.Storage.IUFStorableObject.html#UltraForce_Library_NetStandard_Storage_IUFStorableObject_SaveToStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_
+  name: SaveToStorage
+  nameWithType: IUFStorableObject.SaveToStorage
+  fullName: UltraForce.Library.NetStandard.Storage.IUFStorableObject.SaveToStorage
+- uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject.LoadFromStorage*
+  commentId: Overload:UltraForce.Library.NetStandard.Storage.IUFStorableObject.LoadFromStorage
+  href: UltraForce.Library.NetStandard.Storage.IUFStorableObject.html#UltraForce_Library_NetStandard_Storage_IUFStorableObject_LoadFromStorage_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_
+  name: LoadFromStorage
+  nameWithType: IUFStorableObject.LoadFromStorage
+  fullName: UltraForce.Library.NetStandard.Storage.IUFStorableObject.LoadFromStorage

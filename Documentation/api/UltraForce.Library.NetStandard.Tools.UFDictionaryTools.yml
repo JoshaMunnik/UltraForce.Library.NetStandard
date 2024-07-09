@@ -1,0 +1,1168 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  id: UFDictionaryTools
+  parent: UltraForce.Library.NetStandard.Tools
+  children:
+  - UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Dump``2(System.Collections.Generic.IDictionary{``0,``1},System.String)
+  - UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsBoolean``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Boolean)
+  - UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsDouble``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Double)
+  - UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsFloat``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Single)
+  - UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsInt``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Int32)
+  - UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsString``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.String)
+  - UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValue``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)
+  - UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Merge``2(System.Collections.Generic.IDictionary{``0,``1}[])
+  langs:
+  - csharp
+  - vb
+  name: UFDictionaryTools
+  nameWithType: UFDictionaryTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: UFDictionaryTools
+    path: ../UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+    startLine: 38
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> related utility methods.
+  example: []
+  syntax:
+    content: public static class UFDictionaryTools
+    content.vb: Public Module UFDictionaryTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValue``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValue``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)
+  id: GetValue``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)
+  parent: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  langs:
+  - csharp
+  - vb
+  name: GetValue<K, V>(IDictionary<K, V>, K, V)
+  nameWithType: UFDictionaryTools.GetValue<K, V>(IDictionary<K, V>, K, V)
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValue<K, V>(System.Collections.Generic.IDictionary<K, V>, K, V)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetValue
+    path: ../UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+    startLine: 57
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Tries to get value for a key, if not found returns a default value.
+  example: []
+  syntax:
+    content: public static V GetValue<K, V>(IDictionary<K, V> aDictionary, K aKey, V aDefault)
+    parameters:
+    - id: aDictionary
+      type: System.Collections.Generic.IDictionary{{K},{V}}
+      description: A dictionary to get value from
+    - id: aKey
+      type: '{K}'
+      description: Key to get value for
+    - id: aDefault
+      type: '{V}'
+      description: Default value to return if value could not be obtained
+    typeParameters:
+    - id: K
+      description: The type for key
+    - id: V
+      description: The type for value
+    return:
+      type: '{V}'
+      description: Value for the key or default value
+    content.vb: Public Shared Function GetValue(Of K, V)(aDictionary As IDictionary(Of K, V), aKey As K, aDefault As V) As V
+  overload: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValue*
+  nameWithType.vb: UFDictionaryTools.GetValue(Of K, V)(IDictionary(Of K, V), K, V)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValue(Of K, V)(System.Collections.Generic.IDictionary(Of K, V), K, V)
+  name.vb: GetValue(Of K, V)(IDictionary(Of K, V), K, V)
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsString``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsString``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.String)
+  id: GetValueAsString``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.String)
+  parent: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  langs:
+  - csharp
+  - vb
+  name: GetValueAsString<TKey, TValue>(IDictionary<TKey, TValue>?, TKey, string)
+  nameWithType: UFDictionaryTools.GetValueAsString<TKey, TValue>(IDictionary<TKey, TValue>?, TKey, string)
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsString<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>?, TKey, string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetValueAsString
+    path: ../UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+    startLine: 87
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Tries to get value for a key, if not found returns a default value.
+
+    <p>
+
+    Uses <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref> to get the string from the value.
+
+    </p>
+  example: []
+  syntax:
+    content: public static string GetValueAsString<TKey, TValue>(IDictionary<TKey, TValue>? aDictionary, TKey aKey, string aDefault)
+    parameters:
+    - id: aDictionary
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+      description: A dictionary to get value from
+    - id: aKey
+      type: '{TKey}'
+      description: Key to get value for
+    - id: aDefault
+      type: System.String
+      description: Default value to return if value could not be obtained
+    typeParameters:
+    - id: TKey
+      description: The type for key
+    - id: TValue
+      description: The type for value
+    return:
+      type: System.String
+      description: Value for the key or default value
+    content.vb: Public Shared Function GetValueAsString(Of TKey, TValue)(aDictionary As IDictionary(Of TKey, TValue), aKey As TKey, aDefault As String) As String
+  overload: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsString*
+  nameWithType.vb: UFDictionaryTools.GetValueAsString(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, String)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsString(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), TKey, String)
+  name.vb: GetValueAsString(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, String)
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsBoolean``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsBoolean``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Boolean)
+  id: GetValueAsBoolean``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Boolean)
+  parent: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  langs:
+  - csharp
+  - vb
+  name: GetValueAsBoolean<TKey, TValue>(IDictionary<TKey, TValue>?, TKey, bool)
+  nameWithType: UFDictionaryTools.GetValueAsBoolean<TKey, TValue>(IDictionary<TKey, TValue>?, TKey, bool)
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsBoolean<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>?, TKey, bool)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetValueAsBoolean
+    path: ../UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+    startLine: 118
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Tries to get value for a key, if not found returns a default value.
+
+    <p>
+
+    Returns true if the <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref> equals "test" (case
+
+    insensitive compare).
+
+    </p>
+  example: []
+  syntax:
+    content: public static bool GetValueAsBoolean<TKey, TValue>(IDictionary<TKey, TValue>? aDictionary, TKey aKey, bool aDefault)
+    parameters:
+    - id: aDictionary
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+      description: A dictionary to get value from
+    - id: aKey
+      type: '{TKey}'
+      description: Key to get value for
+    - id: aDefault
+      type: System.Boolean
+      description: Default value to return if value could not be obtained
+    typeParameters:
+    - id: TKey
+      description: The type for key
+    - id: TValue
+      description: The type for value
+    return:
+      type: System.Boolean
+      description: Value for the key or default value
+    content.vb: Public Shared Function GetValueAsBoolean(Of TKey, TValue)(aDictionary As IDictionary(Of TKey, TValue), aKey As TKey, aDefault As Boolean) As Boolean
+  overload: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsBoolean*
+  nameWithType.vb: UFDictionaryTools.GetValueAsBoolean(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsBoolean(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), TKey, Boolean)
+  name.vb: GetValueAsBoolean(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, Boolean)
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsInt``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Int32)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsInt``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Int32)
+  id: GetValueAsInt``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Int32)
+  parent: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  langs:
+  - csharp
+  - vb
+  name: GetValueAsInt<TKey, TValue>(IDictionary<TKey, TValue>?, TKey, int)
+  nameWithType: UFDictionaryTools.GetValueAsInt<TKey, TValue>(IDictionary<TKey, TValue>?, TKey, int)
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsInt<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>?, TKey, int)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetValueAsInt
+    path: ../UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+    startLine: 152
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Tries to get value for a key, if not found returns a default value.
+
+    <p>
+
+    Uses the <xref href="System.Int32.Parse(System.String)" data-throw-if-not-resolved="false"></xref> on the result of
+
+    <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref> of the value.
+
+    </p>
+  example: []
+  syntax:
+    content: public static int GetValueAsInt<TKey, TValue>(IDictionary<TKey, TValue>? aDictionary, TKey aKey, int aDefault)
+    parameters:
+    - id: aDictionary
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+      description: A dictionary to get value from
+    - id: aKey
+      type: '{TKey}'
+      description: Key to get value for
+    - id: aDefault
+      type: System.Int32
+      description: Default value to return if value could not be obtained
+    typeParameters:
+    - id: TKey
+      description: The type for key
+    - id: TValue
+      description: The type for value
+    return:
+      type: System.Int32
+      description: Value for the key or default value
+    content.vb: Public Shared Function GetValueAsInt(Of TKey, TValue)(aDictionary As IDictionary(Of TKey, TValue), aKey As TKey, aDefault As Integer) As Integer
+  overload: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsInt*
+  nameWithType.vb: UFDictionaryTools.GetValueAsInt(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, Integer)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsInt(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), TKey, Integer)
+  name.vb: GetValueAsInt(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, Integer)
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsFloat``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Single)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsFloat``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Single)
+  id: GetValueAsFloat``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Single)
+  parent: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  langs:
+  - csharp
+  - vb
+  name: GetValueAsFloat<TKey, TValue>(IDictionary<TKey, TValue>?, TKey, float)
+  nameWithType: UFDictionaryTools.GetValueAsFloat<TKey, TValue>(IDictionary<TKey, TValue>?, TKey, float)
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsFloat<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>?, TKey, float)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetValueAsFloat
+    path: ../UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+    startLine: 182
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Tries to get value for a key, if not found returns a default value.
+
+    <p>
+
+    Uses the <xref href="System.Single.Parse(System.String)" data-throw-if-not-resolved="false"></xref> on the result of
+
+    <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref> of the value.
+
+    </p>
+  example: []
+  syntax:
+    content: public static float GetValueAsFloat<TKey, TValue>(IDictionary<TKey, TValue>? aDictionary, TKey aKey, float aDefault)
+    parameters:
+    - id: aDictionary
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+      description: A dictionary to get value from
+    - id: aKey
+      type: '{TKey}'
+      description: Key to get value for
+    - id: aDefault
+      type: System.Single
+      description: Default value to return if value could not be obtained
+    typeParameters:
+    - id: TKey
+      description: The type for key
+    - id: TValue
+      description: The type for value
+    return:
+      type: System.Single
+      description: Value for the key or default value
+    content.vb: Public Shared Function GetValueAsFloat(Of TKey, TValue)(aDictionary As IDictionary(Of TKey, TValue), aKey As TKey, aDefault As Single) As Single
+  overload: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsFloat*
+  nameWithType.vb: UFDictionaryTools.GetValueAsFloat(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, Single)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsFloat(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), TKey, Single)
+  name.vb: GetValueAsFloat(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, Single)
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsDouble``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Double)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsDouble``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Double)
+  id: GetValueAsDouble``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Double)
+  parent: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  langs:
+  - csharp
+  - vb
+  name: GetValueAsDouble<TKey, TValue>(IDictionary<TKey, TValue>?, TKey, double)
+  nameWithType: UFDictionaryTools.GetValueAsDouble<TKey, TValue>(IDictionary<TKey, TValue>?, TKey, double)
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsDouble<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>?, TKey, double)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: GetValueAsDouble
+    path: ../UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+    startLine: 212
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Tries to get value for a key, if not found returns a default value.
+
+    <p>
+
+    Uses the <xref href="System.Double.Parse(System.String)" data-throw-if-not-resolved="false"></xref> on the result of
+
+    <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref> of the value.
+
+    </p>
+  example: []
+  syntax:
+    content: public static double GetValueAsDouble<TKey, TValue>(IDictionary<TKey, TValue>? aDictionary, TKey aKey, double aDefault)
+    parameters:
+    - id: aDictionary
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+      description: A dictionary to get value from
+    - id: aKey
+      type: '{TKey}'
+      description: Key to get value for
+    - id: aDefault
+      type: System.Double
+      description: Default value to return if value could not be obtained
+    typeParameters:
+    - id: TKey
+      description: The type for key
+    - id: TValue
+      description: The type for value
+    return:
+      type: System.Double
+      description: Value for the key or default value
+    content.vb: Public Shared Function GetValueAsDouble(Of TKey, TValue)(aDictionary As IDictionary(Of TKey, TValue), aKey As TKey, aDefault As Double) As Double
+  overload: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsDouble*
+  nameWithType.vb: UFDictionaryTools.GetValueAsDouble(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, Double)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsDouble(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), TKey, Double)
+  name.vb: GetValueAsDouble(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, Double)
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Merge``2(System.Collections.Generic.IDictionary{``0,``1}[])
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Merge``2(System.Collections.Generic.IDictionary{``0,``1}[])
+  id: Merge``2(System.Collections.Generic.IDictionary{``0,``1}[])
+  parent: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  langs:
+  - csharp
+  - vb
+  name: Merge<TKey, TValue>(params IDictionary<TKey, TValue>?[])
+  nameWithType: UFDictionaryTools.Merge<TKey, TValue>(params IDictionary<TKey, TValue>?[])
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Merge<TKey, TValue>(params System.Collections.Generic.IDictionary<TKey, TValue>?[])
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Merge
+    path: ../UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+    startLine: 237
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    Merges multiple dictionaries into a single dictionary. The first non
+
+    null entry will be used to merge the others into. If multiple
+
+    dictionary contain the same key, the value of the last dictionary with
+
+    that key will be used.
+  example: []
+  syntax:
+    content: public static IDictionary<TKey, TValue>? Merge<TKey, TValue>(params IDictionary<TKey, TValue>?[] aDictionaries)
+    parameters:
+    - id: aDictionaries
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}[]
+      description: Dictionaries to merge (can be null)
+    typeParameters:
+    - id: TKey
+      description: Key type
+    - id: TValue
+      description: Value type
+    return:
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+      description: >-
+        The first non null parameter with the values of all others merged
+
+        into it. If all parameters are null, the method will return null.
+    content.vb: Public Shared Function Merge(Of TKey, TValue)(ParamArray aDictionaries As IDictionary(Of TKey, TValue)()) As IDictionary(Of TKey, TValue)
+  overload: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Merge*
+  nameWithType.vb: UFDictionaryTools.Merge(Of TKey, TValue)(ParamArray IDictionary(Of TKey, TValue)())
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Merge(Of TKey, TValue)(ParamArray System.Collections.Generic.IDictionary(Of TKey, TValue)())
+  name.vb: Merge(Of TKey, TValue)(ParamArray IDictionary(Of TKey, TValue)())
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Dump``2(System.Collections.Generic.IDictionary{``0,``1},System.String)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Dump``2(System.Collections.Generic.IDictionary{``0,``1},System.String)
+  id: Dump``2(System.Collections.Generic.IDictionary{``0,``1},System.String)
+  parent: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+  langs:
+  - csharp
+  - vb
+  name: Dump<TKey, TValue>(IDictionary<TKey, TValue>, string)
+  nameWithType: UFDictionaryTools.Dump<TKey, TValue>(IDictionary<TKey, TValue>, string)
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Dump<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>, string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Dump
+    path: ../UltraForce.Library.NetStandard/Tools/UFDictionaryTools.cs
+    startLine: 269
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Dumps a dictionary
+  example: []
+  syntax:
+    content: public static string Dump<TKey, TValue>(IDictionary<TKey, TValue> aDictionary, string aSeparator = "\n")
+    parameters:
+    - id: aDictionary
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+      description: Dictionary to dump
+    - id: aSeparator
+      type: System.String
+      description: separator to use between values
+    typeParameters:
+    - id: TKey
+      description: type for key
+    - id: TValue
+      description: type for value
+    return:
+      type: System.String
+      description: string in the form of 'k=v'[+ aSeparator + 'k=v' ...]
+    content.vb: Public Shared Function Dump(Of TKey, TValue)(aDictionary As IDictionary(Of TKey, TValue), aSeparator As String = vbLf) As String
+  overload: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Dump*
+  nameWithType.vb: UFDictionaryTools.Dump(Of TKey, TValue)(IDictionary(Of TKey, TValue), String)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Dump(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), String)
+  name.vb: Dump(Of TKey, TValue)(IDictionary(Of TKey, TValue), String)
+references:
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools
+  commentId: N:UltraForce.Library.NetStandard.Tools
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Tools
+  nameWithType: UltraForce.Library.NetStandard.Tools
+  fullName: UltraForce.Library.NetStandard.Tools
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValue*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValue
+  href: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.html#UltraForce_Library_NetStandard_Tools_UFDictionaryTools_GetValue__2_System_Collections_Generic_IDictionary___0___1____0___1_
+  name: GetValue
+  nameWithType: UFDictionaryTools.GetValue
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValue
+- uid: System.Collections.Generic.IDictionary{{K},{V}}
+  commentId: T:System.Collections.Generic.IDictionary{``0,``1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<K, V>
+  nameWithType: IDictionary<K, V>
+  fullName: System.Collections.Generic.IDictionary<K, V>
+  nameWithType.vb: IDictionary(Of K, V)
+  fullName.vb: System.Collections.Generic.IDictionary(Of K, V)
+  name.vb: IDictionary(Of K, V)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: K
+  - name: ','
+  - name: " "
+  - name: V
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: K
+  - name: ','
+  - name: " "
+  - name: V
+  - name: )
+- uid: '{K}'
+  commentId: '!:K'
+  definition: K
+  name: K
+  nameWithType: K
+  fullName: K
+- uid: '{V}'
+  commentId: '!:V'
+  definition: V
+  name: V
+  nameWithType: V
+  fullName: V
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: K
+  commentId: '!:K'
+  name: K
+  nameWithType: K
+  fullName: K
+- uid: V
+  name: V
+  nameWithType: V
+  fullName: V
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsString*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsString
+  href: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.html#UltraForce_Library_NetStandard_Tools_UFDictionaryTools_GetValueAsString__2_System_Collections_Generic_IDictionary___0___1____0_System_String_
+  name: GetValueAsString
+  nameWithType: UFDictionaryTools.GetValueAsString
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsString
+- uid: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+  commentId: T:System.Collections.Generic.IDictionary{`0,`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsBoolean*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsBoolean
+  href: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.html#UltraForce_Library_NetStandard_Tools_UFDictionaryTools_GetValueAsBoolean__2_System_Collections_Generic_IDictionary___0___1____0_System_Boolean_
+  name: GetValueAsBoolean
+  nameWithType: UFDictionaryTools.GetValueAsBoolean
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsBoolean
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32.Parse(System.String)
+  commentId: M:System.Int32.Parse(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32.parse#system-int32-parse(system-string)
+  name: Parse(string)
+  nameWithType: int.Parse(string)
+  fullName: int.Parse(string)
+  nameWithType.vb: Integer.Parse(String)
+  fullName.vb: Integer.Parse(String)
+  name.vb: Parse(String)
+  spec.csharp:
+  - uid: System.Int32.Parse(System.String)
+    name: Parse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32.parse#system-int32-parse(system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Int32.Parse(System.String)
+    name: Parse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32.parse#system-int32-parse(system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsInt*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsInt
+  href: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.html#UltraForce_Library_NetStandard_Tools_UFDictionaryTools_GetValueAsInt__2_System_Collections_Generic_IDictionary___0___1____0_System_Int32_
+  name: GetValueAsInt
+  nameWithType: UFDictionaryTools.GetValueAsInt
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsInt
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single.Parse(System.String)
+  commentId: M:System.Single.Parse(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single.parse#system-single-parse(system-string)
+  name: Parse(string)
+  nameWithType: float.Parse(string)
+  fullName: float.Parse(string)
+  nameWithType.vb: Single.Parse(String)
+  fullName.vb: Single.Parse(String)
+  name.vb: Parse(String)
+  spec.csharp:
+  - uid: System.Single.Parse(System.String)
+    name: Parse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single.parse#system-single-parse(system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Single.Parse(System.String)
+    name: Parse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single.parse#system-single-parse(system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsFloat*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsFloat
+  href: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.html#UltraForce_Library_NetStandard_Tools_UFDictionaryTools_GetValueAsFloat__2_System_Collections_Generic_IDictionary___0___1____0_System_Single_
+  name: GetValueAsFloat
+  nameWithType: UFDictionaryTools.GetValueAsFloat
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsFloat
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Double.Parse(System.String)
+  commentId: M:System.Double.Parse(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double.parse#system-double-parse(system-string)
+  name: Parse(string)
+  nameWithType: double.Parse(string)
+  fullName: double.Parse(string)
+  nameWithType.vb: Double.Parse(String)
+  fullName.vb: Double.Parse(String)
+  name.vb: Parse(String)
+  spec.csharp:
+  - uid: System.Double.Parse(System.String)
+    name: Parse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double.parse#system-double-parse(system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Double.Parse(System.String)
+    name: Parse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double.parse#system-double-parse(system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsDouble*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsDouble
+  href: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.html#UltraForce_Library_NetStandard_Tools_UFDictionaryTools_GetValueAsDouble__2_System_Collections_Generic_IDictionary___0___1____0_System_Double_
+  name: GetValueAsDouble
+  nameWithType: UFDictionaryTools.GetValueAsDouble
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.GetValueAsDouble
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Merge*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Merge
+  href: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.html#UltraForce_Library_NetStandard_Tools_UFDictionaryTools_Merge__2_System_Collections_Generic_IDictionary___0___1____
+  name: Merge
+  nameWithType: UFDictionaryTools.Merge
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Merge
+- uid: System.Collections.Generic.IDictionary{{TKey},{TValue}}[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>[]
+  nameWithType: IDictionary<TKey, TValue>[]
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>[]
+  nameWithType.vb: IDictionary(Of TKey, TValue)()
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)()
+  name.vb: IDictionary(Of TKey, TValue)()
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Dump*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Dump
+  href: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.html#UltraForce_Library_NetStandard_Tools_UFDictionaryTools_Dump__2_System_Collections_Generic_IDictionary___0___1__System_String_
+  name: Dump
+  nameWithType: UFDictionaryTools.Dump
+  fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools.Dump

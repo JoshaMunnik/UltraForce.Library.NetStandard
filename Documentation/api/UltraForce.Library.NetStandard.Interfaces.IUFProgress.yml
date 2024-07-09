@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFProgress
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFProgress
+  id: IUFProgress
+  parent: UltraForce.Library.NetStandard.Interfaces
+  children:
+  - UltraForce.Library.NetStandard.Interfaces.IUFProgress.Progress
+  langs:
+  - csharp
+  - vb
+  name: IUFProgress
+  nameWithType: IUFProgress
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFProgress
+  type: Interface
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Interfaces/IUFProgress.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: IUFProgress
+    path: ../UltraForce.Library.NetStandard/Interfaces/IUFProgress.cs
+    startLine: 31
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Interfaces
+  summary: >-
+    A simple interface that objects can implement which have some form of
+
+    progress.
+  example: []
+  syntax:
+    content: public interface IUFProgress
+    content.vb: Public Interface IUFProgress
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFProgress.Progress
+  commentId: P:UltraForce.Library.NetStandard.Interfaces.IUFProgress.Progress
+  id: Progress
+  parent: UltraForce.Library.NetStandard.Interfaces.IUFProgress
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: IUFProgress.Progress
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFProgress.Progress
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Interfaces/IUFProgress.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Progress
+    path: ../UltraForce.Library.NetStandard/Interfaces/IUFProgress.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Interfaces
+  summary: Gets the current progress (0.0 .. 1.0)
+  example: []
+  syntax:
+    content: double Progress { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property Progress As Double
+  overload: UltraForce.Library.NetStandard.Interfaces.IUFProgress.Progress*
+references:
+- uid: UltraForce.Library.NetStandard.Interfaces
+  commentId: N:UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Interfaces
+  nameWithType: UltraForce.Library.NetStandard.Interfaces
+  fullName: UltraForce.Library.NetStandard.Interfaces
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFProgress.Progress*
+  commentId: Overload:UltraForce.Library.NetStandard.Interfaces.IUFProgress.Progress
+  href: UltraForce.Library.NetStandard.Interfaces.IUFProgress.html#UltraForce_Library_NetStandard_Interfaces_IUFProgress_Progress
+  name: Progress
+  nameWithType: IUFProgress.Progress
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFProgress.Progress
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

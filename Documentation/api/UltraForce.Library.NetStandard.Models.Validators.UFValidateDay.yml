@@ -1,0 +1,545 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay
+  commentId: T:UltraForce.Library.NetStandard.Models.Validators.UFValidateDay
+  id: UFValidateDay
+  parent: UltraForce.Library.NetStandard.Models.Validators
+  children:
+  - UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.#ctor(System.String,System.String,UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty)
+  - UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.IsValid(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: UFValidateDay
+  nameWithType: UFValidateDay
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Models/Validators/UFValidateDay.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: UFValidateDay
+    path: ../UltraForce.Library.NetStandard/Models/Validators/UFValidateDay.cs
+    startLine: 38
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models.Validators
+  summary: Validate a day by using year and month values.
+  example: []
+  syntax:
+    content: 'public class UFValidateDay : IUFValidateValue'
+    content.vb: Public Class UFValidateDay Implements IUFValidateValue
+  inheritance:
+  - System.Object
+  implements:
+  - UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.#ctor(System.String,System.String,UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty)
+  commentId: M:UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.#ctor(System.String,System.String,UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty)
+  id: '#ctor(System.String,System.String,UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty)'
+  parent: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay
+  langs:
+  - csharp
+  - vb
+  name: UFValidateDay(string, string, IUFAccessProperty)
+  nameWithType: UFValidateDay.UFValidateDay(string, string, IUFAccessProperty)
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.UFValidateDay(string, string, UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Models/Validators/UFValidateDay.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: .ctor
+    path: ../UltraForce.Library.NetStandard/Models/Validators/UFValidateDay.cs
+    startLine: 80
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models.Validators
+  summary: Initializes a new instance of the <xref href="UltraForce.Library.NetStandard.Models.Validators.UFValidateDay" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public UFValidateDay(string aMonthFieldName, string aYearFieldName, IUFAccessProperty aData)
+    parameters:
+    - id: aMonthFieldName
+      type: System.String
+      description: The name of month property in data.
+    - id: aYearFieldName
+      type: System.String
+      description: The name of year property in data.
+    - id: aData
+      type: UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty
+      description: A data to obtain month and year from.
+    content.vb: Public Sub New(aMonthFieldName As String, aYearFieldName As String, aData As IUFAccessProperty)
+  overload: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.#ctor*
+  nameWithType.vb: UFValidateDay.New(String, String, IUFAccessProperty)
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.New(String, String, UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty)
+  name.vb: New(String, String, IUFAccessProperty)
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.IsValid(System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.IsValid(System.Object)
+  id: IsValid(System.Object)
+  parent: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay
+  langs:
+  - csharp
+  - vb
+  name: IsValid(object?)
+  nameWithType: UFValidateDay.IsValid(object?)
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.IsValid(object?)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Models/Validators/UFValidateDay.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: IsValid
+    path: ../UltraForce.Library.NetStandard/Models/Validators/UFValidateDay.cs
+    startLine: 106
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Models.Validators
+  summary: >-
+    Validate a day value. Use year and month values to determine maximum 
+
+    day.If the month and/or year are invalid(not an integer
+
+    or in the case of month outside the valid range), the method will
+
+    only validate day at the maximum range.
+  example: []
+  syntax:
+    content: public bool IsValid(object? aValue)
+    parameters:
+    - id: aValue
+      type: System.Object
+      description: value to compare
+    return:
+      type: System.Boolean
+      description: >-
+        <code>True</code> if day is valid day value or if month or year values are 
+
+        invalid themselves.
+    content.vb: Public Function IsValid(aValue As Object) As Boolean
+  overload: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.IsValid*
+  implements:
+  - UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+  nameWithType.vb: UFValidateDay.IsValid(Object)
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.IsValid(Object)
+  name.vb: IsValid(Object)
+references:
+- uid: UltraForce.Library.NetStandard.Models.Validators
+  commentId: N:UltraForce.Library.NetStandard.Models.Validators
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Models.Validators
+  nameWithType: UltraForce.Library.NetStandard.Models.Validators
+  fullName: UltraForce.Library.NetStandard.Models.Validators
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models
+    name: Models
+    href: UltraForce.Library.NetStandard.Models.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models.Validators
+    name: Validators
+    href: UltraForce.Library.NetStandard.Models.Validators.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models
+    name: Models
+    href: UltraForce.Library.NetStandard.Models.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Models.Validators
+    name: Validators
+    href: UltraForce.Library.NetStandard.Models.Validators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+  commentId: T:UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+  parent: UltraForce.Library.NetStandard.Models.Validators
+  href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html
+  name: IUFValidateValue
+  nameWithType: IUFValidateValue
+  fullName: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay
+  commentId: T:UltraForce.Library.NetStandard.Models.Validators.UFValidateDay
+  href: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.html
+  name: UFValidateDay
+  nameWithType: UFValidateDay
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.#ctor*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.#ctor
+  href: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.html#UltraForce_Library_NetStandard_Models_Validators_UFValidateDay__ctor_System_String_System_String_UltraForce_Library_NetStandard_Interfaces_IUFAccessProperty_
+  name: UFValidateDay
+  nameWithType: UFValidateDay.UFValidateDay
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.UFValidateDay
+  nameWithType.vb: UFValidateDay.New
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty.html
+  name: IUFAccessProperty
+  nameWithType: IUFAccessProperty
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFAccessProperty
+- uid: UltraForce.Library.NetStandard.Interfaces
+  commentId: N:UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Interfaces
+  nameWithType: UltraForce.Library.NetStandard.Interfaces
+  fullName: UltraForce.Library.NetStandard.Interfaces
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+- uid: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.IsValid*
+  commentId: Overload:UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.IsValid
+  href: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.html#UltraForce_Library_NetStandard_Models_Validators_UFValidateDay_IsValid_System_Object_
+  name: IsValid
+  nameWithType: UFValidateDay.IsValid
+  fullName: UltraForce.Library.NetStandard.Models.Validators.UFValidateDay.IsValid
+- uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+  parent: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html#UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_IsValid_System_Object_
+  name: IsValid(object)
+  nameWithType: IUFValidateValue.IsValid(object)
+  fullName: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(object)
+  nameWithType.vb: IUFValidateValue.IsValid(Object)
+  fullName.vb: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(Object)
+  name.vb: IsValid(Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+    name: IsValid
+    href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html#UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_IsValid_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.IsValid(System.Object)
+    name: IsValid
+    href: UltraForce.Library.NetStandard.Models.Validators.IUFValidateValue.html#UltraForce_Library_NetStandard_Models_Validators_IUFValidateValue_IsValid_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

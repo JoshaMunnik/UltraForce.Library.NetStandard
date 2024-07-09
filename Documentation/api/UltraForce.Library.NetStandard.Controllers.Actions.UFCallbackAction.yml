@@ -1,0 +1,559 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+  id: UFCallbackAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  children:
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.#ctor(System.Action)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Callback
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Run
+  langs:
+  - csharp
+  - vb
+  name: UFCallbackAction
+  nameWithType: UFCallbackAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFCallbackAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: UFCallbackAction
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFCallbackAction.cs
+    startLine: 33
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    UFCallbackAction is a subclass of <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction" data-throw-if-not-resolved="false"></xref>. It acts as a wrapper for some
+
+    callback (of type <xref href="System.Action" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: 'public class UFCallbackAction : UFRunnableAction, IUFQueueableAction'
+    content.vb: Public Class UFCallbackAction Inherits UFRunnableAction Implements IUFQueueableAction
+  inheritance:
+  - System.Object
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction
+  implements:
+  - UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  inheritedMembers:
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.RunAsync
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.RunAsync(System.Threading.CancellationToken)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.#ctor(System.Action)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.#ctor(System.Action)
+  id: '#ctor(System.Action)'
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+  langs:
+  - csharp
+  - vb
+  name: UFCallbackAction(Action)
+  nameWithType: UFCallbackAction.UFCallbackAction(Action)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.UFCallbackAction(System.Action)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFCallbackAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: .ctor
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFCallbackAction.cs
+    startLine: 43
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Constructs an instance of <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public UFCallbackAction(Action aCallback)
+    parameters:
+    - id: aCallback
+      type: System.Action
+      description: Callback to call when action is started.
+    content.vb: Public Sub New(aCallback As Action)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.#ctor*
+  nameWithType.vb: UFCallbackAction.New(Action)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.New(System.Action)
+  name.vb: New(Action)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Run
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Run
+  id: Run
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+  langs:
+  - csharp
+  - vb
+  name: Run()
+  nameWithType: UFCallbackAction.Run()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Run()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFCallbackAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Run
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFCallbackAction.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Runs the action.
+  example: []
+  syntax:
+    content: protected override bool Run()
+    return:
+      type: System.Boolean
+      description: A value indicating of the action was successful or not.
+    content.vb: Protected Overrides Function Run() As Boolean
+  overridden: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.Run
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Run*
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Callback
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Callback
+  id: Callback
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+  langs:
+  - csharp
+  - vb
+  name: Callback
+  nameWithType: UFCallbackAction.Callback
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Callback
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFCallbackAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Callback
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFCallbackAction.cs
+    startLine: 66
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: The callback that will be called when the action is run.
+  example: []
+  syntax:
+    content: public Action Callback { get; }
+    parameters: []
+    return:
+      type: System.Action
+    content.vb: Public ReadOnly Property Callback As Action
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Callback*
+references:
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.html
+  name: UFRunnableAction
+  nameWithType: UFRunnableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: UltraForce.Library.NetStandard.Controllers.Actions
+  commentId: N:UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Controllers.Actions
+  nameWithType: UltraForce.Library.NetStandard.Controllers.Actions
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers
+    name: Controllers
+    href: UltraForce.Library.NetStandard.Controllers.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions
+    name: Actions
+    href: UltraForce.Library.NetStandard.Controllers.Actions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers
+    name: Controllers
+    href: UltraForce.Library.NetStandard.Controllers.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions
+    name: Actions
+    href: UltraForce.Library.NetStandard.Controllers.Actions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.html
+  name: IUFQueueableAction
+  nameWithType: IUFQueueableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.RunAsync
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.RunAsync
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFRunnableAction_RunAsync
+  name: RunAsync()
+  nameWithType: UFRunnableAction.RunAsync()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.RunAsync()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.RunAsync
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFRunnableAction_RunAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.RunAsync
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFRunnableAction_RunAsync
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.RunAsync(System.Threading.CancellationToken)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.RunAsync(System.Threading.CancellationToken)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFRunnableAction_RunAsync_System_Threading_CancellationToken_
+  name: RunAsync(CancellationToken)
+  nameWithType: UFRunnableAction.RunAsync(CancellationToken)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.RunAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.RunAsync(System.Threading.CancellationToken)
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFRunnableAction_RunAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.RunAsync(System.Threading.CancellationToken)
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFRunnableAction_RunAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.html
+  name: UFCallbackAction
+  nameWithType: UFCallbackAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.#ctor*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.#ctor
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFCallbackAction__ctor_System_Action_
+  name: UFCallbackAction
+  nameWithType: UFCallbackAction.UFCallbackAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.UFCallbackAction
+  nameWithType.vb: UFCallbackAction.New
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.New
+  name.vb: New
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.Run
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.Run
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFRunnableAction_Run
+  name: Run()
+  nameWithType: UFRunnableAction.Run()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.Run()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.Run
+    name: Run
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFRunnableAction_Run
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.Run
+    name: Run
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFRunnableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFRunnableAction_Run
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Run*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Run
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFCallbackAction_Run
+  name: Run
+  nameWithType: UFCallbackAction.Run
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Run
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Callback*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Callback
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFCallbackAction_Callback
+  name: Callback
+  nameWithType: UFCallbackAction.Callback
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFCallbackAction.Callback

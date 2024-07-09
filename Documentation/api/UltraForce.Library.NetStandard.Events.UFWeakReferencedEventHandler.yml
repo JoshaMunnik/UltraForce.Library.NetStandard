@@ -1,0 +1,1206 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  commentId: T:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  id: UFWeakReferencedEventHandler
+  parent: UltraForce.Library.NetStandard.Events
+  children:
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor(System.ComponentModel.PropertyChangedEventHandler)
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor(System.Delegate)
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor(System.EventHandler)
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object)
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object,System.EventArgs)
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.ComponentModel.PropertyChangedEventHandler)
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler)
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler{UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs})
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap``1(System.EventHandler{``0})
+  langs:
+  - csharp
+  - vb
+  name: UFWeakReferencedEventHandler
+  nameWithType: UFWeakReferencedEventHandler
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: UFWeakReferencedEventHandler
+    path: ../UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+    startLine: 43
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Stores an event handler as method and weak reference to the target.
+
+    <p>
+
+    Either an instance can be created or a <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler)" data-throw-if-not-resolved="false"></xref> can be used to create an instance for
+
+    a handler.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public class UFWeakReferencedEventHandler : UFWeakReferencedDelegateBase'
+    content.vb: Public Class UFWeakReferencedEventHandler Inherits UFWeakReferencedDelegateBase
+  inheritance:
+  - System.Object
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  derivedClasses:
+  - UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler`1
+  inheritedMembers:
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(System.Object)
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.GetHashCode
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.IsAlive
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Invoke(System.Object[])
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor(System.EventHandler)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor(System.EventHandler)
+  id: '#ctor(System.EventHandler)'
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: UFWeakReferencedEventHandler(EventHandler)
+  nameWithType: UFWeakReferencedEventHandler.UFWeakReferencedEventHandler(EventHandler)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.UFWeakReferencedEventHandler(System.EventHandler)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: .ctor
+    path: ../UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+    startLine: 52
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Constructs an instance of <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler" data-throw-if-not-resolved="false"></xref>
+
+    for a <xref href="System.EventHandler" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public UFWeakReferencedEventHandler(EventHandler anHandler)
+    parameters:
+    - id: anHandler
+      type: System.EventHandler
+      description: event handler
+    content.vb: Public Sub New(anHandler As EventHandler)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor*
+  nameWithType.vb: UFWeakReferencedEventHandler.New(EventHandler)
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.New(System.EventHandler)
+  name.vb: New(EventHandler)
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor(System.ComponentModel.PropertyChangedEventHandler)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor(System.ComponentModel.PropertyChangedEventHandler)
+  id: '#ctor(System.ComponentModel.PropertyChangedEventHandler)'
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: UFWeakReferencedEventHandler(PropertyChangedEventHandler)
+  nameWithType: UFWeakReferencedEventHandler.UFWeakReferencedEventHandler(PropertyChangedEventHandler)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.UFWeakReferencedEventHandler(System.ComponentModel.PropertyChangedEventHandler)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: .ctor
+    path: ../UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+    startLine: 61
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Constructs an instance of <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler" data-throw-if-not-resolved="false"></xref>
+
+    for a <xref href="System.ComponentModel.PropertyChangedEventHandler" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public UFWeakReferencedEventHandler(PropertyChangedEventHandler anHandler)
+    parameters:
+    - id: anHandler
+      type: System.ComponentModel.PropertyChangedEventHandler
+      description: ''
+    content.vb: Public Sub New(anHandler As PropertyChangedEventHandler)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor*
+  nameWithType.vb: UFWeakReferencedEventHandler.New(PropertyChangedEventHandler)
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.New(System.ComponentModel.PropertyChangedEventHandler)
+  name.vb: New(PropertyChangedEventHandler)
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  id: '#ctor(System.Collections.Specialized.NotifyCollectionChangedEventHandler)'
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: UFWeakReferencedEventHandler(NotifyCollectionChangedEventHandler)
+  nameWithType: UFWeakReferencedEventHandler.UFWeakReferencedEventHandler(NotifyCollectionChangedEventHandler)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.UFWeakReferencedEventHandler(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: .ctor
+    path: ../UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+    startLine: 70
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Constructs an instance of <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler" data-throw-if-not-resolved="false"></xref>
+
+    for a <xref href="System.Collections.Specialized.NotifyCollectionChangedEventHandler" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public UFWeakReferencedEventHandler(NotifyCollectionChangedEventHandler anHandler)
+    parameters:
+    - id: anHandler
+      type: System.Collections.Specialized.NotifyCollectionChangedEventHandler
+      description: ''
+    content.vb: Public Sub New(anHandler As NotifyCollectionChangedEventHandler)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor*
+  nameWithType.vb: UFWeakReferencedEventHandler.New(NotifyCollectionChangedEventHandler)
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.New(System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+  name.vb: New(NotifyCollectionChangedEventHandler)
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor(System.Delegate)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor(System.Delegate)
+  id: '#ctor(System.Delegate)'
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: UFWeakReferencedEventHandler(Delegate)
+  nameWithType: UFWeakReferencedEventHandler.UFWeakReferencedEventHandler(Delegate)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.UFWeakReferencedEventHandler(System.Delegate)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: .ctor
+    path: ../UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+    startLine: 75
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Stores a delegate as a weak reference to the target and the method that should be invoked.
+
+    <p>
+
+    Trying to use a static delegate will throw an exception.
+
+    </p>
+  example: []
+  syntax:
+    content: protected UFWeakReferencedEventHandler(Delegate aDelegate)
+    parameters:
+    - id: aDelegate
+      type: System.Delegate
+      description: Delegate to store
+    content.vb: Protected Sub New(aDelegate As [Delegate])
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor*
+  nameWithType.vb: UFWeakReferencedEventHandler.New(Delegate)
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.New(System.Delegate)
+  name.vb: New(Delegate)
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object)
+  id: Invoke(System.Object)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(object)
+  nameWithType: UFWeakReferencedEventHandler.Invoke(object)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(object)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Invoke
+    path: ../UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+    startLine: 88
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Calls the handler method with <xref href="System.EventArgs.Empty" data-throw-if-not-resolved="false"></xref> if the
+
+    target has not been garbage collected.
+  example: []
+  syntax:
+    content: public void Invoke(object aSender)
+    parameters:
+    - id: aSender
+      type: System.Object
+      description: ''
+    content.vb: Public Sub Invoke(aSender As Object)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke*
+  nameWithType.vb: UFWeakReferencedEventHandler.Invoke(Object)
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(Object)
+  name.vb: Invoke(Object)
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object,System.EventArgs)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object,System.EventArgs)
+  id: Invoke(System.Object,System.EventArgs)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(object, EventArgs)
+  nameWithType: UFWeakReferencedEventHandler.Invoke(object, EventArgs)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Invoke
+    path: ../UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+    startLine: 98
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: Calls the handler method if the target has not been garbage collected.
+  example: []
+  syntax:
+    content: public void Invoke(object aSender, EventArgs anEventArgs)
+    parameters:
+    - id: aSender
+      type: System.Object
+      description: ''
+    - id: anEventArgs
+      type: System.EventArgs
+      description: ''
+    content.vb: Public Sub Invoke(aSender As Object, anEventArgs As EventArgs)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke*
+  nameWithType.vb: UFWeakReferencedEventHandler.Invoke(Object, EventArgs)
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(Object, System.EventArgs)
+  name.vb: Invoke(Object, EventArgs)
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler)
+  id: Wrap(System.EventHandler)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Wrap(EventHandler)
+  nameWithType: UFWeakReferencedEventHandler.Wrap(EventHandler)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Wrap
+    path: ../UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+    startLine: 121
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Wraps an event handler by creating an instance of <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler" data-throw-if-not-resolved="false"></xref> for the
+
+    handler and return its <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object%2cSystem.EventArgs)" data-throw-if-not-resolved="false"></xref> method.
+
+    <p>
+
+    Take note that when attaching the result of this method to an event the
+
+    <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler" data-throw-if-not-resolved="false"></xref> instance will NOT get garbage collected until the event provider
+
+    gets garbage collected.
+
+    </p>
+
+    <p>
+
+    If the handler is a static handler, the method just returns the handler.
+
+    </p>
+  example: []
+  syntax:
+    content: public static EventHandler Wrap(EventHandler anHandler)
+    parameters:
+    - id: anHandler
+      type: System.EventHandler
+      description: Handler method to wrap. If it is a static handler, the method just returns anHandler.
+    return:
+      type: System.EventHandler
+      description: Handler method of the wrapper object or the value of <code>anHandler</code> if it was a static handler.
+    content.vb: Public Shared Function Wrap(anHandler As EventHandler) As EventHandler
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap*
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler{UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs})
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler{UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs})
+  id: Wrap(System.EventHandler{UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs})
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Wrap(EventHandler<UFDataChangedEventArgs>)
+  nameWithType: UFWeakReferencedEventHandler.Wrap(EventHandler<UFDataChangedEventArgs>)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler<UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs>)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Wrap
+    path: ../UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+    startLine: 141
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Wraps an event handler by creating an instance of <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler%601" data-throw-if-not-resolved="false"></xref> for the
+
+    handler and return its <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object%2cSystem.EventArgs)" data-throw-if-not-resolved="false"></xref> method.
+  example: []
+  syntax:
+    content: public static EventHandler<UFDataChangedEventArgs> Wrap(EventHandler<UFDataChangedEventArgs> anHandler)
+    parameters:
+    - id: anHandler
+      type: System.EventHandler{UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs}
+      description: Handler method to wrap. If it is a static handler, the method just returns anHandler.
+    return:
+      type: System.EventHandler{UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs}
+      description: Handler method of the wrapper object or the value of <code>anHandler</code> if it was a static handler.
+    content.vb: Public Shared Function Wrap(anHandler As EventHandler(Of UFDataChangedEventArgs)) As EventHandler(Of UFDataChangedEventArgs)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap*
+  nameWithType.vb: UFWeakReferencedEventHandler.Wrap(EventHandler(Of UFDataChangedEventArgs))
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler(Of UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs))
+  name.vb: Wrap(EventHandler(Of UFDataChangedEventArgs))
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap``1(System.EventHandler{``0})
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap``1(System.EventHandler{``0})
+  id: Wrap``1(System.EventHandler{``0})
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Wrap<TEventArgs>(EventHandler<TEventArgs>)
+  nameWithType: UFWeakReferencedEventHandler.Wrap<TEventArgs>(EventHandler<TEventArgs>)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap<TEventArgs>(System.EventHandler<TEventArgs>)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Wrap
+    path: ../UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+    startLine: 159
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Wraps an event handler by creating an instance of <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler%601" data-throw-if-not-resolved="false"></xref> for the
+
+    handler and return its <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object%2cSystem.EventArgs)" data-throw-if-not-resolved="false"></xref> method.
+  example: []
+  syntax:
+    content: 'public static EventHandler<TEventArgs> Wrap<TEventArgs>(EventHandler<TEventArgs> anHandler) where TEventArgs : EventArgs'
+    parameters:
+    - id: anHandler
+      type: System.EventHandler{{TEventArgs}}
+      description: Handler method to wrap. If it is a static handler, the method just returns anHandler.
+    typeParameters:
+    - id: TEventArgs
+      description: <xref href="System.EventArgs" data-throw-if-not-resolved="false"></xref> type to use
+    return:
+      type: System.EventHandler{{TEventArgs}}
+      description: Handler method of the wrapper object or the value of <code>anHandler</code> if it was a static handler.
+    content.vb: Public Shared Function Wrap(Of TEventArgs As EventArgs)(anHandler As EventHandler(Of TEventArgs)) As EventHandler(Of TEventArgs)
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap*
+  nameWithType.vb: UFWeakReferencedEventHandler.Wrap(Of TEventArgs)(EventHandler(Of TEventArgs))
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(Of TEventArgs)(System.EventHandler(Of TEventArgs))
+  name.vb: Wrap(Of TEventArgs)(EventHandler(Of TEventArgs))
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.ComponentModel.PropertyChangedEventHandler)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.ComponentModel.PropertyChangedEventHandler)
+  id: Wrap(System.ComponentModel.PropertyChangedEventHandler)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Wrap(PropertyChangedEventHandler)
+  nameWithType: UFWeakReferencedEventHandler.Wrap(PropertyChangedEventHandler)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.ComponentModel.PropertyChangedEventHandler)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Wrap
+    path: ../UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandler.cs
+    startLine: 188
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Events
+  summary: >-
+    Wraps an event handler by creating an instance of <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler" data-throw-if-not-resolved="false"></xref> for the handler and
+
+    return its <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object)" data-throw-if-not-resolved="false"></xref> method.
+
+    <p>
+
+    Take note that when attaching the result of this method to an event the
+
+    <xref href="UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler" data-throw-if-not-resolved="false"></xref> instance will NOT get garbage collected until the event provider
+
+    gets garbage collected.
+
+    </p>
+
+    <p>
+
+    If the handler is a static handler, the method just returns the handler.
+
+    </p>
+  example: []
+  syntax:
+    content: public static PropertyChangedEventHandler Wrap(PropertyChangedEventHandler anHandler)
+    parameters:
+    - id: anHandler
+      type: System.ComponentModel.PropertyChangedEventHandler
+      description: Handler method to wrap. If it is a static handler, the method just returns anHandler.
+    return:
+      type: System.ComponentModel.PropertyChangedEventHandler
+      description: Handler method of the wrapper object or the value of <code>anHandler</code> if it was a static handler.
+    content.vb: Public Shared Function Wrap(anHandler As PropertyChangedEventHandler) As PropertyChangedEventHandler
+  overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap*
+references:
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_Wrap_System_EventHandler_
+  name: Wrap(EventHandler)
+  nameWithType: UFWeakReferencedEventHandler.Wrap(EventHandler)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler)
+    name: Wrap
+    href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_Wrap_System_EventHandler_
+  - name: (
+  - uid: System.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap(System.EventHandler)
+    name: Wrap
+    href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_Wrap_System_EventHandler_
+  - name: (
+  - uid: System.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler
+  - name: )
+- uid: UltraForce.Library.NetStandard.Events
+  commentId: N:UltraForce.Library.NetStandard.Events
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Events
+  nameWithType: UltraForce.Library.NetStandard.Events
+  fullName: UltraForce.Library.NetStandard.Events
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Events
+    name: Events
+    href: UltraForce.Library.NetStandard.Events.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Events
+    name: Events
+    href: UltraForce.Library.NetStandard.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  commentId: T:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  parent: UltraForce.Library.NetStandard.Delegates
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html
+  name: UFWeakReferencedDelegateBase
+  nameWithType: UFWeakReferencedDelegateBase
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(System.Object)
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: UFWeakReferencedDelegateBase.Equals(object)
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(object)
+  nameWithType.vb: UFWeakReferencedDelegateBase.Equals(Object)
+  fullName.vb: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(System.Object)
+    name: Equals
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(System.Object)
+    name: Equals
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.GetHashCode
+  commentId: M:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.GetHashCode
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_GetHashCode
+  name: GetHashCode()
+  nameWithType: UFWeakReferencedDelegateBase.GetHashCode()
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.GetHashCode()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.GetHashCode
+    name: GetHashCode
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.GetHashCode
+    name: GetHashCode
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_GetHashCode
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.IsAlive
+  commentId: P:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.IsAlive
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_IsAlive
+  name: IsAlive
+  nameWithType: UFWeakReferencedDelegateBase.IsAlive
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.IsAlive
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Invoke(System.Object[])
+  commentId: M:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Invoke(System.Object[])
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_Invoke_System_Object___
+  name: Invoke(params object[])
+  nameWithType: UFWeakReferencedDelegateBase.Invoke(params object[])
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Invoke(params object[])
+  nameWithType.vb: UFWeakReferencedDelegateBase.Invoke(ParamArray Object())
+  fullName.vb: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Invoke(ParamArray Object())
+  name.vb: Invoke(ParamArray Object())
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Invoke(System.Object[])
+    name: Invoke
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_Invoke_System_Object___
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Invoke(System.Object[])
+    name: Invoke
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_Invoke_System_Object___
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  commentId: T:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  parent: UltraForce.Library.NetStandard.Events
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html
+  name: UFWeakReferencedEventHandler
+  nameWithType: UFWeakReferencedEventHandler
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Delegates
+  commentId: N:UltraForce.Library.NetStandard.Delegates
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Delegates
+  nameWithType: UltraForce.Library.NetStandard.Delegates
+  fullName: UltraForce.Library.NetStandard.Delegates
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Delegates
+    name: Delegates
+    href: UltraForce.Library.NetStandard.Delegates.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Delegates
+    name: Delegates
+    href: UltraForce.Library.NetStandard.Delegates.html
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor*
+  commentId: Overload:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.#ctor
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler__ctor_System_EventHandler_
+  name: UFWeakReferencedEventHandler
+  nameWithType: UFWeakReferencedEventHandler.UFWeakReferencedEventHandler
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.UFWeakReferencedEventHandler
+  nameWithType.vb: UFWeakReferencedEventHandler.New
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.New
+  name.vb: New
+- uid: System.ComponentModel.PropertyChangedEventHandler
+  commentId: T:System.ComponentModel.PropertyChangedEventHandler
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler
+  name: PropertyChangedEventHandler
+  nameWithType: PropertyChangedEventHandler
+  fullName: System.ComponentModel.PropertyChangedEventHandler
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: System.Collections.Specialized.NotifyCollectionChangedEventHandler
+  commentId: T:System.Collections.Specialized.NotifyCollectionChangedEventHandler
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventhandler
+  name: NotifyCollectionChangedEventHandler
+  nameWithType: NotifyCollectionChangedEventHandler
+  fullName: System.Collections.Specialized.NotifyCollectionChangedEventHandler
+- uid: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+- uid: System.Delegate
+  commentId: T:System.Delegate
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.delegate
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs.empty
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke*
+  commentId: Overload:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_Invoke_System_Object_
+  name: Invoke
+  nameWithType: UFWeakReferencedEventHandler.Invoke
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object,System.EventArgs)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object,System.EventArgs)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_Invoke_System_Object_System_EventArgs_
+  name: Invoke(object, EventArgs)
+  nameWithType: UFWeakReferencedEventHandler.Invoke(object, EventArgs)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(object, System.EventArgs)
+  nameWithType.vb: UFWeakReferencedEventHandler.Invoke(Object, EventArgs)
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(Object, System.EventArgs)
+  name.vb: Invoke(Object, EventArgs)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object,System.EventArgs)
+    name: Invoke
+    href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_Invoke_System_Object_System_EventArgs_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object,System.EventArgs)
+    name: Invoke
+    href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_Invoke_System_Object_System_EventArgs_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: )
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap*
+  commentId: Overload:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_Wrap_System_EventHandler_
+  name: Wrap
+  nameWithType: UFWeakReferencedEventHandler.Wrap
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Wrap
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler`1
+  commentId: T:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler`1
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler-1.html
+  name: UFWeakReferencedEventHandler<TEventArgs>
+  nameWithType: UFWeakReferencedEventHandler<TEventArgs>
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler<TEventArgs>
+  nameWithType.vb: UFWeakReferencedEventHandler(Of TEventArgs)
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler(Of TEventArgs)
+  name.vb: UFWeakReferencedEventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler`1
+    name: UFWeakReferencedEventHandler
+    href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler-1.html
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler`1
+    name: UFWeakReferencedEventHandler
+    href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: System.EventHandler{UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs}
+  commentId: T:System.EventHandler{UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<UFDataChangedEventArgs>
+  nameWithType: EventHandler<UFDataChangedEventArgs>
+  fullName: System.EventHandler<UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs>
+  nameWithType.vb: EventHandler(Of UFDataChangedEventArgs)
+  fullName.vb: System.EventHandler(Of UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  name.vb: EventHandler(Of UFDataChangedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+    name: UFDataChangedEventArgs
+    href: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+    name: UFDataChangedEventArgs
+    href: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: System.EventHandler{{TEventArgs}}
+  commentId: T:System.EventHandler{``0}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object)
+  parent: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_Invoke_System_Object_
+  name: Invoke(object)
+  nameWithType: UFWeakReferencedEventHandler.Invoke(object)
+  fullName: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(object)
+  nameWithType.vb: UFWeakReferencedEventHandler.Invoke(Object)
+  fullName.vb: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(Object)
+  name.vb: Invoke(Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object)
+    name: Invoke
+    href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_Invoke_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.Invoke(System.Object)
+    name: Invoke
+    href: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandler.html#UltraForce_Library_NetStandard_Events_UFWeakReferencedEventHandler_Invoke_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )

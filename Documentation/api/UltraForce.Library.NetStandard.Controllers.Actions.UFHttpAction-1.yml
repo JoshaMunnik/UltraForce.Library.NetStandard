@@ -1,0 +1,2185 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  id: UFHttpAction`1
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  children:
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.BuildRequestAsync(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ErrorResult
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.MaxSendTime
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Exception)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Net.HttpStatusCode,System.String)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessResponseAsync(`0)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessTimeoutAsync
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Progress
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.RunAsync(System.Threading.CancellationToken)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SendMessageAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest(System.String,UltraForce.Library.NetStandard.Interfaces.IUFJsonExport)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest(System.String,UltraForce.Library.NetStandard.Interfaces.IUFJsonExport,System.Net.Http.HttpMethod)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetProgressAsync(System.Double)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest(System.String)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest(System.String,System.Net.Http.HttpMethod)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequestAsync(System.Threading.CancellationToken)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetStringRequest(System.String,System.String,System.Text.Encoding,System.String,System.Net.Http.HttpMethod)
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.StaticHttpClient
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Uri
+  langs:
+  - csharp
+  - vb
+  name: UFHttpAction<TResponse>
+  nameWithType: UFHttpAction<TResponse>
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: UFHttpAction
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 56
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction%601" data-throw-if-not-resolved="false"></xref> base class for sending and receiving data from a server via HTTP.
+  remarks: >-
+    Subclasses must implement to <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction%601.SendMessageAsync(System.Net.Http.HttpRequestMessage%2cSystem.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref> to send the data and process the response from
+
+    the server.
+
+    <p>
+
+    Subclasses can call one of the SetXXXXRequest methods either from the constructor or from the
+
+    <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction%601.SetRequestAsync(System.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref> to set the request before the IO starts.
+
+    </p>
+
+    <p>
+
+    There three different types of errors. Subclasses can override
+
+    <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction%601.ProcessErrorAsync(System.Net.HttpStatusCode%2cSystem.String)" data-throw-if-not-resolved="false"></xref>, <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction%601.ProcessErrorAsync(System.Exception)" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction%601.ProcessTimeoutAsync" data-throw-if-not-resolved="false"></xref>. 
+
+    </p>
+
+    <p>
+
+    Subclasses can override <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction%601.BuildRequestAsync(System.String%2cSystem.Net.Http.HttpContent%2cSystem.Net.Http.HttpMethod)" data-throw-if-not-resolved="false"></xref> to do additional pre processing.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public abstract class UFHttpAction<TResponse> : UFQueueableAction, IUFWeightedProgress, IUFProgress, IUFQueueableAction where TResponse : class'
+    typeParameters:
+    - id: TResponse
+    content.vb: Public MustInherit Class UFHttpAction(Of TResponse As Class) Inherits UFQueueableAction Implements IUFWeightedProgress, IUFProgress, IUFQueueableAction
+  inheritance:
+  - System.Object
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  derivedClasses:
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFDownloadToStreamAction
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFSendServerMessageAction
+  implements:
+  - UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress
+  - UltraForce.Library.NetStandard.Interfaces.IUFProgress
+  - UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  inheritedMembers:
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync
+  - UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.ProgressWeight
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: UFHttpAction(Of TResponse)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse)
+  name.vb: UFHttpAction(Of TResponse)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.RunAsync(System.Threading.CancellationToken)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.RunAsync(System.Threading.CancellationToken)
+  id: RunAsync(System.Threading.CancellationToken)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: RunAsync(CancellationToken)
+  nameWithType: UFHttpAction<TResponse>.RunAsync(CancellationToken)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.RunAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: RunAsync
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 106
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: This method runs the action.
+  remarks: Subclasses must implement this method.
+  example: []
+  syntax:
+    content: public override Task<bool> RunAsync(CancellationToken aToken)
+    parameters:
+    - id: aToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>True</code> when successful, <code>false</code> to stop other actions in the queue.
+    content.vb: Public Overrides Function RunAsync(aToken As CancellationToken) As Task(Of Boolean)
+  overridden: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync(System.Threading.CancellationToken)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.RunAsync*
+  nameWithType.vb: UFHttpAction(Of TResponse).RunAsync(CancellationToken)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).RunAsync(System.Threading.CancellationToken)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.MaxSendTime
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.MaxSendTime
+  id: MaxSendTime
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: MaxSendTime
+  nameWithType: UFHttpAction<TResponse>.MaxSendTime
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.MaxSendTime
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: MaxSendTime
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 206
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    MaxSendTime determines the maximum time in milliseconds an IO action make take. 
+
+    <p>
+
+    The minimum value that can be assigned is 1000. Any lower value is changed to 1000.
+
+    </p>
+  example: []
+  syntax:
+    content: public static int MaxSendTime { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared Property MaxSendTime As Integer
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.MaxSendTime*
+  nameWithType.vb: UFHttpAction(Of TResponse).MaxSendTime
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).MaxSendTime
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Uri
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Uri
+  id: Uri
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: Uri
+  nameWithType: UFHttpAction<TResponse>.Uri
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.Uri
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Uri
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 214
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Uri being communicated with.
+  example: []
+  syntax:
+    content: public string? Uri { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Uri As String
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Uri*
+  nameWithType.vb: UFHttpAction(Of TResponse).Uri
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).Uri
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Progress
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Progress
+  id: Progress
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: UFHttpAction<TResponse>.Progress
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.Progress
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Progress
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 221
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    This property contains the progress of the action.
+
+    <p>
+
+    The default implementation just returns 0.0
+
+    </p>
+  example: []
+  syntax:
+    content: public override double Progress { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Overrides ReadOnly Property Progress As Double
+  overridden: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.Progress
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Progress*
+  nameWithType.vb: UFHttpAction(Of TResponse).Progress
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).Progress
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ErrorResult
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ErrorResult
+  id: ErrorResult
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: ErrorResult
+  nameWithType: UFHttpAction<TResponse>.ErrorResult
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ErrorResult
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: ErrorResult
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 233
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    The value to return by <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction%601.RunAsync(System.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref> if the communication fails.
+
+    <p>
+
+    The default value is <code>false</code>
+
+    </p>
+  example: []
+  syntax:
+    content: protected bool ErrorResult { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Protected Property ErrorResult As Boolean
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ErrorResult*
+  nameWithType.vb: UFHttpAction(Of TResponse).ErrorResult
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ErrorResult
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.StaticHttpClient
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.StaticHttpClient
+  id: StaticHttpClient
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: StaticHttpClient
+  nameWithType: UFHttpAction<TResponse>.StaticHttpClient
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.StaticHttpClient
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: StaticHttpClient
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 241
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    The HttpClient property is a static property and can be used to minimize the number of HttpClient instances.
+
+    <p>
+
+    The instance is created the first time the property is accessed.
+
+    </p>
+  example: []
+  syntax:
+    content: protected static HttpClient StaticHttpClient { get; }
+    parameters: []
+    return:
+      type: System.Net.Http.HttpClient
+    content.vb: Protected Shared ReadOnly Property StaticHttpClient As HttpClient
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.StaticHttpClient*
+  nameWithType.vb: UFHttpAction(Of TResponse).StaticHttpClient
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).StaticHttpClient
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequestAsync(System.Threading.CancellationToken)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequestAsync(System.Threading.CancellationToken)
+  id: SetRequestAsync(System.Threading.CancellationToken)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: SetRequestAsync(CancellationToken)
+  nameWithType: UFHttpAction<TResponse>.SetRequestAsync(CancellationToken)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetRequestAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: SetRequestAsync
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 254
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    This method can be overridden by subclasses. It will be called at the start of the IO action.
+
+    <p>
+
+    The default implementation does nothing and just returns <xref href="System.Threading.Tasks.Task.CompletedTask" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
+  example: []
+  syntax:
+    content: protected virtual Task SetRequestAsync(CancellationToken aToken)
+    parameters:
+    - id: aToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overridable Function SetRequestAsync(aToken As CancellationToken) As Task
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequestAsync*
+  nameWithType.vb: UFHttpAction(Of TResponse).SetRequestAsync(CancellationToken)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetRequestAsync(System.Threading.CancellationToken)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetProgressAsync(System.Double)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetProgressAsync(System.Double)
+  id: SetProgressAsync(System.Double)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: SetProgressAsync(double)
+  nameWithType: UFHttpAction<TResponse>.SetProgressAsync(double)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetProgressAsync(double)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: SetProgressAsync
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 267
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    Updates the progress property.
+
+    <p>
+
+    The default implementation updates the internal progress value. Subclasses can override to provide additional
+
+    actions.
+
+    </p>
+  example: []
+  syntax:
+    content: protected virtual Task SetProgressAsync(double aValue)
+    parameters:
+    - id: aValue
+      type: System.Double
+      description: New value (might be outside valid range of 0.0 .. 1.0)
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overridable Function SetProgressAsync(aValue As Double) As Task
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetProgressAsync*
+  nameWithType.vb: UFHttpAction(Of TResponse).SetProgressAsync(Double)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetProgressAsync(Double)
+  name.vb: SetProgressAsync(Double)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)
+  id: SetRequest(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: SetRequest(string, HttpContent?, HttpMethod)
+  nameWithType: UFHttpAction<TResponse>.SetRequest(string, HttpContent?, HttpMethod)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetRequest(string, System.Net.Http.HttpContent?, System.Net.Http.HttpMethod)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: SetRequest
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 283
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Initialize action to send a data to the server via a certain method.
+  example: []
+  syntax:
+    content: protected void SetRequest(string anUri, HttpContent? aSendData, HttpMethod aMethod)
+    parameters:
+    - id: anUri
+      type: System.String
+      description: url to server
+    - id: aSendData
+      type: System.Net.Http.HttpContent
+      description: Data to send null to not send any data
+    - id: aMethod
+      type: System.Net.Http.HttpMethod
+      description: Method to use
+    content.vb: Protected Sub SetRequest(anUri As String, aSendData As HttpContent, aMethod As HttpMethod)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest*
+  nameWithType.vb: UFHttpAction(Of TResponse).SetRequest(String, HttpContent, HttpMethod)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetRequest(String, System.Net.Http.HttpContent, System.Net.Http.HttpMethod)
+  name.vb: SetRequest(String, HttpContent, HttpMethod)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest(System.String,System.Net.Http.HttpMethod)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest(System.String,System.Net.Http.HttpMethod)
+  id: SetRequest(System.String,System.Net.Http.HttpMethod)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: SetRequest(string, HttpMethod)
+  nameWithType: UFHttpAction<TResponse>.SetRequest(string, HttpMethod)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetRequest(string, System.Net.Http.HttpMethod)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: SetRequest
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 295
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Initialize action to query the server via a certain method.
+  example: []
+  syntax:
+    content: protected void SetRequest(string anUri, HttpMethod aMethod)
+    parameters:
+    - id: anUri
+      type: System.String
+      description: url to server
+    - id: aMethod
+      type: System.Net.Http.HttpMethod
+      description: Method to use
+    content.vb: Protected Sub SetRequest(anUri As String, aMethod As HttpMethod)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest*
+  nameWithType.vb: UFHttpAction(Of TResponse).SetRequest(String, HttpMethod)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetRequest(String, System.Net.Http.HttpMethod)
+  name.vb: SetRequest(String, HttpMethod)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetStringRequest(System.String,System.String,System.Text.Encoding,System.String,System.Net.Http.HttpMethod)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetStringRequest(System.String,System.String,System.Text.Encoding,System.String,System.Net.Http.HttpMethod)
+  id: SetStringRequest(System.String,System.String,System.Text.Encoding,System.String,System.Net.Http.HttpMethod)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: SetStringRequest(string, string, Encoding, string, HttpMethod)
+  nameWithType: UFHttpAction<TResponse>.SetStringRequest(string, string, Encoding, string, HttpMethod)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetStringRequest(string, string, System.Text.Encoding, string, System.Net.Http.HttpMethod)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: SetStringRequest
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 308
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Initialize action to send a data to the server via a certain method using a certain encoding and media type.
+  example: []
+  syntax:
+    content: protected void SetStringRequest(string anUri, string aSendData, Encoding anEncoding, string aMediaType, HttpMethod aMethod)
+    parameters:
+    - id: anUri
+      type: System.String
+      description: url to server
+    - id: aSendData
+      type: System.String
+      description: ''
+    - id: anEncoding
+      type: System.Text.Encoding
+      description: ''
+    - id: aMediaType
+      type: System.String
+      description: ''
+    - id: aMethod
+      type: System.Net.Http.HttpMethod
+      description: ''
+    content.vb: Protected Sub SetStringRequest(anUri As String, aSendData As String, anEncoding As Encoding, aMediaType As String, aMethod As HttpMethod)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetStringRequest*
+  nameWithType.vb: UFHttpAction(Of TResponse).SetStringRequest(String, String, Encoding, String, HttpMethod)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetStringRequest(String, String, System.Text.Encoding, String, System.Net.Http.HttpMethod)
+  name.vb: SetStringRequest(String, String, Encoding, String, HttpMethod)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest(System.String,UltraForce.Library.NetStandard.Interfaces.IUFJsonExport,System.Net.Http.HttpMethod)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest(System.String,UltraForce.Library.NetStandard.Interfaces.IUFJsonExport,System.Net.Http.HttpMethod)
+  id: SetJsonRequest(System.String,UltraForce.Library.NetStandard.Interfaces.IUFJsonExport,System.Net.Http.HttpMethod)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: SetJsonRequest(string, IUFJsonExport, HttpMethod)
+  nameWithType: UFHttpAction<TResponse>.SetJsonRequest(string, IUFJsonExport, HttpMethod)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetJsonRequest(string, UltraForce.Library.NetStandard.Interfaces.IUFJsonExport, System.Net.Http.HttpMethod)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: SetJsonRequest
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 331
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Initialize action to send a json encoded data to the server via a certain method.
+  example: []
+  syntax:
+    content: protected void SetJsonRequest(string anUri, IUFJsonExport aSendData, HttpMethod aMethod)
+    parameters:
+    - id: anUri
+      type: System.String
+      description: url to server
+    - id: aSendData
+      type: UltraForce.Library.NetStandard.Interfaces.IUFJsonExport
+      description: Data to encode as JSON
+    - id: aMethod
+      type: System.Net.Http.HttpMethod
+      description: Method to use
+    content.vb: Protected Sub SetJsonRequest(anUri As String, aSendData As IUFJsonExport, aMethod As HttpMethod)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest*
+  nameWithType.vb: UFHttpAction(Of TResponse).SetJsonRequest(String, IUFJsonExport, HttpMethod)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetJsonRequest(String, UltraForce.Library.NetStandard.Interfaces.IUFJsonExport, System.Net.Http.HttpMethod)
+  name.vb: SetJsonRequest(String, IUFJsonExport, HttpMethod)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest(System.String,UltraForce.Library.NetStandard.Interfaces.IUFJsonExport)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest(System.String,UltraForce.Library.NetStandard.Interfaces.IUFJsonExport)
+  id: SetJsonRequest(System.String,UltraForce.Library.NetStandard.Interfaces.IUFJsonExport)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: SetJsonRequest(string, IUFJsonExport)
+  nameWithType: UFHttpAction<TResponse>.SetJsonRequest(string, IUFJsonExport)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetJsonRequest(string, UltraForce.Library.NetStandard.Interfaces.IUFJsonExport)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: SetJsonRequest
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 354
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    Initialize action to send a json encoded data to the server via the 
+
+    POST method.
+  example: []
+  syntax:
+    content: protected void SetJsonRequest(string anUri, IUFJsonExport aSendData)
+    parameters:
+    - id: anUri
+      type: System.String
+      description: url to server
+    - id: aSendData
+      type: UltraForce.Library.NetStandard.Interfaces.IUFJsonExport
+      description: Data to encode as JSON
+    content.vb: Protected Sub SetJsonRequest(anUri As String, aSendData As IUFJsonExport)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest*
+  nameWithType.vb: UFHttpAction(Of TResponse).SetJsonRequest(String, IUFJsonExport)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetJsonRequest(String, UltraForce.Library.NetStandard.Interfaces.IUFJsonExport)
+  name.vb: SetJsonRequest(String, IUFJsonExport)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest(System.String)
+  id: SetRequest(System.String)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: SetRequest(string)
+  nameWithType: UFHttpAction<TResponse>.SetRequest(string)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetRequest(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: SetRequest
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 363
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Initialize action to query server via the <xref href="System.Net.Http.HttpMethod.Get" data-throw-if-not-resolved="false"></xref> method.
+  example: []
+  syntax:
+    content: protected void SetRequest(string anUri)
+    parameters:
+    - id: anUri
+      type: System.String
+      description: url to server
+    content.vb: Protected Sub SetRequest(anUri As String)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest*
+  nameWithType.vb: UFHttpAction(Of TResponse).SetRequest(String)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetRequest(String)
+  name.vb: SetRequest(String)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessResponseAsync(`0)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessResponseAsync(`0)
+  id: ProcessResponseAsync(`0)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: ProcessResponseAsync(TResponse)
+  nameWithType: UFHttpAction<TResponse>.ProcessResponseAsync(TResponse)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ProcessResponseAsync(TResponse)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: ProcessResponseAsync
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 384
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Processes the data received from the server.
+  remarks: The default implementation returns <code>true</code>.
+  example: []
+  syntax:
+    content: protected virtual Task<bool> ProcessResponseAsync(TResponse aResponse)
+    parameters:
+    - id: aResponse
+      type: '{TResponse}'
+      description: Response (can be <code>null</code> if there was no data)
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>True</code> if data was processed successfully. This result will be returned as the result of the action.
+    content.vb: Protected Overridable Function ProcessResponseAsync(aResponse As TResponse) As Task(Of Boolean)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessResponseAsync*
+  nameWithType.vb: UFHttpAction(Of TResponse).ProcessResponseAsync(TResponse)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ProcessResponseAsync(TResponse)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Exception)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Exception)
+  id: ProcessErrorAsync(System.Exception)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: ProcessErrorAsync(Exception)
+  nameWithType: UFHttpAction<TResponse>.ProcessErrorAsync(Exception)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ProcessErrorAsync(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: ProcessErrorAsync
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 399
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Processes the exception that occurred while sending the data.
+  remarks: The default implementation just returns <code>false</code>.
+  example: []
+  syntax:
+    content: protected virtual Task<bool> ProcessErrorAsync(Exception anError)
+    parameters:
+    - id: anError
+      type: System.Exception
+      description: Error to process
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>True</code> to repeat the send action, <code>false</code> to cancel the action and return <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction%601.ErrorResult" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Protected Overridable Function ProcessErrorAsync(anError As Exception) As Task(Of Boolean)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync*
+  nameWithType.vb: UFHttpAction(Of TResponse).ProcessErrorAsync(Exception)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ProcessErrorAsync(System.Exception)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Net.HttpStatusCode,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Net.HttpStatusCode,System.String)
+  id: ProcessErrorAsync(System.Net.HttpStatusCode,System.String)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: ProcessErrorAsync(HttpStatusCode, string)
+  nameWithType: UFHttpAction<TResponse>.ProcessErrorAsync(HttpStatusCode, string)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ProcessErrorAsync(System.Net.HttpStatusCode, string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: ProcessErrorAsync
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 415
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Process error statuses from the server (status code &gt;= 300)
+  remarks: The default implementation just returns <code>false</code>.
+  example: []
+  syntax:
+    content: protected virtual Task<bool> ProcessErrorAsync(HttpStatusCode aStatus, string anErrorResponse)
+    parameters:
+    - id: aStatus
+      type: System.Net.HttpStatusCode
+      description: Status returned by server
+    - id: anErrorResponse
+      type: System.String
+      description: Response if any
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>True</code> to repeat the send action, <code>false</code> to cancel the action and return <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction%601.ErrorResult" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Protected Overridable Function ProcessErrorAsync(aStatus As HttpStatusCode, anErrorResponse As String) As Task(Of Boolean)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync*
+  nameWithType.vb: UFHttpAction(Of TResponse).ProcessErrorAsync(HttpStatusCode, String)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ProcessErrorAsync(System.Net.HttpStatusCode, String)
+  name.vb: ProcessErrorAsync(HttpStatusCode, String)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessTimeoutAsync
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessTimeoutAsync
+  id: ProcessTimeoutAsync
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: ProcessTimeoutAsync()
+  nameWithType: UFHttpAction<TResponse>.ProcessTimeoutAsync()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ProcessTimeoutAsync()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: ProcessTimeoutAsync
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 429
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: Processes timeout error.
+  remarks: The default implementation just returns <code>false</code>.
+  example: []
+  syntax:
+    content: protected virtual Task<bool> ProcessTimeoutAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>True</code> to repeat the send action, <code>false</code> to cancel the action and return <xref href="UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction%601.ErrorResult" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Protected Overridable Function ProcessTimeoutAsync() As Task(Of Boolean)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessTimeoutAsync*
+  nameWithType.vb: UFHttpAction(Of TResponse).ProcessTimeoutAsync()
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ProcessTimeoutAsync()
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.BuildRequestAsync(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.BuildRequestAsync(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)
+  id: BuildRequestAsync(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: BuildRequestAsync(string, HttpContent?, HttpMethod)
+  nameWithType: UFHttpAction<TResponse>.BuildRequestAsync(string, HttpContent?, HttpMethod)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.BuildRequestAsync(string, System.Net.Http.HttpContent?, System.Net.Http.HttpMethod)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: BuildRequestAsync
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 453
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    Builds a request to send to the server.
+
+    <p>
+
+    The default implementation just creates the <xref href="System.Net.Http.HttpRequestMessage" data-throw-if-not-resolved="false"></xref> instance. Subclasses can override
+
+    to perform additional actions (for example setting additional header values).
+
+    </p>
+  example: []
+  syntax:
+    content: protected virtual Task<HttpRequestMessage> BuildRequestAsync(string anUri, HttpContent? aContent, HttpMethod aMethod)
+    parameters:
+    - id: anUri
+      type: System.String
+      description: Uri to send to
+    - id: aContent
+      type: System.Net.Http.HttpContent
+      description: Content to send (or null if there is none)
+    - id: aMethod
+      type: System.Net.Http.HttpMethod
+      description: Method to use
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpRequestMessage}
+      description: A <xref href="System.Net.Http.HttpRequestMessage" data-throw-if-not-resolved="false"></xref> to use for the server IO.
+    content.vb: Protected Overridable Function BuildRequestAsync(anUri As String, aContent As HttpContent, aMethod As HttpMethod) As Task(Of HttpRequestMessage)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.BuildRequestAsync*
+  nameWithType.vb: UFHttpAction(Of TResponse).BuildRequestAsync(String, HttpContent, HttpMethod)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).BuildRequestAsync(String, System.Net.Http.HttpContent, System.Net.Http.HttpMethod)
+  name.vb: BuildRequestAsync(String, HttpContent, HttpMethod)
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SendMessageAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SendMessageAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  id: SendMessageAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  langs:
+  - csharp
+  - vb
+  name: SendMessageAsync(HttpRequestMessage, CancellationToken)
+  nameWithType: UFHttpAction<TResponse>.SendMessageAsync(HttpRequestMessage, CancellationToken)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SendMessageAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: SendMessageAsync
+    path: ../UltraForce.Library.NetStandard/Controllers/Actions/UFHttpAction.cs
+    startLine: 481
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Controllers.Actions
+  summary: >-
+    Sends a message to the server and process the response.
+
+    <p>
+
+    This is an abstract method and must be implemented by subclasses.
+
+    </p>
+  example: []
+  syntax:
+    content: protected abstract Task<UFHttpAction<TResponse>.UFServerResponse> SendMessageAsync(HttpRequestMessage aRequest, CancellationToken aToken)
+    parameters:
+    - id: aRequest
+      type: System.Net.Http.HttpRequestMessage
+      description: Request to send
+    - id: aToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token
+    return:
+      type: System.Threading.Tasks.Task{UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.UFServerResponse}
+      description: The result of sending the message.
+    content.vb: Protected MustOverride Function SendMessageAsync(aRequest As HttpRequestMessage, aToken As CancellationToken) As Task(Of UFHttpAction(Of TResponse).UFServerResponse)
+  overload: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SendMessageAsync*
+  nameWithType.vb: UFHttpAction(Of TResponse).SendMessageAsync(HttpRequestMessage, CancellationToken)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SendMessageAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+references:
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html
+  name: UFHttpAction<TResponse>
+  nameWithType: UFHttpAction<TResponse>
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>
+  nameWithType.vb: UFHttpAction(Of TResponse)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse)
+  name.vb: UFHttpAction(Of TResponse)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+    name: UFHttpAction
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+    name: UFHttpAction
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SendMessageAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SendMessageAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SendMessageAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
+  name: SendMessageAsync(HttpRequestMessage, CancellationToken)
+  nameWithType: UFHttpAction<TResponse>.SendMessageAsync(HttpRequestMessage, CancellationToken)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SendMessageAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  nameWithType.vb: UFHttpAction(Of TResponse).SendMessageAsync(HttpRequestMessage, CancellationToken)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SendMessageAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SendMessageAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: SendMessageAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SendMessageAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SendMessageAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: SendMessageAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SendMessageAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequestAsync(System.Threading.CancellationToken)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequestAsync(System.Threading.CancellationToken)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequestAsync_System_Threading_CancellationToken_
+  name: SetRequestAsync(CancellationToken)
+  nameWithType: UFHttpAction<TResponse>.SetRequestAsync(CancellationToken)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetRequestAsync(System.Threading.CancellationToken)
+  nameWithType.vb: UFHttpAction(Of TResponse).SetRequestAsync(CancellationToken)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetRequestAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequestAsync(System.Threading.CancellationToken)
+    name: SetRequestAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequestAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequestAsync(System.Threading.CancellationToken)
+    name: SetRequestAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequestAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Net.HttpStatusCode,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Net.HttpStatusCode,System.String)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Net_HttpStatusCode_System_String_
+  name: ProcessErrorAsync(HttpStatusCode, string)
+  nameWithType: UFHttpAction<TResponse>.ProcessErrorAsync(HttpStatusCode, string)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ProcessErrorAsync(System.Net.HttpStatusCode, string)
+  nameWithType.vb: UFHttpAction(Of TResponse).ProcessErrorAsync(HttpStatusCode, String)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ProcessErrorAsync(System.Net.HttpStatusCode, String)
+  name.vb: ProcessErrorAsync(HttpStatusCode, String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Net.HttpStatusCode,System.String)
+    name: ProcessErrorAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Net_HttpStatusCode_System_String_
+  - name: (
+  - uid: System.Net.HttpStatusCode
+    name: HttpStatusCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Net.HttpStatusCode,System.String)
+    name: ProcessErrorAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Net_HttpStatusCode_System_String_
+  - name: (
+  - uid: System.Net.HttpStatusCode
+    name: HttpStatusCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Exception)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Exception)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Exception_
+  name: ProcessErrorAsync(Exception)
+  nameWithType: UFHttpAction<TResponse>.ProcessErrorAsync(Exception)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ProcessErrorAsync(System.Exception)
+  nameWithType.vb: UFHttpAction(Of TResponse).ProcessErrorAsync(Exception)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ProcessErrorAsync(System.Exception)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Exception)
+    name: ProcessErrorAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync(System.Exception)
+    name: ProcessErrorAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Exception_
+  - name: (
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessTimeoutAsync
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessTimeoutAsync
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessTimeoutAsync
+  name: ProcessTimeoutAsync()
+  nameWithType: UFHttpAction<TResponse>.ProcessTimeoutAsync()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ProcessTimeoutAsync()
+  nameWithType.vb: UFHttpAction(Of TResponse).ProcessTimeoutAsync()
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ProcessTimeoutAsync()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessTimeoutAsync
+    name: ProcessTimeoutAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessTimeoutAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessTimeoutAsync
+    name: ProcessTimeoutAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessTimeoutAsync
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.BuildRequestAsync(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.BuildRequestAsync(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_BuildRequestAsync_System_String_System_Net_Http_HttpContent_System_Net_Http_HttpMethod_
+  name: BuildRequestAsync(string, HttpContent, HttpMethod)
+  nameWithType: UFHttpAction<TResponse>.BuildRequestAsync(string, HttpContent, HttpMethod)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.BuildRequestAsync(string, System.Net.Http.HttpContent, System.Net.Http.HttpMethod)
+  nameWithType.vb: UFHttpAction(Of TResponse).BuildRequestAsync(String, HttpContent, HttpMethod)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).BuildRequestAsync(String, System.Net.Http.HttpContent, System.Net.Http.HttpMethod)
+  name.vb: BuildRequestAsync(String, HttpContent, HttpMethod)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.BuildRequestAsync(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)
+    name: BuildRequestAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_BuildRequestAsync_System_String_System_Net_Http_HttpContent_System_Net_Http_HttpMethod_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Net.Http.HttpContent
+    name: HttpContent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent
+  - name: ','
+  - name: " "
+  - uid: System.Net.Http.HttpMethod
+    name: HttpMethod
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.BuildRequestAsync(System.String,System.Net.Http.HttpContent,System.Net.Http.HttpMethod)
+    name: BuildRequestAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_BuildRequestAsync_System_String_System_Net_Http_HttpContent_System_Net_Http_HttpMethod_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Net.Http.HttpContent
+    name: HttpContent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent
+  - name: ','
+  - name: " "
+  - uid: System.Net.Http.HttpMethod
+    name: HttpMethod
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions
+  commentId: N:UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Controllers.Actions
+  nameWithType: UltraForce.Library.NetStandard.Controllers.Actions
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers
+    name: Controllers
+    href: UltraForce.Library.NetStandard.Controllers.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions
+    name: Actions
+    href: UltraForce.Library.NetStandard.Controllers.Actions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers
+    name: Controllers
+    href: UltraForce.Library.NetStandard.Controllers.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions
+    name: Actions
+    href: UltraForce.Library.NetStandard.Controllers.Actions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html
+  name: UFQueueableAction
+  nameWithType: UFQueueableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress.html
+  name: IUFWeightedProgress
+  nameWithType: IUFWeightedProgress
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFWeightedProgress
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFProgress
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFProgress
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFProgress.html
+  name: IUFProgress
+  nameWithType: IUFProgress
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFProgress
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  commentId: T:UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+  parent: UltraForce.Library.NetStandard.Controllers.Actions
+  href: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction.html
+  name: IUFQueueableAction
+  nameWithType: IUFQueueableAction
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.IUFQueueableAction
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync
+  name: RunAsync()
+  nameWithType: UFQueueableAction.RunAsync()
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.ProgressWeight
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.ProgressWeight
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_ProgressWeight
+  name: ProgressWeight
+  nameWithType: UFQueueableAction.ProgressWeight
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.ProgressWeight
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Interfaces
+  commentId: N:UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Interfaces
+  nameWithType: UltraForce.Library.NetStandard.Interfaces
+  fullName: UltraForce.Library.NetStandard.Interfaces
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync(System.Threading.CancellationToken)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync(System.Threading.CancellationToken)
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync_System_Threading_CancellationToken_
+  name: RunAsync(CancellationToken)
+  nameWithType: UFQueueableAction.RunAsync(CancellationToken)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync(System.Threading.CancellationToken)
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.RunAsync(System.Threading.CancellationToken)
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_RunAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.RunAsync*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.RunAsync
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_RunAsync_System_Threading_CancellationToken_
+  name: RunAsync
+  nameWithType: UFHttpAction<TResponse>.RunAsync
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.RunAsync
+  nameWithType.vb: UFHttpAction(Of TResponse).RunAsync
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).RunAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.MaxSendTime*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.MaxSendTime
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_MaxSendTime
+  name: MaxSendTime
+  nameWithType: UFHttpAction<TResponse>.MaxSendTime
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.MaxSendTime
+  nameWithType.vb: UFHttpAction(Of TResponse).MaxSendTime
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).MaxSendTime
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Uri*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Uri
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_Uri
+  name: Uri
+  nameWithType: UFHttpAction<TResponse>.Uri
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.Uri
+  nameWithType.vb: UFHttpAction(Of TResponse).Uri
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).Uri
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.Progress
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.Progress
+  parent: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.html#UltraForce_Library_NetStandard_Controllers_Actions_UFQueueableAction_Progress
+  name: Progress
+  nameWithType: UFQueueableAction.Progress
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFQueueableAction.Progress
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Progress*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.Progress
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_Progress
+  name: Progress
+  nameWithType: UFHttpAction<TResponse>.Progress
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.Progress
+  nameWithType.vb: UFHttpAction(Of TResponse).Progress
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).Progress
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.RunAsync(System.Threading.CancellationToken)
+  commentId: M:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.RunAsync(System.Threading.CancellationToken)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_RunAsync_System_Threading_CancellationToken_
+  name: RunAsync(CancellationToken)
+  nameWithType: UFHttpAction<TResponse>.RunAsync(CancellationToken)
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.RunAsync(System.Threading.CancellationToken)
+  nameWithType.vb: UFHttpAction(Of TResponse).RunAsync(CancellationToken)
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).RunAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.RunAsync(System.Threading.CancellationToken)
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_RunAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.RunAsync(System.Threading.CancellationToken)
+    name: RunAsync
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_RunAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ErrorResult*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ErrorResult
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ErrorResult
+  name: ErrorResult
+  nameWithType: UFHttpAction<TResponse>.ErrorResult
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ErrorResult
+  nameWithType.vb: UFHttpAction(Of TResponse).ErrorResult
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ErrorResult
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.StaticHttpClient*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.StaticHttpClient
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_StaticHttpClient
+  name: StaticHttpClient
+  nameWithType: UFHttpAction<TResponse>.StaticHttpClient
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.StaticHttpClient
+  nameWithType.vb: UFHttpAction(Of TResponse).StaticHttpClient
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).StaticHttpClient
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpclient
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+- uid: System.Threading.Tasks.Task.CompletedTask
+  commentId: P:System.Threading.Tasks.Task.CompletedTask
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task.completedtask
+  name: CompletedTask
+  nameWithType: Task.CompletedTask
+  fullName: System.Threading.Tasks.Task.CompletedTask
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequestAsync*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequestAsync
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequestAsync_System_Threading_CancellationToken_
+  name: SetRequestAsync
+  nameWithType: UFHttpAction<TResponse>.SetRequestAsync
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetRequestAsync
+  nameWithType.vb: UFHttpAction(Of TResponse).SetRequestAsync
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetRequestAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetProgressAsync*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetProgressAsync
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetProgressAsync_System_Double_
+  name: SetProgressAsync
+  nameWithType: UFHttpAction<TResponse>.SetProgressAsync
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetProgressAsync
+  nameWithType.vb: UFHttpAction(Of TResponse).SetProgressAsync
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetProgressAsync
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetRequest
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetRequest_System_String_System_Net_Http_HttpContent_System_Net_Http_HttpMethod_
+  name: SetRequest
+  nameWithType: UFHttpAction<TResponse>.SetRequest
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetRequest
+  nameWithType.vb: UFHttpAction(Of TResponse).SetRequest
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetRequest
+- uid: System.Net.Http.HttpContent
+  commentId: T:System.Net.Http.HttpContent
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent
+  name: HttpContent
+  nameWithType: HttpContent
+  fullName: System.Net.Http.HttpContent
+- uid: System.Net.Http.HttpMethod
+  commentId: T:System.Net.Http.HttpMethod
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod
+  name: HttpMethod
+  nameWithType: HttpMethod
+  fullName: System.Net.Http.HttpMethod
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetStringRequest*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetStringRequest
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetStringRequest_System_String_System_String_System_Text_Encoding_System_String_System_Net_Http_HttpMethod_
+  name: SetStringRequest
+  nameWithType: UFHttpAction<TResponse>.SetStringRequest
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetStringRequest
+  nameWithType.vb: UFHttpAction(Of TResponse).SetStringRequest
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetStringRequest
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.encoding
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SetJsonRequest
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SetJsonRequest_System_String_UltraForce_Library_NetStandard_Interfaces_IUFJsonExport_System_Net_Http_HttpMethod_
+  name: SetJsonRequest
+  nameWithType: UFHttpAction<TResponse>.SetJsonRequest
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SetJsonRequest
+  nameWithType.vb: UFHttpAction(Of TResponse).SetJsonRequest
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SetJsonRequest
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFJsonExport
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFJsonExport
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFJsonExport.html
+  name: IUFJsonExport
+  nameWithType: IUFJsonExport
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFJsonExport
+- uid: System.Net.Http.HttpMethod.Get
+  commentId: P:System.Net.Http.HttpMethod.Get
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod.get
+  name: Get
+  nameWithType: HttpMethod.Get
+  fullName: System.Net.Http.HttpMethod.Get
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessResponseAsync*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessResponseAsync
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessResponseAsync__0_
+  name: ProcessResponseAsync
+  nameWithType: UFHttpAction<TResponse>.ProcessResponseAsync
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ProcessResponseAsync
+  nameWithType.vb: UFHttpAction(Of TResponse).ProcessResponseAsync
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ProcessResponseAsync
+- uid: '{TResponse}'
+  commentId: '!:TResponse'
+  definition: TResponse
+  name: TResponse
+  nameWithType: TResponse
+  fullName: TResponse
+- uid: TResponse
+  name: TResponse
+  nameWithType: TResponse
+  fullName: TResponse
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ErrorResult
+  commentId: P:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ErrorResult
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ErrorResult
+  name: ErrorResult
+  nameWithType: UFHttpAction<TResponse>.ErrorResult
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ErrorResult
+  nameWithType.vb: UFHttpAction(Of TResponse).ErrorResult
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ErrorResult
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessErrorAsync
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessErrorAsync_System_Exception_
+  name: ProcessErrorAsync
+  nameWithType: UFHttpAction<TResponse>.ProcessErrorAsync
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ProcessErrorAsync
+  nameWithType.vb: UFHttpAction(Of TResponse).ProcessErrorAsync
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ProcessErrorAsync
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Net.HttpStatusCode
+  commentId: T:System.Net.HttpStatusCode
+  parent: System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode
+  name: HttpStatusCode
+  nameWithType: HttpStatusCode
+  fullName: System.Net.HttpStatusCode
+- uid: System.Net
+  commentId: N:System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessTimeoutAsync*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.ProcessTimeoutAsync
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_ProcessTimeoutAsync
+  name: ProcessTimeoutAsync
+  nameWithType: UFHttpAction<TResponse>.ProcessTimeoutAsync
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.ProcessTimeoutAsync
+  nameWithType.vb: UFHttpAction(Of TResponse).ProcessTimeoutAsync
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).ProcessTimeoutAsync
+- uid: System.Net.Http.HttpRequestMessage
+  commentId: T:System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  name: HttpRequestMessage
+  nameWithType: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.BuildRequestAsync*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.BuildRequestAsync
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_BuildRequestAsync_System_String_System_Net_Http_HttpContent_System_Net_Http_HttpMethod_
+  name: BuildRequestAsync
+  nameWithType: UFHttpAction<TResponse>.BuildRequestAsync
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.BuildRequestAsync
+  nameWithType.vb: UFHttpAction(Of TResponse).BuildRequestAsync
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).BuildRequestAsync
+- uid: System.Threading.Tasks.Task{System.Net.Http.HttpRequestMessage}
+  commentId: T:System.Threading.Tasks.Task{System.Net.Http.HttpRequestMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<HttpRequestMessage>
+  nameWithType: Task<HttpRequestMessage>
+  fullName: System.Threading.Tasks.Task<System.Net.Http.HttpRequestMessage>
+  nameWithType.vb: Task(Of HttpRequestMessage)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Net.Http.HttpRequestMessage)
+  name.vb: Task(Of HttpRequestMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  - name: )
+- uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SendMessageAsync*
+  commentId: Overload:UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.SendMessageAsync
+  href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html#UltraForce_Library_NetStandard_Controllers_Actions_UFHttpAction_1_SendMessageAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
+  name: SendMessageAsync
+  nameWithType: UFHttpAction<TResponse>.SendMessageAsync
+  fullName: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.SendMessageAsync
+  nameWithType.vb: UFHttpAction(Of TResponse).SendMessageAsync
+  fullName.vb: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).SendMessageAsync
+- uid: System.Threading.Tasks.Task{UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.UFServerResponse}
+  commentId: T:System.Threading.Tasks.Task{UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.UFServerResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<UFHttpAction<TResponse>.UFServerResponse>
+  nameWithType: Task<UFHttpAction<TResponse>.UFServerResponse>
+  fullName: System.Threading.Tasks.Task<UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction<TResponse>.UFServerResponse>
+  nameWithType.vb: Task(Of UFHttpAction(Of TResponse).UFServerResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction(Of TResponse).UFServerResponse)
+  name.vb: Task(Of UFHttpAction(Of TResponse).UFServerResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+    name: UFHttpAction
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html
+  - name: <
+  - name: TResponse
+  - name: '>'
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.UFServerResponse
+    name: UFServerResponse
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.UFServerResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1
+    name: UFHttpAction
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction`1.UFServerResponse
+    name: UFServerResponse
+    href: UltraForce.Library.NetStandard.Controllers.Actions.UFHttpAction-1.UFServerResponse.html
+  - name: )

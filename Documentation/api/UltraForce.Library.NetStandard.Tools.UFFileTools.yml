@@ -1,0 +1,682 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFFileTools
+  id: UFFileTools
+  parent: UltraForce.Library.NetStandard.Tools
+  children:
+  - UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath(System.String,System.Char)
+  - UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath(System.String)
+  - UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(System.String,System.Char)
+  - UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String)
+  - UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String,System.Boolean)
+  - UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String,System.Boolean,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: UFFileTools
+  nameWithType: UFFileTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: UFFileTools
+    path: ../UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+    startLine: 40
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Static support methods related to files and folders.
+  example: []
+  syntax:
+    content: public static class UFFileTools
+    content.vb: Public Module UFFileTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String,System.Boolean,System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String,System.Boolean,System.Boolean)
+  id: ValidateFilename(System.String,System.Boolean,System.Boolean)
+  parent: UltraForce.Library.NetStandard.Tools.UFFileTools
+  langs:
+  - csharp
+  - vb
+  name: ValidateFilename(string, bool, bool)
+  nameWithType: UFFileTools.ValidateFilename(string, bool, bool)
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(string, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: ValidateFilename
+    path: ../UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+    startLine: 52
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Validates a file or folder name.
+  example: []
+  syntax:
+    content: public static bool ValidateFilename(string aName, bool aFileOnly, bool aRelativeDir)
+    parameters:
+    - id: aName
+      type: System.String
+      description: name to validate
+    - id: aFileOnly
+      type: System.Boolean
+      description: >-
+        When <code>true</code> aName should not contain path, 
+            else aName also can contain path parts
+    - id: aRelativeDir
+      type: System.Boolean
+      description: >-
+        When <code>true</code> the path part can
+            contain '..'
+    return:
+      type: System.Boolean
+      description: >-
+        <code>True</code>=valid name, <code>false</code>=name contains invalid 
+            chars or start with a path separator
+    content.vb: Public Shared Function ValidateFilename(aName As String, aFileOnly As Boolean, aRelativeDir As Boolean) As Boolean
+  overload: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename*
+  nameWithType.vb: UFFileTools.ValidateFilename(String, Boolean, Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(String, Boolean, Boolean)
+  name.vb: ValidateFilename(String, Boolean, Boolean)
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String,System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String,System.Boolean)
+  id: ValidateFilename(System.String,System.Boolean)
+  parent: UltraForce.Library.NetStandard.Tools.UFFileTools
+  langs:
+  - csharp
+  - vb
+  name: ValidateFilename(string, bool)
+  nameWithType: UFFileTools.ValidateFilename(string, bool)
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(string, bool)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: ValidateFilename
+    path: ../UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+    startLine: 126
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Validates a file or folder name.
+  example: []
+  syntax:
+    content: public static bool ValidateFilename(string aName, bool aFileOnly)
+    parameters:
+    - id: aName
+      type: System.String
+      description: name to validate
+    - id: aFileOnly
+      type: System.Boolean
+      description: >-
+        When <code>true</code> aName should not contain path, 
+            else aName also contains path part
+    return:
+      type: System.Boolean
+      description: >-
+        <code>True</code>=valid name, <code>false</code>=name contains invalid chars or 
+
+        starts with path separator or contains relative folder parts
+    content.vb: Public Shared Function ValidateFilename(aName As String, aFileOnly As Boolean) As Boolean
+  overload: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename*
+  nameWithType.vb: UFFileTools.ValidateFilename(String, Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(String, Boolean)
+  name.vb: ValidateFilename(String, Boolean)
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String)
+  id: ValidateFilename(System.String)
+  parent: UltraForce.Library.NetStandard.Tools.UFFileTools
+  langs:
+  - csharp
+  - vb
+  name: ValidateFilename(string)
+  nameWithType: UFFileTools.ValidateFilename(string)
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: ValidateFilename
+    path: ../UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+    startLine: 137
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Validates a file name.
+  example: []
+  syntax:
+    content: public static bool ValidateFilename(string aName)
+    parameters:
+    - id: aName
+      type: System.String
+      description: name to validate
+    return:
+      type: System.Boolean
+      description: >-
+        <code>True</code>=valid name, <code>false</code>=name contains invalid 
+            chars or contains folder specifications
+    content.vb: Public Shared Function ValidateFilename(aName As String) As Boolean
+  overload: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename*
+  nameWithType.vb: UFFileTools.ValidateFilename(String)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(String)
+  name.vb: ValidateFilename(String)
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(System.String,System.Char)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(System.String,System.Char)
+  id: UpdateSeparator(System.String,System.Char)
+  parent: UltraForce.Library.NetStandard.Tools.UFFileTools
+  langs:
+  - csharp
+  - vb
+  name: UpdateSeparator(string, char)
+  nameWithType: UFFileTools.UpdateSeparator(string, char)
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(string, char)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: UpdateSeparator
+    path: ../UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+    startLine: 148
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Replace forward or backward slash with the opposite.
+  example: []
+  syntax:
+    content: public static string UpdateSeparator(string aPath, char aPathSeparator = '\\')
+    parameters:
+    - id: aPath
+      type: System.String
+      description: Path to update
+    - id: aPathSeparator
+      type: System.Char
+      description: Separator to use
+    return:
+      type: System.String
+      description: updated path
+    content.vb: Public Shared Function UpdateSeparator(aPath As String, aPathSeparator As Char = "\"c) As String
+  overload: UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator*
+  nameWithType.vb: UFFileTools.UpdateSeparator(String, Char)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(String, Char)
+  name.vb: UpdateSeparator(String, Char)
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath(System.String,System.Char)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath(System.String,System.Char)
+  id: AddRootPath(System.String,System.Char)
+  parent: UltraForce.Library.NetStandard.Tools.UFFileTools
+  langs:
+  - csharp
+  - vb
+  name: AddRootPath(string, char)
+  nameWithType: UFFileTools.AddRootPath(string, char)
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath(string, char)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: AddRootPath
+    path: ../UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+    startLine: 164
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: >-
+    This method first calls <xref href="UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(System.String%2cSystem.Char)" data-throw-if-not-resolved="false"></xref> and then checks
+
+    if the path specification starts with a root character and adds it
+
+    if needed.
+  example: []
+  syntax:
+    content: public static string AddRootPath(string aPath, char aPathSeparator = '\\')
+    parameters:
+    - id: aPath
+      type: System.String
+      description: Path to update
+    - id: aPathSeparator
+      type: System.Char
+      description: Separator to use
+    return:
+      type: System.String
+      description: Path starting with separator
+    content.vb: Public Shared Function AddRootPath(aPath As String, aPathSeparator As Char = "\"c) As String
+  overload: UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath*
+  nameWithType.vb: UFFileTools.AddRootPath(String, Char)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath(String, Char)
+  name.vb: AddRootPath(String, Char)
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath(System.String)
+  id: RemoveRootPath(System.String)
+  parent: UltraForce.Library.NetStandard.Tools.UFFileTools
+  langs:
+  - csharp
+  - vb
+  name: RemoveRootPath(string)
+  nameWithType: UFFileTools.RemoveRootPath(string)
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: RemoveRootPath
+    path: ../UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+    startLine: 186
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Removes forward or backward slash if it is the first character.
+  example: []
+  syntax:
+    content: public static string RemoveRootPath(string aPath)
+    parameters:
+    - id: aPath
+      type: System.String
+      description: Path to check
+    return:
+      type: System.String
+      description: Updated path
+    content.vb: Public Shared Function RemoveRootPath(aPath As String) As String
+  overload: UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath*
+  nameWithType.vb: UFFileTools.RemoveRootPath(String)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath(String)
+  name.vb: RemoveRootPath(String)
+references:
+- uid: UltraForce.Library.NetStandard.Tools
+  commentId: N:UltraForce.Library.NetStandard.Tools
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Tools
+  nameWithType: UltraForce.Library.NetStandard.Tools
+  fullName: UltraForce.Library.NetStandard.Tools
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Tools
+    name: Tools
+    href: UltraForce.Library.NetStandard.Tools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename
+  href: UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_ValidateFilename_System_String_System_Boolean_System_Boolean_
+  name: ValidateFilename
+  nameWithType: UFFileTools.ValidateFilename
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator
+  href: UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_UpdateSeparator_System_String_System_Char_
+  name: UpdateSeparator
+  nameWithType: UFFileTools.UpdateSeparator
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(System.String,System.Char)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(System.String,System.Char)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_UpdateSeparator_System_String_System_Char_
+  name: UpdateSeparator(string, char)
+  nameWithType: UFFileTools.UpdateSeparator(string, char)
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(string, char)
+  nameWithType.vb: UFFileTools.UpdateSeparator(String, Char)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(String, Char)
+  name.vb: UpdateSeparator(String, Char)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(System.String,System.Char)
+    name: UpdateSeparator
+    href: UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_UpdateSeparator_System_String_System_Char_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(System.String,System.Char)
+    name: UpdateSeparator
+    href: UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_UpdateSeparator_System_String_System_Char_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath
+  href: UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_AddRootPath_System_String_System_Char_
+  name: AddRootPath
+  nameWithType: UFFileTools.AddRootPath
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath
+  href: UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_RemoveRootPath_System_String_
+  name: RemoveRootPath
+  nameWithType: UFFileTools.RemoveRootPath
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath

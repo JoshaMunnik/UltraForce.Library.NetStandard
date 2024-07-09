@@ -10709,6 +10709,22 @@ references:
   commentId: T:UltraForce.Library.NetStandard.Tools.UFEnumTools
   fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools
   nameWithType: UFEnumTools
+- uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList*
+  name: AsList
+  href: api/UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_AsList_
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList
+  isSpec: "True"
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList
+  nameWithType: UFEnumTools.AsList
+- uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList``1
+  name: AsList<T>()
+  href: api/UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_AsList__1
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList``1
+  name.vb: AsList(Of T)()
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList<T>()
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList(Of T)()
+  nameWithType: UFEnumTools.AsList<T>()
+  nameWithType.vb: UFEnumTools.AsList(Of T)()
 - uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue(System.Type,System.Int32)
   name: FindValue(Type, int)
   href: api/UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_FindValue_System_Type_System_Int32_

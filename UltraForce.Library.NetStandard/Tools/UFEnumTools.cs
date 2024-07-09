@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 
 namespace UltraForce.Library.NetStandard.Tools
@@ -25,6 +27,16 @@ namespace UltraForce.Library.NetStandard.Tools
     public static T FindValue<T>(int aValue) where T : Enum
     {
       return (T) FindValue(typeof(T), aValue);
+    }
+
+    /// <summary>
+    /// Gets all values of an enum as a <see cref="List{T}"/>
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public static List<T> AsList<T>() where T : Enum
+    {
+      return Enum.GetValues(typeof(T)).Cast<T>().ToList();
     }
 
     /// <summary>

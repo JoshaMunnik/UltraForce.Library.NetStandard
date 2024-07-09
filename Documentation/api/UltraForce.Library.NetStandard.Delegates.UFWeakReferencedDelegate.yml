@@ -1,0 +1,455 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate
+  commentId: T:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate
+  id: UFWeakReferencedDelegate
+  parent: UltraForce.Library.NetStandard.Delegates
+  children:
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.#ctor(System.Delegate)
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.Invoke(System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: UFWeakReferencedDelegate
+  nameWithType: UFWeakReferencedDelegate
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Delegates/UFWeakReferencedDelegate.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: UFWeakReferencedDelegate
+    path: ../UltraForce.Library.NetStandard/Delegates/UFWeakReferencedDelegate.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Delegates
+  summary: A general purpose implementation of <xref href="UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class UFWeakReferencedDelegate : UFWeakReferencedDelegateBase'
+    content.vb: Public Class UFWeakReferencedDelegate Inherits UFWeakReferencedDelegateBase
+  inheritance:
+  - System.Object
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  inheritedMembers:
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(System.Object)
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.GetHashCode
+  - UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.IsAlive
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.#ctor(System.Delegate)
+  commentId: M:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.#ctor(System.Delegate)
+  id: '#ctor(System.Delegate)'
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate
+  langs:
+  - csharp
+  - vb
+  name: UFWeakReferencedDelegate(Delegate)
+  nameWithType: UFWeakReferencedDelegate.UFWeakReferencedDelegate(Delegate)
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.UFWeakReferencedDelegate(System.Delegate)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Delegates/UFWeakReferencedDelegate.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: .ctor
+    path: ../UltraForce.Library.NetStandard/Delegates/UFWeakReferencedDelegate.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Delegates
+  summary: Constructs an instance of <xref href="UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public UFWeakReferencedDelegate(Delegate aDelegate)
+    parameters:
+    - id: aDelegate
+      type: System.Delegate
+      description: <xref href="System.Delegate" data-throw-if-not-resolved="false"></xref> to store
+    content.vb: Public Sub New(aDelegate As [Delegate])
+  overload: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.#ctor*
+  nameWithType.vb: UFWeakReferencedDelegate.New(Delegate)
+  fullName.vb: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.New(System.Delegate)
+  name.vb: New(Delegate)
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.Invoke(System.Object[])
+  commentId: M:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.Invoke(System.Object[])
+  id: Invoke(System.Object[])
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate
+  langs:
+  - csharp
+  - vb
+  name: Invoke(params object[])
+  nameWithType: UFWeakReferencedDelegate.Invoke(params object[])
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.Invoke(params object[])
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Delegates/UFWeakReferencedDelegate.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Invoke
+    path: ../UltraForce.Library.NetStandard/Delegates/UFWeakReferencedDelegate.cs
+    startLine: 56
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Delegates
+  summary: Invokes the delegate method if the target is still alive.
+  example: []
+  syntax:
+    content: public object? Invoke(params object[] anArguments)
+    parameters:
+    - id: anArguments
+      type: System.Object[]
+      description: Arguments to invoke with
+    return:
+      type: System.Object
+      description: >-
+        Result returned from delegate or <code>null</code> if the target is no longer
+
+        available.
+    content.vb: Public Function Invoke(ParamArray anArguments As Object()) As Object
+  overload: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.Invoke*
+  nameWithType.vb: UFWeakReferencedDelegate.Invoke(ParamArray Object())
+  fullName.vb: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.Invoke(ParamArray Object())
+  name.vb: Invoke(ParamArray Object())
+references:
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  commentId: T:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  parent: UltraForce.Library.NetStandard.Delegates
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html
+  name: UFWeakReferencedDelegateBase
+  nameWithType: UFWeakReferencedDelegateBase
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+- uid: UltraForce.Library.NetStandard.Delegates
+  commentId: N:UltraForce.Library.NetStandard.Delegates
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Delegates
+  nameWithType: UltraForce.Library.NetStandard.Delegates
+  fullName: UltraForce.Library.NetStandard.Delegates
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Delegates
+    name: Delegates
+    href: UltraForce.Library.NetStandard.Delegates.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Delegates
+    name: Delegates
+    href: UltraForce.Library.NetStandard.Delegates.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(System.Object)
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: UFWeakReferencedDelegateBase.Equals(object)
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(object)
+  nameWithType.vb: UFWeakReferencedDelegateBase.Equals(Object)
+  fullName.vb: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(System.Object)
+    name: Equals
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.Equals(System.Object)
+    name: Equals
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.GetHashCode
+  commentId: M:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.GetHashCode
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_GetHashCode
+  name: GetHashCode()
+  nameWithType: UFWeakReferencedDelegateBase.GetHashCode()
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.GetHashCode()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.GetHashCode
+    name: GetHashCode
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.GetHashCode
+    name: GetHashCode
+    href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_GetHashCode
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.IsAlive
+  commentId: P:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.IsAlive
+  parent: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegateBase_IsAlive
+  name: IsAlive
+  nameWithType: UFWeakReferencedDelegateBase.IsAlive
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegateBase.IsAlive
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate
+  commentId: T:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.html
+  name: UFWeakReferencedDelegate
+  nameWithType: UFWeakReferencedDelegate
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate
+- uid: System.Delegate
+  commentId: T:System.Delegate
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.delegate
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.#ctor*
+  commentId: Overload:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.#ctor
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegate__ctor_System_Delegate_
+  name: UFWeakReferencedDelegate
+  nameWithType: UFWeakReferencedDelegate.UFWeakReferencedDelegate
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.UFWeakReferencedDelegate
+  nameWithType.vb: UFWeakReferencedDelegate.New
+  fullName.vb: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.New
+  name.vb: New
+- uid: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.Invoke*
+  commentId: Overload:UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.Invoke
+  href: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.html#UltraForce_Library_NetStandard_Delegates_UFWeakReferencedDelegate_Invoke_System_Object___
+  name: Invoke
+  nameWithType: UFWeakReferencedDelegate.Invoke
+  fullName: UltraForce.Library.NetStandard.Delegates.UFWeakReferencedDelegate.Invoke
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )

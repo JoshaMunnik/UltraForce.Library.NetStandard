@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+  id: IUFNotifyDataChanged
+  parent: UltraForce.Library.NetStandard.Interfaces
+  children:
+  - UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.DataChanged
+  langs:
+  - csharp
+  - vb
+  name: IUFNotifyDataChanged
+  nameWithType: IUFNotifyDataChanged
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+  type: Interface
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Interfaces/IUFNotifyDataChanged.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: IUFNotifyDataChanged
+    path: ../UltraForce.Library.NetStandard/Interfaces/IUFNotifyDataChanged.cs
+    startLine: 40
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Interfaces
+  summary: >-
+    <xref href="UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged" data-throw-if-not-resolved="false"></xref> has a similar function as
+
+    <xref href="System.ComponentModel.INotifyPropertyChanged" data-throw-if-not-resolved="false"></xref> except that
+
+    its event argument contains more information and may 
+
+    contain information for multiple properties.
+  example: []
+  syntax:
+    content: public interface IUFNotifyDataChanged
+    content.vb: Public Interface IUFNotifyDataChanged
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.DataChanged
+  commentId: E:UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.DataChanged
+  id: DataChanged
+  parent: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+  langs:
+  - csharp
+  - vb
+  name: DataChanged
+  nameWithType: IUFNotifyDataChanged.DataChanged
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.DataChanged
+  type: Event
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Interfaces/IUFNotifyDataChanged.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: DataChanged
+    path: ../UltraForce.Library.NetStandard/Interfaces/IUFNotifyDataChanged.cs
+    startLine: 45
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Interfaces
+  summary: This event is fired when the instance or one or more property changes.
+  example: []
+  syntax:
+    content: event EventHandler<UFDataChangedEventArgs> DataChanged
+    return:
+      type: System.EventHandler{UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs}
+    content.vb: Event DataChanged As EventHandler(Of UFDataChangedEventArgs)
+references:
+- uid: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+  commentId: T:UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+  parent: UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged.html
+  name: IUFNotifyDataChanged
+  nameWithType: IUFNotifyDataChanged
+  fullName: UltraForce.Library.NetStandard.Interfaces.IUFNotifyDataChanged
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: UltraForce.Library.NetStandard.Interfaces
+  commentId: N:UltraForce.Library.NetStandard.Interfaces
+  href: UltraForce.html
+  name: UltraForce.Library.NetStandard.Interfaces
+  nameWithType: UltraForce.Library.NetStandard.Interfaces
+  fullName: UltraForce.Library.NetStandard.Interfaces
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    href: UltraForce.Library.NetStandard.html
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.NetStandard.Interfaces.html
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: System.EventHandler{UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs}
+  commentId: T:System.EventHandler{UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<UFDataChangedEventArgs>
+  nameWithType: EventHandler<UFDataChangedEventArgs>
+  fullName: System.EventHandler<UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs>
+  nameWithType.vb: EventHandler(Of UFDataChangedEventArgs)
+  fullName.vb: System.EventHandler(Of UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs)
+  name.vb: EventHandler(Of UFDataChangedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+    name: UFDataChangedEventArgs
+    href: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs
+    name: UFDataChangedEventArgs
+    href: UltraForce.Library.NetStandard.Events.UFDataChangedEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
