@@ -10,33 +10,51 @@ namespace UltraForce.Library.NetStandard.Tools
     /// <summary>
     /// Gets a random value from an enum.
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="TEnum"></typeparam>
     /// <returns></returns>
-    public static T Random<T>() where T : Enum
+    public static TEnum Random<TEnum>() where TEnum : Enum
     {
-      Array values = Enum.GetValues(typeof(T));
-      return (T)values.GetValue(UFRandomTools.Next(values.Length));
+      Array values = Enum.GetValues(typeof(TEnum));
+      return (TEnum)values.GetValue(UFRandomTools.Next(values.Length));
+    }
+    
+    /// <summary>
+    /// Tries to get a enum equivalent for a given integer.
+    /// </summary>
+    /// <param name="aValue"></param>
+    /// <param name="anEnumValue"></param>
+    /// <typeparam name="TEnum"></typeparam>
+    /// <returns>True if the integer matches an enum; false when not</returns>
+    public static bool TryGet<TEnum>(int aValue, out TEnum anEnumValue) where TEnum : Enum
+    {
+      if (Enum.IsDefined(typeof(TEnum), aValue))
+      {
+        anEnumValue = (TEnum)Enum.ToObject(typeof(TEnum), aValue);
+        return true;
+      }
+      anEnumValue = default!;
+      return false;
     }
 
     /// <summary>
     /// Gets the enum value for a given integer.
     /// </summary>
     /// <param name="aValue"></param>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="TEnum"></typeparam>
     /// <returns></returns>
-    public static T FindValue<T>(int aValue) where T : Enum
+    public static TEnum FindValue<TEnum>(int aValue) where TEnum : Enum
     {
-      return (T) FindValue(typeof(T), aValue);
+      return (TEnum) FindValue(typeof(TEnum), aValue);
     }
 
     /// <summary>
     /// Gets all values of an enum as a <see cref="List{T}"/>
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="TEnum"></typeparam>
     /// <returns></returns>
-    public static List<T> AsList<T>() where T : Enum
+    public static List<TEnum> AsList<TEnum>() where TEnum : Enum
     {
-      return Enum.GetValues(typeof(T)).Cast<T>().ToList();
+      return Enum.GetValues(typeof(TEnum)).Cast<TEnum>().ToList();
     }
 
     /// <summary>

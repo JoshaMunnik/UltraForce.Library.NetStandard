@@ -816,6 +816,7 @@
   "UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue(System.Type,System.Int32)": "UltraForce.Library.NetStandard.Tools.UFEnumTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue``1(System.Int32)": "UltraForce.Library.NetStandard.Tools.UFEnumTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFEnumTools.Random``1": "UltraForce.Library.NetStandard.Tools.UFEnumTools.yml",
+  "UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet``1(System.Int32,``0@)": "UltraForce.Library.NetStandard.Tools.UFEnumTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFExceptionTools": "UltraForce.Library.NetStandard.Tools.UFExceptionTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFExceptionTools.GetInnerExceptionMessages(System.Exception)": "UltraForce.Library.NetStandard.Tools.UFExceptionTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFFileTools": "UltraForce.Library.NetStandard.Tools.UFFileTools.yml",

@@ -9,6 +9,7 @@ items:
   - UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue(System.Type,System.Int32)
   - UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue``1(System.Int32)
   - UltraForce.Library.NetStandard.Tools.UFEnumTools.Random``1
+  - UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet``1(System.Int32,``0@)
   langs:
   - csharp
   - vb
@@ -47,9 +48,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Random<T>()
-  nameWithType: UFEnumTools.Random<T>()
-  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random<T>()
+  name: Random<TEnum>()
+  nameWithType: UFEnumTools.Random<TEnum>()
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random<TEnum>()
   type: Method
   source:
     remote:
@@ -65,18 +66,62 @@ items:
   summary: Gets a random value from an enum.
   example: []
   syntax:
-    content: 'public static T Random<T>() where T : Enum'
+    content: 'public static TEnum Random<TEnum>() where TEnum : Enum'
     typeParameters:
-    - id: T
+    - id: TEnum
       description: ''
     return:
-      type: '{T}'
+      type: '{TEnum}'
       description: ''
-    content.vb: Public Shared Function Random(Of T As [Enum])() As T
+    content.vb: Public Shared Function Random(Of TEnum As [Enum])() As TEnum
   overload: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random*
-  nameWithType.vb: UFEnumTools.Random(Of T)()
-  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random(Of T)()
-  name.vb: Random(Of T)()
+  nameWithType.vb: UFEnumTools.Random(Of TEnum)()
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random(Of TEnum)()
+  name.vb: Random(Of TEnum)()
+- uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet``1(System.Int32,``0@)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet``1(System.Int32,``0@)
+  id: TryGet``1(System.Int32,``0@)
+  parent: UltraForce.Library.NetStandard.Tools.UFEnumTools
+  langs:
+  - csharp
+  - vb
+  name: TryGet<TEnum>(int, out TEnum)
+  nameWithType: UFEnumTools.TryGet<TEnum>(int, out TEnum)
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet<TEnum>(int, out TEnum)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFEnumTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: TryGet
+    path: ../UltraForce.Library.NetStandard/Tools/UFEnumTools.cs
+    startLine: 27
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Tries to get a enum equivalent for a given integer.
+  example: []
+  syntax:
+    content: 'public static bool TryGet<TEnum>(int aValue, out TEnum anEnumValue) where TEnum : Enum'
+    parameters:
+    - id: aValue
+      type: System.Int32
+      description: ''
+    - id: anEnumValue
+      type: '{TEnum}'
+      description: ''
+    typeParameters:
+    - id: TEnum
+      description: ''
+    return:
+      type: System.Boolean
+      description: True if the integer matches an enum; false when not
+    content.vb: Public Shared Function TryGet(Of TEnum As [Enum])(aValue As Integer, anEnumValue As TEnum) As Boolean
+  overload: UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet*
+  nameWithType.vb: UFEnumTools.TryGet(Of TEnum)(Integer, TEnum)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet(Of TEnum)(Integer, TEnum)
+  name.vb: TryGet(Of TEnum)(Integer, TEnum)
 - uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue``1(System.Int32)
   commentId: M:UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue``1(System.Int32)
   id: FindValue``1(System.Int32)
@@ -84,9 +129,9 @@ items:
   langs:
   - csharp
   - vb
-  name: FindValue<T>(int)
-  nameWithType: UFEnumTools.FindValue<T>(int)
-  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue<T>(int)
+  name: FindValue<TEnum>(int)
+  nameWithType: UFEnumTools.FindValue<TEnum>(int)
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue<TEnum>(int)
   type: Method
   source:
     remote:
@@ -95,29 +140,29 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: FindValue
     path: ../UltraForce.Library.NetStandard/Tools/UFEnumTools.cs
-    startLine: 26
+    startLine: 44
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
   summary: Gets the enum value for a given integer.
   example: []
   syntax:
-    content: 'public static T FindValue<T>(int aValue) where T : Enum'
+    content: 'public static TEnum FindValue<TEnum>(int aValue) where TEnum : Enum'
     parameters:
     - id: aValue
       type: System.Int32
       description: ''
     typeParameters:
-    - id: T
+    - id: TEnum
       description: ''
     return:
-      type: '{T}'
+      type: '{TEnum}'
       description: ''
-    content.vb: Public Shared Function FindValue(Of T As [Enum])(aValue As Integer) As T
+    content.vb: Public Shared Function FindValue(Of TEnum As [Enum])(aValue As Integer) As TEnum
   overload: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue*
-  nameWithType.vb: UFEnumTools.FindValue(Of T)(Integer)
-  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue(Of T)(Integer)
-  name.vb: FindValue(Of T)(Integer)
+  nameWithType.vb: UFEnumTools.FindValue(Of TEnum)(Integer)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue(Of TEnum)(Integer)
+  name.vb: FindValue(Of TEnum)(Integer)
 - uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList``1
   commentId: M:UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList``1
   id: AsList``1
@@ -125,9 +170,9 @@ items:
   langs:
   - csharp
   - vb
-  name: AsList<T>()
-  nameWithType: UFEnumTools.AsList<T>()
-  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList<T>()
+  name: AsList<TEnum>()
+  nameWithType: UFEnumTools.AsList<TEnum>()
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList<TEnum>()
   type: Method
   source:
     remote:
@@ -136,25 +181,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: AsList
     path: ../UltraForce.Library.NetStandard/Tools/UFEnumTools.cs
-    startLine: 36
+    startLine: 54
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
   summary: Gets all values of an enum as a <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref>
   example: []
   syntax:
-    content: 'public static List<T> AsList<T>() where T : Enum'
+    content: 'public static List<TEnum> AsList<TEnum>() where TEnum : Enum'
     typeParameters:
-    - id: T
+    - id: TEnum
       description: ''
     return:
-      type: System.Collections.Generic.List{{T}}
+      type: System.Collections.Generic.List{{TEnum}}
       description: ''
-    content.vb: Public Shared Function AsList(Of T As [Enum])() As List(Of T)
+    content.vb: Public Shared Function AsList(Of TEnum As [Enum])() As List(Of TEnum)
   overload: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList*
-  nameWithType.vb: UFEnumTools.AsList(Of T)()
-  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList(Of T)()
-  name.vb: AsList(Of T)()
+  nameWithType.vb: UFEnumTools.AsList(Of TEnum)()
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList(Of TEnum)()
+  name.vb: AsList(Of TEnum)()
 - uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue(System.Type,System.Int32)
   commentId: M:UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue(System.Type,System.Int32)
   id: FindValue(System.Type,System.Int32)
@@ -173,7 +218,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: FindValue
     path: ../UltraForce.Library.NetStandard/Tools/UFEnumTools.cs
-    startLine: 48
+    startLine: 66
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
@@ -482,22 +527,22 @@ references:
   name: Random
   nameWithType: UFEnumTools.Random
   fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random
-- uid: '{T}'
-  commentId: '!:T'
-  definition: T
-  name: T
-  nameWithType: T
-  fullName: T
-- uid: T
-  name: T
-  nameWithType: T
-  fullName: T
-- uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue*
-  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue
-  href: UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_FindValue__1_System_Int32_
-  name: FindValue
-  nameWithType: UFEnumTools.FindValue
-  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue
+- uid: '{TEnum}'
+  commentId: '!:TEnum'
+  definition: TEnum
+  name: TEnum
+  nameWithType: TEnum
+  fullName: TEnum
+- uid: TEnum
+  name: TEnum
+  nameWithType: TEnum
+  fullName: TEnum
+- uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet
+  href: UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_TryGet__1_System_Int32___0__
+  name: TryGet
+  nameWithType: UFEnumTools.TryGet
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -509,6 +554,23 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue
+  href: UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_FindValue__1_System_Int32_
+  name: FindValue
+  nameWithType: UFEnumTools.FindValue
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
   isExternal: true
@@ -543,24 +605,24 @@ references:
   name: AsList
   nameWithType: UFEnumTools.AsList
   fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList
-- uid: System.Collections.Generic.List{{T}}
-  commentId: T:System.Collections.Generic.List{`0}
+- uid: System.Collections.Generic.List{{TEnum}}
+  commentId: T:System.Collections.Generic.List{``0}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
+  name: List<TEnum>
+  nameWithType: List<TEnum>
+  fullName: System.Collections.Generic.List<TEnum>
+  nameWithType.vb: List(Of TEnum)
+  fullName.vb: System.Collections.Generic.List(Of TEnum)
+  name.vb: List(Of TEnum)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - name: T
+  - name: TEnum
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -570,7 +632,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: T
+  - name: TEnum
   - name: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic

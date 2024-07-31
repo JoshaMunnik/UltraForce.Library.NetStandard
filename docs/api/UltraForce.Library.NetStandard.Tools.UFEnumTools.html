@@ -155,8 +155,8 @@ Class UFEnumTools  <a class="header-action link-secondary" title="View source" h
   <a id="UltraForce_Library_NetStandard_Tools_UFEnumTools_AsList_" data-uid="UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList*"></a>
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFEnumTools_AsList__1" data-uid="UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList``1">
-  AsList&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFEnumTools.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  AsList&lt;TEnum&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFEnumTools.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets all values of an enum as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a></p>
@@ -164,19 +164,19 @@ Class UFEnumTools  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;T&gt; AsList&lt;T&gt;() where T : Enum</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;TEnum&gt; AsList&lt;TEnum&gt;() where TEnum : Enum</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;TEnum&gt;</dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt><code>T</code></dt>
+    <dt><code>TEnum</code></dt>
     <dd></dd>
   </dl>
 
@@ -193,7 +193,7 @@ Class UFEnumTools  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFEnumTools_FindValue_System_Type_System_Int32_" data-uid="UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue(System.Type,System.Int32)">
   FindValue(Type, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFEnumTools.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFEnumTools.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the enum value for a given integer.</p>
@@ -237,8 +237,8 @@ Class UFEnumTools  <a class="header-action link-secondary" title="View source" h
   <a id="UltraForce_Library_NetStandard_Tools_UFEnumTools_FindValue_" data-uid="UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue*"></a>
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFEnumTools_FindValue__1_System_Int32_" data-uid="UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue``1(System.Int32)">
-  FindValue&lt;T&gt;(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFEnumTools.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  FindValue&lt;TEnum&gt;(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFEnumTools.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the enum value for a given integer.</p>
@@ -246,7 +246,7 @@ Class UFEnumTools  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T FindValue&lt;T&gt;(int aValue) where T : Enum</code></pre>
+    <pre><code class="lang-csharp hljs">public static TEnum FindValue&lt;TEnum&gt;(int aValue) where TEnum : Enum</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -257,13 +257,13 @@ Class UFEnumTools  <a class="header-action link-secondary" title="View source" h
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">T</span></dt>
+    <dt><span class="xref">TEnum</span></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt><code>T</code></dt>
+    <dt><code>TEnum</code></dt>
     <dd></dd>
   </dl>
 
@@ -279,7 +279,7 @@ Class UFEnumTools  <a class="header-action link-secondary" title="View source" h
   <a id="UltraForce_Library_NetStandard_Tools_UFEnumTools_Random_" data-uid="UltraForce.Library.NetStandard.Tools.UFEnumTools.Random*"></a>
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFEnumTools_Random__1" data-uid="UltraForce.Library.NetStandard.Tools.UFEnumTools.Random``1">
-  Random&lt;T&gt;()
+  Random&lt;TEnum&gt;()
   <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFEnumTools.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -288,19 +288,64 @@ Class UFEnumTools  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T Random&lt;T&gt;() where T : Enum</code></pre>
+    <pre><code class="lang-csharp hljs">public static TEnum Random&lt;TEnum&gt;() where TEnum : Enum</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">T</span></dt>
+    <dt><span class="xref">TEnum</span></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt><code>T</code></dt>
+    <dt><code>TEnum</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_NetStandard_Tools_UFEnumTools_TryGet_" data-uid="UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFEnumTools_TryGet__1_System_Int32___0__" data-uid="UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet``1(System.Int32,``0@)">
+  TryGet&lt;TEnum&gt;(int, out TEnum)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFEnumTools.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to get a enum equivalent for a given integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGet&lt;TEnum&gt;(int aValue, out TEnum anEnumValue) where TEnum : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>anEnumValue</code> <span class="xref">TEnum</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the integer matches an enum; false when not</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnum</code></dt>
     <dd></dd>
   </dl>
 

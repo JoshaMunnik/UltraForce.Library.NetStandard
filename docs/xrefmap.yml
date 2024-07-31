@@ -10717,14 +10717,14 @@ references:
   fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList
   nameWithType: UFEnumTools.AsList
 - uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList``1
-  name: AsList<T>()
+  name: AsList<TEnum>()
   href: api/UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_AsList__1
   commentId: M:UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList``1
-  name.vb: AsList(Of T)()
-  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList<T>()
-  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList(Of T)()
-  nameWithType: UFEnumTools.AsList<T>()
-  nameWithType.vb: UFEnumTools.AsList(Of T)()
+  name.vb: AsList(Of TEnum)()
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList<TEnum>()
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.AsList(Of TEnum)()
+  nameWithType: UFEnumTools.AsList<TEnum>()
+  nameWithType.vb: UFEnumTools.AsList(Of TEnum)()
 - uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue(System.Type,System.Int32)
   name: FindValue(Type, int)
   href: api/UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_FindValue_System_Type_System_Int32_
@@ -10742,14 +10742,14 @@ references:
   fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue
   nameWithType: UFEnumTools.FindValue
 - uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue``1(System.Int32)
-  name: FindValue<T>(int)
+  name: FindValue<TEnum>(int)
   href: api/UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_FindValue__1_System_Int32_
   commentId: M:UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue``1(System.Int32)
-  name.vb: FindValue(Of T)(Integer)
-  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue<T>(int)
-  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue(Of T)(Integer)
-  nameWithType: UFEnumTools.FindValue<T>(int)
-  nameWithType.vb: UFEnumTools.FindValue(Of T)(Integer)
+  name.vb: FindValue(Of TEnum)(Integer)
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue<TEnum>(int)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.FindValue(Of TEnum)(Integer)
+  nameWithType: UFEnumTools.FindValue<TEnum>(int)
+  nameWithType.vb: UFEnumTools.FindValue(Of TEnum)(Integer)
 - uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random*
   name: Random
   href: api/UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_Random_
@@ -10758,14 +10758,30 @@ references:
   fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random
   nameWithType: UFEnumTools.Random
 - uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random``1
-  name: Random<T>()
+  name: Random<TEnum>()
   href: api/UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_Random__1
   commentId: M:UltraForce.Library.NetStandard.Tools.UFEnumTools.Random``1
-  name.vb: Random(Of T)()
-  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random<T>()
-  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random(Of T)()
-  nameWithType: UFEnumTools.Random<T>()
-  nameWithType.vb: UFEnumTools.Random(Of T)()
+  name.vb: Random(Of TEnum)()
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random<TEnum>()
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.Random(Of TEnum)()
+  nameWithType: UFEnumTools.Random<TEnum>()
+  nameWithType.vb: UFEnumTools.Random(Of TEnum)()
+- uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet*
+  name: TryGet
+  href: api/UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_TryGet_
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet
+  isSpec: "True"
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet
+  nameWithType: UFEnumTools.TryGet
+- uid: UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet``1(System.Int32,``0@)
+  name: TryGet<TEnum>(int, out TEnum)
+  href: api/UltraForce.Library.NetStandard.Tools.UFEnumTools.html#UltraForce_Library_NetStandard_Tools_UFEnumTools_TryGet__1_System_Int32___0__
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet``1(System.Int32,``0@)
+  name.vb: TryGet(Of TEnum)(Integer, TEnum)
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet<TEnum>(int, out TEnum)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFEnumTools.TryGet(Of TEnum)(Integer, TEnum)
+  nameWithType: UFEnumTools.TryGet<TEnum>(int, out TEnum)
+  nameWithType.vb: UFEnumTools.TryGet(Of TEnum)(Integer, TEnum)
 - uid: UltraForce.Library.NetStandard.Tools.UFExceptionTools
   name: UFExceptionTools
   href: api/UltraForce.Library.NetStandard.Tools.UFExceptionTools.html

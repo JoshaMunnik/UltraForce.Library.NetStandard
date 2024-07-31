@@ -406,7 +406,6 @@ references:
   nameWithType: TEnum
   fullName: TEnum
 - uid: TEnum
-  commentId: '!:TEnum'
   name: TEnum
   nameWithType: TEnum
   fullName: TEnum
