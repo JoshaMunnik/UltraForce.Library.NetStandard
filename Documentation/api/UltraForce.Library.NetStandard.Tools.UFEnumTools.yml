@@ -100,7 +100,7 @@ items:
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
-  summary: Tries to get a enum equivalent for a given integer.
+  summary: Tries to get an enum equivalent for a given integer.
   example: []
   syntax:
     content: 'public static bool TryGet<TEnum>(int aValue, out TEnum anEnumValue) where TEnum : Enum'

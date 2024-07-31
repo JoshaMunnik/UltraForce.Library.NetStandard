@@ -19,7 +19,7 @@ namespace UltraForce.Library.NetStandard.Tools
     }
     
     /// <summary>
-    /// Tries to get a enum equivalent for a given integer.
+    /// Tries to get an enum equivalent for a given integer.
     /// </summary>
     /// <param name="aValue"></param>
     /// <param name="anEnumValue"></param>
