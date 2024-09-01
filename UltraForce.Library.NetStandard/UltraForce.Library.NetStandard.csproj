@@ -13,8 +13,11 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.NetStandard</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.2</Version>
-    <PackageReleaseNotes>1.0.2
+    <Version>1.0.3</Version>
+    <PackageReleaseNotes>1.0.3
+Fixed bug in UFPropertiesComparer
+
+1.0.2
 Added UFEnumTools.TryGet
 
 1.0.1

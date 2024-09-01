@@ -45,7 +45,8 @@ namespace UltraForce.Library.NetStandard.Testing
     /// A list of property names that should not be equal when comparing.
     /// </param>
     public UFPropertiesComparer(
-      bool aThrowException = false, IEnumerable<string>? aNotEqualProperties = null
+      bool aThrowException = false,
+      IEnumerable<string>? aNotEqualProperties = null
     )
     {
       this.m_throwException = aThrowException;
@@ -65,23 +66,26 @@ namespace UltraForce.Library.NetStandard.Testing
     /// <param name="anActual"></param>
     /// <returns>True if all properties are equal</returns>
     /// <exception cref="Exception">Might be thrown depending on the constructor.</exception>
-    public bool Equals(T anExpected, T anActual)
+    public bool Equals(
+      T anExpected,
+      T anActual
+    )
     {
       PropertyInfo[] propertyInfos = typeof(T).GetProperties(
         BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.Instance
       );
       foreach (PropertyInfo propertyInfo in propertyInfos)
       {
-        if (propertyInfo.GetCustomAttribute<UFCompareIgnoreAttribute>() != null)
+        if (
+          this.m_notEqualProperties.Contains(propertyInfo.Name) ||
+          (propertyInfo.GetCustomAttribute<UFCompareIgnoreAttribute>() != null)
+        )
         {
           continue;
         }
         object expectedValue = propertyInfo.GetValue(anExpected, null);
         object actualValue = propertyInfo.GetValue(anActual, null);
-        if (
-          UFObjectTools.AreEqual(expectedValue, actualValue) ^ 
-          this.m_notEqualProperties.Contains(propertyInfo.Name)
-        )
+        if (UFObjectTools.AreEqual(expectedValue, actualValue))
         {
           continue;
         }
@@ -106,7 +110,9 @@ namespace UltraForce.Library.NetStandard.Testing
     }
 
     /// <inheritdoc />
-    public int GetHashCode(T aParameterValue)
+    public int GetHashCode(
+      T aParameterValue
+    )
     {
       return Tuple.Create(aParameterValue).GetHashCode();
     }

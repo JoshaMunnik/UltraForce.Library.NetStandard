@@ -114,7 +114,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: Equals
     path: ../UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs
-    startLine: 67
+    startLine: 68
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Testing
@@ -164,7 +164,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetHashCode
     path: ../UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs
-    startLine: 108
+    startLine: 112
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Testing
