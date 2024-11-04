@@ -13,8 +13,11 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.NetStandard</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.3</Version>
-    <PackageReleaseNotes>1.0.3
+    <Version>1.0.4</Version>
+    <PackageReleaseNotes>1.0.4
+Included source documentation
+
+1.0.3
 Fixed bug in UFPropertiesComparer
 
 1.0.2
@@ -28,14 +31,19 @@ Added UFEnumTools.AsList</PackageReleaseNotes>
     <DefineConstants>TRACE;DEBUG;NETSTANDARD;NETSTANDARD2_0;UFDEBUG</DefineConstants>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DocumentationFile>bin\Release\UltraForce.Library.NetStandard.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="**/*.meta"/>
     <None Include="ufd.png" Pack="True" PackagePath="" />
     <None Include="README.md" Pack="True" PackagePath="" />
+    <None Include="bin\$(Configuration)\$(TargetFramework)\*.xml" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
+    <PackageReference Include="JetBrains.Annotations" Version="2024.3.0" />
   </ItemGroup>
 
 </Project>
