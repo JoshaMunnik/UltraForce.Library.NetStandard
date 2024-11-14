@@ -196,5 +196,27 @@ namespace UltraForce.Library.NetStandard.Tools
       }
       return aPath;
     }
+    
+    /// <summary>
+    /// Combines parts of a URL into a single URL. The method inserts a '/' between parts if needed.
+    /// </summary>
+    public static string CombineUrl(params string[] aParts)
+    {
+      if (aParts.Length == 0)
+      {
+        return string.Empty;
+      }
+      string result = aParts[0];
+      for (int index = 1; index < aParts.Length; index++)
+      {
+        string part = aParts[index];
+        if (!result.EndsWith('/') && !part.StartsWith('/'))
+        {
+          result += '/';
+        }
+        result += part;
+      }
+      return result;
+    }
   }
 }

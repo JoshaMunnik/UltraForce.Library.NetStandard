@@ -10823,6 +10823,22 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath
   nameWithType: UFFileTools.AddRootPath
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl(System.String[])
+  name: CombineUrl(params string[])
+  href: api/UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_CombineUrl_System_String___
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl(System.String[])
+  name.vb: CombineUrl(ParamArray String())
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl(params string[])
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl(ParamArray String())
+  nameWithType: UFFileTools.CombineUrl(params string[])
+  nameWithType.vb: UFFileTools.CombineUrl(ParamArray String())
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl*
+  name: CombineUrl
+  href: api/UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_CombineUrl_
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl
+  isSpec: "True"
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl
+  nameWithType: UFFileTools.CombineUrl
 - uid: UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath(System.String)
   name: RemoveRootPath(string)
   href: api/UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_RemoveRootPath_System_String_

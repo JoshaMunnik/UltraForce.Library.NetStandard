@@ -6,6 +6,7 @@ items:
   parent: UltraForce.Library.NetStandard.Tools
   children:
   - UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath(System.String,System.Char)
+  - UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl(System.String[])
   - UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath(System.String)
   - UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(System.String,System.Char)
   - UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String)
@@ -305,6 +306,42 @@ items:
   nameWithType.vb: UFFileTools.RemoveRootPath(String)
   fullName.vb: UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath(String)
   name.vb: RemoveRootPath(String)
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl(System.String[])
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl(System.String[])
+  id: CombineUrl(System.String[])
+  parent: UltraForce.Library.NetStandard.Tools.UFFileTools
+  langs:
+  - csharp
+  - vb
+  name: CombineUrl(params string[])
+  nameWithType: UFFileTools.CombineUrl(params string[])
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl(params string[])
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: CombineUrl
+    path: ../UltraForce.Library.NetStandard/Tools/UFFileTools.cs
+    startLine: 202
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Combines parts of a URL into a single URL. The method inserts a '/' between parts if needed.
+  example: []
+  syntax:
+    content: public static string CombineUrl(params string[] aParts)
+    parameters:
+    - id: aParts
+      type: System.String[]
+    return:
+      type: System.String
+    content.vb: Public Shared Function CombineUrl(ParamArray aParts As String()) As String
+  overload: UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl*
+  nameWithType.vb: UFFileTools.CombineUrl(ParamArray String())
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl(ParamArray String())
+  name.vb: CombineUrl(ParamArray String())
 references:
 - uid: UltraForce.Library.NetStandard.Tools
   commentId: N:UltraForce.Library.NetStandard.Tools
@@ -680,3 +717,32 @@ references:
   name: RemoveRootPath
   nameWithType: UFFileTools.RemoveRootPath
   fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl
+  href: UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_CombineUrl_System_String___
+  name: CombineUrl
+  nameWithType: UFFileTools.CombineUrl
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
