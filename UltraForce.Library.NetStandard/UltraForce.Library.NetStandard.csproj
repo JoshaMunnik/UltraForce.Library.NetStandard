@@ -13,8 +13,11 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.NetStandard</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.5</Version>
-    <PackageReleaseNotes>1.0.5
+    <Version>1.0.6</Version>
+    <PackageReleaseNotes>1.0.6
+Fixed bug in UFFileTools.CombineUrl()
+
+1.0.5
 Added UFFileTools.CombineUrl()
 
 1.0.4

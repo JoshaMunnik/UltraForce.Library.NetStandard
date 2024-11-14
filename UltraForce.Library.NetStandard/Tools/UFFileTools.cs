@@ -210,11 +210,7 @@ namespace UltraForce.Library.NetStandard.Tools
       for (int index = 1; index < aParts.Length; index++)
       {
         string part = aParts[index];
-        if (!result.EndsWith('/') && !part.StartsWith('/'))
-        {
-          result += '/';
-        }
-        result += part;
+        result = result.TrimEnd('/') + "/" + part.TrimStart('/');
       }
       return result;
     }
