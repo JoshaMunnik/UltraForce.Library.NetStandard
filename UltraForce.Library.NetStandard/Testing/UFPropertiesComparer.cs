@@ -108,6 +108,20 @@ namespace UltraForce.Library.NetStandard.Testing
       }
       object expectedValue = propertyInfo.GetValue(anExpected, null);
       object actualValue = propertyInfo.GetValue(anActual, null);
+      if ((expectedValue == null) && (actualValue == null))
+      {
+        continue;
+      }
+      if ((expectedValue == null) || (actualValue == null))
+      {
+        if (!this.m_throwException)
+        {
+          return false;
+        }
+        throw new Exception(
+          $"One of the values of property '{propertyInfo.Name}' is null and the other is not"
+        );
+      }
       if (propertyInfo.GetCustomAttribute<UFComparePropertiesAttribute>() != null)
       {
         bool compareResult = this.CompareProperties(
