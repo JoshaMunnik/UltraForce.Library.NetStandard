@@ -13,8 +13,11 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.NetStandard</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.8</Version>
-    <PackageReleaseNotes>1.0.8
+    <Version>1.0.9</Version>
+    <PackageReleaseNotes>1.0.9
+Removed class constrained from UFPropertiesComparer
+
+1.0.8
 Added check on null values to UFPropertiesComparer.
 
 1.0.7

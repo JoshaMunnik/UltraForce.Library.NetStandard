@@ -19,7 +19,7 @@ namespace UltraForce.Library.NetStandard.Testing
   /// </para>
   /// </summary>
   /// <typeparam name="T">Type to compare properties from</typeparam>
-  public class UFPropertiesComparer<T> : IEqualityComparer<T> where T : class
+  public class UFPropertiesComparer<T> : IEqualityComparer<T>
   {
 
   #region private variables
