@@ -1,6 +1,7 @@
 {
   "UltraForce.Library.NetStandard.Annotations": "UltraForce.Library.NetStandard.Annotations.yml",
   "UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute": "UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute.yml",
+  "UltraForce.Library.NetStandard.Annotations.UFComparePropertiesAttribute": "UltraForce.Library.NetStandard.Annotations.UFComparePropertiesAttribute.yml",
   "UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute": "UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.yml",
   "UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.#ctor": "UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.yml",
   "UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.#ctor(System.String)": "UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.yml",

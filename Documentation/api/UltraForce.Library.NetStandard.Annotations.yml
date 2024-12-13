@@ -5,6 +5,7 @@ items:
   id: UltraForce.Library.NetStandard.Annotations
   children:
   - UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute
+  - UltraForce.Library.NetStandard.Annotations.UFComparePropertiesAttribute
   - UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
   - UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute
   - UltraForce.Library.NetStandard.Annotations.UFIONameAttribute
@@ -27,6 +28,12 @@ references:
   name: UFCompareIgnoreAttribute
   nameWithType: UFCompareIgnoreAttribute
   fullName: UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute
+- uid: UltraForce.Library.NetStandard.Annotations.UFComparePropertiesAttribute
+  commentId: T:UltraForce.Library.NetStandard.Annotations.UFComparePropertiesAttribute
+  href: UltraForce.Library.NetStandard.Annotations.UFComparePropertiesAttribute.html
+  name: UFComparePropertiesAttribute
+  nameWithType: UFComparePropertiesAttribute
+  fullName: UltraForce.Library.NetStandard.Annotations.UFComparePropertiesAttribute
 - uid: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
   commentId: T:UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
   href: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.html

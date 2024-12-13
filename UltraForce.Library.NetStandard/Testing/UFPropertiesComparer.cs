@@ -1,9 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using JetBrains.Annotations;
 using UltraForce.Library.NetStandard.Annotations;
 using UltraForce.Library.NetStandard.Tools;
 
@@ -15,108 +13,149 @@ namespace UltraForce.Library.NetStandard.Testing
   /// <para>
   /// Based on code from: https://stackoverflow.com/a/49825057/968451
   /// </para>
+  /// <para>
+  /// Use [UFCustomIgnore] to ignore a property. Use [UFCompareProperties] with object type to
+  /// compare the properties of the object and not the object value itself. 
+  /// </para>
   /// </summary>
   /// <typeparam name="T">Type to compare properties from</typeparam>
-  public class UFPropertiesComparer<T> : IEqualityComparer<T>
+  public class UFPropertiesComparer<T> : IEqualityComparer<T> where T : class
   {
-    #region private variables
 
-    /// <summary>
-    /// When true throw an exception, false just return false
-    /// </summary>
-    private readonly bool m_throwException;
+  #region private variables
 
-    /// <summary>
-    /// Property names to ignore
-    /// </summary>
-    private readonly IList<string> m_notEqualProperties;
+  /// <summary>
+  /// When true throw an exception, false just return false
+  /// </summary>
+  private readonly bool m_throwException;
 
-    #endregion
+  /// <summary>
+  /// Property names to ignore
+  /// </summary>
+  private readonly IList<string> m_notEqualProperties;
 
-    #region constructors
+  #endregion
 
-    /// <summary>
-    /// Constructs an instance of <see cref="UFPropertiesComparer{T}"/>
-    /// </summary>
-    /// <param name="aThrowException">
-    /// When true throw an exception with <see cref="Equals"/> if there is a value mismatch instead of returning false.
-    /// </param>
-    /// <param name="aNotEqualProperties">
-    /// A list of property names that should not be equal when comparing.
-    /// </param>
-    public UFPropertiesComparer(
-      bool aThrowException = false,
-      IEnumerable<string>? aNotEqualProperties = null
-    )
-    {
-      this.m_throwException = aThrowException;
-      this.m_notEqualProperties = aNotEqualProperties?.ToList() ?? new List<string>();
-    }
+  #region constructors
 
-    #endregion
+  /// <summary>
+  /// Constructs an instance of <see cref="UFPropertiesComparer{T}"/>
+  /// </summary>
+  /// <param name="aThrowException">
+  /// When true throw an exception with <see cref="Equals"/> if there is a value mismatch instead of returning false.
+  /// </param>
+  /// <param name="aNotEqualProperties">
+  /// A list of property names that should not be equal when comparing.
+  /// </param>
+  public UFPropertiesComparer(
+    bool aThrowException = false,
+    IEnumerable<string>? aNotEqualProperties = null
+  )
+  {
+    this.m_throwException = aThrowException;
+    this.m_notEqualProperties = aNotEqualProperties?.ToList() ?? new List<string>();
+  }
 
-    #region IEqualityComparer
+  #endregion
 
-    /// <summary>
-    /// Compare two instances of <typeparamref name="T"/> by comparing all public properties.
-    ///
-    /// Properties using <see cref="UFCompareIgnoreAttribute"/> are skipped.
-    /// </summary>
-    /// <param name="anExpected"></param>
-    /// <param name="anActual"></param>
-    /// <returns>True if all properties are equal</returns>
-    /// <exception cref="Exception">Might be thrown depending on the constructor.</exception>
-    public bool Equals(
-      T anExpected,
-      T anActual
-    )
-    {
-      PropertyInfo[] propertyInfos = typeof(T).GetProperties(
+  #region IEqualityComparer
+
+  /// <summary>
+  /// Compare two instances of <typeparamref name="T"/> by comparing all public properties.
+  ///
+  /// Properties using <see cref="UFCompareIgnoreAttribute"/> are skipped.
+  /// </summary>
+  /// <param name="anExpected"></param>
+  /// <param name="anActual"></param>
+  /// <returns>True if all properties are equal</returns>
+  /// <exception cref="Exception">Might be thrown depending on the constructor.</exception>
+  public bool Equals(
+    T anExpected,
+    T anActual
+  )
+  {
+    return this.CompareProperties(
+      anExpected,
+      anActual,
+      typeof(T).GetProperties(
         BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.Instance
-      );
-      foreach (PropertyInfo propertyInfo in propertyInfos)
+      )
+    );
+  }
+  
+  /// <summary>
+  /// Compares the properties of two objects.
+  /// </summary>
+  /// <param name="anExpected"></param>
+  /// <param name="anActual"></param>
+  /// <param name="propertyInfos"></param>
+  /// <returns></returns>
+  /// <exception cref="Exception"></exception>
+  private bool CompareProperties(
+    object anExpected,
+    object anActual,
+    PropertyInfo[] propertyInfos
+  )
+  {
+    foreach (PropertyInfo propertyInfo in propertyInfos)
+    {
+      if (
+        this.m_notEqualProperties.Contains(propertyInfo.Name) ||
+        (propertyInfo.GetCustomAttribute<UFCompareIgnoreAttribute>() != null)
+      )
       {
-        if (
-          this.m_notEqualProperties.Contains(propertyInfo.Name) ||
-          (propertyInfo.GetCustomAttribute<UFCompareIgnoreAttribute>() != null)
-        )
-        {
-          continue;
-        }
-        object expectedValue = propertyInfo.GetValue(anExpected, null);
-        object actualValue = propertyInfo.GetValue(anActual, null);
-        if (UFObjectTools.AreEqual(expectedValue, actualValue))
-        {
-          continue;
-        }
-        if (!this.m_throwException)
+        continue;
+      }
+      object expectedValue = propertyInfo.GetValue(anExpected, null);
+      object actualValue = propertyInfo.GetValue(anActual, null);
+      if (propertyInfo.GetCustomAttribute<UFComparePropertiesAttribute>() != null)
+      {
+        bool compareResult = this.CompareProperties(
+          expectedValue,
+          actualValue, 
+          expectedValue.GetType().GetProperties(
+            BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.Instance
+          )
+        );
+        if (!compareResult)
         {
           return false;
         }
-        if (this.m_notEqualProperties.Contains(propertyInfo.Name))
-        {
-          throw new Exception(
-            $"A value of '{expectedValue}' for property '{propertyInfo.Name}' should not be equal"
-          );
-        }
-        else
-        {
-          throw new Exception(
-            $"A value of '{expectedValue}' for property '{propertyInfo.Name}' does not match '{actualValue}'"
-          );
-        }
+        continue;
       }
-      return true;
+      if (UFObjectTools.AreEqual(expectedValue, actualValue))
+      {
+        continue;
+      }
+      if (!this.m_throwException)
+      {
+        return false;
+      }
+      if (this.m_notEqualProperties.Contains(propertyInfo.Name))
+      {
+        throw new Exception(
+          $"A value of '{expectedValue}' for property '{propertyInfo.Name}' should not be equal"
+        );
+      }
+      else
+      {
+        throw new Exception(
+          $"A value of '{expectedValue}' for property '{propertyInfo.Name}' does not match '{actualValue}'"
+        );
+      }
     }
+    return true;
+  }
 
-    /// <inheritdoc />
-    public int GetHashCode(
-      T aParameterValue
-    )
-    {
-      return Tuple.Create(aParameterValue).GetHashCode();
-    }
+  /// <inheritdoc />
+  public int GetHashCode(
+    T aParameterValue
+  )
+  {
+    return Tuple.Create(aParameterValue).GetHashCode();
+  }
 
-    #endregion
+  #endregion
+
   }
 }

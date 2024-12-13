@@ -13,6 +13,12 @@ references:
   commentId: T:UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute
   fullName: UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute
   nameWithType: UFCompareIgnoreAttribute
+- uid: UltraForce.Library.NetStandard.Annotations.UFComparePropertiesAttribute
+  name: UFComparePropertiesAttribute
+  href: api/UltraForce.Library.NetStandard.Annotations.UFComparePropertiesAttribute.html
+  commentId: T:UltraForce.Library.NetStandard.Annotations.UFComparePropertiesAttribute
+  fullName: UltraForce.Library.NetStandard.Annotations.UFComparePropertiesAttribute
+  nameWithType: UFComparePropertiesAttribute
 - uid: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
   name: UFDescriptionAttribute
   href: api/UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.html

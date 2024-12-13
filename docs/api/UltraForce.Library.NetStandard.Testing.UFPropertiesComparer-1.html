@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFPropertiesComparer&lt;T&gt; | UltraForce.Library.NetStandard ">
       
-      <meta name="description" content="implements  by comparing all public properties of a type.  Based on code from: https://stackoverflow.com/a/49825057/968451">
+      <meta name="description" content="implements  by comparing all public properties of a type.  Based on code from: https://stackoverflow.com/a/49825057/968451   Use [UFCustomIgnore] to ignore a property. Use [UFCompareProperties] with object type to compare the properties of the object and not the object value itself.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_NetStandard_Testing_UFPropertiesComparer_1" data-uid="UltraForce.Library.NetStandard.Testing.UFPropertiesComparer`1" class="text-break">
-Class UFPropertiesComparer&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs/#L20"><i class="bi bi-code-slash"></i></a>
+Class UFPropertiesComparer&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,11 +102,15 @@ comparing all public properties of a type.</p>
 <p>
 Based on code from: https://stackoverflow.com/a/49825057/968451
 </p>
+<p>
+Use [UFCustomIgnore] to ignore a property. Use [UFCompareProperties] with object type to
+compare the properties of the object and not the object value itself. 
+</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UFPropertiesComparer&lt;T&gt; : IEqualityComparer&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class UFPropertiesComparer&lt;T&gt; : IEqualityComparer&lt;T&gt; where T : class</code></pre>
   </div>
 
 
@@ -173,7 +177,7 @@ Based on code from: https://stackoverflow.com/a/49825057/968451
 
   <h3 id="UltraForce_Library_NetStandard_Testing_UFPropertiesComparer_1__ctor_System_Boolean_System_Collections_Generic_IEnumerable_System_String__" data-uid="UltraForce.Library.NetStandard.Testing.UFPropertiesComparer`1.#ctor(System.Boolean,System.Collections.Generic.IEnumerable{System.String})">
   UFPropertiesComparer(bool, IEnumerable&lt;string&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="UltraForce.Library.NetStandard.Testing.UFPropertiesComparer-1.html">UFPropertiesComparer&lt;T&gt;</a></p>
@@ -213,7 +217,7 @@ Based on code from: https://stackoverflow.com/a/49825057/968451
 
   <h3 id="UltraForce_Library_NetStandard_Testing_UFPropertiesComparer_1_Equals__0__0_" data-uid="UltraForce.Library.NetStandard.Testing.UFPropertiesComparer`1.Equals(`0,`0)">
   Equals(T, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compare two instances of <code class="typeparamref">T</code> by comparing all public properties.</p>
@@ -260,7 +264,7 @@ Based on code from: https://stackoverflow.com/a/49825057/968451
 
   <h3 id="UltraForce_Library_NetStandard_Testing_UFPropertiesComparer_1_GetHashCode__0_" data-uid="UltraForce.Library.NetStandard.Testing.UFPropertiesComparer`1.GetHashCode(`0)">
   GetHashCode(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a hash code for the specified object.</p>
@@ -304,7 +308,7 @@ Based on code from: https://stackoverflow.com/a/49825057/968451
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs/#L20" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs/#L22" class="edit-link">Edit this page</a>
         </div>
 
 

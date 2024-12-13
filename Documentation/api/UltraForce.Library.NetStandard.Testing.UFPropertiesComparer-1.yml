@@ -22,7 +22,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: UFPropertiesComparer
     path: ../UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs
-    startLine: 19
+    startLine: 21
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Testing
@@ -36,13 +36,21 @@ items:
     Based on code from: https://stackoverflow.com/a/49825057/968451
 
     </p>
+
+    <p>
+
+    Use [UFCustomIgnore] to ignore a property. Use [UFCompareProperties] with object type to
+
+    compare the properties of the object and not the object value itself. 
+
+    </p>
   example: []
   syntax:
-    content: 'public class UFPropertiesComparer<T> : IEqualityComparer<T>'
+    content: 'public class UFPropertiesComparer<T> : IEqualityComparer<T> where T : class'
     typeParameters:
     - id: T
       description: Type to compare properties from
-    content.vb: Public Class UFPropertiesComparer(Of T) Implements IEqualityComparer(Of T)
+    content.vb: Public Class UFPropertiesComparer(Of T As Class) Implements IEqualityComparer(Of T)
   inheritance:
   - System.Object
   implements:
@@ -76,7 +84,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: .ctor
     path: ../UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs
-    startLine: 46
+    startLine: 49
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Testing
@@ -114,7 +122,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: Equals
     path: ../UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs
-    startLine: 68
+    startLine: 71
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Testing
@@ -164,7 +172,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetHashCode
     path: ../UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs
-    startLine: 112
+    startLine: 150
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Testing

@@ -5,6 +5,8 @@ items:
   items:
   - uid: UltraForce.Library.NetStandard.Annotations.UFCompareIgnoreAttribute
     name: UFCompareIgnoreAttribute
+  - uid: UltraForce.Library.NetStandard.Annotations.UFComparePropertiesAttribute
+    name: UFComparePropertiesAttribute
   - uid: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
     name: UFDescriptionAttribute
   - uid: UltraForce.Library.NetStandard.Annotations.UFIOIgnoreAttribute
