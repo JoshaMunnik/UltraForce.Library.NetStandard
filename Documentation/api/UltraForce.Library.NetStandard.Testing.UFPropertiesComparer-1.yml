@@ -46,11 +46,11 @@ items:
     </p>
   example: []
   syntax:
-    content: 'public class UFPropertiesComparer<T> : IEqualityComparer<T> where T : class'
+    content: 'public class UFPropertiesComparer<T> : IEqualityComparer<T>'
     typeParameters:
     - id: T
       description: Type to compare properties from
-    content.vb: Public Class UFPropertiesComparer(Of T As Class) Implements IEqualityComparer(Of T)
+    content.vb: Public Class UFPropertiesComparer(Of T) Implements IEqualityComparer(Of T)
   inheritance:
   - System.Object
   implements:
@@ -172,7 +172,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetHashCode
     path: ../UltraForce.Library.NetStandard/Testing/UFPropertiesComparer.cs
-    startLine: 150
+    startLine: 164
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Testing
