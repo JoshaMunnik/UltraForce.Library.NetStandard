@@ -417,8 +417,8 @@ namespace UltraForce.Library.NetStandard.Tools
     }
 
     /// <summary>
-    /// Joins the values of an enumerable type by using <see cref="Object#ToString"/> and joining them using
-    /// <see cref="Add"/>.
+    /// Joins the values of an enumerable type by using <see cref="Object.ToString"/> and joining
+    /// them using <see cref="Add"/>.
     /// </summary>
     /// <param name="anEnumerable">Enumerable to combine into one string</param>
     /// <param name="aSeparator">Text to use separator between each value</param>

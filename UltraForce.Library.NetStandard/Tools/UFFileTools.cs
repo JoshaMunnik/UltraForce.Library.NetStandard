@@ -28,6 +28,7 @@
 // </license>
 
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Text.RegularExpressions;
 
@@ -38,28 +39,28 @@ namespace UltraForce.Library.NetStandard.Tools
   /// <summary>
   /// Static support methods related to files and folders.
   /// </summary>
+  [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
   public static class UFFileTools
   {
     /// <summary>
     /// Validates a file or folder name. 
     /// </summary>
-    /// <param name="aName">name to validate</param>
-    /// <param name="aFileOnly">When <c>true</c> aName should not contain path, 
+    /// <param name="name">name to validate</param>
+    /// <param name="fileOnly">When <c>true</c> aName should not contain path, 
     /// else aName also can contain path parts</param>
-    /// <param name="aRelativeDir">When <c>true</c> the path part can
-    /// contain '..'</param>
+    /// <param name="relativeDir">When <c>true</c> the path part can contain '..'</param>
     /// <returns><c>True</c>=valid name, <c>false</c>=name contains invalid 
     /// chars or start with a path separator</returns>
     public static bool ValidateFilename(
-      string aName,
-      bool aFileOnly,
-      bool aRelativeDir
+      string name,
+      bool fileOnly,
+      bool relativeDir
     )
     {
       // get parts from name
-      string? directoryName = Path.GetDirectoryName(aName);
-      string? baseName = Path.GetFileName(aName);
-      string? extension = Path.GetExtension(aName);
+      string? directoryName = Path.GetDirectoryName(name);
+      string? baseName = Path.GetFileName(name);
+      string? extension = Path.GetExtension(name);
       if ((extension == null) || (baseName == null) || (directoryName == null))
       {
         return false;
@@ -70,13 +71,13 @@ namespace UltraForce.Library.NetStandard.Tools
         extension = extension.Substring(1);
       }
       // directory name should be empty with file only
-      if (aFileOnly && (directoryName.Length > 0))
+      if (fileOnly && (directoryName.Length > 0))
       {
         return false;
       }
       // directory name should not contain ..
       if (
-        !aRelativeDir &&
+        !relativeDir &&
         (directoryName.IndexOf("..", StringComparison.Ordinal) >= 0)
       )
       {
@@ -84,7 +85,7 @@ namespace UltraForce.Library.NetStandard.Tools
       }
       // base name should not contain ..
       if (
-        !aRelativeDir &&
+        !relativeDir &&
         (baseName.IndexOf("..", StringComparison.Ordinal) >= 0)
       )
       {
@@ -117,41 +118,41 @@ namespace UltraForce.Library.NetStandard.Tools
     /// <summary>
     /// Validates a file or folder name. 
     /// </summary>
-    /// <param name="aName">name to validate</param>
-    /// <param name="aFileOnly">When <c>true</c> aName should not contain path, 
+    /// <param name="name">name to validate</param>
+    /// <param name="fileOnly">When <c>true</c> aName should not contain path, 
     /// else aName also contains path part</param>
     /// <returns>
     /// <c>True</c>=valid name, <c>false</c>=name contains invalid chars or 
     /// starts with path separator or contains relative folder parts
     /// </returns>
-    public static bool ValidateFilename(string aName, bool aFileOnly)
+    public static bool ValidateFilename(string name, bool fileOnly)
     {
-      return ValidateFilename(aName, aFileOnly, false);
+      return ValidateFilename(name, fileOnly, false);
     }
 
     /// <summary>
     /// Validates a file name. 
     /// </summary>
-    /// <param name="aName">name to validate</param>
+    /// <param name="name">name to validate</param>
     /// <returns><c>True</c>=valid name, <c>false</c>=name contains invalid 
     /// chars or contains folder specifications</returns>
-    public static bool ValidateFilename(string aName)
+    public static bool ValidateFilename(string name)
     {
-      return ValidateFilename(aName, true, false);
+      return ValidateFilename(name, true, false);
     }
 
     /// <summary>
     /// Replace forward or backward slash with the opposite.
     /// </summary>
-    /// <param name="aPath">Path to update</param>
-    /// <param name="aPathSeparator">Separator to use</param>
+    /// <param name="path">Path to update</param>
+    /// <param name="pathSeparator">Separator to use</param>
     /// <returns>updated path</returns>
     public static string UpdateSeparator(
-      string aPath,
-      char aPathSeparator = '\\'
+      string path,
+      char pathSeparator = '\\'
     )
     {
-      return aPath.Replace(aPathSeparator == '\\' ? '/' : '\\', aPathSeparator);
+      return path.Replace(pathSeparator == '\\' ? '/' : '\\', pathSeparator);
     }
 
     /// <summary>
@@ -159,22 +160,22 @@ namespace UltraForce.Library.NetStandard.Tools
     /// if the path specification starts with a root character and adds it
     /// if needed.
     /// </summary>
-    /// <param name="aPath">Path to update</param>
-    /// <param name="aPathSeparator">Separator to use</param>
+    /// <param name="path">Path to update</param>
+    /// <param name="pathSeparator">Separator to use</param>
     /// <returns>Path starting with separator</returns>
     public static string AddRootPath(
-      string aPath,
-      char aPathSeparator = '\\'
+      string path,
+      char pathSeparator = '\\'
     )
     {
-      if (string.IsNullOrEmpty(aPath))
+      if (string.IsNullOrEmpty(path))
       {
-        return aPathSeparator.ToString();
+        return pathSeparator.ToString();
       }
-      string result = UpdateSeparator(aPath, aPathSeparator);
-      if (result[0] != aPathSeparator)
+      string result = UpdateSeparator(path, pathSeparator);
+      if (result[0] != pathSeparator)
       {
-        result = aPathSeparator + result;
+        result = pathSeparator + result;
       }
       return result;
     }
@@ -182,37 +183,60 @@ namespace UltraForce.Library.NetStandard.Tools
     /// <summary>
     /// Removes forward or backward slash if it is the first character.
     /// </summary>
-    /// <param name="aPath">Path to check</param>
+    /// <param name="path">Path to check</param>
     /// <returns>Updated path</returns>
-    public static string RemoveRootPath(string aPath)
+    public static string RemoveRootPath(string path)
     {
-      if (string.IsNullOrEmpty(aPath))
+      if (string.IsNullOrEmpty(path))
       {
-        return aPath;
+        return path;
       }
-      if ((aPath[0] == '\\') || (aPath[0] == '/'))
+      if ((path[0] == '\\') || (path[0] == '/'))
       {
-        return aPath.Substring(1);
+        return path[1..];
       }
-      return aPath;
+      return path;
     }
     
     /// <summary>
     /// Combines parts of a URL into a single URL. The method inserts a '/' between parts if needed.
     /// </summary>
-    public static string CombineUrl(params string[] aParts)
+    public static string CombineUrl(params string[] parts)
     {
-      if (aParts.Length == 0)
+      if (parts.Length == 0)
       {
         return string.Empty;
       }
-      string result = aParts[0];
-      for (int index = 1; index < aParts.Length; index++)
+      string result = parts[0];
+      for (int index = 1; index < parts.Length; index++)
       {
-        string part = aParts[index];
+        string part = parts[index];
         result = result.TrimEnd('/') + "/" + part.TrimStart('/');
       }
       return result;
+    }
+
+    /// <summary>
+    /// Adds a timestamp ('yyyyMMdd_HHmmss') to a filename. 
+    /// </summary>
+    /// <param name="fileName">Name of file (can include an extension)</param>
+    /// <param name="dateTime">Date/time to add or null to use current UTC date/time.</param>
+    /// <returns>Returns fileName with timestamp added to it.</returns>
+    /// <example>
+    /// <code>
+    /// string name = UFFileTools.AddTimestamp("example.txt");
+    /// // name is "example_20210801_123456.txt"
+    /// </code>
+    /// </example>
+    public static string AddTimestamp(
+      string fileName,
+      DateTime? dateTime = null
+    )
+    {
+      dateTime ??= DateTime.UtcNow;
+      string extension = Path.GetExtension(fileName);
+      string name = Path.GetFileNameWithoutExtension(fileName);
+      return $"{name}_{dateTime:yyyyMMdd_HHmmss}{extension}";
     }
   }
 }

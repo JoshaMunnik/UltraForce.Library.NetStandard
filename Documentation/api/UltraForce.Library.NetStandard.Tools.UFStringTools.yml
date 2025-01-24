@@ -679,9 +679,9 @@ items:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
   summary: >-
-    Joins the values of an enumerable type by using Object#ToString and joining them using
+    Joins the values of an enumerable type by using <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref> and joining
 
-    <xref href="UltraForce.Library.NetStandard.Tools.UFStringTools.Add(System.String%2cSystem.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref>.
+    them using <xref href="UltraForce.Library.NetStandard.Tools.UFStringTools.Add(System.String%2cSystem.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: 'public static string Join<T>(IEnumerable<T> anEnumerable, string aSeparator = ", ") where T : notnull'

@@ -5,6 +5,9 @@ using System.Reflection;
 
 namespace UltraForce.Library.NetStandard.Tools
 {
+  /// <summary>
+  /// Support methods to work with enums.
+  /// </summary>
   public static class UFEnumTools
   {
     /// <summary>

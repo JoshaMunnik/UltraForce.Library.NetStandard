@@ -10829,6 +10829,22 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath
   nameWithType: UFFileTools.AddRootPath
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.AddTimestamp(System.String,System.Nullable{System.DateTime})
+  name: AddTimestamp(string, DateTime?)
+  href: api/UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_AddTimestamp_System_String_System_Nullable_System_DateTime__
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFFileTools.AddTimestamp(System.String,System.Nullable{System.DateTime})
+  name.vb: AddTimestamp(String, Date?)
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.AddTimestamp(string, System.DateTime?)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFFileTools.AddTimestamp(String, Date?)
+  nameWithType: UFFileTools.AddTimestamp(string, DateTime?)
+  nameWithType.vb: UFFileTools.AddTimestamp(String, Date?)
+- uid: UltraForce.Library.NetStandard.Tools.UFFileTools.AddTimestamp*
+  name: AddTimestamp
+  href: api/UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_AddTimestamp_
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFFileTools.AddTimestamp
+  isSpec: "True"
+  fullName: UltraForce.Library.NetStandard.Tools.UFFileTools.AddTimestamp
+  nameWithType: UFFileTools.AddTimestamp
 - uid: UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl(System.String[])
   name: CombineUrl(params string[])
   href: api/UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_CombineUrl_System_String___

@@ -822,6 +822,7 @@
   "UltraForce.Library.NetStandard.Tools.UFExceptionTools.GetInnerExceptionMessages(System.Exception)": "UltraForce.Library.NetStandard.Tools.UFExceptionTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFFileTools": "UltraForce.Library.NetStandard.Tools.UFFileTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath(System.String,System.Char)": "UltraForce.Library.NetStandard.Tools.UFFileTools.yml",
+  "UltraForce.Library.NetStandard.Tools.UFFileTools.AddTimestamp(System.String,System.Nullable{System.DateTime})": "UltraForce.Library.NetStandard.Tools.UFFileTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl(System.String[])": "UltraForce.Library.NetStandard.Tools.UFFileTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath(System.String)": "UltraForce.Library.NetStandard.Tools.UFFileTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(System.String,System.Char)": "UltraForce.Library.NetStandard.Tools.UFFileTools.yml",

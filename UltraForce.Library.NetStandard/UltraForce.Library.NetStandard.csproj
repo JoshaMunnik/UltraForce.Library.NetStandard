@@ -13,8 +13,12 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.NetStandard</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.9</Version>
-    <PackageReleaseNotes>1.0.9
+    <Version>1.0.10</Version>
+    <PackageReleaseNotes>1.0.10
+Added AddTimestamp to UFFileTools
+Renamed method parameters in UFFileTools
+
+1.0.9
 Removed class constrained from UFPropertiesComparer
 
 1.0.8

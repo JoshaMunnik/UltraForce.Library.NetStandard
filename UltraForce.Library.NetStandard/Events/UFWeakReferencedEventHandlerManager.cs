@@ -454,6 +454,13 @@ namespace UltraForce.Library.NetStandard.Events
   public class UFWeakReferencedEventHandlerManager<TEventArgs> : UFWeakReferencedEventHandlerManager
     where TEventArgs : EventArgs
   {
+    /// <summary>
+    /// Constructs an instance.
+    /// </summary>
+    /// <param name="anHandler"></param>
+    /// <param name="aProvider"></param>
+    /// <param name="anEventName"></param>
+    /// <param name="anAdd"></param>
     public UFWeakReferencedEventHandlerManager(
       EventHandler<TEventArgs> anHandler,
       object aProvider,

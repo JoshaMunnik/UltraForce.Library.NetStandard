@@ -72,21 +72,27 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: .ctor
     path: ../UltraForce.Library.NetStandard/Events/UFWeakReferencedEventHandlerManager.cs
-    startLine: 456
+    startLine: 463
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Events
+  summary: Constructs an instance.
+  example: []
   syntax:
     content: public UFWeakReferencedEventHandlerManager(EventHandler<TEventArgs> anHandler, object aProvider, string anEventName, bool anAdd = true)
     parameters:
     - id: anHandler
       type: System.EventHandler{{TEventArgs}}
+      description: ''
     - id: aProvider
       type: System.Object
+      description: ''
     - id: anEventName
       type: System.String
+      description: ''
     - id: anAdd
       type: System.Boolean
+      description: ''
     content.vb: Public Sub New(anHandler As EventHandler(Of TEventArgs), aProvider As Object, anEventName As String, anAdd As Boolean = True)
   overload: UltraForce.Library.NetStandard.Events.UFWeakReferencedEventHandlerManager`1.#ctor*
   nameWithType.vb: UFWeakReferencedEventHandlerManager(Of TEventArgs).New(EventHandler(Of TEventArgs), Object, String, Boolean)

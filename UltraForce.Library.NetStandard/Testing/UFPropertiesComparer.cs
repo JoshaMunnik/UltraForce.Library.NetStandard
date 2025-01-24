@@ -92,11 +92,20 @@ namespace UltraForce.Library.NetStandard.Testing
   /// <returns></returns>
   /// <exception cref="Exception"></exception>
   private bool CompareProperties(
-    object anExpected,
-    object anActual,
+    object? anExpected,
+    object? anActual,
     PropertyInfo[] propertyInfos
   )
   {
+    if ((anExpected == null) && (anActual == null))
+    {
+      return true;
+    }
+    // both objects are not null, but one of them can still be null
+    if ((anExpected == null) || (anActual == null))
+    {
+      return false;
+    }
     foreach (PropertyInfo propertyInfo in propertyInfos)
     {
       if (

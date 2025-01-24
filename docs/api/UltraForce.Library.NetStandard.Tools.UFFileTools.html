@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_NetStandard_Tools_UFFileTools" data-uid="UltraForce.Library.NetStandard.Tools.UFFileTools" class="text-break">
-Class UFFileTools  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L41"><i class="bi bi-code-slash"></i></a>
+Class UFFileTools  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -157,7 +157,7 @@ Class UFFileTools  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFFileTools_AddRootPath_System_String_System_Char_" data-uid="UltraForce.Library.NetStandard.Tools.UFFileTools.AddRootPath(System.String,System.Char)">
   AddRootPath(string, char)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method first calls <a class="xref" href="UltraForce.Library.NetStandard.Tools.UFFileTools.html#UltraForce_Library_NetStandard_Tools_UFFileTools_UpdateSeparator_System_String_System_Char_">UpdateSeparator(string, char)</a> and then checks
@@ -167,15 +167,15 @@ if needed.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string AddRootPath(string aPath, char aPathSeparator = &#39;\\&#39;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string AddRootPath(string path, char pathSeparator = &#39;\\&#39;)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Path to update</p>
 </dd>
-    <dt><code>aPathSeparator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dt><code>pathSeparator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
     <dd><p>Separator to use</p>
 </dd>
   </dl>
@@ -197,11 +197,57 @@ if needed.</p>
 
 
 
+  <a id="UltraForce_Library_NetStandard_Tools_UFFileTools_AddTimestamp_" data-uid="UltraForce.Library.NetStandard.Tools.UFFileTools.AddTimestamp*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFFileTools_AddTimestamp_System_String_System_Nullable_System_DateTime__" data-uid="UltraForce.Library.NetStandard.Tools.UFFileTools.AddTimestamp(System.String,System.Nullable{System.DateTime})">
+  AddTimestamp(string, DateTime?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a timestamp ('yyyyMMdd_HHmmss') to a filename.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string AddTimestamp(string fileName, DateTime? dateTime = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of file (can include an extension)</p>
+</dd>
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd><p>Date/time to add or null to use current UTC date/time.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns fileName with timestamp added to it.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_NetStandard_Tools_UFFileTools_AddTimestamp_System_String_System_Nullable_System_DateTime___examples">Examples</h4>
+  <pre><code class="lang-csharp">string name = UFFileTools.AddTimestamp("example.txt");
+// name is "example_20210801_123456.txt"</code></pre>
+
+
+
+
+
+
   <a id="UltraForce_Library_NetStandard_Tools_UFFileTools_CombineUrl_" data-uid="UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl*"></a>
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFFileTools_CombineUrl_System_String___" data-uid="UltraForce.Library.NetStandard.Tools.UFFileTools.CombineUrl(System.String[])">
   CombineUrl(params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Combines parts of a URL into a single URL. The method inserts a '/' between parts if needed.</p>
@@ -209,12 +255,12 @@ if needed.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string CombineUrl(params string[] aParts)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string CombineUrl(params string[] parts)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aParts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dt><code>parts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -238,7 +284,7 @@ if needed.</p>
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFFileTools_RemoveRootPath_System_String_" data-uid="UltraForce.Library.NetStandard.Tools.UFFileTools.RemoveRootPath(System.String)">
   RemoveRootPath(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes forward or backward slash if it is the first character.</p>
@@ -246,12 +292,12 @@ if needed.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RemoveRootPath(string aPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string RemoveRootPath(string path)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Path to check</p>
 </dd>
   </dl>
@@ -277,7 +323,7 @@ if needed.</p>
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFFileTools_UpdateSeparator_System_String_System_Char_" data-uid="UltraForce.Library.NetStandard.Tools.UFFileTools.UpdateSeparator(System.String,System.Char)">
   UpdateSeparator(string, char)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Replace forward or backward slash with the opposite.</p>
@@ -285,15 +331,15 @@ if needed.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string UpdateSeparator(string aPath, char aPathSeparator = &#39;\\&#39;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string UpdateSeparator(string path, char pathSeparator = &#39;\\&#39;)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Path to update</p>
 </dd>
-    <dt><code>aPathSeparator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dt><code>pathSeparator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
     <dd><p>Separator to use</p>
 </dd>
   </dl>
@@ -319,7 +365,7 @@ if needed.</p>
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFFileTools_ValidateFilename_System_String_" data-uid="UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String)">
   ValidateFilename(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Validates a file name.</p>
@@ -327,12 +373,12 @@ if needed.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ValidateFilename(string aName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool ValidateFilename(string name)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>name to validate</p>
 </dd>
   </dl>
@@ -359,7 +405,7 @@ chars or contains folder specifications</p>
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFFileTools_ValidateFilename_System_String_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String,System.Boolean)">
   ValidateFilename(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Validates a file or folder name.</p>
@@ -367,15 +413,15 @@ chars or contains folder specifications</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ValidateFilename(string aName, bool aFileOnly)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool ValidateFilename(string name, bool fileOnly)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>name to validate</p>
 </dd>
-    <dt><code>aFileOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><code>fileOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>When <code>true</code> aName should not contain path,
 else aName also contains path part</p>
 </dd>
@@ -403,7 +449,7 @@ starts with path separator or contains relative folder parts</p>
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFFileTools_ValidateFilename_System_String_System_Boolean_System_Boolean_" data-uid="UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String,System.Boolean,System.Boolean)">
   ValidateFilename(string, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Validates a file or folder name.</p>
@@ -411,21 +457,20 @@ starts with path separator or contains relative folder parts</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ValidateFilename(string aName, bool aFileOnly, bool aRelativeDir)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool ValidateFilename(string name, bool fileOnly, bool relativeDir)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>name to validate</p>
 </dd>
-    <dt><code>aFileOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><code>fileOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>When <code>true</code> aName should not contain path,
 else aName also can contain path parts</p>
 </dd>
-    <dt><code>aRelativeDir</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>When <code>true</code> the path part can
-contain '..'</p>
+    <dt><code>relativeDir</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code> the path part can contain '..'</p>
 </dd>
   </dl>
 
@@ -451,7 +496,7 @@ chars or start with a path separator</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L41" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFFileTools.cs/#L42" class="edit-link">Edit this page</a>
         </div>
 
 
