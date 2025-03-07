@@ -832,7 +832,7 @@
   "UltraForce.Library.NetStandard.Tools.UFFileTools.ValidateFilename(System.String,System.Boolean,System.Boolean)": "UltraForce.Library.NetStandard.Tools.UFFileTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFHtmlTools": "UltraForce.Library.NetStandard.Tools.UFHtmlTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFHtmlTools.AddProtocol(System.String,System.String)": "UltraForce.Library.NetStandard.Tools.UFHtmlTools.yml",
-  "UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.String)": "UltraForce.Library.NetStandard.Tools.UFHtmlTools.yml",
+  "UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.Object)": "UltraForce.Library.NetStandard.Tools.UFHtmlTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode(System.String)": "UltraForce.Library.NetStandard.Tools.UFHtmlTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFHtmlTools.NewDomId": "UltraForce.Library.NetStandard.Tools.UFHtmlTools.yml",
   "UltraForce.Library.NetStandard.Tools.UFHtmlTools.ToHtml(System.String)": "UltraForce.Library.NetStandard.Tools.UFHtmlTools.yml",

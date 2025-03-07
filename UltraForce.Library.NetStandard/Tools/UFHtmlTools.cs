@@ -163,14 +163,14 @@ namespace UltraForce.Library.NetStandard.Tools
     /// </returns>
     public static string Attribute(
       string name,
-      string? value = null
+      object? value = null
     )
     {
       return value == null ? name : $"{name}=\"{value}\"";
     }
 
     /// <summary>
-    /// Replace html entity definitions with their unicode equivalent
+    /// Replace html entity definitions with their Unicode equivalent
     /// <para>
     /// Entity replace code based upon code from:
     /// https://github.com/Cratesmith/RestSharp-for-unity3d/blob/master/RestSharp/Extensions/MonoHttp/HtmlEncoder.cs

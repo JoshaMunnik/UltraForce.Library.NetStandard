@@ -2,6 +2,9 @@
 https://joshamunnik.github.io/UltraForce.Library.NetStandard/index.html
 
 ## Version history
+1.0.13
+- Value parameter of UFHtmlTools.Attribute() is now object type (instead of string)
+
 1.0.12
 - Moved version history to README.md
 - added Attribute() to UFHtmlTools

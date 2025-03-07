@@ -10958,15 +10958,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.AddProtocol
   nameWithType: UFHtmlTools.AddProtocol
-- uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.String)
-  name: Attribute(string, string?)
-  href: api/UltraForce.Library.NetStandard.Tools.UFHtmlTools.html#UltraForce_Library_NetStandard_Tools_UFHtmlTools_Attribute_System_String_System_String_
-  commentId: M:UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.String)
-  name.vb: Attribute(String, String)
-  fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(string, string?)
-  fullName.vb: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(String, String)
-  nameWithType: UFHtmlTools.Attribute(string, string?)
-  nameWithType.vb: UFHtmlTools.Attribute(String, String)
+- uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.Object)
+  name: Attribute(string, object?)
+  href: api/UltraForce.Library.NetStandard.Tools.UFHtmlTools.html#UltraForce_Library_NetStandard_Tools_UFHtmlTools_Attribute_System_String_System_Object_
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.Object)
+  name.vb: Attribute(String, Object)
+  fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(string, object?)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(String, Object)
+  nameWithType: UFHtmlTools.Attribute(string, object?)
+  nameWithType.vb: UFHtmlTools.Attribute(String, Object)
 - uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute*
   name: Attribute
   href: api/UltraForce.Library.NetStandard.Tools.UFHtmlTools.html#UltraForce_Library_NetStandard_Tools_UFHtmlTools_Attribute_

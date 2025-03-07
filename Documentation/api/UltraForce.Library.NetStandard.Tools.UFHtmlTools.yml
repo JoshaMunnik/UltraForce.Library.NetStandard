@@ -6,7 +6,7 @@ items:
   parent: UltraForce.Library.NetStandard.Tools
   children:
   - UltraForce.Library.NetStandard.Tools.UFHtmlTools.AddProtocol(System.String,System.String)
-  - UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.String)
+  - UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.Object)
   - UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode(System.String)
   - UltraForce.Library.NetStandard.Tools.UFHtmlTools.NewDomId
   - UltraForce.Library.NetStandard.Tools.UFHtmlTools.ToHtml(System.String)
@@ -209,16 +209,16 @@ items:
   nameWithType.vb: UFHtmlTools.ToHtml(String)
   fullName.vb: UltraForce.Library.NetStandard.Tools.UFHtmlTools.ToHtml(String)
   name.vb: ToHtml(String)
-- uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.String)
-  commentId: M:UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.String)
-  id: Attribute(System.String,System.String)
+- uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.Object)
+  id: Attribute(System.String,System.Object)
   parent: UltraForce.Library.NetStandard.Tools.UFHtmlTools
   langs:
   - csharp
   - vb
-  name: Attribute(string, string?)
-  nameWithType: UFHtmlTools.Attribute(string, string?)
-  fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(string, string?)
+  name: Attribute(string, object?)
+  nameWithType: UFHtmlTools.Attribute(string, object?)
+  fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(string, object?)
   type: Method
   source:
     remote:
@@ -234,22 +234,22 @@ items:
   summary: Generates an attribute definition for the name and value.
   example: []
   syntax:
-    content: public static string Attribute(string name, string? value = null)
+    content: public static string Attribute(string name, object? value = null)
     parameters:
     - id: name
       type: System.String
       description: attribute name
     - id: value
-      type: System.String
+      type: System.Object
       description: optional attribute value
     return:
       type: System.String
       description: Either only the <code>name</code> if the value is not set, or else <code>name="value"</code>
-    content.vb: Public Shared Function Attribute(name As String, value As String = Nothing) As String
+    content.vb: Public Shared Function Attribute(name As String, value As Object = Nothing) As String
   overload: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute*
-  nameWithType.vb: UFHtmlTools.Attribute(String, String)
-  fullName.vb: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(String, String)
-  name.vb: Attribute(String, String)
+  nameWithType.vb: UFHtmlTools.Attribute(String, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(String, Object)
+  name.vb: Attribute(String, Object)
 - uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode(System.String)
   commentId: M:UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode(System.String)
   id: EntityToUnicode(System.String)
@@ -273,7 +273,7 @@ items:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
   summary: >-
-    Replace html entity definitions with their unicode equivalent
+    Replace html entity definitions with their Unicode equivalent
 
     <p>
 
@@ -648,7 +648,7 @@ references:
   fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.ToHtml
 - uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute*
   commentId: Overload:UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute
-  href: UltraForce.Library.NetStandard.Tools.UFHtmlTools.html#UltraForce_Library_NetStandard_Tools_UFHtmlTools_Attribute_System_String_System_String_
+  href: UltraForce.Library.NetStandard.Tools.UFHtmlTools.html#UltraForce_Library_NetStandard_Tools_UFHtmlTools_Attribute_System_String_System_Object_
   name: Attribute
   nameWithType: UFHtmlTools.Attribute
   fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute

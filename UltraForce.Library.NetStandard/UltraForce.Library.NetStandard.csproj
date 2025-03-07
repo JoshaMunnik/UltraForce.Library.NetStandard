@@ -13,9 +13,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.NetStandard</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.12</Version>
-    <PackageReleaseNotes>- Moved version history to README.md
-- added Attribute() to UFHtmlTools
+    <Version>1.0.13</Version>
+    <PackageReleaseNotes>- Value parameter of UFHtmlTools.Attribute() is now object type (instead of string)
 </PackageReleaseNotes>
   </PropertyGroup>
 
