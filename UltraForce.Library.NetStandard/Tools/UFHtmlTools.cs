@@ -35,7 +35,7 @@ using System.Text.RegularExpressions;
 namespace UltraForce.Library.NetStandard.Tools
 {
   /// <summary>
-  /// An utility class that contains HTML related methods.
+  /// A utility class that contains HTML related methods.
   /// </summary>
   public static class UFHtmlTools
   {
@@ -53,55 +53,55 @@ namespace UltraForce.Library.NetStandard.Tools
     /// <c>br</c> and closing <c>p</c> tags with \r\n, removing all other 
     /// html tags and replacing html entities with their unicode equivalent.
     /// </summary>
-    /// <param name="aHtmlText">Html formatted string</param>
+    /// <param name="htmlText">Html formatted string</param>
     /// <returns>String without html tags</returns>
-    public static string ToPlain(string aHtmlText)
+    public static string ToPlain(string htmlText)
     {
       // check if aValue contains at least one html tag
       Regex regex = new Regex(
         @"</?\w+((\s+\w+(\s*=\s*(?:"".*?""|'.*?'|[^'"">\s]+))?)+\s*|\s*)/?>",
         RegexOptions.Singleline
       );
-      if (!regex.Match(aHtmlText.ToLower()).Success)
+      if (!regex.Match(htmlText.ToLower()).Success)
       {
-        return aHtmlText;
+        return htmlText;
       }
       // remove any \n and \r
-      aHtmlText = aHtmlText.Replace("\n", "").Replace("\r", "");
+      htmlText = htmlText.Replace("\n", "").Replace("\r", "");
       // replace all multiple spaces with 1 space
-      aHtmlText = Regex.Replace(aHtmlText, @"\s{2,}", " ");
+      htmlText = Regex.Replace(htmlText, @"\s{2,}", " ");
       // replace </p> and <br[/]> with \n
-      aHtmlText = aHtmlText
+      htmlText = htmlText
         .Replace(@"</p>", "\n")
         .Replace(@"<br>", "\n")
         .Replace(@"<br/>", "\n");
       // remove all other tags
-      aHtmlText = regex.Replace(aHtmlText, "");
+      htmlText = regex.Replace(htmlText, "");
       // replace entities with unicode equivalents
-      return EntityToUnicode(aHtmlText);
+      return EntityToUnicode(htmlText);
     }
 
     /// <summary>
     /// Adds a protocol to an url that starts with "//" or does not contain "://".
     /// </summary>
-    /// <param name="anUrl">Url to check</param>
-    /// <param name="aProtocol">Protocol to add</param>
+    /// <param name="url">Url to check</param>
+    /// <param name="protocol">Protocol to add</param>
     /// <returns>Url with protocol</returns>
-    public static string AddProtocol(string anUrl, string aProtocol = "http")
+    public static string AddProtocol(string url, string protocol = "http")
     {
-      if (string.IsNullOrEmpty(anUrl))
+      if (string.IsNullOrEmpty(url))
       {
         return "";
       }
-      if (anUrl.IndexOf("//", StringComparison.Ordinal) == 0)
+      if (url.IndexOf("//", StringComparison.Ordinal) == 0)
       {
-        anUrl = aProtocol + ":" + anUrl;
+        url = protocol + ":" + url;
       }
-      else if (anUrl.IndexOf("://", StringComparison.Ordinal) < 0)
+      else if (url.IndexOf("://", StringComparison.Ordinal) < 0)
       {
-        anUrl = aProtocol + "://" + anUrl;
+        url = protocol + "://" + url;
       }
-      return anUrl;
+      return url;
     }
 
     /// <summary>
@@ -112,16 +112,16 @@ namespace UltraForce.Library.NetStandard.Tools
     /// It will replace "\n" with "<br/>"; "\r" characters are not copied.
     /// </para>
     /// </summary>
-    /// <param name="aPlainText">Plain text to convert</param>
+    /// <param name="plainText">Plain text to convert</param>
     /// <returns>Html safe text</returns>
-    public static string ToHtml(string aPlainText)
+    public static string ToHtml(string plainText)
     {
-      if (string.IsNullOrEmpty(aPlainText))
+      if (string.IsNullOrEmpty(plainText))
       {
         return string.Empty;
       }
       StringBuilder result = new StringBuilder();
-      foreach (char character in UnicodeToEntity(aPlainText))
+      foreach (char character in UnicodeToEntity(plainText))
       {
         switch (character)
         {
@@ -154,19 +154,35 @@ namespace UltraForce.Library.NetStandard.Tools
     }
 
     /// <summary>
+    /// Generates an attribute definition for the name and value.
+    /// </summary>
+    /// <param name="name">attribute name</param>
+    /// <param name="value">optional attribute value</param>
+    /// <returns>
+    /// Either only the <c>name</c> if the value is not set, or else <c>name="value"</c>
+    /// </returns>
+    public static string Attribute(
+      string name,
+      string? value = null
+    )
+    {
+      return value == null ? name : $"{name}=\"{value}\"";
+    }
+
+    /// <summary>
     /// Replace html entity definitions with their unicode equivalent
     /// <para>
     /// Entity replace code based upon code from:
     /// https://github.com/Cratesmith/RestSharp-for-unity3d/blob/master/RestSharp/Extensions/MonoHttp/HtmlEncoder.cs
     /// </para>
     /// </summary>
-    /// <param name="aText">Text with entity definitions</param>
+    /// <param name="text">Text with entity definitions</param>
     /// <returns>String with entities replaced</returns>
-    public static string EntityToUnicode(string aText)
+    public static string EntityToUnicode(string text)
     {
       // Not the fastest solution, but easiest.
       // See HTML 4.01 W3C recommendation.
-      return aText
+      return text
         .Replace("&nbsp;", "\u00A0")
         .Replace("&iexcl;", "\u00A1")
         .Replace("&cent;", "\u00A2")
@@ -424,15 +440,15 @@ namespace UltraForce.Library.NetStandard.Tools
     /// <summary>
     /// Replace certain unicode  definitions with their html entity definition
     /// </summary>
-    /// <param name="aText">Text to check</param>
+    /// <param name="text">Text to check</param>
     /// <returns>String with entities</returns>
-    public static string UnicodeToEntity(string aText)
+    public static string UnicodeToEntity(string text)
     {
       // Not the fastest solution, but easiest.
       // See HTML 4.01 W3C recommendation.
       // make sure & is done first, so not to replace the ones in the entity
       // definitions
-      return aText
+      return text
         .Replace("\u0026", "&amp;")
         .Replace("\u00A0", "&nbsp;")
         .Replace("\u00A1", "&iexcl;")

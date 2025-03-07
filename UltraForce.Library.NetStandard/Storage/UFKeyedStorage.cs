@@ -28,6 +28,7 @@
 // </license>
 
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Reflection;
 
@@ -52,6 +53,9 @@ namespace UltraForce.Library.NetStandard.Storage
   /// If possible a subclass should also implement <see cref="DeleteAll" />.
   /// </para>
   /// </remarks>
+  [SuppressMessage("ReSharper", "IntroduceOptionalParameters.Global")]
+  [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
+  [SuppressMessage("ReSharper", "MemberCanBeProtected.Global")]
   public abstract class UFKeyedStorage
   {
     #region constructors
@@ -75,14 +79,19 @@ namespace UltraForce.Library.NetStandard.Storage
     /// A default value to use when there is no string stored for the key.
     /// </param>
     /// <returns>The stored string or aDefault.</returns>
-    public abstract string GetString(string aKey, string aDefault);
+    public abstract string GetString(
+      string aKey,
+      string aDefault
+    );
 
     /// <summary>
     /// Gets a string.
     /// </summary>
     /// <param name="aKey">A key to get the string for.</param>
     /// <returns>The stored string or "" if none could be found.</returns>
-    public string GetString(string aKey)
+    public string GetString(
+      string aKey
+    )
     {
       return this.GetString(aKey, "");
     }
@@ -92,7 +101,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// </summary>
     /// <param name="aKey">Key to store value for.</param>
     /// <param name="aValue">A value to store.</param>
-    public abstract void SetString(string aKey, string aValue);
+    public abstract void SetString(
+      string aKey,
+      string aValue
+    );
 
     /// <summary>
     /// Gets a byte.
@@ -105,7 +117,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// A default value to use when there is no byte stored for the key.
     /// </param>
     /// <returns>The stored byte or aDefault.</returns>
-    public virtual byte GetByte(string aKey, byte aDefault)
+    public virtual byte GetByte(
+      string aKey,
+      byte aDefault
+    )
     {
       return this.HasKey(aKey) ? (byte)this.GetInt(aKey) : aDefault;
     }
@@ -119,7 +134,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored byte or 0 if none could be found.
     /// </returns>
-    public byte GetByte(string aKey)
+    public byte GetByte(
+      string aKey
+    )
     {
       return this.GetByte(aKey, 0);
     }
@@ -136,7 +153,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// A value to store.
     /// </param>
-    public virtual void SetByte(string aKey, byte aValue)
+    public virtual void SetByte(
+      string aKey,
+      byte aValue
+    )
     {
       this.SetInt(aKey, aValue);
     }
@@ -156,7 +176,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored sbyte or aDefault.
     /// </returns>
-    public virtual sbyte GetSByte(string aKey, sbyte aDefault)
+    public virtual sbyte GetSByte(
+      string aKey,
+      sbyte aDefault
+    )
     {
       return this.HasKey(aKey) ? (sbyte)this.GetInt(aKey) : aDefault;
     }
@@ -170,7 +193,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored sbyte or 0 if none could be found.
     /// </returns>
-    public sbyte GetSByte(string aKey)
+    public sbyte GetSByte(
+      string aKey
+    )
     {
       return this.GetSByte(aKey, 0);
     }
@@ -187,7 +212,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// A value to store.
     /// </param>
-    public virtual void SetSByte(string aKey, sbyte aValue)
+    public virtual void SetSByte(
+      string aKey,
+      sbyte aValue
+    )
     {
       this.SetInt(aKey, aValue);
     }
@@ -207,7 +235,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored short or aDefault.
     /// </returns>
-    public virtual short GetShort(string aKey, short aDefault)
+    public virtual short GetShort(
+      string aKey,
+      short aDefault
+    )
     {
       return this.HasKey(aKey) ? (short)this.GetInt(aKey) : aDefault;
     }
@@ -221,7 +252,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored short or 0 if none could be found.
     /// </returns>
-    public short GetShort(string aKey)
+    public short GetShort(
+      string aKey
+    )
     {
       return this.GetShort(aKey, 0);
     }
@@ -238,7 +271,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// A value to store.
     /// </param>
-    public virtual void SetShort(string aKey, short aValue)
+    public virtual void SetShort(
+      string aKey,
+      short aValue
+    )
     {
       this.SetInt(aKey, aValue);
     }
@@ -258,7 +294,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored ushort or aDefault.
     /// </returns>
-    public virtual ushort GetUShort(string aKey, ushort aDefault)
+    public virtual ushort GetUShort(
+      string aKey,
+      ushort aDefault
+    )
     {
       return this.HasKey(aKey) ? (ushort)this.GetInt(aKey) : aDefault;
     }
@@ -272,7 +311,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored ushort or 0 if none could be found.
     /// </returns>
-    public ushort GetUShort(string aKey)
+    public ushort GetUShort(
+      string aKey
+    )
     {
       return this.GetUShort(aKey, 0);
     }
@@ -289,7 +330,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// A value to store.
     /// </param>
-    public virtual void SetUShort(string aKey, ushort aValue)
+    public virtual void SetUShort(
+      string aKey,
+      ushort aValue
+    )
     {
       this.SetInt(aKey, aValue);
     }
@@ -310,7 +354,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored integer or aDefault.
     /// </returns>
-    public virtual int GetInt(string aKey, int aDefault)
+    public virtual int GetInt(
+      string aKey,
+      int aDefault
+    )
     {
       return this.HasKey(aKey) ? int.Parse(this.GetString(aKey)) : aDefault;
     }
@@ -324,7 +371,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored integer or 0 if none could be found.
     /// </returns>
-    public int GetInt(string aKey)
+    public int GetInt(
+      string aKey
+    )
     {
       return this.GetInt(aKey, 0);
     }
@@ -342,7 +391,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// A value to store.
     /// </param>
-    public virtual void SetInt(string aKey, int aValue)
+    public virtual void SetInt(
+      string aKey,
+      int aValue
+    )
     {
       this.SetString(aKey, aValue.ToString());
     }
@@ -365,7 +417,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored unsigned integer or aDefault.
     /// </returns>
-    public virtual uint GetUInt(string aKey, uint aDefault)
+    public virtual uint GetUInt(
+      string aKey,
+      uint aDefault
+    )
     {
       return this.HasKey(aKey) ? uint.Parse(this.GetString(aKey)) : aDefault;
     }
@@ -379,7 +434,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored unsigned integer or 0 if none could be found.
     /// </returns>
-    public uint GetUInt(string aKey)
+    public uint GetUInt(
+      string aKey
+    )
     {
       return this.GetUInt(aKey, 0);
     }
@@ -397,7 +454,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// A value to store.
     /// </param>
-    public virtual void SetUInt(string aKey, uint aValue)
+    public virtual void SetUInt(
+      string aKey,
+      uint aValue
+    )
     {
       this.SetString(aKey, aValue.ToString());
     }
@@ -418,7 +478,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored long or aDefault.
     /// </returns>
-    public virtual long GetLong(string aKey, long aDefault)
+    public virtual long GetLong(
+      string aKey,
+      long aDefault
+    )
     {
       return this.HasKey(aKey) ? long.Parse(this.GetString(aKey)) : aDefault;
     }
@@ -432,7 +495,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored long or 0 if none could be found.
     /// </returns>
-    public long GetLong(string aKey)
+    public long GetLong(
+      string aKey
+    )
     {
       return this.GetLong(aKey, 0);
     }
@@ -450,7 +515,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// A value to store.
     /// </param>
-    public virtual void SetLong(string aKey, long aValue)
+    public virtual void SetLong(
+      string aKey,
+      long aValue
+    )
     {
       this.SetString(aKey, aValue.ToString());
     }
@@ -471,7 +539,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored ulong or aDefault.
     /// </returns>
-    public virtual ulong GetULong(string aKey, ulong aDefault)
+    public virtual ulong GetULong(
+      string aKey,
+      ulong aDefault
+    )
     {
       return this.HasKey(aKey) ? ulong.Parse(this.GetString(aKey)) : aDefault;
     }
@@ -485,7 +556,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored ulong or 0 if none could be found.
     /// </returns>
-    public ulong GetULong(string aKey)
+    public ulong GetULong(
+      string aKey
+    )
     {
       return this.GetULong(aKey, 0);
     }
@@ -503,7 +576,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// A value to store.
     /// </param>
-    public virtual void SetULong(string aKey, ulong aValue)
+    public virtual void SetULong(
+      string aKey,
+      ulong aValue
+    )
     {
       this.SetString(aKey, aValue.ToString());
     }
@@ -525,7 +601,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored floating number or aDefault.
     /// </returns>
-    public virtual float GetFloat(string aKey, float aDefault)
+    public virtual float GetFloat(
+      string aKey,
+      float aDefault
+    )
     {
       return this.HasKey(aKey) ? (float)this.GetDouble(aKey) : aDefault;
     }
@@ -539,7 +618,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns> 
     /// The stored floating number or 0.0 when missing.
     /// </returns>
-    public float GetFloat(string aKey)
+    public float GetFloat(
+      string aKey
+    )
     {
       return this.GetFloat(aKey, 0.0f);
     }
@@ -556,7 +637,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// A value to store.
     /// </param> 
-    public virtual void SetFloat(string aKey, float aValue)
+    public virtual void SetFloat(
+      string aKey,
+      float aValue
+    )
     {
       this.SetDouble(aKey, aValue);
     }
@@ -578,7 +662,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored floating number or aDefault.
     /// </returns>
-    public virtual double GetDouble(string aKey, double aDefault)
+    public virtual double GetDouble(
+      string aKey,
+      double aDefault
+    )
     {
       return this.HasKey(aKey) ? double.Parse(this.GetString(aKey)) : aDefault;
     }
@@ -592,7 +679,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored double number or 0.0 when missing.
     /// </returns>
-    public double GetDouble(string aKey)
+    public double GetDouble(
+      string aKey
+    )
     {
       return this.GetDouble(aKey, 0.0);
     }
@@ -610,7 +699,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// A value to store.
     /// </param>
-    public virtual void SetDouble(string aKey, double aValue)
+    public virtual void SetDouble(
+      string aKey,
+      double aValue
+    )
     {
       this.SetString(aKey, aValue.ToString(CultureInfo.InvariantCulture));
     }
@@ -631,7 +723,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored bool or aDefault.
     /// </returns>
-    public virtual bool GetBool(string aKey, bool aDefault)
+    public virtual bool GetBool(
+      string aKey,
+      bool aDefault
+    )
     {
       return this.HasKey(aKey) ? !this.GetString(aKey).Equals("0") : aDefault;
     }
@@ -645,7 +740,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored bool or true when missing. 
     /// </returns>
-    public bool GetBool(string aKey)
+    public bool GetBool(
+      string aKey
+    )
     {
       return this.GetBool(aKey, true);
     }
@@ -663,7 +760,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// A value to store.
     /// </param>
-    public virtual void SetBool(string aKey, bool aValue)
+    public virtual void SetBool(
+      string aKey,
+      bool aValue
+    )
     {
       this.SetString(aKey, aValue ? "1" : "0");
     }
@@ -684,7 +784,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored char or aDefault.
     /// </returns>
-    public virtual char GetChar(string aKey, char aDefault)
+    public virtual char GetChar(
+      string aKey,
+      char aDefault
+    )
     {
       return this.HasKey(aKey) ? this.GetString(aKey)[0] : aDefault;
     }
@@ -698,7 +801,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// The stored char or '\0' when missing. 
     /// </returns>
-    public char GetChar(string aKey)
+    public char GetChar(
+      string aKey
+    )
     {
       return this.GetChar(aKey, '\0');
     }
@@ -716,7 +821,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// A value to store.
     /// </param>
-    public virtual void SetChar(string aKey, char aValue)
+    public virtual void SetChar(
+      string aKey,
+      char aValue
+    )
     {
       this.SetString(aKey, aValue.ToString());
     }
@@ -737,7 +845,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns> 
     /// Array of byte or aDefault
     /// </returns>
-    public virtual byte[]? GetBytes(string aKey, byte[]? aDefault)
+    public virtual byte[]? GetBytes(
+      string aKey,
+      byte[]? aDefault
+    )
     {
       return this.HasKey(aKey)
         ? Convert.FromBase64String(this.GetString(aKey))
@@ -753,7 +864,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// Array of byte or null when missing
     /// </returns>
-    public byte[]? GetBytes(string aKey)
+    public byte[]? GetBytes(
+      string aKey
+    )
     {
       return this.GetBytes(aKey, null);
     }
@@ -771,7 +884,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aValue">
     /// Array of byte to store
     /// </param>
-    public virtual void SetBytes(string aKey, byte[] aValue)
+    public virtual void SetBytes(
+      string aKey,
+      byte[] aValue
+    )
     {
       this.SetString(aKey, Convert.ToBase64String(aValue));
     }
@@ -783,7 +899,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aKey">Key to get date and time for</param>
     /// <param name="aDefault">Default value to use</param>
     /// <returns>Store value or aDefault</returns>
-    public virtual DateTime GetDateTime(string aKey, DateTime aDefault)
+    public virtual DateTime GetDateTime(
+      string aKey,
+      DateTime aDefault
+    )
     {
       return this.HasKey(aKey) ? DateTime.FromBinary(this.GetLong(aKey)) : aDefault;
     }
@@ -795,7 +914,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// Date and time or <see cref="DateTime.Now"/> when missing
     /// </returns>
-    public DateTime GetDateTime(string aKey)
+    public DateTime GetDateTime(
+      string aKey
+    )
     {
       return this.GetDateTime(aKey, DateTime.Now);
     }
@@ -806,7 +927,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// </summary>
     /// <param name="aKey">Key to store value for</param>
     /// <param name="aValue">Value to store</param>
-    public virtual void SetDateTime(string aKey, DateTime aValue)
+    public virtual void SetDateTime(
+      string aKey,
+      DateTime aValue
+    )
     {
       this.SetLong(aKey, aValue.ToBinary());
     }
@@ -817,7 +941,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aKey">Key to get value for</param>
     /// <param name="aDefault">Default value to use</param>
     /// <returns>Stored value or aDefault</returns>
-    public virtual Guid GetGuid(string aKey, Guid aDefault)
+    public virtual Guid GetGuid(
+      string aKey,
+      Guid aDefault
+    )
     {
       return this.HasKey(aKey) ? new Guid(this.GetBytes(aKey)!) : aDefault;
     }
@@ -829,7 +956,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// Stored value or <see cref="Guid.Empty"/> when missing
     /// </returns>
-    public Guid GetGuid(string aKey)
+    public Guid GetGuid(
+      string aKey
+    )
     {
       return this.GetGuid(aKey, Guid.Empty);
     }
@@ -840,7 +969,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// </summary>
     /// <param name="aKey">Key to store value for</param>
     /// <param name="aValue">Value to store</param>
-    public virtual void SetGuid(string aKey, Guid aValue)
+    public virtual void SetGuid(
+      string aKey,
+      Guid aValue
+    )
     {
       this.SetBytes(aKey, aValue.ToByteArray());
     }
@@ -854,7 +986,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aKey">Key to get data for</param>
     /// <param name="anObject">Object to load from the storage</param>
     /// <returns>Value of <c>anObject</c></returns>
-    public virtual IUFStorableObject GetStorableObject(string aKey, IUFStorableObject anObject)
+    public virtual IUFStorableObject GetStorableObject(
+      string aKey,
+      IUFStorableObject anObject
+    )
     {
       if (this.HasKey(aKey))
       {
@@ -873,7 +1008,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// </summary>
     /// <param name="aKey">Key to set data for</param>
     /// <param name="anObject">Object to save to the storage</param>
-    public virtual void SetStorableObject(string aKey, IUFStorableObject anObject)
+    public virtual void SetStorableObject(
+      string aKey,
+      IUFStorableObject anObject
+    )
     {
       UFDictionaryStorage storage = new UFDictionaryStorage();
       anObject.SaveToStorage(storage);
@@ -887,7 +1025,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aKey">Key to get object for</param>
     /// <param name="aType">type of object</param>
     /// <returns>instance or <c>null</c> if object could not be found</returns>
-    public object? GetObject(string aKey, Type aType)
+    public object? GetObject(
+      string aKey,
+      Type aType
+    )
     {
       return this.GetObject(
         aKey,
@@ -902,9 +1043,11 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <typeparam name="T">Type of value to get</typeparam>
     /// <param name="aKey">Key value was stored with</param>
     /// <returns>Value or null if none could be found</returns>
-    public T? GetObject<T>(string aKey) where T : struct
+    public T? GetObject<T>(
+      string aKey
+    ) 
     {
-      return (T?) this.GetObject(aKey, typeof(T));
+      return (T?)this.GetObject(aKey, typeof(T));
     }
 
     /// <summary>
@@ -1011,9 +1154,12 @@ namespace UltraForce.Library.NetStandard.Storage
         // null values are never stored, so if there is no data for the key
         // it has the value null. Else repeat with type without nullable
         // definition to get the stored data.
-        return !this.HasKey(aKey)
-          ? null
-          : this.GetObject(aKey, Nullable.GetUnderlyingType(aType));
+        if (!this.HasKey(aKey))
+        {
+          return null;
+        }
+        Type? underlyingType = Nullable.GetUnderlyingType(aType);
+        return underlyingType == null ? null : this.GetObject(aKey, underlyingType);
       }
       // try to get an object using serialization
       return this.DeserializeObject(aKey, aType, aFactory);
@@ -1061,7 +1207,11 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aKey">Key to store object for</param>
     /// <param name="anObject">object to store</param>
     /// <param name="aType">type of object</param>
-    public virtual void SetObject(string aKey, object? anObject, Type? aType)
+    public virtual void SetObject(
+      string aKey,
+      object? anObject,
+      Type? aType
+    )
     {
       // trying to store null value?
       if (anObject == null)
@@ -1131,7 +1281,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// </summary>
     /// <param name="aKey">Key to store object for</param>
     /// <param name="anObject">Object to store</param>
-    public void SetObject(string aKey, object anObject)
+    public void SetObject(
+      string aKey,
+      object anObject
+    )
     {
       this.SetObject(aKey, anObject, anObject?.GetType());
     }
@@ -1142,7 +1295,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <typeparam name="T">Type to store</typeparam>
     /// <param name="aKey">Key to store object for</param>
     /// <param name="anObject">Object to store</param>
-    public void SetObject<T>(string aKey, object anObject)
+    public void SetObject<T>(
+      string aKey,
+      T anObject
+    )
     {
       this.SetObject(aKey, anObject, typeof(T));
     }
@@ -1160,7 +1316,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aKey">
     /// A key to Delete the data for.
     /// </param>
-    public abstract void DeleteKey(string aKey);
+    public abstract void DeleteKey(
+      string aKey
+    );
 
     /// <summary>
     /// Checks if there is a locally stored data for a specific key.
@@ -1171,7 +1329,9 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>
     /// True if has there is data for the key; otherwise, false.
     /// </returns>
-    public abstract bool HasKey(string aKey);
+    public abstract bool HasKey(
+      string aKey
+    );
 
     #endregion
 
@@ -1185,9 +1345,14 @@ namespace UltraForce.Library.NetStandard.Storage
     /// </summary>
     /// <param name="aKey">Key to store serializes object with</param>
     /// <param name="anObject">Object to store</param>
-    protected virtual void SerializeObject(string aKey, object anObject)
+    protected virtual void SerializeObject(
+      string aKey,
+      object anObject
+    )
     {
-      throw new NotImplementedException($"Unknown object type for {aKey}: {anObject.GetType().Name}");
+      throw new NotImplementedException(
+        $"Unknown object type for {aKey}: {anObject.GetType().Name}"
+      );
     }
 
     /// <summary>
@@ -1201,7 +1366,11 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aType">Type of object to create (might be <c>null</c>)</param>
     /// <param name="aFactory">A factory to create a new instance of <c>aType</c></param>
     /// <returns>Retrieved object</returns>
-    protected virtual object DeserializeObject(string aKey, Type? aType, Func<Type, object> aFactory)
+    protected virtual object DeserializeObject(
+      string aKey,
+      Type? aType,
+      Func<Type, object> aFactory
+    )
     {
       throw new NotImplementedException($"Unknown object type for {aKey}: {aType?.Name ?? "null"}");
     }
@@ -1216,7 +1385,11 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aKey">Key to store value for</param>
     /// <param name="anObject">Value to store</param>
     /// <param name="aType">Type of value</param>
-    private void SetPrimitive(string aKey, object anObject, Type aType)
+    private void SetPrimitive(
+      string aKey,
+      object anObject,
+      Type aType
+    )
     {
       // save with correct typecast.
       if (aType == typeof(byte))
@@ -1279,7 +1452,10 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <param name="aKey">Key to store value for</param>
     /// <param name="aType">Type of value</param>
     /// <returns>Value for aKey</returns>
-    private object GetPrimitive(string aKey, Type aType)
+    private object GetPrimitive(
+      string aKey,
+      Type aType
+    )
     {
       // save with correct typecast.
       if (aType == typeof(byte))

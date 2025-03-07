@@ -95,7 +95,7 @@ items:
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type,System.Func{System.Type,System.Object})
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object,System.Type)
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object)
-  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,{T})
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
   - System.Object.Equals(System.Object)
@@ -2592,21 +2592,21 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
-  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,{T})
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
   parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
-  isExternal: true
-  href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String_System_Object_
-  name: SetObject<T>(string, object)
-  nameWithType: UFKeyedStorage.SetObject<T>(string, object)
-  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject<T>(string, object)
-  nameWithType.vb: UFKeyedStorage.SetObject(Of T)(String, Object)
-  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(Of T)(String, Object)
-  name.vb: SetObject(Of T)(String, Object)
+  definition: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
+  href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String___0_
+  name: SetObject<T>(string, T)
+  nameWithType: UFKeyedStorage.SetObject<T>(string, T)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject<T>(string, T)
+  nameWithType.vb: UFKeyedStorage.SetObject(Of T)(String, T)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(Of T)(String, T)
+  name.vb: SetObject(Of T)(String, T)
   spec.csharp:
-  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
     name: SetObject
-    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String_System_Object_
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String___0_
   - name: <
   - name: T
   - name: '>'
@@ -2617,15 +2617,12 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: T
   - name: )
   spec.vb:
-  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
     name: SetObject
-    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String_System_Object_
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String___0_
   - name: (
   - name: Of
   - name: " "
@@ -2638,10 +2635,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: T
   - name: )
 - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
   commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
@@ -2993,6 +2987,50 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String___0_
+  name: SetObject<T>(string, T)
+  nameWithType: UFKeyedStorage.SetObject<T>(string, T)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject<T>(string, T)
+  nameWithType.vb: UFKeyedStorage.SetObject(Of T)(String, T)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(Of T)(String, T)
+  name.vb: SetObject(Of T)(String, T)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
+    name: SetObject
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
+    name: SetObject
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
 - uid: UltraForce.Library.NetStandard.Storage.UFCachedStorage.#ctor*
   commentId: Overload:UltraForce.Library.NetStandard.Storage.UFCachedStorage.#ctor
   href: UltraForce.Library.NetStandard.Storage.UFCachedStorage.html#UltraForce_Library_NetStandard_Storage_UFCachedStorage__ctor_System_TimeSpan_UltraForce_Library_NetStandard_Storage_UFKeyedStorage_System_Boolean_

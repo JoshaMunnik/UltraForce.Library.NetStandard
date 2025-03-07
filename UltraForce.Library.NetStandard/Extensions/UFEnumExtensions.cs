@@ -42,7 +42,10 @@ namespace UltraForce.Library.NetStandard.Extensions
   public static class UFEnumExtensions
   {
     /// <summary>
-    /// Get the value of a <see cref="UFDescriptionAttribute.Description"/> used with an enum value.
+    /// Get the value of a <see cref="UFDescriptionAttribute"/> used with an enum value.
+    /// If no value is found, the value of the <see cref="DescriptionAttribute"/> is
+    /// used. If that one also cannot be found, the enum value is converted to a string using
+    /// <see cref="object.ToString"/>.
     /// </summary>
     /// <remarks>
     /// Based on code from: 
@@ -50,10 +53,23 @@ namespace UltraForce.Library.NetStandard.Extensions
     /// <para>
     /// Usage:
     /// <code>
-    ///     [UFDescription("Some text")]
-    ///     EnumValue
-    ///     ...
-    ///     EnumValue.GetDescription() 
+    ///   ... 
+    ///   [UFDescription("Some text")]
+    ///   FirstEnumValue
+    ///   ...
+    ///   // returns "Some text"
+    ///   FirstEnumValue.GetDescription()
+    ///   ... 
+    ///   [Description("other text")]
+    ///   SecondEnumValue
+    ///   ... 
+    ///   // returns "Other text"
+    ///   SecondEnumValue.GetDescription()
+    ///   ... 
+    ///   ThirdEnumValue
+    ///   ... 
+    ///   // returns "ThirdEnumValue" 
+    ///   ThirdEnumValue.GetDescription()
     /// </code>
     /// </para>
     /// </remarks>

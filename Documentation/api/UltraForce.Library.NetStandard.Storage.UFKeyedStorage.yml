@@ -59,7 +59,7 @@ items:
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetLong(System.String,System.Int64)
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object)
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object,System.Type)
-  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetSByte(System.String,System.SByte)
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetShort(System.String,System.Int16)
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
@@ -81,7 +81,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: UFKeyedStorage
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 54
+    startLine: 55
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -150,7 +150,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: .ctor
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 61
+    startLine: 65
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -181,7 +181,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetString
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 77
+    startLine: 81
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -222,7 +222,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetString
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 84
+    startLine: 91
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -260,7 +260,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetString
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 94
+    startLine: 103
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -298,7 +298,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetByte
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 107
+    startLine: 119
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -346,7 +346,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetByte
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 121
+    startLine: 136
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -384,7 +384,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetByte
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 138
+    startLine: 155
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -429,7 +429,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetSByte
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 158
+    startLine: 178
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -477,7 +477,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetSByte
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 172
+    startLine: 195
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -515,7 +515,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetSByte
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 189
+    startLine: 214
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -560,7 +560,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetShort
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 209
+    startLine: 237
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -608,7 +608,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetShort
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 223
+    startLine: 254
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -646,7 +646,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetShort
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 240
+    startLine: 273
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -691,7 +691,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetUShort
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 260
+    startLine: 296
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -739,7 +739,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetUShort
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 274
+    startLine: 313
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -777,7 +777,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetUShort
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 291
+    startLine: 332
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -822,7 +822,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetInt
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 312
+    startLine: 356
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -872,7 +872,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetInt
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 326
+    startLine: 373
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -910,7 +910,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetInt
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 344
+    startLine: 393
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -957,7 +957,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetUInt
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 367
+    startLine: 419
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1012,7 +1012,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetUInt
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 381
+    startLine: 436
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1050,7 +1050,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetUInt
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 399
+    startLine: 456
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1097,7 +1097,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetLong
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 420
+    startLine: 480
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1147,7 +1147,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetLong
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 434
+    startLine: 497
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1185,7 +1185,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetLong
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 452
+    startLine: 517
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1232,7 +1232,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetULong
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 473
+    startLine: 541
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1282,7 +1282,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetULong
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 487
+    startLine: 558
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1320,7 +1320,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetULong
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 505
+    startLine: 578
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1367,7 +1367,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetFloat
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 527
+    startLine: 603
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1420,7 +1420,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetFloat
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 541
+    startLine: 620
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1458,7 +1458,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetFloat
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 558
+    startLine: 639
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1503,7 +1503,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetDouble
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 580
+    startLine: 664
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1556,7 +1556,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetDouble
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 594
+    startLine: 681
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1594,7 +1594,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetDouble
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 612
+    startLine: 701
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1641,7 +1641,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetBool
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 633
+    startLine: 725
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1691,7 +1691,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetBool
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 647
+    startLine: 742
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1729,7 +1729,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetBool
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 665
+    startLine: 762
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1776,7 +1776,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetChar
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 686
+    startLine: 786
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1826,7 +1826,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetChar
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 700
+    startLine: 803
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1864,7 +1864,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetChar
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 718
+    startLine: 823
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1911,7 +1911,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetBytes
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 739
+    startLine: 847
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1961,7 +1961,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetBytes
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 755
+    startLine: 866
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -1999,7 +1999,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetBytes
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 773
+    startLine: 886
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2046,7 +2046,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetDateTime
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 785
+    startLine: 901
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2090,7 +2090,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetDateTime
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 797
+    startLine: 916
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2128,7 +2128,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetDateTime
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 808
+    startLine: 929
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2169,7 +2169,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetGuid
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 819
+    startLine: 943
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2210,7 +2210,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetGuid
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 831
+    startLine: 958
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2248,7 +2248,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetGuid
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 842
+    startLine: 971
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2289,7 +2289,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetStorableObject
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 856
+    startLine: 988
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2330,7 +2330,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetStorableObject
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 875
+    startLine: 1010
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2375,7 +2375,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetObject
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 889
+    startLine: 1027
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2419,14 +2419,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetObject
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 904
+    startLine: 1045
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
   summary: A generic version of <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String%2cSystem.Type)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: 'public T? GetObject<T>(string aKey) where T : struct'
+    content: public T? GetObject<T>(string aKey)
     parameters:
     - id: aKey
       type: System.String
@@ -2435,9 +2435,9 @@ items:
     - id: T
       description: Type of value to get
     return:
-      type: System.Nullable{{T}}
+      type: '{T}'
       description: Value or null if none could be found
-    content.vb: Public Function GetObject(Of T As Structure)(aKey As String) As T?
+    content.vb: Public Function GetObject(Of T)(aKey As String) As T
   overload: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject*
   nameWithType.vb: UFKeyedStorage.GetObject(Of T)(String)
   fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(Of T)(String)
@@ -2460,7 +2460,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetObject
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 958
+    startLine: 1101
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2572,7 +2572,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetObject
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 1063
+    startLine: 1209
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2681,7 +2681,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetObject
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 1133
+    startLine: 1283
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2704,16 +2704,16 @@ items:
   nameWithType.vb: UFKeyedStorage.SetObject(String, Object)
   fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(String, Object)
   name.vb: SetObject(String, Object)
-- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
-  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
-  id: SetObject``1(System.String,System.Object)
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
+  id: SetObject``1(System.String,``0)
   parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
   langs:
   - csharp
   - vb
-  name: SetObject<T>(string, object)
-  nameWithType: UFKeyedStorage.SetObject<T>(string, object)
-  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject<T>(string, object)
+  name: SetObject<T>(string, T)
+  nameWithType: UFKeyedStorage.SetObject<T>(string, T)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject<T>(string, T)
   type: Method
   source:
     remote:
@@ -2722,29 +2722,29 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SetObject
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 1144
+    startLine: 1297
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
   summary: Generic version of <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String%2cSystem.Object%2cSystem.Type)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public void SetObject<T>(string aKey, object anObject)
+    content: public void SetObject<T>(string aKey, T anObject)
     parameters:
     - id: aKey
       type: System.String
       description: Key to store object for
     - id: anObject
-      type: System.Object
+      type: '{T}'
       description: Object to store
     typeParameters:
     - id: T
       description: Type to store
-    content.vb: Public Sub SetObject(Of T)(aKey As String, anObject As Object)
+    content.vb: Public Sub SetObject(Of T)(aKey As String, anObject As T)
   overload: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject*
-  nameWithType.vb: UFKeyedStorage.SetObject(Of T)(String, Object)
-  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(Of T)(String, Object)
-  name.vb: SetObject(Of T)(String, Object)
+  nameWithType.vb: UFKeyedStorage.SetObject(Of T)(String, T)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(Of T)(String, T)
+  name.vb: SetObject(Of T)(String, T)
 - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteAll
   commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteAll
   id: DeleteAll
@@ -2763,7 +2763,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: DeleteAll
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 1152
+    startLine: 1308
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2791,7 +2791,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: DeleteKey
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 1162
+    startLine: 1318
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2826,7 +2826,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: HasKey
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 1173
+    startLine: 1331
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2864,7 +2864,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: SerializeObject
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 1187
+    startLine: 1347
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -2909,7 +2909,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: DeserializeObject
     path: ../UltraForce.Library.NetStandard/Storage/UFKeyedStorage.cs
-    startLine: 1203
+    startLine: 1368
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Storage
@@ -4527,47 +4527,16 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.type
   - name: )
-- uid: System.Nullable{{T}}
-  commentId: T:System.Nullable{``0}
-  parent: System
-  definition: System.Nullable`1
-  name: T?
-  nameWithType: T?
-  fullName: T?
-  spec.csharp:
-  - name: T
-  - name: '?'
-  spec.vb:
-  - name: T
-  - name: '?'
-- uid: System.Nullable`1
-  commentId: T:System.Nullable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  name: Nullable<T>
-  nameWithType: Nullable<T>
-  fullName: System.Nullable<T>
-  nameWithType.vb: Nullable(Of T)
-  fullName.vb: System.Nullable(Of T)
-  name.vb: Nullable(Of T)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
 - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
   commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
   parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage

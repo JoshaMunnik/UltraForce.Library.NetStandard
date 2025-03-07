@@ -851,7 +851,12 @@ namespace UltraForce.Library.NetStandard.Storage
     /// <returns>Stored value or aDefault</returns>
     public virtual async Task<Guid> GetGuidAsync(string aKey, Guid aDefault)
     {
-      return await this.HasKeyAsync(aKey) ? new Guid(await this.GetBytesAsync(aKey)) : aDefault;
+      if (!await this.HasKeyAsync(aKey))
+      {
+        return aDefault;
+      }
+      byte[]? bytes = await this.GetBytesAsync(aKey);
+      return bytes != null ? new Guid(bytes) : aDefault;
     }
 
     /// <summary>
@@ -1152,6 +1157,20 @@ namespace UltraForce.Library.NetStandard.Storage
     public async Task SetObjectAsync(string aKey, object? anObject)
     {
       await this.SetObjectAsync(aKey, anObject, anObject?.GetType());
+    }
+    
+    /// <summary>
+    /// Generic version of <see cref="SetObjectAsync(string,object,Type)"/>.
+    /// </summary>
+    /// <typeparam name="T">Type to store</typeparam>
+    /// <param name="aKey">Key to store object for</param>
+    /// <param name="anObject">Object to store</param>
+    public async Task SetObjectAsync<T>(
+      string aKey,
+      T anObject
+    )
+    {
+      await this.SetObjectAsync(aKey, anObject, typeof(T));
     }
 
     /// <summary>

@@ -63,11 +63,18 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetDescription
     path: ../UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs
-    startLine: 64
+    startLine: 80
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Extensions
-  summary: Get the value of a <xref href="UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.Description" data-throw-if-not-resolved="false"></xref> used with an enum value.
+  summary: >-
+    Get the value of a <xref href="UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute" data-throw-if-not-resolved="false"></xref> used with an enum value.
+
+    If no value is found, the value of the <xref href="System.ComponentModel.DescriptionAttribute" data-throw-if-not-resolved="false"></xref> is
+
+    used. If that one also cannot be found, the enum value is converted to a string using
+
+    <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref>.
   remarks: >-
     Based on code from: 
 
@@ -77,13 +84,39 @@ items:
 
     Usage:
 
-    <pre><code class="lang-csharp">[UFDescription("Some text")]
+    <pre><code class="lang-csharp">... 
 
-    EnumValue
+    [UFDescription("Some text")]
+
+    FirstEnumValue
 
     ...
 
-    EnumValue.GetDescription()</code></pre>
+    // returns "Some text"
+
+    FirstEnumValue.GetDescription()
+
+    ... 
+
+    [Description("other text")]
+
+    SecondEnumValue
+
+    ... 
+
+    // returns "Other text"
+
+    SecondEnumValue.GetDescription()
+
+    ... 
+
+    ThirdEnumValue
+
+    ... 
+
+    // returns "ThirdEnumValue" 
+
+    ThirdEnumValue.GetDescription()</code></pre>
 
     </p>
   example: []
@@ -120,7 +153,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetShortDescription
     path: ../UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs
-    startLine: 80
+    startLine: 96
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Extensions
@@ -156,7 +189,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetName
     path: ../UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs
-    startLine: 95
+    startLine: 111
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Extensions
@@ -192,7 +225,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: Next
     path: ../UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs
-    startLine: 114
+    startLine: 130
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Extensions
@@ -241,7 +274,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: Previous
     path: ../UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs
-    startLine: 132
+    startLine: 148
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Extensions
@@ -290,7 +323,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: GetAttribute
     path: ../UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs
-    startLine: 145
+    startLine: 161
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Extensions
@@ -597,12 +630,19 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.Description
-  commentId: P:UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.Description
-  href: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.html#UltraForce_Library_NetStandard_Annotations_UFDescriptionAttribute_Description
-  name: Description
-  nameWithType: UFDescriptionAttribute.Description
-  fullName: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.Description
+- uid: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
+  commentId: T:UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
+  href: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.html
+  name: UFDescriptionAttribute
+  nameWithType: UFDescriptionAttribute
+  fullName: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
+- uid: System.ComponentModel.DescriptionAttribute
+  commentId: T:System.ComponentModel.DescriptionAttribute
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.descriptionattribute
+  name: DescriptionAttribute
+  nameWithType: DescriptionAttribute
+  fullName: System.ComponentModel.DescriptionAttribute
 - uid: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription*
   commentId: Overload:UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription
   href: UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.html#UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetDescription_System_Enum_

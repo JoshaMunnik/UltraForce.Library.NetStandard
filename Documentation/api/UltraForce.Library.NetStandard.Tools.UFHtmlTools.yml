@@ -6,6 +6,7 @@ items:
   parent: UltraForce.Library.NetStandard.Tools
   children:
   - UltraForce.Library.NetStandard.Tools.UFHtmlTools.AddProtocol(System.String,System.String)
+  - UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.String)
   - UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode(System.String)
   - UltraForce.Library.NetStandard.Tools.UFHtmlTools.NewDomId
   - UltraForce.Library.NetStandard.Tools.UFHtmlTools.ToHtml(System.String)
@@ -29,7 +30,7 @@ items:
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
-  summary: An utility class that contains HTML related methods.
+  summary: A utility class that contains HTML related methods.
   example: []
   syntax:
     content: public static class UFHtmlTools
@@ -105,15 +106,15 @@ items:
     html tags and replacing html entities with their unicode equivalent.
   example: []
   syntax:
-    content: public static string ToPlain(string aHtmlText)
+    content: public static string ToPlain(string htmlText)
     parameters:
-    - id: aHtmlText
+    - id: htmlText
       type: System.String
       description: Html formatted string
     return:
       type: System.String
       description: String without html tags
-    content.vb: Public Shared Function ToPlain(aHtmlText As String) As String
+    content.vb: Public Shared Function ToPlain(htmlText As String) As String
   overload: UltraForce.Library.NetStandard.Tools.UFHtmlTools.ToPlain*
   nameWithType.vb: UFHtmlTools.ToPlain(String)
   fullName.vb: UltraForce.Library.NetStandard.Tools.UFHtmlTools.ToPlain(String)
@@ -143,18 +144,18 @@ items:
   summary: Adds a protocol to an url that starts with "//" or does not contain "://".
   example: []
   syntax:
-    content: public static string AddProtocol(string anUrl, string aProtocol = "http")
+    content: public static string AddProtocol(string url, string protocol = "http")
     parameters:
-    - id: anUrl
+    - id: url
       type: System.String
       description: Url to check
-    - id: aProtocol
+    - id: protocol
       type: System.String
       description: Protocol to add
     return:
       type: System.String
       description: Url with protocol
-    content.vb: Public Shared Function AddProtocol(anUrl As String, aProtocol As String = "http") As String
+    content.vb: Public Shared Function AddProtocol(url As String, protocol As String = "http") As String
   overload: UltraForce.Library.NetStandard.Tools.UFHtmlTools.AddProtocol*
   nameWithType.vb: UFHtmlTools.AddProtocol(String, String)
   fullName.vb: UltraForce.Library.NetStandard.Tools.UFHtmlTools.AddProtocol(String, String)
@@ -195,19 +196,60 @@ items:
     </p>
   example: []
   syntax:
-    content: public static string ToHtml(string aPlainText)
+    content: public static string ToHtml(string plainText)
     parameters:
-    - id: aPlainText
+    - id: plainText
       type: System.String
       description: Plain text to convert
     return:
       type: System.String
       description: Html safe text
-    content.vb: Public Shared Function ToHtml(aPlainText As String) As String
+    content.vb: Public Shared Function ToHtml(plainText As String) As String
   overload: UltraForce.Library.NetStandard.Tools.UFHtmlTools.ToHtml*
   nameWithType.vb: UFHtmlTools.ToHtml(String)
   fullName.vb: UltraForce.Library.NetStandard.Tools.UFHtmlTools.ToHtml(String)
   name.vb: ToHtml(String)
+- uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.String)
+  id: Attribute(System.String,System.String)
+  parent: UltraForce.Library.NetStandard.Tools.UFHtmlTools
+  langs:
+  - csharp
+  - vb
+  name: Attribute(string, string?)
+  nameWithType: UFHtmlTools.Attribute(string, string?)
+  fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(string, string?)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFHtmlTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: Attribute
+    path: ../UltraForce.Library.NetStandard/Tools/UFHtmlTools.cs
+    startLine: 163
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Generates an attribute definition for the name and value.
+  example: []
+  syntax:
+    content: public static string Attribute(string name, string? value = null)
+    parameters:
+    - id: name
+      type: System.String
+      description: attribute name
+    - id: value
+      type: System.String
+      description: optional attribute value
+    return:
+      type: System.String
+      description: Either only the <code>name</code> if the value is not set, or else <code>name="value"</code>
+    content.vb: Public Shared Function Attribute(name As String, value As String = Nothing) As String
+  overload: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute*
+  nameWithType.vb: UFHtmlTools.Attribute(String, String)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(String, String)
+  name.vb: Attribute(String, String)
 - uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode(System.String)
   commentId: M:UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode(System.String)
   id: EntityToUnicode(System.String)
@@ -226,7 +268,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: EntityToUnicode
     path: ../UltraForce.Library.NetStandard/Tools/UFHtmlTools.cs
-    startLine: 164
+    startLine: 180
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
@@ -242,15 +284,15 @@ items:
     </p>
   example: []
   syntax:
-    content: public static string EntityToUnicode(string aText)
+    content: public static string EntityToUnicode(string text)
     parameters:
-    - id: aText
+    - id: text
       type: System.String
       description: Text with entity definitions
     return:
       type: System.String
       description: String with entities replaced
-    content.vb: Public Shared Function EntityToUnicode(aText As String) As String
+    content.vb: Public Shared Function EntityToUnicode(text As String) As String
   overload: UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode*
   nameWithType.vb: UFHtmlTools.EntityToUnicode(String)
   fullName.vb: UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode(String)
@@ -273,22 +315,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: UnicodeToEntity
     path: ../UltraForce.Library.NetStandard/Tools/UFHtmlTools.cs
-    startLine: 428
+    startLine: 444
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
   summary: Replace certain unicode  definitions with their html entity definition
   example: []
   syntax:
-    content: public static string UnicodeToEntity(string aText)
+    content: public static string UnicodeToEntity(string text)
     parameters:
-    - id: aText
+    - id: text
       type: System.String
       description: Text to check
     return:
       type: System.String
       description: String with entities
-    content.vb: Public Shared Function UnicodeToEntity(aText As String) As String
+    content.vb: Public Shared Function UnicodeToEntity(text As String) As String
   overload: UltraForce.Library.NetStandard.Tools.UFHtmlTools.UnicodeToEntity*
   nameWithType.vb: UFHtmlTools.UnicodeToEntity(String)
   fullName.vb: UltraForce.Library.NetStandard.Tools.UFHtmlTools.UnicodeToEntity(String)
@@ -604,6 +646,12 @@ references:
   name: ToHtml
   nameWithType: UFHtmlTools.ToHtml
   fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.ToHtml
+- uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute
+  href: UltraForce.Library.NetStandard.Tools.UFHtmlTools.html#UltraForce_Library_NetStandard_Tools_UFHtmlTools_Attribute_System_String_System_String_
+  name: Attribute
+  nameWithType: UFHtmlTools.Attribute
+  fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute
 - uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode*
   commentId: Overload:UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode
   href: UltraForce.Library.NetStandard.Tools.UFHtmlTools.html#UltraForce_Library_NetStandard_Tools_UFHtmlTools_EntityToUnicode_System_String_

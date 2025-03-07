@@ -9113,15 +9113,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject
   nameWithType: UFKeyedStorage.SetObject
-- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
-  name: SetObject<T>(string, object)
-  href: api/UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String_System_Object_
-  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
-  name.vb: SetObject(Of T)(String, Object)
-  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject<T>(string, object)
-  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(Of T)(String, Object)
-  nameWithType: UFKeyedStorage.SetObject<T>(string, object)
-  nameWithType.vb: UFKeyedStorage.SetObject(Of T)(String, Object)
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
+  name: SetObject<T>(string, T)
+  href: api/UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetObject__1_System_String___0_
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,``0)
+  name.vb: SetObject(Of T)(String, T)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject<T>(string, T)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(Of T)(String, T)
+  nameWithType: UFKeyedStorage.SetObject<T>(string, T)
+  nameWithType.vb: UFKeyedStorage.SetObject(Of T)(String, T)
 - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetSByte(System.String,System.SByte)
   name: SetSByte(string, sbyte)
   href: api/UltraForce.Library.NetStandard.Storage.UFKeyedStorage.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorage_SetSByte_System_String_System_SByte_
@@ -9962,6 +9962,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync
   nameWithType: UFKeyedStorageAsync.SetObjectAsync
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync``1(System.String,``0)
+  name: SetObjectAsync<T>(string, T)
+  href: api/UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetObjectAsync__1_System_String___0_
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync``1(System.String,``0)
+  name.vb: SetObjectAsync(Of T)(String, T)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync<T>(string, T)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync(Of T)(String, T)
+  nameWithType: UFKeyedStorageAsync.SetObjectAsync<T>(string, T)
+  nameWithType.vb: UFKeyedStorageAsync.SetObjectAsync(Of T)(String, T)
 - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetSByteAsync(System.String,System.SByte)
   name: SetSByteAsync(string, sbyte)
   href: api/UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetSByteAsync_System_String_System_SByte_
@@ -10949,6 +10958,22 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.AddProtocol
   nameWithType: UFHtmlTools.AddProtocol
+- uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.String)
+  name: Attribute(string, string?)
+  href: api/UltraForce.Library.NetStandard.Tools.UFHtmlTools.html#UltraForce_Library_NetStandard_Tools_UFHtmlTools_Attribute_System_String_System_String_
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.String)
+  name.vb: Attribute(String, String)
+  fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(string, string?)
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(String, String)
+  nameWithType: UFHtmlTools.Attribute(string, string?)
+  nameWithType.vb: UFHtmlTools.Attribute(String, String)
+- uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute*
+  name: Attribute
+  href: api/UltraForce.Library.NetStandard.Tools.UFHtmlTools.html#UltraForce_Library_NetStandard_Tools_UFHtmlTools_Attribute_
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute
+  isSpec: "True"
+  fullName: UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute
+  nameWithType: UFHtmlTools.Attribute
 - uid: UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode(System.String)
   name: EntityToUnicode(string)
   href: api/UltraForce.Library.NetStandard.Tools.UFHtmlTools.html#UltraForce_Library_NetStandard_Tools_UFHtmlTools_EntityToUnicode_System_String_

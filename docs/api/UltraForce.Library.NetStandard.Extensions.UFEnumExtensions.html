@@ -157,7 +157,7 @@ Class UFEnumExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetAttribute__1_System_Enum_" data-uid="UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetAttribute``1(System.Enum)">
   GetAttribute&lt;T&gt;(Enum)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets an attribute type for an enum value.</p>
@@ -199,10 +199,13 @@ Class UFEnumExtensions  <a class="header-action link-secondary" title="View sour
 
   <h3 id="UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetDescription_System_Enum_" data-uid="UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetDescription(System.Enum)">
   GetDescription(Enum)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Get the value of a <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.html#UltraForce_Library_NetStandard_Annotations_UFDescriptionAttribute_Description">Description</a> used with an enum value.</p>
+  <div class="markdown level1 summary"><p>Get the value of a <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.html">UFDescriptionAttribute</a> used with an enum value.
+If no value is found, the value of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.descriptionattribute">DescriptionAttribute</a> is
+used. If that one also cannot be found, the enum value is converted to a string using
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">ToString()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -236,10 +239,23 @@ string.</p>
 <a href="http://stackoverflow.com/questions/18912697/system-componentmodel-descriptionattribute-in.NetStandard1-class-library">http://stackoverflow.com/questions/18912697/system-componentmodel-descriptionattribute-in.NetStandard1-class-library</a></p>
 <p>
 Usage:
-<pre><code class="lang-csharp">[UFDescription("Some text")]
-EnumValue
+<pre><code class="lang-csharp">... 
+[UFDescription("Some text")]
+FirstEnumValue
 ...
-EnumValue.GetDescription()</code></pre>
+// returns "Some text"
+FirstEnumValue.GetDescription()
+... 
+[Description("other text")]
+SecondEnumValue
+... 
+// returns "Other text"
+SecondEnumValue.GetDescription()
+... 
+ThirdEnumValue
+... 
+// returns "ThirdEnumValue" 
+ThirdEnumValue.GetDescription()</code></pre>
 
 </div>
 
@@ -250,7 +266,7 @@ EnumValue.GetDescription()</code></pre>
 
   <h3 id="UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetName_System_Enum_" data-uid="UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetName(System.Enum)">
   GetName(Enum)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the value of a <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.html#UltraForce_Library_NetStandard_Annotations_UFDescriptionAttribute_ShortDescription">ShortDescription</a> used with an enum value.</p>
@@ -289,7 +305,7 @@ EnumValue.GetDescription()</code></pre>
 
   <h3 id="UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_GetShortDescription_System_Enum_" data-uid="UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.GetShortDescription(System.Enum)">
   GetShortDescription(Enum)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the value of a <a class="xref" href="UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute.html#UltraForce_Library_NetStandard_Annotations_UFDescriptionAttribute_ShortDescription">ShortDescription</a> used with an enum value.</p>
@@ -328,7 +344,7 @@ EnumValue.GetDescription()</code></pre>
 
   <h3 id="UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Next__1___0_" data-uid="UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Next``1(``0)">
   Next&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the next value in an enum; if the value is the last value in
@@ -378,7 +394,7 @@ the enum, the first value is returned.</p>
 
   <h3 id="UltraForce_Library_NetStandard_Extensions_UFEnumExtensions_Previous__1___0_" data-uid="UltraForce.Library.NetStandard.Extensions.UFEnumExtensions.Previous``1(``0)">
   Previous&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Extensions/UFEnumExtensions.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the next value in an enum; if the value is the last value in

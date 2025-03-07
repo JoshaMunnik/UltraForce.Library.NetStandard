@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFHtmlTools | UltraForce.Library.NetStandard ">
       
-      <meta name="description" content="An utility class that contains HTML related methods.">
+      <meta name="description" content="A utility class that contains HTML related methods.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class UFHtmlTools  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>UltraForce.Library.NetStandard.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>An utility class that contains HTML related methods.</p>
+  <div class="markdown summary"><p>A utility class that contains HTML related methods.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -165,15 +165,15 @@ Class UFHtmlTools  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string AddProtocol(string anUrl, string aProtocol = &quot;http&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string AddProtocol(string url, string protocol = &quot;http&quot;)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Url to check</p>
 </dd>
-    <dt><code>aProtocol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>protocol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Protocol to add</p>
 </dd>
   </dl>
@@ -195,11 +195,53 @@ Class UFHtmlTools  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <a id="UltraForce_Library_NetStandard_Tools_UFHtmlTools_Attribute_" data-uid="UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute*"></a>
+
+  <h3 id="UltraForce_Library_NetStandard_Tools_UFHtmlTools_Attribute_System_String_System_String_" data-uid="UltraForce.Library.NetStandard.Tools.UFHtmlTools.Attribute(System.String,System.String)">
+  Attribute(string, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFHtmlTools.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates an attribute definition for the name and value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Attribute(string name, string? value = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>attribute name</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>optional attribute value</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Either only the <code>name</code> if the value is not set, or else <code>name=&quot;value&quot;</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_NetStandard_Tools_UFHtmlTools_EntityToUnicode_" data-uid="UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode*"></a>
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFHtmlTools_EntityToUnicode_System_String_" data-uid="UltraForce.Library.NetStandard.Tools.UFHtmlTools.EntityToUnicode(System.String)">
   EntityToUnicode(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFHtmlTools.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFHtmlTools.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Replace html entity definitions with their unicode equivalent</p>
@@ -211,12 +253,12 @@ https://github.com/Cratesmith/RestSharp-for-unity3d/blob/master/RestSharp/Extens
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string EntityToUnicode(string aText)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string EntityToUnicode(string text)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Text with entity definitions</p>
 </dd>
   </dl>
@@ -288,12 +330,12 @@ It will replace "\n" with "<br>"; "\r" characters are not copied.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ToHtml(string aPlainText)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string ToHtml(string plainText)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aPlainText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>plainText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Plain text to convert</p>
 </dd>
   </dl>
@@ -329,12 +371,12 @@ html tags and replacing html entities with their unicode equivalent.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ToPlain(string aHtmlText)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string ToPlain(string htmlText)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aHtmlText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>htmlText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Html formatted string</p>
 </dd>
   </dl>
@@ -360,7 +402,7 @@ html tags and replacing html entities with their unicode equivalent.</p>
 
   <h3 id="UltraForce_Library_NetStandard_Tools_UFHtmlTools_UnicodeToEntity_System_String_" data-uid="UltraForce.Library.NetStandard.Tools.UFHtmlTools.UnicodeToEntity(System.String)">
   UnicodeToEntity(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFHtmlTools.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.NetStandard/blob/master/UltraForce.Library.NetStandard/Tools/UFHtmlTools.cs/#L445"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Replace certain unicode  definitions with their html entity definition</p>
@@ -368,12 +410,12 @@ html tags and replacing html entities with their unicode equivalent.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string UnicodeToEntity(string aText)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string UnicodeToEntity(string text)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Text to check</p>
 </dd>
   </dl>

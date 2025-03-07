@@ -94,6 +94,7 @@ items:
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.GetObjectAsync``1(System.String)
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync(System.String,System.Object,System.Type)
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync(System.String,System.Object)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync``1(System.String,{T})
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SerializeObjectAsync(System.String,System.Object)
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.DeserializeObjectAsync(System.String,System.Type)
   - System.Object.Equals(System.Object)
@@ -2515,6 +2516,51 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync``1(System.String,{T})
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync``1(System.String,``0)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync
+  definition: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync``1(System.String,``0)
+  href: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetObjectAsync__1_System_String___0_
+  name: SetObjectAsync<T>(string, T)
+  nameWithType: UFKeyedStorageAsync.SetObjectAsync<T>(string, T)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync<T>(string, T)
+  nameWithType.vb: UFKeyedStorageAsync.SetObjectAsync(Of T)(String, T)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync(Of T)(String, T)
+  name.vb: SetObjectAsync(Of T)(String, T)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync``1(System.String,``0)
+    name: SetObjectAsync
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetObjectAsync__1_System_String___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync``1(System.String,``0)
+    name: SetObjectAsync
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetObjectAsync__1_System_String___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
 - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SerializeObjectAsync(System.String,System.Object)
   commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SerializeObjectAsync(System.String,System.Object)
   parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync
@@ -2827,6 +2873,50 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync``1(System.String,``0)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync``1(System.String,``0)
+  isExternal: true
+  href: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetObjectAsync__1_System_String___0_
+  name: SetObjectAsync<T>(string, T)
+  nameWithType: UFKeyedStorageAsync.SetObjectAsync<T>(string, T)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync<T>(string, T)
+  nameWithType.vb: UFKeyedStorageAsync.SetObjectAsync(Of T)(String, T)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync(Of T)(String, T)
+  name.vb: SetObjectAsync(Of T)(String, T)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync``1(System.String,``0)
+    name: SetObjectAsync
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetObjectAsync__1_System_String___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.SetObjectAsync``1(System.String,``0)
+    name: SetObjectAsync
+    href: UltraForce.Library.NetStandard.Storage.UFKeyedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_SetObjectAsync__1_System_String___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
 - uid: UltraForce.Library.NetStandard.Storage.UFCachedStorageAsync.#ctor*
   commentId: Overload:UltraForce.Library.NetStandard.Storage.UFCachedStorageAsync.#ctor
   href: UltraForce.Library.NetStandard.Storage.UFCachedStorageAsync.html#UltraForce_Library_NetStandard_Storage_UFCachedStorageAsync__ctor_System_TimeSpan_UltraForce_Library_NetStandard_Storage_UFKeyedStorageAsync_System_Boolean_
