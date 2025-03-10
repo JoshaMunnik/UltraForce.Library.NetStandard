@@ -5,6 +5,8 @@ items:
   id: UFArrayTools
   parent: UltraForce.Library.NetStandard.Tools
   children:
+  - UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAll``1(``0[],``0[])
+  - UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAny``1(``0[],``0[])
   - UltraForce.Library.NetStandard.Tools.UFArrayTools.Fill``1(``0[])
   - UltraForce.Library.NetStandard.Tools.UFArrayTools.Fill``1(``0[],System.Int32,System.Int32)
   - UltraForce.Library.NetStandard.Tools.UFArrayTools.RandomItem``1(``0[])
@@ -25,7 +27,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: UFArrayTools
     path: ../UltraForce.Library.NetStandard/Tools/UFArrayTools.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
@@ -62,7 +64,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: Shuffle
     path: ../UltraForce.Library.NetStandard/Tools/UFArrayTools.cs
-    startLine: 50
+    startLine: 51
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
@@ -103,7 +105,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: Swap
     path: ../UltraForce.Library.NetStandard/Tools/UFArrayTools.cs
-    startLine: 77
+    startLine: 78
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
@@ -150,7 +152,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: RandomItem
     path: ../UltraForce.Library.NetStandard/Tools/UFArrayTools.cs
-    startLine: 95
+    startLine: 96
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
@@ -191,7 +193,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: RandomItem
     path: ../UltraForce.Library.NetStandard/Tools/UFArrayTools.cs
-    startLine: 118
+    startLine: 119
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
@@ -238,7 +240,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: Fill
     path: ../UltraForce.Library.NetStandard/Tools/UFArrayTools.cs
-    startLine: 132
+    startLine: 133
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
@@ -280,7 +282,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
     id: Fill
     path: ../UltraForce.Library.NetStandard/Tools/UFArrayTools.cs
-    startLine: 148
+    startLine: 149
   assemblies:
   - UltraForce.Library.NetStandard
   namespace: UltraForce.Library.NetStandard.Tools
@@ -310,6 +312,94 @@ items:
   nameWithType.vb: UFArrayTools.Fill(Of T)(T(), Integer, Integer)
   fullName.vb: UltraForce.Library.NetStandard.Tools.UFArrayTools.Fill(Of T)(T(), Integer, Integer)
   name.vb: Fill(Of T)(T(), Integer, Integer)
+- uid: UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAny``1(``0[],``0[])
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAny``1(``0[],``0[])
+  id: ContainsAny``1(``0[],``0[])
+  parent: UltraForce.Library.NetStandard.Tools.UFArrayTools
+  langs:
+  - csharp
+  - vb
+  name: ContainsAny<T>(T[], params T[])
+  nameWithType: UFArrayTools.ContainsAny<T>(T[], params T[])
+  fullName: UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAny<T>(T[], params T[])
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFArrayTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: ContainsAny
+    path: ../UltraForce.Library.NetStandard/Tools/UFArrayTools.cs
+    startLine: 165
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Checks if an array contains any of the values.
+  example: []
+  syntax:
+    content: public static bool ContainsAny<T>(T[] array, params T[] values)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: Array to check
+    - id: values
+      type: '{T}[]'
+      description: Value to check
+    typeParameters:
+    - id: T
+      description: Type of the elements inside the array
+    return:
+      type: System.Boolean
+      description: <code>true</code> if any of the values are found in the array
+    content.vb: Public Shared Function ContainsAny(Of T)(array As T(), ParamArray values As T()) As Boolean
+  overload: UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAny*
+  nameWithType.vb: UFArrayTools.ContainsAny(Of T)(T(), ParamArray T())
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAny(Of T)(T(), ParamArray T())
+  name.vb: ContainsAny(Of T)(T(), ParamArray T())
+- uid: UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAll``1(``0[],``0[])
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAll``1(``0[],``0[])
+  id: ContainsAll``1(``0[],``0[])
+  parent: UltraForce.Library.NetStandard.Tools.UFArrayTools
+  langs:
+  - csharp
+  - vb
+  name: ContainsAll<T>(T[], params T[])
+  nameWithType: UFArrayTools.ContainsAll<T>(T[], params T[])
+  fullName: UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAll<T>(T[], params T[])
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFArrayTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: ContainsAll
+    path: ../UltraForce.Library.NetStandard/Tools/UFArrayTools.cs
+    startLine: 177
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Checks if a array contains all the values.
+  example: []
+  syntax:
+    content: public static bool ContainsAll<T>(T[] array, params T[] values)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: Array to check
+    - id: values
+      type: '{T}[]'
+      description: Value to check
+    typeParameters:
+    - id: T
+      description: Type of the elements inside the array
+    return:
+      type: System.Boolean
+      description: <code>true</code> if all values are found in the array
+    content.vb: Public Shared Function ContainsAll(Of T)(array As T(), ParamArray values As T()) As Boolean
+  overload: UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAll*
+  nameWithType.vb: UFArrayTools.ContainsAll(Of T)(T(), ParamArray T())
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAll(Of T)(T(), ParamArray T())
+  name.vb: ContainsAll(Of T)(T(), ParamArray T())
 references:
 - uid: UltraForce.Library.NetStandard.Tools
   commentId: N:UltraForce.Library.NetStandard.Tools
@@ -647,3 +737,26 @@ references:
   name: Fill
   nameWithType: UFArrayTools.Fill
   fullName: UltraForce.Library.NetStandard.Tools.UFArrayTools.Fill
+- uid: UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAny*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAny
+  href: UltraForce.Library.NetStandard.Tools.UFArrayTools.html#UltraForce_Library_NetStandard_Tools_UFArrayTools_ContainsAny__1___0_____0___
+  name: ContainsAny
+  nameWithType: UFArrayTools.ContainsAny
+  fullName: UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAny
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAll*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAll
+  href: UltraForce.Library.NetStandard.Tools.UFArrayTools.html#UltraForce_Library_NetStandard_Tools_UFArrayTools_ContainsAll__1___0_____0___
+  name: ContainsAll
+  nameWithType: UFArrayTools.ContainsAll
+  fullName: UltraForce.Library.NetStandard.Tools.UFArrayTools.ContainsAll

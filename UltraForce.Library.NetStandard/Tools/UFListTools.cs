@@ -304,5 +304,29 @@ namespace UltraForce.Library.NetStandard.Tools
       }
       return -1;
     }
+    
+    /// <summary>
+    /// Checks if a list contains any of the values.
+    /// </summary>
+    /// <param name="list">List to check</param>
+    /// <param name="values">Value to check</param>
+    /// <typeparam name="T">Type of the elements inside the list</typeparam>
+    /// <returns><c>true</c> if any of the values are found in the list</returns>
+    public static bool ContainsAny<T>(IList<T> list, params T[] values)
+    {
+      return values.Any(list.Contains);
+    }
+    
+    /// <summary>
+    /// Checks if a list contains all the values. 
+    /// </summary>
+    /// <param name="list">List to check</param>
+    /// <param name="values">Value to check</param>
+    /// <typeparam name="T">Type of the elements inside the list</typeparam>
+    /// <returns><c>true</c> if all values are found in the list</returns>
+    public static bool ContainsAll<T>(IList<T> list, params T[] values)
+    {
+      return values.All(list.Contains);
+    }
   }
 }

@@ -6,6 +6,8 @@ items:
   parent: UltraForce.Library.NetStandard.Tools
   children:
   - UltraForce.Library.NetStandard.Tools.UFListTools.Compact``1(System.Collections.Generic.List{``0},System.Func{``0,System.Boolean})
+  - UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAll``1(System.Collections.Generic.IList{``0},``0[])
+  - UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAny``1(System.Collections.Generic.IList{``0},``0[])
   - UltraForce.Library.NetStandard.Tools.UFListTools.EqualContent``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IList{``0})
   - UltraForce.Library.NetStandard.Tools.UFListTools.FillAsync``1(System.Int32,System.Func{System.Threading.Tasks.Task{``0}})
   - UltraForce.Library.NetStandard.Tools.UFListTools.Fill``1(System.Collections.Generic.IList{``0},System.Int32)
@@ -678,6 +680,94 @@ items:
   nameWithType.vb: UFListTools.IndexOf(Of T)(IList(Of T), Func(Of T, Boolean), Integer)
   fullName.vb: UltraForce.Library.NetStandard.Tools.UFListTools.IndexOf(Of T)(System.Collections.Generic.IList(Of T), System.Func(Of T, Boolean), Integer)
   name.vb: IndexOf(Of T)(IList(Of T), Func(Of T, Boolean), Integer)
+- uid: UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAny``1(System.Collections.Generic.IList{``0},``0[])
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAny``1(System.Collections.Generic.IList{``0},``0[])
+  id: ContainsAny``1(System.Collections.Generic.IList{``0},``0[])
+  parent: UltraForce.Library.NetStandard.Tools.UFListTools
+  langs:
+  - csharp
+  - vb
+  name: ContainsAny<T>(IList<T>, params T[])
+  nameWithType: UFListTools.ContainsAny<T>(IList<T>, params T[])
+  fullName: UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAny<T>(System.Collections.Generic.IList<T>, params T[])
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFListTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: ContainsAny
+    path: ../UltraForce.Library.NetStandard/Tools/UFListTools.cs
+    startLine: 314
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Checks if a list contains any of the values.
+  example: []
+  syntax:
+    content: public static bool ContainsAny<T>(IList<T> list, params T[] values)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+      description: List to check
+    - id: values
+      type: '{T}[]'
+      description: Value to check
+    typeParameters:
+    - id: T
+      description: Type of the elements inside the list
+    return:
+      type: System.Boolean
+      description: <code>true</code> if any of the values are found in the list
+    content.vb: Public Shared Function ContainsAny(Of T)(list As IList(Of T), ParamArray values As T()) As Boolean
+  overload: UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAny*
+  nameWithType.vb: UFListTools.ContainsAny(Of T)(IList(Of T), ParamArray T())
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAny(Of T)(System.Collections.Generic.IList(Of T), ParamArray T())
+  name.vb: ContainsAny(Of T)(IList(Of T), ParamArray T())
+- uid: UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAll``1(System.Collections.Generic.IList{``0},``0[])
+  commentId: M:UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAll``1(System.Collections.Generic.IList{``0},``0[])
+  id: ContainsAll``1(System.Collections.Generic.IList{``0},``0[])
+  parent: UltraForce.Library.NetStandard.Tools.UFListTools
+  langs:
+  - csharp
+  - vb
+  name: ContainsAll<T>(IList<T>, params T[])
+  nameWithType: UFListTools.ContainsAll<T>(IList<T>, params T[])
+  fullName: UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAll<T>(System.Collections.Generic.IList<T>, params T[])
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.NetStandard/Tools/UFListTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.NetStandard.git
+    id: ContainsAll
+    path: ../UltraForce.Library.NetStandard/Tools/UFListTools.cs
+    startLine: 326
+  assemblies:
+  - UltraForce.Library.NetStandard
+  namespace: UltraForce.Library.NetStandard.Tools
+  summary: Checks if a list contains all the values.
+  example: []
+  syntax:
+    content: public static bool ContainsAll<T>(IList<T> list, params T[] values)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+      description: List to check
+    - id: values
+      type: '{T}[]'
+      description: Value to check
+    typeParameters:
+    - id: T
+      description: Type of the elements inside the list
+    return:
+      type: System.Boolean
+      description: <code>true</code> if all values are found in the list
+    content.vb: Public Shared Function ContainsAll(Of T)(list As IList(Of T), ParamArray values As T()) As Boolean
+  overload: UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAll*
+  nameWithType.vb: UFListTools.ContainsAll(Of T)(IList(Of T), ParamArray T())
+  fullName.vb: UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAll(Of T)(System.Collections.Generic.IList(Of T), ParamArray T())
+  name.vb: ContainsAll(Of T)(IList(Of T), ParamArray T())
 references:
 - uid: UltraForce.Library.NetStandard.Tools
   commentId: N:UltraForce.Library.NetStandard.Tools
@@ -1483,3 +1573,31 @@ references:
   name: IndexOf
   nameWithType: UFListTools.IndexOf
   fullName: UltraForce.Library.NetStandard.Tools.UFListTools.IndexOf
+- uid: UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAny*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAny
+  href: UltraForce.Library.NetStandard.Tools.UFListTools.html#UltraForce_Library_NetStandard_Tools_UFListTools_ContainsAny__1_System_Collections_Generic_IList___0____0___
+  name: ContainsAny
+  nameWithType: UFListTools.ContainsAny
+  fullName: UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAny
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAll*
+  commentId: Overload:UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAll
+  href: UltraForce.Library.NetStandard.Tools.UFListTools.html#UltraForce_Library_NetStandard_Tools_UFListTools_ContainsAll__1_System_Collections_Generic_IList___0____0___
+  name: ContainsAll
+  nameWithType: UFListTools.ContainsAll
+  fullName: UltraForce.Library.NetStandard.Tools.UFListTools.ContainsAll

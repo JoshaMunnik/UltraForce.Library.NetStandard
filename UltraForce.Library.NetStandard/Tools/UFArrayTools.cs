@@ -28,6 +28,7 @@
 // </license>
 
 using System;
+using System.Linq;
 
 namespace UltraForce.Library.NetStandard.Tools
 {
@@ -153,6 +154,30 @@ namespace UltraForce.Library.NetStandard.Tools
         anArray[index] = Activator.CreateInstance<T>();
       }
       return anArray;
+    }
+    
+    /// <summary>
+    /// Checks if an array contains any of the values.
+    /// </summary>
+    /// <param name="array">Array to check</param>
+    /// <param name="values">Value to check</param>
+    /// <typeparam name="T">Type of the elements inside the array</typeparam>
+    /// <returns><c>true</c> if any of the values are found in the array</returns>
+    public static bool ContainsAny<T>(T[] array, params T[] values)
+    {
+      return values.Any(array.Contains);
+    }
+    
+    /// <summary>
+    /// Checks if a array contains all the values. 
+    /// </summary>
+    /// <param name="array">Array to check</param>
+    /// <param name="values">Value to check</param>
+    /// <typeparam name="T">Type of the elements inside the array</typeparam>
+    /// <returns><c>true</c> if all values are found in the array</returns>
+    public static bool ContainsAll<T>(T[] array, params T[] values)
+    {
+      return values.All(array.Contains);
     }
 
     #endregion

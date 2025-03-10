@@ -2,6 +2,10 @@
 https://joshamunnik.github.io/UltraForce.Library.NetStandard/index.html
 
 ## Version history
+1.0.14
+- added UFEnumTools 
+- added ContainsAny, ContainsAll to UFArrayTools and UFListTools
+
 1.0.13
 - Value parameter of UFHtmlTools.Attribute() is now object type (instead of string)
 

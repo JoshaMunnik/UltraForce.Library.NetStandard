@@ -10,6 +10,7 @@ items:
   - UltraForce.Library.NetStandard.Tools.UFDateTimeTools
   - UltraForce.Library.NetStandard.Tools.UFDictionaryTools
   - UltraForce.Library.NetStandard.Tools.UFEnumTools
+  - UltraForce.Library.NetStandard.Tools.UFEnumerableTools
   - UltraForce.Library.NetStandard.Tools.UFExceptionTools
   - UltraForce.Library.NetStandard.Tools.UFFileTools
   - UltraForce.Library.NetStandard.Tools.UFHtmlTools
@@ -67,6 +68,12 @@ references:
   name: UFDictionaryTools
   nameWithType: UFDictionaryTools
   fullName: UltraForce.Library.NetStandard.Tools.UFDictionaryTools
+- uid: UltraForce.Library.NetStandard.Tools.UFEnumerableTools
+  commentId: T:UltraForce.Library.NetStandard.Tools.UFEnumerableTools
+  href: UltraForce.Library.NetStandard.Tools.UFEnumerableTools.html
+  name: UFEnumerableTools
+  nameWithType: UFEnumerableTools
+  fullName: UltraForce.Library.NetStandard.Tools.UFEnumerableTools
 - uid: UltraForce.Library.NetStandard.Tools.UFEnumTools
   commentId: T:UltraForce.Library.NetStandard.Tools.UFEnumTools
   href: UltraForce.Library.NetStandard.Tools.UFEnumTools.html

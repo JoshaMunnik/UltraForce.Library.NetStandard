@@ -273,6 +273,8 @@ items:
     name: UFDictionaryTools
   - uid: UltraForce.Library.NetStandard.Tools.UFEnumTools
     name: UFEnumTools
+  - uid: UltraForce.Library.NetStandard.Tools.UFEnumerableTools
+    name: UFEnumerableTools
   - uid: UltraForce.Library.NetStandard.Tools.UFExceptionTools
     name: UFExceptionTools
   - uid: UltraForce.Library.NetStandard.Tools.UFFileTools
